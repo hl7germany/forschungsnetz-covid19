@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://charite.de/fhir/StructureDefinition/Observation-GasPanel-pH" />
-  <name value="Observation-GasPanel-pH" />
+  <name value="BloodGasPanel-pH" />
   <status value="draft" />
+  <description value="pH of Blood" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

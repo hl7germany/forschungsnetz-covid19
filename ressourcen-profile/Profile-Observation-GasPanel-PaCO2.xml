@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://charite.de/fhir/StructureDefinition/Observation-GasPanel-PaCO2" />
-  <name value="Observation-GasPanel-PaCO2" />
+  <name value="BloodGasPanel-PaCO2" />
   <status value="draft" />
+  <description value="Carbon dioxide Partial pressure in Blood" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
