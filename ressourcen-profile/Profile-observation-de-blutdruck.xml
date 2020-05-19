@@ -2,7 +2,17 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://fhir.de/StructureDefinition/observation-de-blutdruck" />
   <name value="observation-de-blutdruck" />
+  <title value="Blutdruck" />
   <status value="draft" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://hl7.de/technische-komitees/fhir/" />
+    </telecom>
+  </contact>
+  <description value="Blutdruck eines Patienten oder einer Patientin" />
+  <copyright value="HL7 Deutschland e.V." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -143,6 +153,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
+        <code value="8480-6" />
       </patternCoding>
     </element>
     <element id="Observation.component:systolisch.code.coding:loinc.system">
