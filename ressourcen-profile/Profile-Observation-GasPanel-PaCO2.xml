@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/Observation-GasPanel-PaCO2" />
-  <name value="BloodGasPanel-PaCO2" />
+  <url value="http://charite.de/fhir/StructureDefinition/PaCO2" />
+  <name value="PaCO2" />
   <status value="draft" />
   <description value="Carbon dioxide Partial pressure in Blood" />
   <fhirVersion value="4.0.1" />
@@ -41,84 +41,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.meta.security.display" />
-    </element>
-    <element id="Observation.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.meta.tag.display" />
-    </element>
-    <element id="Observation.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.identifier.type.text" />
-    </element>
-    <element id="Observation.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.identifier.assigner.display" />
-    </element>
-    <element id="Observation.basedOn.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.basedOn.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.basedOn.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.basedOn.identifier.type.text" />
-    </element>
-    <element id="Observation.basedOn.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.basedOn.display" />
-    </element>
-    <element id="Observation.partOf.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.partOf.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.partOf.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.partOf.identifier.type.text" />
-    </element>
-    <element id="Observation.partOf.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.partOf.display" />
-    </element>
-    <element id="Observation.category.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.category.coding.display" />
-    </element>
-    <element id="Observation.category.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.category.text" />
-    </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <slicing>
@@ -134,12 +56,6 @@
       </slicing>
       <min value="1" />
       <max value="1" />
-    </element>
-    <element id="Observation.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.code.coding.display" />
     </element>
     <element id="Observation.code.coding:PaCO2-blood">
       <path value="Observation.code.coding" />
@@ -158,12 +74,6 @@
       <path value="Observation.code.coding.code" />
       <patternCode value="11557-6" />
     </element>
-    <element id="Observation.code.coding:PaCO2-blood.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.code.coding.display" />
-    </element>
     <element id="Observation.code.coding:PaCO2-arterial">
       <path value="Observation.code.coding" />
       <sliceName value="PaCO2-arterial" />
@@ -180,12 +90,6 @@
     <element id="Observation.code.coding:PaCO2-arterial.code">
       <path value="Observation.code.coding.code" />
       <patternCode value="2019-8" />
-    </element>
-    <element id="Observation.code.coding:PaCO2-arterial.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.code.coding.display" />
     </element>
     <element id="Observation.code.coding:PaCO2-capillary">
       <path value="Observation.code.coding" />
@@ -204,18 +108,6 @@
       <path value="Observation.code.coding.code" />
       <patternCode value="2020-6" />
     </element>
-    <element id="Observation.code.coding:PaCO2-capillary.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.code.coding.display" />
-    </element>
-    <element id="Observation.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.code.text" />
-    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
@@ -224,78 +116,6 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
-    </element>
-    <element id="Observation.subject.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.subject.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.subject.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.subject.identifier.type.text" />
-    </element>
-    <element id="Observation.subject.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.subject.display" />
-    </element>
-    <element id="Observation.focus.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.focus.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.focus.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.focus.identifier.type.text" />
-    </element>
-    <element id="Observation.focus.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.focus.display" />
-    </element>
-    <element id="Observation.encounter.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.encounter.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.encounter.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.encounter.identifier.type.text" />
-    </element>
-    <element id="Observation.encounter.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.encounter.display" />
-    </element>
-    <element id="Observation.performer.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.performer.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.performer.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.performer.identifier.type.text" />
-    </element>
-    <element id="Observation.performer.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.performer.display" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
@@ -323,258 +143,6 @@
       <path value="Observation.value[x].code" />
       <min value="1" />
       <fixedCode value="mm[Hg]" />
-    </element>
-    <element id="Observation.dataAbsentReason.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.dataAbsentReason.coding.display" />
-    </element>
-    <element id="Observation.dataAbsentReason.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.dataAbsentReason.text" />
-    </element>
-    <element id="Observation.interpretation.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.interpretation.coding.display" />
-    </element>
-    <element id="Observation.interpretation.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.interpretation.text" />
-    </element>
-    <element id="Observation.bodySite.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.bodySite.coding.display" />
-    </element>
-    <element id="Observation.bodySite.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.bodySite.text" />
-    </element>
-    <element id="Observation.method.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.method.coding.display" />
-    </element>
-    <element id="Observation.method.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.method.text" />
-    </element>
-    <element id="Observation.specimen.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.specimen.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.specimen.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.specimen.identifier.type.text" />
-    </element>
-    <element id="Observation.specimen.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.specimen.display" />
-    </element>
-    <element id="Observation.device.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.device.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.device.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.device.identifier.type.text" />
-    </element>
-    <element id="Observation.device.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.device.display" />
-    </element>
-    <element id="Observation.referenceRange.low.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.referenceRange.low.unit" />
-    </element>
-    <element id="Observation.referenceRange.high.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.referenceRange.high.unit" />
-    </element>
-    <element id="Observation.referenceRange.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.referenceRange.type.coding.display" />
-    </element>
-    <element id="Observation.referenceRange.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.referenceRange.type.text" />
-    </element>
-    <element id="Observation.referenceRange.appliesTo.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.referenceRange.appliesTo.coding.display" />
-    </element>
-    <element id="Observation.referenceRange.appliesTo.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.referenceRange.appliesTo.text" />
-    </element>
-    <element id="Observation.referenceRange.age.low.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.referenceRange.age.low.unit" />
-    </element>
-    <element id="Observation.referenceRange.age.high.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.referenceRange.age.high.unit" />
-    </element>
-    <element id="Observation.hasMember.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.hasMember.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.hasMember.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.hasMember.identifier.type.text" />
-    </element>
-    <element id="Observation.hasMember.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.hasMember.display" />
-    </element>
-    <element id="Observation.derivedFrom.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.derivedFrom.identifier.type.coding.display" />
-    </element>
-    <element id="Observation.derivedFrom.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.derivedFrom.identifier.type.text" />
-    </element>
-    <element id="Observation.derivedFrom.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.derivedFrom.display" />
-    </element>
-    <element id="Observation.component.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.code.coding.display" />
-    </element>
-    <element id="Observation.component.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.code.text" />
-    </element>
-    <element id="Observation.component.dataAbsentReason.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.dataAbsentReason.coding.display" />
-    </element>
-    <element id="Observation.component.dataAbsentReason.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.dataAbsentReason.text" />
-    </element>
-    <element id="Observation.component.interpretation.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.interpretation.coding.display" />
-    </element>
-    <element id="Observation.component.interpretation.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.interpretation.text" />
-    </element>
-    <element id="Observation.component.referenceRange.low.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.referenceRange.low.unit" />
-    </element>
-    <element id="Observation.component.referenceRange.high.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.referenceRange.high.unit" />
-    </element>
-    <element id="Observation.component.referenceRange.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.referenceRange.type.coding.display" />
-    </element>
-    <element id="Observation.component.referenceRange.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.referenceRange.type.text" />
-    </element>
-    <element id="Observation.component.referenceRange.appliesTo.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.referenceRange.appliesTo.coding.display" />
-    </element>
-    <element id="Observation.component.referenceRange.appliesTo.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.referenceRange.appliesTo.text" />
-    </element>
-    <element id="Observation.component.referenceRange.age.low.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.referenceRange.age.low.unit" />
-    </element>
-    <element id="Observation.component.referenceRange.age.high.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.component.referenceRange.age.high.unit" />
     </element>
   </differential>
 </StructureDefinition>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/Observation-RespiratoryRate" />
+  <url value="http://charite.de/fhir/StructureDefinition/RespiratoryRate" />
   <name value="RespiratoryRate" />
   <status value="draft" />
   <date value="2020-05-19" />
@@ -54,12 +54,6 @@
       <min value="1" />
     </element>
     <element id="Observation.code.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <max value="1" />
@@ -79,12 +73,6 @@
       <patternCode value="9279-1" />
     </element>
     <element id="Observation.code.coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="snomed" />
       <max value="1" />
