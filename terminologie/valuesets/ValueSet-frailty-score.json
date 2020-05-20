@@ -1,0 +1,27 @@
+{
+    "compose": {
+        "include": [
+            {
+                "system": "http://charite.de/CodeSystem/frailty-score"
+            }
+        ]
+    },
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+                }
+            ]
+        }
+    ],
+    "date": "2020-05-20",
+    "description": "Contains all Frailty Score codes",
+    "experimental": true,
+    "name": "Frailty Score",
+    "publisher": "Charité",
+    "status": "draft",
+    "url": "http://charite.de/ValueSet/frailty-score",
+    "resourceType": "ValueSet"
+}
