@@ -1,0 +1,115 @@
+{
+    "caseSensitive": false,
+    "concept": [
+        {
+            "code": "1",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Sehr fit"
+                }
+            ],
+            "display": "Very Fit"
+        },
+        {
+            "code": "2",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Durchschnittlich aktiv"
+                }
+            ],
+            "display": "Well"
+        },
+        {
+            "code": "3",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Gut zurechtkommend"
+                }
+            ],
+            "display": "Managing Well"
+        },
+        {
+            "code": "4",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Vulnerabel"
+                }
+            ],
+            "display": "Vulnerable"
+        },
+        {
+            "code": "5",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Geringgradig frail"
+                }
+            ],
+            "display": "Mildly Frail"
+        },
+        {
+            "code": "6",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Mittelgradig frail"
+                }
+            ],
+            "display": "Moderately Frail"
+        },
+        {
+            "code": "7",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Ausgeprägt frail"
+                }
+            ],
+            "display": "Severely Frail"
+        },
+        {
+            "code": "8",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Extrem frail"
+                }
+            ],
+            "display": "Very Severely Frail"
+        },
+        {
+            "code": "9",
+            "designation": [
+                {
+                    "language": "de-DE",
+                    "value": "Terminal erkrankt"
+                }
+            ],
+            "display": "Terminally Ill"
+        }
+    ],
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+                }
+            ]
+        }
+    ],
+    "content": "complete",
+    "date": "2020-05-20",
+    "description": "Clinical Frailty Scale",
+    "experimental": true,
+    "name": "frailty-score",
+    "publisher": "Charité",
+    "status": "draft",
+    "url": "http://charite.de/CodeSystem/frailty-score",
+    "valueSet": "http://charite.de/ValueSet/frailty-score",
+    "resourceType": "CodeSystem"
+}
