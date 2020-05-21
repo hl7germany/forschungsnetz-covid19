@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://charite.de/fhir/StructureDefinition/HistoryOfTravel" />
+  <name value="HistoryOfTravel" />
+  <status value="draft" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="8691-8" />
+    </element>
+    <element id="Observation.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.code.coding.display" />
+      <min value="1" />
+      <fixedString value="History of travel" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <max value="0" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.component:Country">
+      <path value="Observation.component" />
+      <sliceName value="Country" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:Country.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:Country.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:Country.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="94651-7" />
+    </element>
+    <element id="Observation.component:Country.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.component.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Country of travel" />
+    </element>
+    <element id="Observation.component:Country.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://fhir.logicahealth.org/covid19/ValueSet/country-codes-vs" />
+      </binding>
+    </element>
+    <element id="Observation.component:State">
+      <path value="Observation.component" />
+      <sliceName value="State" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:State.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:State.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:State.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="82754-3" />
+    </element>
+    <element id="Observation.component:State.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.component.code.coding.display" />
+      <min value="1" />
+      <fixedString value="State of travel" />
+    </element>
+    <element id="Observation.component:State.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.component:City">
+      <path value="Observation.component" />
+      <sliceName value="City" />
+      <max value="1" />
+    </element>
+    <element id="Observation.component:City.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:City.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Observation.component:City.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="94653-3" />
+    </element>
+    <element id="Observation.component:City.code.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.component.code.coding.display" />
+      <min value="1" />
+      <fixedString value="City of travel" />
+    </element>
+    <element id="Observation.component:City.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
