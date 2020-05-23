@@ -1,0 +1,35 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.482--20200503123751"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-03T12:37:51+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/respiratoryTherapies"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.482"/>
+    </identifier>
+    <version value="2020-05-03T12:37:51"/>
+    <name value="oxygen-therapies"/>
+    <title value="Sauerstoff- / Beatmungstherapien"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Behandlungsmethoden im Rahmen einer Sauerstoff- oder Beatmungstherapie"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="53950000"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>
