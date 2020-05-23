@@ -93,6 +93,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
+        <code value="2708-6" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:SpO2-arterial.system">
