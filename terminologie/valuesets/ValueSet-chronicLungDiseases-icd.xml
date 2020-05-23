@@ -1,0 +1,66 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.493--20200504195012"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-04T19:50:12+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/chronicLungDiseases-icd"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.493"/>
+    </identifier>
+    <version value="2020-05-04T19:50:12"/>
+    <name value="chronic-lung-diseases-surrogate"/>
+    <title value="Chronische Lungenerkrankungen Surrogat"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Chronische Lungenerkrankungen im Zusammenhang mit Covid-19"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <concept>
+                <code value="G47.3"/>
+                <display value="Schlafapnoe"/>
+            </concept>
+            <concept>
+                <code value="G47.31"/>
+                <display value="Obstruktives Schlafapnoe-Syndrom"/>
+            </concept>
+            <concept>
+                <code value="E66.29"/>
+                <display value="Übermäßige Adipositas mit alveolärer Hypoventilation : Grad oder Ausmaß der Adipositas nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="I27.0"/>
+                <display value="Primäre pulmonale Hypertonie"/>
+            </concept>
+            <concept>
+                <code value="J84.1"/>
+                <display value="Sonstige interstitielle Lungenkrankheiten mit Fibrose"/>
+            </concept>
+            <concept>
+                <code value="J44.9"/>
+                <display value="Chronische obstruktive Lungenkrankheit, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="J45.9"/>
+                <display value="Asthma bronchiale, nicht näher bezeichnet"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="E84"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>
