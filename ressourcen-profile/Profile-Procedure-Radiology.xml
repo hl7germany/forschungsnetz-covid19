@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://charite.de/fhir/StructureDefinition/RadiologyProcedures" />
+  <name value="RadiologyProcedures" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Procedure" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Procedure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Procedure.category.coding:sct">
+      <path value="Procedure.category.coding" />
+      <sliceName value="sct" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="103693007" />
+      </patternCoding>
+    </element>
+    <element id="Procedure.category.coding:sct.code">
+      <path value="Procedure.category.coding.code" />
+      <patternCode value="103693007" />
+    </element>
+    <element id="Procedure.code.coding:sct">
+      <path value="Procedure.code.coding" />
+      <sliceName value="sct" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://charite.de/fhir/ValueSet/RadiologyProcedures" />
+      </binding>
+    </element>
+    <element id="Procedure.bodySite">
+      <path value="Procedure.bodySite" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.bodySite.coding">
+      <path value="Procedure.bodySite.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="system" />
+        </discriminator>
+        <discriminator>
+          <type value="pattern" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Procedure.bodySite.coding:snomed">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Procedure.bodySite.coding" />
+      <sliceName value="snomed" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="39607008" />
+      </patternCoding>
+    </element>
+    <element id="Procedure.bodySite.coding:snomed.system">
+      <path value="Procedure.bodySite.coding.system" />
+      <min value="1" />
+      <patternUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Procedure.bodySite.coding:snomed.code">
+      <path value="Procedure.bodySite.coding.code" />
+      <min value="1" />
+      <patternCode value="39607008" />
+    </element>
+    <element id="Procedure.report">
+      <path value="Procedure.report" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://charite.de/fhir/StructureDefinition/DiagnosticReportRadiology" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
