@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/StructureDefinition/EthnicGroup" />
+  <url value="http://charite.de/StructureDefinition/ethnic-group" />
   <name value="EthnicGroup" />
+  <title value="Ethnic Group" />
   <status value="draft" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
   <description value="Ethnic group of a patient" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -22,7 +30,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://charite.de/StructureDefinition/EthnicGroup" />
+      <fixedUri value="http://charite.de/StructureDefinition/ethnic-group" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
