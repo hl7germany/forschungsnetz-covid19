@@ -8,7 +8,7 @@
             <start value="2020-05-03T15:28:27+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/RadiologyProcedures"/>
+    <url value="http://charite.de/fhir/ValueSet/radiology-procedures"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
@@ -16,11 +16,11 @@
     </identifier>
     <version value="2020-05-03T15:28:27"/>
     <name value="imaging-procedures"/>
-    <title value="Bildgebungsverfahren"/>
+    <title value="Radiology Procedures"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Bildgebungsverfahren der Lunge im Rahmen von Covid-19"/>
+    <description value="Radiology procedures in the context of Covid-19"/>
     <immutable value="false"/>
     <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
     <compose>

@@ -8,7 +8,7 @@
             <start value="2020-05-04T19:50:12+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/chronicLungDiseases-icd"/>
+    <url value="http://charite.de/fhir/ValueSet/chronic-lung-diseases-icd"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>

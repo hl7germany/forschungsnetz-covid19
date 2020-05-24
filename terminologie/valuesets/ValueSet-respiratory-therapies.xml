@@ -8,7 +8,7 @@
             <start value="2020-05-03T12:37:51+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/respiratoryTherapies"/>
+    <url value="http://charite.de/fhir/ValueSet/respiratory-therapies"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
@@ -16,11 +16,11 @@
     </identifier>
     <version value="2020-05-03T12:37:51"/>
     <name value="oxygen-therapies"/>
-    <title value="Sauerstoff- / Beatmungstherapien"/>
+    <title value="Respiratory Therapies"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Behandlungsmethoden im Rahmen einer Sauerstoff- oder Beatmungstherapie"/>
+    <description value="Therapeutic respiratory procedures"/>
     <immutable value="false"/>
     <compose>
         <include>
