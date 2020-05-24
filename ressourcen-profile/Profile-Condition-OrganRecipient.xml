@@ -88,7 +88,7 @@
       <sliceName value="snomed-ct" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/organsForTransplant" />
+        <valueSet value="http://charite.de/fhir/ValueSet/organs-for-transplant" />
       </binding>
     </element>
   </differential>

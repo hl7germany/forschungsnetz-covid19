@@ -67,7 +67,7 @@
       <sliceName value="sct" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/chronicLungDiseases" />
+        <valueSet value="http://charite.de/fhir/ValueSet/chronic-lung-diseases" />
       </binding>
     </element>
     <element id="Condition.code.coding:orphanet">

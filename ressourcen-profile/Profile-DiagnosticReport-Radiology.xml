@@ -185,7 +185,7 @@
       </patternCoding>
       <binding>
         <strength value="preferred" />
-        <valueSet value="http://charite.de/fhir/ValueSet/RadiologyFindings" />
+        <valueSet value="http://charite.de/fhir/ValueSet/radiology-findings" />
       </binding>
     </element>
     <element id="DiagnosticReport.conclusionCode.coding:snomed.system">

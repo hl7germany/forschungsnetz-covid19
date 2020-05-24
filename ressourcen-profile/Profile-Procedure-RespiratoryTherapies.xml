@@ -54,9 +54,10 @@
     <element id="Procedure.code.coding:sct">
       <path value="Procedure.code.coding" />
       <sliceName value="sct" />
+      <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/respiratoryTherapies" />
+        <valueSet value="http://charite.de/fhir/ValueSet/respiratory-therapies" />
       </binding>
     </element>
   </differential>

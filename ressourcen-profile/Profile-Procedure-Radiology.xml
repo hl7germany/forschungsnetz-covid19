@@ -57,7 +57,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/RadiologyProcedures" />
+        <valueSet value="http://charite.de/fhir/ValueSet/radiology-procedures" />
       </binding>
     </element>
     <element id="Procedure.bodySite">

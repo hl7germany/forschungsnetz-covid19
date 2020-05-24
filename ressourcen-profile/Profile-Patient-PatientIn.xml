@@ -32,11 +32,19 @@
     <element id="Patient.extension:ethnicGroup">
       <path value="Patient.extension" />
       <sliceName value="ethnicGroup" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://charite.de/StructureDefinition/EthnicGroup" />
+        <profile value="http://charite.de/StructureDefinition/ethnic-group" />
       </type>
+    </element>
+    <element id="Patient.extension:ethnicGroup.value[x]">
+      <path value="Patient.extension.value[x]" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://charite.de/fhir/ValueSet/ethnic-groups" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
