@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.493"/>
     </identifier>
     <version value="2020-05-04T19:50:12"/>
-    <name value="chronic-lung-diseases-surrogate"/>
-    <title value="Chronische Lungenerkrankungen Surrogat"/>
+    <name value="chronic-lung-diseases-icd"/>
+    <title value="Chronische Lungenerkrankungen ICD-10-GM"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

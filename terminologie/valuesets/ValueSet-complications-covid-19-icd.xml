@@ -1,0 +1,58 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.509--20200505130915"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-05T13:09:15+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/complications-covid-19-icd"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.509"/>
+    </identifier>
+    <version value="2020-05-05T13:09:15"/>
+    <name value="complications-covid-19-icd"/>
+    <title value="Komplikationen im Rahmen von Covid-19"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Komplikationen im Rahmen von Covid-19 mittels ICD-10-GM"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:1.2.276.0.76.5.409"/>
+            <concept>
+                <code value="J18.9"/>
+                <display value="Pneumonie, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="A41.9"/>
+                <display value="Sepsis, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="I82.9"/>
+                <display value="Embolie und Thrombose nicht näher bezeichneter Vene"/>
+            </concept>
+            <concept>
+                <code value="I26.9"/>
+                <display value="Lungenembolie ohne Angabe eines akuten Cor pulmonale"/>
+            </concept>
+            <concept>
+                <code value="I64"/>
+                <display value="Schlaganfall, nicht als Blutung oder Infarkt bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="I21.9"/>
+                <display value="Akuter Myokardinfarkt, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="N17.9"/>
+                <display value="Akutes Nierenversagen, nicht näher bezeichnet"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
