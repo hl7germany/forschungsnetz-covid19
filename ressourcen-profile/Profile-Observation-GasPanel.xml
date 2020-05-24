@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/GasPanel" />
+  <url value="http://charite.de/fhir/StructureDefinition/blood-gas-panel" />
   <name value="BloodGasPanel" />
+  <title value="Blood Gas Panel" />
   <status value="draft" />
-  <description value="Blood gas panel" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
+  <description value="Blood gas panel is a grouper observation with references to the individual measurements as separate observations." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -137,9 +145,9 @@
       <type>
         <code value="Reference" />
         <targetProfile value="http://charite.de/fhir/StructureDefinition/pH" />
-        <targetProfile value="http://charite.de/fhir/StructureDefinition/PaCO2" />
-        <targetProfile value="http://charite.de/fhir/StructureDefinition/PaO2" />
-        <targetProfile value="http://charite.de/fhir/StructureDefinition/OxygenSaturation" />
+        <targetProfile value="http://charite.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure" />
+        <targetProfile value="http://charite.de/fhir/StructureDefinition/oxygen-partial-pressure" />
+        <targetProfile value="http://charite.de/fhir/StructureDefinition/oxygen-saturation" />
       </type>
       <mustSupport value="true" />
     </element>

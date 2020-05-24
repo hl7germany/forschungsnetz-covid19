@@ -2,8 +2,16 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://charite.de/fhir/StructureDefinition/pH" />
   <name value="pH" />
+  <title value="pH" />
   <status value="draft" />
-  <description value="pH of Blood" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
+  <description value="pH-value of Blood" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

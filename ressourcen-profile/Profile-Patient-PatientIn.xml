@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite/fhir/StructureDefinition/PatientIn" />
-  <name value="PatientIn" />
+  <url value="http://charite/fhir/StructureDefinition/patient" />
+  <name value="Patient" />
+  <title value="Patient" />
   <status value="draft" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
+  <description value="Covers demographic data about the patient." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -23,18 +32,11 @@
     <element id="Patient.extension:ethnicGroup">
       <path value="Patient.extension" />
       <sliceName value="ethnicGroup" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://charite.de/StructureDefinition/EthnicGroup" />
       </type>
-    </element>
-    <element id="Patient.contact">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Contact" />
-      </extension>
-      <path value="Patient.contact" />
     </element>
   </differential>
 </StructureDefinition>

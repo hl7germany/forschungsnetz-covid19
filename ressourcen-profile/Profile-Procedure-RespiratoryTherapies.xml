@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/RespiratoryTherapies" />
+  <url value="http://charite.de/fhir/StructureDefinition/respiratory-therapies" />
   <name value="RespiratoryTherapies" />
+  <title value="Respiratory Therapies" />
   <status value="draft" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
+  <description value="Respiratory therapies as a risk factor for a severe course of an infection with SARS-Cov-2" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

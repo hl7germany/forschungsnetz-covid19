@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/OxygenSaturation" />
+  <url value="http://charite.de/fhir/StructureDefinition/oxygen-saturation" />
   <name value="OxygenSaturation" />
+  <title value="Oxygen Saturation" />
   <status value="draft" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
   <description value="Oxygen saturation" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -57,12 +65,6 @@
       <min value="1" />
     </element>
     <element id="Observation.code.coding:SpO2-blood">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="SpO2-blood" />
       <max value="1" />
@@ -82,12 +84,6 @@
       <patternCode value="20564-1" />
     </element>
     <element id="Observation.code.coding:SpO2-arterial">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="SpO2-arterial" />
       <max value="1" />
@@ -107,12 +103,6 @@
       <patternCode value="2708-6" />
     </element>
     <element id="Observation.code.coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="snomed" />
       <max value="1" />

@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/PaO2" />
+  <url value="http://charite.de/fhir/StructureDefinition/oxygen-partial-pressure" />
   <name value="PaO2" />
+  <title value="PaO2" />
   <status value="draft" />
   <date value="2020-05-18" />
-  <description value="Oxygen Partial pressure in Blood" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
+  <description value="Oxygen partial pressure in blood" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/DiagnosticReportRadiology" />
+  <url value="http://charite.de/fhir/StructureDefinition/diagnostic-report-radiology" />
   <name value="RadiologyDiagnosticReport" />
+  <title value="Radiology Diagnostic Report" />
   <status value="draft" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
+  <description value="Radiological findings in the context of an infection with SARS-Cov-2" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

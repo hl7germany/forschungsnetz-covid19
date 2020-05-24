@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/FrailtyScore" />
-  <name value="FrailtyScore" />
+  <url value="http://charite.de/fhir/StructureDefinition/frailty-score" />
+  <name value="ClinicalFrailtyScale" />
+  <title value="Clinical Frailty Scale" />
   <status value="draft" />
   <date value="2020-05-20" />
   <publisher value="Charité" />
@@ -11,7 +12,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
-  <description value="Frailty Index score" />
+  <description value="Clinical Frailty Scale" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -61,12 +62,6 @@
       <min value="1" />
     </element>
     <element id="Observation.code.coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="snomed" />
       <min value="1" />

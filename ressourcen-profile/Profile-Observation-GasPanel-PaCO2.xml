@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/PaCO2" />
+  <url value="http://charite.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure" />
   <name value="PaCO2" />
+  <title value="PaCO2" />
   <status value="draft" />
-  <description value="Carbon dioxide Partial pressure in Blood" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
+  <description value="Carbon dioxide partial pressure in blood" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
