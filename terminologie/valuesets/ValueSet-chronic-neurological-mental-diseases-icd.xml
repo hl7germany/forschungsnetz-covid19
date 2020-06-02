@@ -1,0 +1,82 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.498--20200504223508"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-04T22:35:08+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/chronic-neurological-mental-diseases-icd"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.498"/>
+    </identifier>
+    <version value="2020-05-04T22:35:08"/>
+    <name value="chronic-neurological-mental-diseases-icd"/>
+    <title value="Chronische neurologische oder psychiatrische Erkrankungen Surrogat"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Chronische neurologische Erkrankungen im Zusammenhang mit Covid-19 mittels ICD-10-GM"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <concept>
+                <code value="F41.9"/>
+                <display value="Angststörung, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="F32.9"/>
+                <display value="Depressive Episode, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="F29"/>
+                <display value="Nicht näher bezeichnete nichtorganische Psychose"/>
+            </concept>
+            <concept>
+                <code value="F03"/>
+                <display value="Nicht näher bezeichnete Demenz"/>
+            </concept>
+            <concept>
+                <code value="G70.9"/>
+                <display value="Neuromuskuläre Krankheit, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="G40.9"/>
+                <display value="Epilepsie, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="G43.9"/>
+                <display value="Migräne, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="I69.4"/>
+                <display value="Folgen eines Schlaganfalls, nicht als Blutung oder Infarkt bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="Z86.7"/>
+                <display value="Krankheiten des Kreislaufsystems in der Eigenanamnese"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="G20"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="G35"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>
