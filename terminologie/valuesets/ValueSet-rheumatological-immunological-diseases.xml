@@ -1,0 +1,96 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.474--20200425233223"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-04-25T23:32:23+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/rheumatological-immunological-diseases"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.474"/>
+    </identifier>
+    <version value="2020-04-25T23:32:23"/>
+    <name value="rheumatological-immunological-diseases"/>
+    <title value="Rheumatologische und immunologische Erkrankungen"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Rheumatologische und immunologische Erkrankungen im Zusammenhang mit Covid-19"/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="24526004"/>
+                <display value="Inflammatory bowel disease (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Chronisch entzündliche Darmerkrankung"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="123803006"/>
+                <display value="Rheumatic arteritis (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Rheumatoide Arthritis"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="105969002"/>
+                <display value="Disorder of connective tissue (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Kollagenosen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="31996006"/>
+                <display value="Vasculitis (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Vasculitis"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="36138009"/>
+                <display value="Congenital immunodeficiency disease (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="angeborene Immundefekte"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

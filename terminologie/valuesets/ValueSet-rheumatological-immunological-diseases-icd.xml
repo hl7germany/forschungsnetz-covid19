@@ -1,0 +1,50 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.512--20200504223024"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-04T22:30:24+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/rheumatological-immunological-diseases-icd"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.512"/>
+    </identifier>
+    <version value="2020-05-04T22:30:24"/>
+    <name value="rheumatological-immunological-diseases-icd"/>
+    <title value="Rheumatologische und immunologische Erkrankungen ICD-10-GM"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Rheumatologische und immunologische Erkrankungen mittels ICD-10-GM"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <concept>
+                <code value="K52.9"/>
+                <display value="Nichtinfektiöse Gastroenteritis und Kolitis, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="I00"/>
+                <display value="Rheumatisches Fieber ohne Angabe einer Herzbeteiligung"/>
+            </concept>
+            <concept>
+                <code value="M35.9"/>
+                <display value="Krankheit mit Systembeteiligung des Bindegewebes, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="I77.6"/>
+                <display value="Arteriitis, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="D84.8"/>
+                <display value="Sonstige näher bezeichnete Immundefekte"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
