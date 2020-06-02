@@ -1,0 +1,83 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.472--20200425215002"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-04-25T21:50:02+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/chronic-liver-diseases"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.472"/>
+    </identifier>
+    <version value="2020-04-25T21:50:02"/>
+    <name value="chronic-liver-diseases"/>
+    <title value="Chronische Lebererkrankungen"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Chronische Nierenerkrankungen im Zusammenhang mit Covid-19"/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="197321007"/>
+                <display value="Steatosis of liver (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Fettleber"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="19943007"/>
+                <display value="Cirrhosis of liver (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Leberzirrhose"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="40468003+76783007"/>
+                <display value="|Viral hepatitis, type A (disorder)|+|Chronic hepatitis (disorder)|"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Chronische infektiöse Hepatitis"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="235890007"/>
+                <display value="Autoimmune liver disease (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Autoimmune Lebererkrankungen"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

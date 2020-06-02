@@ -1,0 +1,46 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.496--20200504212558"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-04T21:25:58+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/chronic-liver-diseases-icd"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.496"/>
+    </identifier>
+    <version value="2020-05-04T21:25:58"/>
+    <name value="chronic-liver-diseases-icd"/>
+    <title value="Chronische Lebererkrankungen ICD-10-GM"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Chronische Lebererkrankungen im Zusammenhang mit Covid-19 mittels ICD-10-GM"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <concept>
+                <code value="K76.0"/>
+                <display value="Fettleber [fettige Degeneration], anderenorts nicht klassifiziert"/>
+            </concept>
+            <concept>
+                <code value="K74.6"/>
+                <display value="Fibrose und Zirrhose der Leber"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="B18"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>
