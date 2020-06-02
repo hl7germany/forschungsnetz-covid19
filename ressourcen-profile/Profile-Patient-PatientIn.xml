@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite/fhir/StructureDefinition/patient" />
+  <url value="http://charite.de/fhir/StructureDefinition/patient" />
   <name value="Patient" />
   <title value="Patient" />
   <status value="draft" />
@@ -11,7 +11,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
-  <description value="Covers demographic data about the patient." />
+  <description value="Covers demographic data about the patient" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

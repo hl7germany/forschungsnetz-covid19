@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://charite.de/fhir/StructureDefinition/complications-covid-19" />
-  <name value="complications-covid-19" />
+  <name value="Complications" />
   <title value="Complications of Covid-19" />
   <status value="draft" />
   <publisher value="Charité" />

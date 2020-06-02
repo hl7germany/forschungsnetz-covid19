@@ -1,0 +1,74 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.495--20200504212332"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-04T21:23:32+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/cardiovascular-diseases-icd"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.495"/>
+    </identifier>
+    <version value="2020-05-04T21:23:32"/>
+    <name value="cardiovascular-diseases-surrogat"/>
+    <title value="Herz-Kreislauf-Erkrankungen Surrogat"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Herz-Kreislauf-Erkrankungen im Zusammenhang mit Covid-19 mittels ICD-10-GM"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <concept>
+                <code value="I25.29"/>
+                <display value="Zustand nach Herzinfarkt"/>
+            </concept>
+            <concept>
+                <code value="I10.90"/>
+                <display value="Bluthochdruck"/>
+            </concept>
+            <concept>
+                <code value="I70.9"/>
+                <display value="pAVK"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="I25.1"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="I49"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="I50"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="I25.2"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>

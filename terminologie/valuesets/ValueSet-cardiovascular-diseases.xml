@@ -1,0 +1,135 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.469--20200425202119"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-04-25T20:21:19+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/cardiovascular-diseases"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.469"/>
+    </identifier>
+    <version value="2020-04-25T20:21:19"/>
+    <name value="cardiovascular-diseases"/>
+    <title value="Herz-Kreislauf-Erkrankungen"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Herz-Kreislauf-Erkrankungen im Zusammenhang mit Covid-19"/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="38341003"/>
+                <display value="Hypertensive disorder, systemic arterial (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Bluthochdruck"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="417662000:246090004=22298006"/>
+                <display value="|History of clinical finding in subject (situation)|:|Associated finding (attribute)|=|Myocardial infarction (disorder)|"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Zustand nach Herzinfarkt"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="698247007"/>
+                <display value="Cardiac arrhythmia (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Herzrhythmusstörungen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="84114007"/>
+                <display value="Heart failure (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Herzinsuffizienz"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="399957001"/>
+                <display value="Peripheral arterial occlusive disease (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="pAVK"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="416940007:363589002=81266008"/>
+                <display value="|Past history of procedure (situation)|:|Associated procedure (attribute)|=|Heart revascularization (procedure)|"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Zustand nach Revaskularisation"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="53741008"/>
+                <display value="Coronary arteriosclerosis (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="koronare Herzkrankheit"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="64586002"/>
+                <display value="Carotid artery stenosis (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Carotisstenose"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

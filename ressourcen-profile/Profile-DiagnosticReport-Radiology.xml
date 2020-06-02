@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://charite.de/fhir/StructureDefinition/diagnostic-report-radiology" />
-  <name value="RadiologyDiagnosticReport" />
-  <title value="Radiology Diagnostic Report" />
+  <name value="DiagnosticReportRadiology" />
+  <title value="Diagnostic Report Radiology" />
   <status value="draft" />
   <publisher value="Charité" />
   <contact>
