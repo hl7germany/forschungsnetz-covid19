@@ -1,26 +1,26 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="1.2.276.0.76.11.482--20200503123751"/>
+    <id value="1.2.276.0.76.11.471--20200425213520"/>
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
-            <start value="2020-05-03T12:37:51+02:00"/>
+            <start value="2020-04-25T21:35:20+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/respiratory-therapies"/>
+    <url value="http://charite.de/fhir/ValueSet/chronic-kidney-diseases"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
-        <value value="1.2.276.0.76.11.482"/>
+        <value value="1.2.276.0.76.11.471"/>
     </identifier>
-    <version value="2020-05-03T12:37:51"/>
-    <name value="respiratory-therapies"/>
-    <title value="Respiratory Therapies"/>
+    <version value="2020-04-25T21:35:20"/>
+    <name value="chronic-kidney-diseases"/>
+    <title value="Chronische Nierenerkrankungen"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Therapeutic respiratory procedures"/>
+    <description value="Chronische Nierenerkrankungen im Zusammenhang mit Covid-19"/>
     <immutable value="false"/>
     <compose>
         <include>
@@ -28,7 +28,7 @@
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
-                <value value="53950000"/>
+                <value value="709044004"/>
             </filter>
         </include>
     </compose>

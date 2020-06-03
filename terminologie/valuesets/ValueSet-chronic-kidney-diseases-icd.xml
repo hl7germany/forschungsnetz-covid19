@@ -1,0 +1,34 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.501--20200504225739"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-04T22:57:39+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/chronic-kidney-diseases-icd"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.501"/>
+    </identifier>
+    <version value="2020-05-04T22:57:39"/>
+    <name value="chronic-kidney-diseases-icd"/>
+    <title value="Chronische Nierenerkrankungen ICD-10-GM"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Chronische Nierenerkrankungen im Zusammenhang mit Covid-19 mittels ICD-10-GM"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <concept>
+                <code value="N18.9"/>
+                <display value="Chronische Nierenkrankheit, nicht näher bezeichnet"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
