@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/respiratory-rate" />
-  <name value="RespiratoryRate" />
-  <title value="Respiratory Rate" />
+  <url value="http://charite.de/fhir/StructureDefinition/body-weight" />
+  <name value="BodyWeight" />
   <status value="draft" />
-  <publisher value="Charité" />
-  <contact>
-    <telecom>
-      <system value="url" />
-      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
-    </telecom>
-  </contact>
-  <description value="Respiratory rate" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -46,7 +37,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/resprate" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/bodyweight" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.meta.security.display">
@@ -155,17 +146,17 @@
       </extension>
       <path value="Observation.code.coding.display" />
     </element>
-    <element id="Observation.code.coding:RespRateCode">
+    <element id="Observation.code.coding:BodyWeightCode">
       <path value="Observation.code.coding" />
-      <sliceName value="RespRateCode" />
+      <sliceName value="BodyWeightCode" />
     </element>
-    <element id="Observation.code.coding:RespRateCode.display">
+    <element id="Observation.code.coding:BodyWeightCode.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="Observation.code.coding.display" />
     </element>
-    <element id="Observation.code.coding:RespRateCodeSnomed">
+    <element id="Observation.code.coding:BodyWeightCodeSnomed">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -173,10 +164,10 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.code.coding" />
-      <sliceName value="RespRateCodeSnomed" />
+      <sliceName value="BodyWeightCodeSnomed" />
       <max value="1" />
     </element>
-    <element id="Observation.code.coding:RespRateCodeSnomed.system">
+    <element id="Observation.code.coding:BodyWeightCodeSnomed.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -187,7 +178,7 @@
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Observation.code.coding:RespRateCodeSnomed.code">
+    <element id="Observation.code.coding:BodyWeightCodeSnomed.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -196,7 +187,7 @@
       </extension>
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="86290005" />
+      <fixedCode value="27113001" />
     </element>
     <element id="Observation.code.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

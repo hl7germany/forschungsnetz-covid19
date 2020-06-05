@@ -2,16 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://charite.de/fhir/StructureDefinition/heart-rate" />
   <name value="HeartRate" />
-  <title value="Heart Rate" />
   <status value="draft" />
-  <date value="2020-05-19" />
-  <publisher value="Charité" />
-  <contact>
-    <telecom>
-      <system value="url" />
-      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
-    </telecom>
-  </contact>
   <description value="Heart rate" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -47,93 +38,29 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/heartrate" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Observation.code.coding:loinc">
-      <path value="Observation.code.coding" />
-      <sliceName value="loinc" />
-      <max value="1" />
-      <patternCoding>
-        <system value="http://loinc.org" />
-        <code value="8867-4" />
-      </patternCoding>
-    </element>
-    <element id="Observation.code.coding:loinc.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <patternUri value="http://loinc.org" />
-    </element>
-    <element id="Observation.code.coding:loinc.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-      <patternCode value="8867-4" />
-    </element>
-    <element id="Observation.code.coding:snomed">
-      <path value="Observation.code.coding" />
-      <sliceName value="snomed" />
-      <max value="1" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="364075005" />
-      </patternCoding>
-    </element>
-    <element id="Observation.code.coding:snomed.system">
-      <path value="Observation.code.coding.system" />
-      <min value="1" />
-      <patternUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Observation.code.coding:snomed.code">
-      <path value="Observation.code.coding.code" />
-      <min value="1" />
-      <patternCode value="364075005" />
-    </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-      </type>
-    </element>
-    <element id="Observation.value[x]">
-      <path value="Observation.value[x]" />
-      <type>
-        <code value="Quantity" />
-      </type>
-    </element>
-    <element id="Observation.value[x].value">
-      <path value="Observation.value[x].value" />
-      <min value="1" />
-    </element>
-    <element id="Observation.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
+    <element id="Observation.code.coding:HeartRateCodeSnomed">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
       </extension>
-      <path value="Observation.value[x].unit" />
-      <min value="1" />
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.code.coding" />
+      <sliceName value="HeartRateCodeSnomed" />
+      <max value="1" />
     </element>
-    <element id="Observation.value[x].system">
-      <path value="Observation.value[x].system" />
+    <element id="Observation.code.coding:HeartRateCodeSnomed.system">
+      <path value="Observation.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://unitsofmeasure.org" />
+      <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Observation.value[x].code">
-      <path value="Observation.value[x].code" />
+    <element id="Observation.code.coding:HeartRateCodeSnomed.code">
+      <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="{beats}/min" />
+      <fixedCode value="364075005" />
     </element>
   </differential>
 </StructureDefinition>

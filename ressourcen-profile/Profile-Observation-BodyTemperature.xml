@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/respiratory-rate" />
-  <name value="RespiratoryRate" />
-  <title value="Respiratory Rate" />
+  <url value="http://charite.de/fhir/StructureDefinition/body-temperature" />
+  <name value="BodyTemperature" />
   <status value="draft" />
-  <publisher value="Charité" />
-  <contact>
-    <telecom>
-      <system value="url" />
-      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
-    </telecom>
-  </contact>
-  <description value="Respiratory rate" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -46,7 +37,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/resprate" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/bodytemp" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.meta.security.display">
@@ -155,17 +146,17 @@
       </extension>
       <path value="Observation.code.coding.display" />
     </element>
-    <element id="Observation.code.coding:RespRateCode">
+    <element id="Observation.code.coding:BodyTempCode">
       <path value="Observation.code.coding" />
-      <sliceName value="RespRateCode" />
+      <sliceName value="BodyTempCode" />
     </element>
-    <element id="Observation.code.coding:RespRateCode.display">
+    <element id="Observation.code.coding:BodyTempCode.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="Observation.code.coding.display" />
     </element>
-    <element id="Observation.code.coding:RespRateCodeSnomed">
+    <element id="Observation.code.coding:BodyTempCodeSnomed">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -173,10 +164,10 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Observation.code.coding" />
-      <sliceName value="RespRateCodeSnomed" />
+      <sliceName value="BodyTempCodeSnomed" />
       <max value="1" />
     </element>
-    <element id="Observation.code.coding:RespRateCodeSnomed.system">
+    <element id="Observation.code.coding:BodyTempCodeSnomed.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -187,7 +178,7 @@
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Observation.code.coding:RespRateCodeSnomed.code">
+    <element id="Observation.code.coding:BodyTempCodeSnomed.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -196,7 +187,7 @@
       </extension>
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="86290005" />
+      <fixedCode value="386725007" />
     </element>
     <element id="Observation.code.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -285,6 +276,11 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Observation.value[x].unit" />
+      <fixedString value="°C" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.code">
+      <path value="Observation.value[x].code" />
+      <fixedCode value="Cel" />
     </element>
     <element id="Observation.dataAbsentReason.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
