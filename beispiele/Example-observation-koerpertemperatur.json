@@ -2,7 +2,7 @@
     "resourceType": "Observation",
     "meta": {
         "profile": [
-            "http://fhir.de/StructureDefinition/observation-de-koerpertemperatur"
+            "http://charite.de/StructureDefinition/body-temperature"
         ]
     },
     "category": [

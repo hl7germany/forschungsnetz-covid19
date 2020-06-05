@@ -2,7 +2,7 @@
     "resourceType": "Observation",
     "meta": {
         "profile": [
-            "http://fhir.de/StructureDefinition/observation-symptom-covid-19"
+            "http://charite.de/StructureDefinition/observation-symptom-covid-19"
         ]
     },
     "code": {
