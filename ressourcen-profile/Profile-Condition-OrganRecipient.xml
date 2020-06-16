@@ -53,7 +53,6 @@
       <path value="Condition.code.coding" />
       <sliceName value="icd10-gm" />
       <patternCoding>
-        <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
         <code value="Z94.9" />
       </patternCoding>
     </element>
@@ -70,7 +69,6 @@
       <path value="Condition.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
         <code value="161663000" />
       </patternCoding>
     </element>
