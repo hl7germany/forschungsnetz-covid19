@@ -53,8 +53,7 @@
       <path value="Condition.code.coding" />
       <sliceName value="icd10-gm" />
       <patternCoding>
-        <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
-        <code value="Z94.9" />
+        <code value="E14" />
       </patternCoding>
       <binding>
         <strength value="required" />
@@ -63,7 +62,7 @@
     </element>
     <element id="Condition.code.coding:icd10-gm.code">
       <path value="Condition.code.coding.code" />
-      <patternCode value="Z94.9" />
+      <patternCode value="E14" />
     </element>
     <element id="Condition.code.coding:alpha-id">
       <path value="Condition.code.coding" />
@@ -74,8 +73,7 @@
       <path value="Condition.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="161663000" />
+        <code value="73211009" />
       </patternCoding>
       <binding>
         <strength value="required" />
@@ -84,7 +82,7 @@
     </element>
     <element id="Condition.code.coding:sct.code">
       <path value="Condition.code.coding.code" />
-      <patternCode value="161663000" />
+      <patternCode value="73211009" />
     </element>
     <element id="Condition.code.coding:orphanet">
       <path value="Condition.code.coding" />
