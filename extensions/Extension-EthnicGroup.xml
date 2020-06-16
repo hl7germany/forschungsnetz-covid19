@@ -39,7 +39,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/EthnicGroups" />
+        <valueSet value="http://charite.de/fhir/ValueSet/ethnic-groups" />
       </binding>
     </element>
   </differential>
