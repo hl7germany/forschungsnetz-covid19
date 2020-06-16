@@ -55,7 +55,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -68,17 +68,16 @@
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
+        <code value="713636003" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:snomed.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://snomed.info/sct" />
     </element>
     <element id="Observation.code.coding:snomed.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="713636003" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
