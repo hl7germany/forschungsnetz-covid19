@@ -13,6 +13,7 @@
     </telecom>
   </contact>
   <description value="Clinical Frailty Scale" />
+  <copyright value="This artefact includes content under copyright from Geriatric Medicine Research, Dalhousie University, Halifax, Canada. Implementers of these artefacts must complete a Permission for Use Agreement - for more information visit https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

@@ -103,6 +103,7 @@
         }
     ],
     "content": "complete",
+    "copyright": "This artefact includes content under copyright from Geriatric Medicine Research, Dalhousie University, Halifax, Canada. Implementers of these artefacts must complete a Permission for Use Agreement - for more information visit https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html.",
     "date": "2020-05-20",
     "description": "Clinical Frailty Scale",
     "experimental": true,
