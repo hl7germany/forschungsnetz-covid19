@@ -31,32 +31,16 @@
                 <display value="Caucasian (ethnic group)"/>
             </concept>
             <concept>
-                <code value="413773004"/>
-                <display value="Caucasian (racial group)"/>
-            </concept>
-            <concept>
                 <code value="18167009"/>
                 <display value="Black African (ethnic group)"/>
-            </concept>
-            <concept>
-                <code value="413464008"/>
-                <display value="African race (racial group)"/>
             </concept>
             <concept>
                 <code value="315280000"/>
                 <display value="Asian - ethnic group (ethnic group)"/>
             </concept>
             <concept>
-                <code value="413581001"/>
-                <display value="Asian or Pacific islander (racial group)"/>
-            </concept>
-            <concept>
                 <code value="90027003"/>
                 <display value="Arabs (ethnic group)"/>
-            </concept>
-            <concept>
-                <code value="414408004"/>
-                <display value="Hispanic (racial group)"/>
             </concept>
         </include>
     </compose>
