@@ -49,6 +49,14 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition.meta">
+      <path value="Condition.meta" />
+      <min value="1" />
+    </element>
+    <element id="Condition.meta.profile">
+      <path value="Condition.meta.profile" />
+      <min value="1" />
+    </element>
     <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
       <sliceName value="icd10-gm" />

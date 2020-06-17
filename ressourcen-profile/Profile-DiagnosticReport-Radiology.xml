@@ -39,6 +39,14 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport.meta">
+      <path value="DiagnosticReport.meta" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.meta.profile">
+      <path value="DiagnosticReport.meta.profile" />
+      <min value="1" />
+    </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
       <min value="1" />

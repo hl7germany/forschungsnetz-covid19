@@ -49,16 +49,20 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition.meta">
+      <path value="Condition.meta" />
+      <min value="1" />
+    </element>
+    <element id="Condition.meta.profile">
+      <path value="Condition.meta.profile" />
+      <min value="1" />
+    </element>
     <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
       <sliceName value="icd10-gm" />
       <patternCoding>
         <code value="Z94.9" />
       </patternCoding>
-    </element>
-    <element id="Condition.code.coding:icd10-gm.code">
-      <path value="Condition.code.coding.code" />
-      <patternCode value="Z94.9" />
     </element>
     <element id="Condition.code.coding:alpha-id">
       <path value="Condition.code.coding" />
@@ -71,10 +75,6 @@
       <patternCoding>
         <code value="161663000" />
       </patternCoding>
-    </element>
-    <element id="Condition.code.coding:sct.code">
-      <path value="Condition.code.coding.code" />
-      <patternCode value="161663000" />
     </element>
     <element id="Condition.code.coding:orphanet">
       <path value="Condition.code.coding" />
