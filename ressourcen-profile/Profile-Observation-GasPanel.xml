@@ -58,11 +58,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="pattern" />
-          <path value="code" />
+          <path value="$this" />
         </discriminator>
         <ordered value="true" />
         <rules value="open" />
@@ -82,12 +78,10 @@
     <element id="Observation.code.coding:blood.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="Observation.code.coding:blood.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <patternCode value="11558-4" />
     </element>
     <element id="Observation.code.coding:arterial-blood">
       <path value="Observation.code.coding" />
@@ -101,12 +95,10 @@
     <element id="Observation.code.coding:arterial-blood.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="Observation.code.coding:arterial-blood.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <patternCode value="24336-0" />
     </element>
     <element id="Observation.code.coding:capillary-blood">
       <path value="Observation.code.coding" />
@@ -120,12 +112,10 @@
     <element id="Observation.code.coding:capillary-blood.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="Observation.code.coding:capillary-blood.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <patternCode value="24337-8" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />

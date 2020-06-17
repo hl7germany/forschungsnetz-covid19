@@ -58,11 +58,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="pattern" />
-          <path value="code" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -81,12 +77,10 @@
     <element id="Observation.code.coding:pH-blood.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="Observation.code.coding:pH-blood.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <patternCode value="11558-4" />
     </element>
     <element id="Observation.code.coding:pH-arterial">
       <path value="Observation.code.coding" />
@@ -100,12 +94,10 @@
     <element id="Observation.code.coding:pH-arterial.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="Observation.code.coding:pH-arterial.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <patternCode value="2744-1" />
     </element>
     <element id="Observation.code.coding:pH-capillary">
       <path value="Observation.code.coding" />
@@ -119,12 +111,10 @@
     <element id="Observation.code.coding:pH-capillary.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="Observation.code.coding:pH-capillary.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <patternCode value="2745-8" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
