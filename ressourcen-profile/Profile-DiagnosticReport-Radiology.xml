@@ -49,19 +49,13 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="2" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DiagnosticReport.category.coding" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -74,20 +68,12 @@
     <element id="DiagnosticReport.category.coding:loinc.system">
       <path value="DiagnosticReport.category.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc.code">
       <path value="DiagnosticReport.category.coding.code" />
       <min value="1" />
-      <patternCode value="18726-0" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DiagnosticReport.category.coding" />
       <sliceName value="diagnostic-service-sections" />
       <min value="1" />
@@ -100,31 +86,23 @@
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.system">
       <path value="DiagnosticReport.category.coding.system" />
       <min value="1" />
-      <patternUri value="http://terminology.hl7.org/CodeSystem/v2-0074" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.code">
       <path value="DiagnosticReport.category.coding.code" />
       <min value="1" />
-      <patternCode value="RAD" />
     </element>
     <element id="DiagnosticReport.code.coding">
       <path value="DiagnosticReport.code.coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="code" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="1" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DiagnosticReport.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -137,12 +115,10 @@
     <element id="DiagnosticReport.code.coding:loinc.system">
       <path value="DiagnosticReport.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc.code">
       <path value="DiagnosticReport.code.coding.code" />
       <min value="1" />
-      <patternCode value="18748-4" />
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
@@ -157,25 +133,26 @@
       <path value="DiagnosticReport.conclusionCode" />
       <min value="1" />
       <max value="1" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="AdjunctDiagnosis" />
+        </extension>
+        <strength value="preferred" />
+        <valueSet value="http://charite.de/fhir/ValueSet/radiology-findings" />
+      </binding>
     </element>
     <element id="DiagnosticReport.conclusionCode.coding">
       <path value="DiagnosticReport.conclusionCode.coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="1" />
     </element>
     <element id="DiagnosticReport.conclusionCode.coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="DiagnosticReport.conclusionCode.coding" />
       <sliceName value="snomed" />
       <min value="1" />
@@ -183,15 +160,10 @@
       <patternCoding>
         <system value="http://snomed.info/sct" />
       </patternCoding>
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="http://charite.de/fhir/ValueSet/radiology-findings" />
-      </binding>
     </element>
     <element id="DiagnosticReport.conclusionCode.coding:snomed.system">
       <path value="DiagnosticReport.conclusionCode.coding.system" />
       <min value="1" />
-      <patternUri value="http://snomed.info/sct" />
     </element>
     <element id="DiagnosticReport.conclusionCode.coding:snomed.code">
       <path value="DiagnosticReport.conclusionCode.coding.code" />
