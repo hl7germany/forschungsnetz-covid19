@@ -54,19 +54,13 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="1" />
     </element>
     <element id="Observation.code.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -79,12 +73,10 @@
     <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <patternCode value="88636-6" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
