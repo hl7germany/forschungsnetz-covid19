@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.492"/>
     </identifier>
     <version value="2020-05-03T23:24:10"/>
-    <name value="stage-at-diagnosis"/>
+    <name value="Stage-at-Diagnosis"/>
     <title value="Erkrankungsphase bei Diagnose"/>
     <status value="draft"/>
     <experimental value="false"/>

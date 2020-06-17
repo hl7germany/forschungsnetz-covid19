@@ -106,7 +106,7 @@
     "date": "2020-05-20",
     "description": "Clinical Frailty Scale",
     "experimental": true,
-    "name": "Frailty Score",
+    "name": "Frailty-Score",
     "publisher": "Charité",
     "status": "draft",
     "url": "http://charite.de/CodeSystem/frailty-score",

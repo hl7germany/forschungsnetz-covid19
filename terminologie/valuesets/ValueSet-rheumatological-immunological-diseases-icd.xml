@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.512"/>
     </identifier>
     <version value="2020-05-04T22:30:24"/>
-    <name value="rheumatological-immunological-diseases-icd"/>
+    <name value="Rheumatological-Immunological-Diseases-ICD"/>
     <title value="Rheumatologische und immunologische Erkrankungen ICD-10-GM"/>
     <status value="draft"/>
     <experimental value="false"/>

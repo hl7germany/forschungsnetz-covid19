@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.486"/>
     </identifier>
     <version value="2020-05-03T14:43:03"/>
-    <name value="resuscitation-status"/>
+    <name value="Resuscitation-Status"/>
     <title value="DNR-Anordnung"/>
     <status value="draft"/>
     <experimental value="false"/>

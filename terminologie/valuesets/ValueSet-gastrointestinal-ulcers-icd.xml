@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.504"/>
     </identifier>
     <version value="2020-05-05T12:10:22"/>
-    <name value="gastrointestinal-ulcers-icd"/>
+    <name value="Gastrointestinal-Ulcers-ICD"/>
     <title value="Magengeschwüre ICD-10-GM"/>
     <status value="draft"/>
     <experimental value="false"/>

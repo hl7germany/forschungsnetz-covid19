@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.467"/>
     </identifier>
     <version value="2020-04-09T00:00:00"/>
-    <name value="SARS-CoV-2-symptoms"/>
+    <name value="SARS-CoV-2-Symptoms"/>
     <title value="Symptome"/>
     <status value="draft"/>
     <experimental value="false"/>
