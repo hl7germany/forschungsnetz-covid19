@@ -25,18 +25,18 @@
     <immutable value="false"/>
     <compose>
         <include>
-            <system value="urn:oid:1.2.276.0.76.5.409"/>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
             <concept>
                 <code value="I25.29"/>
-                <display value="Zustand nach Herzinfarkt"/>
+                <display value="Alter Myokardinfarkt Nicht näher bezeichnet"/>
             </concept>
             <concept>
                 <code value="I10.90"/>
-                <display value="Bluthochdruck"/>
+                <display value="Essentielle Hypertonie, nicht näher bezeichnet : Ohne Angabe einer hypertensiven Krise"/>
             </concept>
             <concept>
                 <code value="I70.9"/>
-                <display value="pAVK"/>
+                <display value="Generalisierte und nicht näher bezeichnete Atherosklerose"/>
             </concept>
             <concept>
                 <code value="I49.9"/>
