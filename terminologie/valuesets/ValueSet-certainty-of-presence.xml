@@ -1,0 +1,43 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.523--20200618132946"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-06-18T13:29:46+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/certainty-of-presence"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.523"/>
+    </identifier>
+    <version value="2020-06-18T13:29:46"/>
+    <name value="certainty-of-presence"/>
+    <title value="Certainty of Presence"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Captures the degree of certainty of the existence of a condition."/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="415684004"/>
+                <display value="Suspected (qualifier value)"/>
+            </concept>
+            <concept>
+                <code value="410592001"/>
+                <display value="Probably present (qualifier value)"/>
+            </concept>
+            <concept>
+                <code value="410605003"/>
+                <display value="Confirmed present (qualifier value)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
