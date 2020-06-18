@@ -103,6 +103,34 @@
       <path value="Observation.bodySite" />
       <max value="0" />
     </element>
+    <element id="Observation.method.coding">
+      <path value="Observation.method.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.method.coding:snomed-scale">
+      <path value="Observation.method.coding" />
+      <sliceName value="snomed-scale" />
+      <definition value="A reference to a code for the assessment scale that is used." />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="445414007" />
+      </patternCoding>
+    </element>
+    <element id="Observation.method.coding:snomed-scale.system">
+      <path value="Observation.method.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.method.coding:snomed-scale.code">
+      <path value="Observation.method.coding.code" />
+      <min value="1" />
+    </element>
     <element id="Observation.specimen">
       <path value="Observation.specimen" />
       <max value="0" />
