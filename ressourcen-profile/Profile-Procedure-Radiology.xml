@@ -62,11 +62,40 @@
     <element id="Procedure.code.coding:sct">
       <path value="Procedure.code.coding" />
       <sliceName value="sct" />
-      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="http://charite.de/fhir/ValueSet/radiology-procedures" />
       </binding>
+    </element>
+    <element id="Procedure.code.coding:dicom">
+      <path value="Procedure.code.coding" />
+      <sliceName value="dicom" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://charite.de/fhir/ValueSet/radiology-procedures-dicom" />
+      </binding>
+    </element>
+    <element id="Procedure.code.coding:dicom.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Procedure.code.coding.system" />
+      <min value="1" />
+      <patternUri value="http://dicom.nema.org/resources/ontology/DCM" />
+    </element>
+    <element id="Procedure.code.coding:dicom.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Procedure.code.coding.code" />
+      <min value="1" />
     </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
@@ -86,6 +115,8 @@
     <element id="Procedure.bodySite.coding:snomed-lung">
       <path value="Procedure.bodySite.coding" />
       <sliceName value="snomed-lung" />
+      <short value="Coding for bodySite of lung" />
+      <definition value="A reference to a code defined by SNOMED CT to express that the imaging procedure is performed on the anatomical location of the lung." />
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />

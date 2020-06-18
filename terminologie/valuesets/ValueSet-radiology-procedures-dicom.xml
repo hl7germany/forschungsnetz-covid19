@@ -1,0 +1,36 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-03T15:28:27+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/radiology-procedures-dicom"/>
+    <version value="2020-05-03T15:28:27"/>
+    <name value="Imaging-Procedures-DICOM"/>
+    <title value="Bildgebungsverfahren DICOM"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Bildgebungsverfahren der Lunge im Rahmen von Covid-19 mittels DICOM"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://dicom.nema.org/resources/ontology/DCM"/>
+            <concept>
+                <code value="CT"/>
+                <display value="Computed Tomography"/>
+            </concept>
+            <concept>
+                <code value="RG"/>
+                <display value="Radiographic imaging"/>
+            </concept>
+            <concept>
+                <code value="US"/>
+                <display value="Ultrasound"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
