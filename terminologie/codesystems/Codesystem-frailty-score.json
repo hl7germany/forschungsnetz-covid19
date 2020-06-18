@@ -110,7 +110,7 @@
     "name": "Frailty-Score",
     "publisher": "Charité",
     "status": "draft",
-    "url": "http://charite.de/CodeSystem/frailty-score",
-    "valueSet": "http://charite.de/ValueSet/frailty-score",
+    "url": "http://charite.de/fhir/CodeSystem/frailty-score",
+    "valueSet": "http://charite.de/fhir/ValueSet/frailty-score",
     "resourceType": "CodeSystem"
 }

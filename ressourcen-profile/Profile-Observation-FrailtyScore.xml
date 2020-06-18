@@ -96,7 +96,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/ValueSet/frailty-score" />
+        <valueSet value="http://charite.de/fhir/ValueSet/frailty-score" />
       </binding>
     </element>
     <element id="Observation.bodySite">
