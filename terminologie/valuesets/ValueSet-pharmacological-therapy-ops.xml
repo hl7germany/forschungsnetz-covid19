@@ -1,0 +1,78 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.516--20200529150432"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-29T15:04:32+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/pharmacological-therapy-ops"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.516"/>
+    </identifier>
+    <version value="2020-05-29T15:04:32"/>
+    <name value="drug-therapy-ops"/>
+    <title value="Pharmacological Therapy OPS"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Pharmacological therapy in the context of Covid-19, relevant OPS-Codes"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <concept>
+                <code value="6-005.m"/>
+                <display value="Tocilizumab, intravenös"/>
+            </concept>
+            <concept>
+                <code value="6-005.n"/>
+                <display value="Tocilizumab, subkutan"/>
+            </concept>
+            <concept>
+                <code value="6-00a.g"/>
+                <display value="Sarilumab, parenteral"/>
+            </concept>
+            <concept>
+                <code value="6-005.8"/>
+                <display value="Everolimus, oral"/>
+            </concept>
+            <concept>
+                <code value="6-004.e"/>
+                <display value="Temsirolimus, parenteral"/>
+            </concept>
+            <concept>
+                <code value="6-001.d"/>
+                <display value="Adalimumab, parenteral"/>
+            </concept>
+            <concept>
+                <code value="6-002.b"/>
+                <display value="Etanercept, parenteral"/>
+            </concept>
+            <concept>
+                <code value="6-005.7"/>
+                <display value="Certolizumab, parenteral"/>
+            </concept>
+            <concept>
+                <code value="6-005.2"/>
+                <display value="Golimumab, parenteral"/>
+            </concept>
+            <concept>
+                <code value="6-001.e"/>
+                <display value="Infliximab, parenteral"/>
+            </concept>
+            <concept>
+                <code value="6-006.7"/>
+                <display value="Canakinumab, parenteral"/>
+            </concept>
+            <concept>
+                <code value="6-009.4"/>
+                <display value="Ruxolitinib, oral"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
