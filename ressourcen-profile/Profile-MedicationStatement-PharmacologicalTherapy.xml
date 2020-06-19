@@ -13,6 +13,14 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatement" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationStatement.meta">
+      <path value="MedicationStatement.meta" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.meta.profile">
+      <path value="MedicationStatement.meta.profile" />
+      <min value="1" />
+    </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]" />
       <slicing>

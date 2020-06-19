@@ -1,0 +1,150 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.500--20200504225150"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-04T22:51:50+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/immunoglobulins-atc"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.500"/>
+    </identifier>
+    <version value="2020-05-04T22:51:50"/>
+    <name value="Immunoglobulins"/>
+    <title value="Immunoglobulins"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Pharmacological therapy using immunoglobulins in the context of Covid-19"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:1.2.276.0.76.5.498"/>
+            <concept>
+                <code value="J06B"/>
+                <display value="IMMUNGLOBULINE"/>
+            </concept>
+            <concept>
+                <code value="J06BA"/>
+                <display value="Immunglobuline, normal human"/>
+            </concept>
+            <concept>
+                <code value="J06BA01"/>
+                <display value="Immunglobuline, normal human, zur extravasalen Anwendung"/>
+            </concept>
+            <concept>
+                <code value="J06BA02"/>
+                <display value="Immunglobuline, normal human, zur intravasalen Anwendung"/>
+            </concept>
+            <concept>
+                <code value="J06BB"/>
+                <display value="Spezifische Immunglobuline"/>
+            </concept>
+            <concept>
+                <code value="J06BB01"/>
+                <display value="Anti-D(rh)-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB02"/>
+                <display value="Tetanus-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB03"/>
+                <display value="Varicella/Zoster-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB04"/>
+                <display value="Hepatitis-B-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB05"/>
+                <display value="Tollwut-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB06"/>
+                <display value="Röteln-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB07"/>
+                <display value="Kuhpocken-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB08"/>
+                <display value="Staphylococcus-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB09"/>
+                <display value="Cytomegalievirus-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB10"/>
+                <display value="Diphtherie-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB11"/>
+                <display value="Hepatitis-A-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB12"/>
+                <display value="FSME-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB13"/>
+                <display value="Pertussis-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB14"/>
+                <display value="Masern-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB15"/>
+                <display value="Mumps-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB16"/>
+                <display value="Palivizumab"/>
+            </concept>
+            <concept>
+                <code value="J06BB17"/>
+                <display value="Motavizumab"/>
+            </concept>
+            <concept>
+                <code value="J06BB18"/>
+                <display value="Raxibacumab"/>
+            </concept>
+            <concept>
+                <code value="J06BB19"/>
+                <display value="Anthrax-Immunglobulin"/>
+            </concept>
+            <concept>
+                <code value="J06BB21"/>
+                <display value="Bezlotoxumab"/>
+            </concept>
+            <concept>
+                <code value="J06BB22"/>
+                <display value="Obiltoxaximab"/>
+            </concept>
+            <concept>
+                <code value="J06BB30"/>
+                <display value="Kombinationen"/>
+            </concept>
+            <concept>
+                <code value="J06BC"/>
+                <display value="Andere Immunglobuline"/>
+            </concept>
+            <concept>
+                <code value="J06BC01"/>
+                <display value="Nebacumab"/>
+            </concept>
+            <concept>
+                <code value="J06BC10"/>
+                <display value="Andere Immunglobuline"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
