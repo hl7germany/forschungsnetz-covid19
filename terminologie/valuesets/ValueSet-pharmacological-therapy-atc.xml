@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.494"/>
     </identifier>
     <version value="2020-05-04T20:17:42"/>
-    <name value="drug-therapy-atc"/>
+    <name value="Drug-Therapy-ATC"/>
     <title value="Pharmacological Therapy ATC"/>
     <status value="draft"/>
     <experimental value="false"/>

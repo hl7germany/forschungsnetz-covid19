@@ -1,0 +1,262 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.499--20200504224822"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-05-04T22:48:22+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/ace-inhibitors-atc"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.499"/>
+    </identifier>
+    <version value="2020-05-04T22:48:22"/>
+    <name value="ACE-inhibitors-ATC"/>
+    <title value="ACE inhibitors ATC"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="ACE inhibitors in the context of Covid-19"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+            <concept>
+                <code value="C09A"/>
+                <display value="ACE-HEMMER, REIN"/>
+            </concept>
+            <concept>
+                <code value="C09AA"/>
+                <display value="ACE-Hemmer, rein"/>
+            </concept>
+            <concept>
+                <code value="C09AA01"/>
+                <display value="Captopril"/>
+            </concept>
+            <concept>
+                <code value="C09AA02"/>
+                <display value="Enalapril"/>
+            </concept>
+            <concept>
+                <code value="C09AA03"/>
+                <display value="Lisinopril"/>
+            </concept>
+            <concept>
+                <code value="C09AA04"/>
+                <display value="Perindopril"/>
+            </concept>
+            <concept>
+                <code value="C09AA05"/>
+                <display value="Ramipril"/>
+            </concept>
+            <concept>
+                <code value="C09AA06"/>
+                <display value="Quinapril"/>
+            </concept>
+            <concept>
+                <code value="C09AA07"/>
+                <display value="Benazepril"/>
+            </concept>
+            <concept>
+                <code value="C09AA08"/>
+                <display value="Cilazapril"/>
+            </concept>
+            <concept>
+                <code value="C09AA09"/>
+                <display value="Fosinopril"/>
+            </concept>
+            <concept>
+                <code value="C09AA10"/>
+                <display value="Trandolapril"/>
+            </concept>
+            <concept>
+                <code value="C09AA11"/>
+                <display value="Spirapril"/>
+            </concept>
+            <concept>
+                <code value="C09AA12"/>
+                <display value="Delapril"/>
+            </concept>
+            <concept>
+                <code value="C09AA13"/>
+                <display value="Moexipril"/>
+            </concept>
+            <concept>
+                <code value="C09AA14"/>
+                <display value="Temocapril"/>
+            </concept>
+            <concept>
+                <code value="C09AA15"/>
+                <display value="Zofenopril"/>
+            </concept>
+            <concept>
+                <code value="C09AA16"/>
+                <display value="Imidapril"/>
+            </concept>
+            <concept>
+                <code value="C09B"/>
+                <display value="ACE-HEMMER, KOMBINATIONEN"/>
+            </concept>
+            <concept>
+                <code value="C09BA"/>
+                <display value="ACE-Hemmer und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA01"/>
+                <display value="Captopril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA02"/>
+                <display value="Enalapril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA03"/>
+                <display value="Lisinopril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA04"/>
+                <display value="Perindopril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA05"/>
+                <display value="Ramipril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA06"/>
+                <display value="Quinapril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA07"/>
+                <display value="Benazepril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA08"/>
+                <display value="Cilazapril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA09"/>
+                <display value="Fosinopril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA12"/>
+                <display value="Delapril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA13"/>
+                <display value="Moexipril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA15"/>
+                <display value="Zofenopril und Diuretika"/>
+            </concept>
+            <concept>
+                <code value="C09BA21"/>
+                <display value="Captopril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA22"/>
+                <display value="Enalapril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA23"/>
+                <display value="Lisinopril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA25"/>
+                <display value="Ramipril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA26"/>
+                <display value="Quinapril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA27"/>
+                <display value="Benazepril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA28"/>
+                <display value="Cilazapril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA29"/>
+                <display value="Fosinopril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA33"/>
+                <display value="Moexipril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA35"/>
+                <display value="Zofenopril und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BA54"/>
+                <display value="Perindopril und Indapamid"/>
+            </concept>
+            <concept>
+                <code value="C09BA55"/>
+                <display value="Ramipril und Piretanid"/>
+            </concept>
+            <concept>
+                <code value="C09BB"/>
+                <display value="ACE-Hemmer und Calciumkanalblocker"/>
+            </concept>
+            <concept>
+                <code value="C09BB02"/>
+                <display value="Enalapril und Lercanidipin"/>
+            </concept>
+            <concept>
+                <code value="C09BB03"/>
+                <display value="Lisinopril und Amlodipin"/>
+            </concept>
+            <concept>
+                <code value="C09BB04"/>
+                <display value="Perindopril und Amlodipin"/>
+            </concept>
+            <concept>
+                <code value="C09BB05"/>
+                <display value="Ramipril und Felodipin"/>
+            </concept>
+            <concept>
+                <code value="C09BB06"/>
+                <display value="Enalapril und Nitrendipin"/>
+            </concept>
+            <concept>
+                <code value="C09BB07"/>
+                <display value="Ramipril und Amlodipin"/>
+            </concept>
+            <concept>
+                <code value="C09BB10"/>
+                <display value="Trandolapril und Verapamil"/>
+            </concept>
+            <concept>
+                <code value="C09BB12"/>
+                <display value="Delapril und Manidipin"/>
+            </concept>
+            <concept>
+                <code value="C09BX"/>
+                <display value="ACE-Hemmer, andere Kombinationen"/>
+            </concept>
+            <concept>
+                <code value="C09BX01"/>
+                <display value="Perindopril, Amlodipin und Indapamid"/>
+            </concept>
+            <concept>
+                <code value="C09BX02"/>
+                <display value="Perindopril und Bisoprolol"/>
+            </concept>
+            <concept>
+                <code value="C09BX03"/>
+                <display value="Ramipril, Amlodipin und Hydrochlorothiazid"/>
+            </concept>
+            <concept>
+                <code value="C09BX04"/>
+                <display value="Perindopril, Bisoprolol und Amlodipin"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
