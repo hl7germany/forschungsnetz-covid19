@@ -21,6 +21,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <isModifier value="true" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="http://charite.de/fhir/StructureDefinition/certainty-of-presence" />
@@ -30,6 +34,7 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <isModifier value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="http://charite.de/fhir/ValueSet/certainty-of-presence" />
