@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.500"/>
     </identifier>
     <version value="2020-05-04T22:51:50"/>
-    <name value="Immunoglobulins"/>
-    <title value="Immunoglobulins"/>
+    <name value="Immunoglobulins-ATC"/>
+    <title value="Immunoglobulins ATC"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
@@ -24,7 +24,7 @@
     <immutable value="false"/>
     <compose>
         <include>
-            <system value="urn:oid:1.2.276.0.76.5.498"/>
+            <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
             <concept>
                 <code value="J06B"/>
                 <display value="IMMUNGLOBULINE"/>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://charite.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants" />
+  <name value="PharmacologicalTherapyAnticoagulants" />
+  <title value="Pharmacological Therapy Anticoagulants" />
+  <status value="draft" />
+  <publisher value="Charité" />
+  <description value="Pharmacological therapy using anticoagulants in the context of Covid-19" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationStatement" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatement" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationStatement.medication[x]">
+      <path value="MedicationStatement.medication[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept">
+      <path value="MedicationStatement.medicationCodeableConcept" />
+      <sliceName value="medicationCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.medicationCodeableConcept.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.medicationCodeableConcept.coding" />
+      <sliceName value="atcClassDe" />
+      <patternCoding>
+        <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      </patternCoding>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://charite.de/fhir/ValueSet/anticoagulants-atc" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe.system">
+      <path value="MedicationStatement.medicationCodeableConcept.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe.code">
+      <path value="MedicationStatement.medicationCodeableConcept.coding.code" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
