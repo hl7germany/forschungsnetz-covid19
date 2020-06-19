@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://charite.de/fhir/StructureDefinition/gastrointestinal-ulcers-present" />
+  <name value="GastrointestinalUlcersPresent" />
+  <title value="Gastrointestinal Ulcers Present" />
+  <status value="draft" />
+  <publisher value="Charité" />
+  <description value="Presence of gastrointestinal ulcers as a risk factor for a severe course of an infection with SARS-Cov-2" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Condition" />
+  <baseDefinition value="http://charite.de/fhir/StructureDefinition/gastrointestinal-ulcers" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition.extension">
+      <path value="Condition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.extension:certaintyOfPresence">
+      <path value="Condition.extension" />
+      <sliceName value="certaintyOfPresence" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://charite.de/fhir/StructureDefinition/certainty-of-presence" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

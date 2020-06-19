@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://charite.de/fhir/StructureDefinition/organ-recipient" />
-  <name value="OrganRecipient" />
-  <title value="Organ Recipient" />
+  <name value="HistoryOfOrganRecipient" />
+  <title value="History of Organ Recipient" />
   <status value="draft" />
   <publisher value="Charité" />
   <contact>
@@ -11,7 +11,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
-  <description value="Does the patient have a history of being a tissue or organ recipient?" />
+  <description value="History of being a tissue or organ recipient" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
