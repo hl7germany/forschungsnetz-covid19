@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="1.2.276.0.76.11.496--20200504212558"/>
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
@@ -33,14 +34,14 @@
                 <code value="K74.6"/>
                 <display value="Fibrose und Zirrhose der Leber"/>
             </concept>
-        </include>
-        <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="B18"/>
-            </filter>
+            <concept>
+                <code value="K73.9"/>
+                <display value="Chronische Hepatitis, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="K76.9"/>
+                <display value="Leberkrankheit, nicht näher bezeichnet"/>
+            </concept>
         </include>
     </compose>
 </ValueSet>
