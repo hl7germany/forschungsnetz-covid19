@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="1.2.276.0.76.11.493--20200504195012"/>
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
@@ -53,14 +54,10 @@
                 <code value="J45.9"/>
                 <display value="Asthma bronchiale, nicht näher bezeichnet"/>
             </concept>
-        </include>
-        <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="E84"/>
-            </filter>
+            <concept>
+                <code value="E84.9"/>
+                <display value="Zystische Fibrose, nicht näher bezeichnet"/>
+            </concept>
         </include>
     </compose>
 </ValueSet>

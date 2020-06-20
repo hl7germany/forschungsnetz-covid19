@@ -16,11 +16,11 @@
     </identifier>
     <version value="2020-04-25T21:27:14"/>
     <name value="Chronic-Lung-Diseases"/>
-    <title value="Chronische Lungenerkrankungen"/>
+    <title value="Chronic lung diseases"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Chronische Lungenerkrankungen im Zusammenhang mit Covid-19"/>
+    <description value="Chronic lung diseases in the context of Covid-19"/>
     <immutable value="false"/>
     <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
     <compose>
