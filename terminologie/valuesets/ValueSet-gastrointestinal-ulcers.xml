@@ -16,11 +16,11 @@
     </identifier>
     <version value="2020-05-03T13:34:19"/>
     <name value="Gastrointestinal-Ulcers"/>
-    <title value="Magengeschwüre"/>
+    <title value="Gastrointestinal-Ulcers"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Magengeschwüre im Rahmen von Covid-19"/>
+    <description value="Gastrointestinal ulcers in the context of Covid-19"/>
     <immutable value="false"/>
     <compose>
         <include>

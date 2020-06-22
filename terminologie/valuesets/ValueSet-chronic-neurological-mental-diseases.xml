@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="1.2.276.0.76.11.473--20200425220002"/>
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
@@ -16,16 +17,42 @@
     </identifier>
     <version value="2020-04-25T22:00:02"/>
     <name value="Chronic-Neurological-Mental-Diseases"/>
-    <title value="Chronische neurologische oder psychiatrische Erkrankungen"/>
+    <title value="Chronic-Neurological-Mental-Diseases"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Chronische neurologische Erkrankungen im Zusammenhang mit Covid-19"/>
+    <description value="Chronic neurological or mental diseases in the context of Covid-19"/>
     <immutable value="false"/>
     <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="128283000"/>
+                <display value="Chronic nervous system disorder (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Chronische neurologische Erkrankung"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="74732009"/>
+                <display value="Mental disorder (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Psychiatrische Erkrankung"/>
+                </designation>
+            </concept>
             <concept>
                 <code value="197480006"/>
                 <display value="Anxiety disorder (disorder)"/>

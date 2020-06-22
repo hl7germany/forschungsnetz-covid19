@@ -24,7 +24,7 @@
     <immutable value="false"/>
     <compose>
         <include>
-            <system value="urn:oid:1.2.276.0.76.5.409"/>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
             <concept>
                 <code value="J18.9"/>
                 <display value="Pneumonie, nicht näher bezeichnet"/>
