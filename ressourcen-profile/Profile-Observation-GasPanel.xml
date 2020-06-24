@@ -72,7 +72,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="11558-4" />
+        <code value="24338-6" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:blood.system">
