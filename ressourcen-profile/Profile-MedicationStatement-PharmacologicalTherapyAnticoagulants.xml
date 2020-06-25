@@ -54,33 +54,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="MedicationStatement.medicationCodeableConcept.coding" />
-      <sliceName value="snomed" />
-      <min value="1" />
-      <max value="1" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="81839001" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed.system">
-      <path value="MedicationStatement.medicationCodeableConcept.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed.code">
-      <path value="MedicationStatement.medicationCodeableConcept.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe">
       <path value="MedicationStatement.medicationCodeableConcept.coding" />
       <sliceName value="atcClassDe" />

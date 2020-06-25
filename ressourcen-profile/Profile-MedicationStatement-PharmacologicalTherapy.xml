@@ -30,21 +30,19 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept">
       <path value="MedicationStatement.medicationCodeableConcept" />
       <sliceName value="medicationCodeableConcept" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationStatement.medicationCodeableConcept.coding" />
       <slicing>
         <discriminator>
@@ -53,14 +51,9 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationStatement.medicationCodeableConcept.coding" />
       <sliceName value="atcClassDe" />
       <patternCoding>
@@ -80,12 +73,6 @@
       <min value="1" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:ops">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationStatement.medicationCodeableConcept.coding" />
       <sliceName value="ops" />
       <patternCoding>
