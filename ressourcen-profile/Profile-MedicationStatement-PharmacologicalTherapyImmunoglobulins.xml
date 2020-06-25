@@ -30,6 +30,9 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept">
       <path value="MedicationStatement.medicationCodeableConcept" />
