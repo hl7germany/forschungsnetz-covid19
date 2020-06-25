@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="1.2.276.0.76.11.498--20200504223508"/>
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
@@ -28,6 +29,14 @@
             <concept>
                 <code value="F99"/>
                 <display value="Psychische Störung ohne nähere Angabe"/>
+            </concept>
+            <concept>
+                <code value="G20"/>
+                <display value="Primäres Parkinson-Syndrom"/>
+            </concept>
+            <concept>
+                <code value="G35"/>
+                <display value="Multiple Sklerose [Encephalomyelitis disseminata]"/>
             </concept>
             <concept>
                 <code value="G96.9"/>
@@ -69,22 +78,6 @@
                 <code value="Z86.7"/>
                 <display value="Krankheiten des Kreislaufsystems in der Eigenanamnese"/>
             </concept>
-        </include>
-        <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="G20"/>
-            </filter>
-        </include>
-        <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="G35"/>
-            </filter>
         </include>
     </compose>
 </ValueSet>
