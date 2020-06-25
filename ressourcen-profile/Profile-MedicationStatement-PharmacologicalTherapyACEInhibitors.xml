@@ -47,6 +47,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -57,6 +58,7 @@
       </extension>
       <path value="MedicationStatement.medication[x].coding" />
       <sliceName value="snomed" />
+      <min value="1" />
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
