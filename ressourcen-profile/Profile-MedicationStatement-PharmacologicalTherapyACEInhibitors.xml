@@ -32,20 +32,14 @@
       </slicing>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept">
-      <path value="MedicationStatement.medicationCodeableConcept" />
+      <path value="MedicationStatement.medication[x]" />
       <sliceName value="medicationCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="MedicationStatement.medicationCodeableConcept.coding" />
+      <path value="MedicationStatement.medication[x].coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -54,14 +48,31 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe">
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
         <valueCode value="4.0.0" />
       </extension>
-      <path value="MedicationStatement.medicationCodeableConcept.coding" />
+      <path value="MedicationStatement.medication[x].coding" />
+      <sliceName value="snomed" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="41549009" />
+      </patternCoding>
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed.system">
+      <path value="MedicationStatement.medication[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed.code">
+      <path value="MedicationStatement.medication[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe">
+      <path value="MedicationStatement.medication[x].coding" />
       <sliceName value="atcClassDe" />
       <patternCoding>
         <system value="http://fhir.de/CodeSystem/dimdi/atc" />
@@ -72,11 +83,11 @@
       </binding>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe.system">
-      <path value="MedicationStatement.medicationCodeableConcept.coding.system" />
+      <path value="MedicationStatement.medication[x].coding.system" />
       <min value="1" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe.code">
-      <path value="MedicationStatement.medicationCodeableConcept.coding.code" />
+      <path value="MedicationStatement.medication[x].coding.code" />
       <min value="1" />
     </element>
   </differential>
