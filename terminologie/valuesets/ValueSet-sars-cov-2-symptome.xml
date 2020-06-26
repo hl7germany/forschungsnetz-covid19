@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="1.2.276.0.76.11.467--20200409000000"/>
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
@@ -27,6 +28,38 @@
         <include>
             <system value="http://snomed.info/sct"/>
             <concept>
+                <code value="21522001"/>
+                <display value="Abdominal pain (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Bauchschmerzen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="84387000"/>
+                <display value="Asymptomatic (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Asymptomatisch"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="131148009"/>
+                <display value="Bleeding (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Blutung"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="29857009"/>
+                <display value="Chest pain (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Brustschmerzen"/>
+                </designation>
+            </concept>
+            <concept>
                 <code value="43724002"/>
                 <display value="Chill (finding)"/>
                 <designation>
@@ -35,11 +68,11 @@
                 </designation>
             </concept>
             <concept>
-                <code value="162397003"/>
-                <display value="Pain in throat (finding)"/>
+                <code value="9826008"/>
+                <display value="Conjunctivitis (disorder)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Halsschmerzen"/>
+                    <value value="Konjunktivitis"/>
                 </designation>
             </concept>
             <concept>
@@ -51,6 +84,22 @@
                 </designation>
             </concept>
             <concept>
+                <code value="62315008"/>
+                <display value="Diarrhea (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Durchfall"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="3006004"/>
+                <display value="Disturbance of consciousness (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Bewusstseinsstörung"/>
+                </designation>
+            </concept>
+            <concept>
                 <code value="267036007"/>
                 <display value="Dyspnea (finding)"/>
                 <designation>
@@ -59,11 +108,19 @@
                 </designation>
             </concept>
             <concept>
-                <code value="426000000"/>
-                <display value="Fever greater than 100.4 Fahrenheit / 38° Celsius (finding)"/>
+                <code value="271807003"/>
+                <display value="Eruption of skin (disorder)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Fieber über 38° Celsius"/>
+                    <value value="Hautausschlag"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="84229001"/>
+                <display value="Fatigue (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Müdigkeit"/>
                 </designation>
             </concept>
             <concept>
@@ -75,35 +132,11 @@
                 </designation>
             </concept>
             <concept>
-                <code value="68962001"/>
-                <display value="Muscle pain (finding)"/>
+                <code value="386661006"/>
+                <display value="Fever (finding)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Muskelschmerzen"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="64531003"/>
-                <display value="Nasal discharge (finding)"/>
-                <designation>
-                    <language value="de-DE"/>
-                    <value value="Laufende Nase"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="422587007"/>
-                <display value="Nausea (finding)"/>
-                <designation>
-                    <language value="de-DE"/>
-                    <value value="Überlkeit"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="422400008"/>
-                <display value="Vomiting (disorder)"/>
-                <designation>
-                    <language value="de-DE"/>
-                    <value value="Erbrechen"/>
+                    <value value="Fieber"/>
                 </designation>
             </concept>
             <concept>
@@ -115,43 +148,27 @@
                 </designation>
             </concept>
             <concept>
-                <code value="21522001"/>
-                <display value="Abdominal pain (finding)"/>
+                <code value="66857006"/>
+                <display value="Hemoptysis (finding)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Bauchschmerzen"/>
+                    <value value="Bluthusten"/>
                 </designation>
             </concept>
             <concept>
-                <code value="62315008"/>
-                <display value="Diarrhea (finding)"/>
+                <code value="248567008"/>
+                <display value="Indrawing of ribs during respiration (finding)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Durchfall"/>
+                    <value value="Hauteinziehungen des Brustkorbs bei der Einatmung"/>
                 </designation>
             </concept>
             <concept>
-                <code value="13791008"/>
-                <display value="Asthenia (finding)"/>
+                <code value="57676002"/>
+                <display value="Joint pain (finding)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Schwächegefühl"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="22253000"/>
-                <display value="Pain (finding)"/>
-                <designation>
-                    <language value="de-DE"/>
-                    <value value="Schmerzen"/>
-                </designation>
-            </concept>
-            <concept>
-                <code value="29857009"/>
-                <display value="Chest pain (finding)"/>
-                <designation>
-                    <language value="de-DE"/>
-                    <value value="Brustschmerzen"/>
+                    <value value="Gelenkschmerz"/>
                 </designation>
             </concept>
             <concept>
@@ -176,6 +193,134 @@
                 <designation>
                     <language value="de-DE"/>
                     <value value="Geschmackverlust"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="30746006"/>
+                <display value="Lymphadenopathy (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Lymphadenopathie"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="367391008"/>
+                <display value="Malaise (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Unwohlsein"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="68962001"/>
+                <display value="Muscle pain (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Muskelschmerzen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="68235000"/>
+                <display value="Nasal congestion (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Verstopfte Nase"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="64531003"/>
+                <display value="Nasal discharge (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Laufende Nase"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="422587007"/>
+                <display value="Nausea (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Überlkeit"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="162397003"/>
+                <display value="Pain in throat (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Halsschmerzen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="38880002"/>
+                <display value="Rigor (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Fieber"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="91175000"/>
+                <display value="Seizure (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Starre"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="46742003"/>
+                <display value="Skin ulcer (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Hautgeschwüre"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="282145008"/>
+                <display value="Unable to walk (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Unfähig zu gehen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="422400008"/>
+                <display value="Vomiting (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Erbrechen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="56018004"/>
+                <display value="Wheezing (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Keuchen"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="426000000"/>
+                <display value="Fever greater than 100.4 Fahrenheit / 38° Celsius (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Fieber über 38° Celsius"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="13791008"/>
+                <display value="Asthenia (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Schwächegefühl"/>
+                </designation>
+            </concept>
+            <concept>
+                <code value="22253000"/>
+                <display value="Pain (finding)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <value value="Schmerzen"/>
                 </designation>
             </concept>
             <concept>

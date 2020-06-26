@@ -27,12 +27,12 @@
         <include>
             <system value="http://snomed.info/sct"/>
             <concept>
-                <code value="263914008"/>
-                <display value="Uncomplicated (qualifier value)"/>
+                <code value="ToDo"/>
+                <display value="Uncomplicated"/>
             </concept>
             <concept>
-                <code value="255302009"/>
-                <display value="Complicated (qualifier value)"/>
+                <code value="ToDo"/>
+                <display value="Complicated"/>
             </concept>
             <concept>
                 <code value="ToDo"/>
