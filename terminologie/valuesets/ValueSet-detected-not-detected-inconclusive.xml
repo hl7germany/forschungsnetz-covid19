@@ -1,0 +1,43 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.522--20200609161852"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-06-09T16:18:52+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="http://charite.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.522"/>
+    </identifier>
+    <version value="2020-06-09T16:18:52"/>
+    <name value="Detected-Not-detected-Inconclusive"/>
+    <title value="Detected-Not-detected-Inconclusive"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="A set of codes representing the result of a test as detected, not detected, or inconclusive."/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="260373001"/>
+                <display value="Detected (qualifier value)"/>
+            </concept>
+            <concept>
+                <code value="260415000"/>
+                <display value="Not detected (qualifier value)"/>
+            </concept>
+            <concept>
+                <code value="419984006"/>
+                <display value="Inconclusive (qualifier value)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
