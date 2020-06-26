@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.514"/>
     </identifier>
     <version value="2020-05-19T22:30:54"/>
-    <name value="severity"/>
-    <title value="Schweregrad"/>
+    <name value="Severity"/>
+    <title value="Condition Severity"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
