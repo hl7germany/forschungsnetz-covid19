@@ -45,6 +45,12 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
@@ -53,6 +59,7 @@
     <element id="Observation.value[x]:valueCodeableConcept">
       <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="http://charite.de/fhir/ValueSet/detected-not-detected-inconclusive" />
