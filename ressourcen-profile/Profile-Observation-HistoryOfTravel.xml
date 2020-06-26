@@ -187,6 +187,10 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://fhir.de/ValueSet/iso/bundeslaender" />
+      </binding>
     </element>
     <element id="Observation.component:City">
       <path value="Observation.component" />
