@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/SARS-CoV-2-RT-PCR" />
+  <url value="http://charite.de/fhir/StructureDefinition/sars-cov-2-rt-pcr" />
   <name value="SarsCoV2RTPCR" />
-  <title value="SARS-CoV-2-RT-PCR" />
+  <title value="Sars-CoV-2-RT-PCR" />
   <status value="draft" />
   <publisher value="Charité" />
   <fhirVersion value="4.0.1" />
@@ -50,11 +50,6 @@
       <type>
         <code value="CodeableConcept" />
       </type>
-    </element>
-    <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.value[x]" />
-      <sliceName value="valueQuantity" />
-      <max value="0" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
       <path value="Observation.valueCodeableConcept" />
