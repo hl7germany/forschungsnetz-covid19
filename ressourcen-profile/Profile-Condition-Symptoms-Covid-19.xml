@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/Symptoms-Covid-19" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Symptoms-Covid-19" />
   <name value="SymptomsCovid19" />
   <title value="Symptoms Covid-19" />
   <status value="draft" />
@@ -53,6 +53,7 @@
     </element>
     <element id="Condition.severity">
       <path value="Condition.severity" />
+      <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ConditionSeverity" />
