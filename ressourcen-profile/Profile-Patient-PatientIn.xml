@@ -34,7 +34,7 @@
       <sliceName value="ethnicGroup" />
       <type>
         <code value="Extension" />
-        <profile value="http://charite.de/StructureDefinition/ethnic-group" />
+        <profile value="https://www.netzwerk-universitaetsmedizin.de/StructureDefinition/ethnic-group" />
       </type>
     </element>
   </differential>
