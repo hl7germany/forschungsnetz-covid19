@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants" />
   <name value="PharmacologicalTherapyAnticoagulants" />
   <title value="Pharmacological Therapy Anticoagulants" />
   <status value="draft" />
@@ -62,7 +62,7 @@
       </patternCoding>
       <binding>
         <strength value="extensible" />
-        <valueSet value="http://charite.de/fhir/ValueSet/anticoagulants-atc" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/anticoagulants-atc" />
       </binding>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe.system">

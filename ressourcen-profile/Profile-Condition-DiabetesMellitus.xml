@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/diabetes-mellitus" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diabetes-mellitus" />
   <name value="DiabetesMellitus" />
   <title value="Diabetes Mellitus" />
   <status value="draft" />
@@ -65,7 +65,7 @@
       </patternCoding>
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/diabetes-mellitus-diseases-icd" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases-icd" />
       </binding>
     </element>
     <element id="Condition.code.coding:icd10-gm.code">
@@ -85,7 +85,7 @@
       </patternCoding>
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/diabetes-mellitus-diseases" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases" />
       </binding>
     </element>
     <element id="Condition.code.coding:sct.code">

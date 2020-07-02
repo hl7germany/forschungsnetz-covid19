@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/pharmacological-therapy-ace-inhibitors" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-ace-inhibitors" />
   <name value="PharmacologicalTherapyACEInhibitors" />
   <title value="Pharmacological Therapy ACE Inhibitors" />
   <status value="draft" />
@@ -89,7 +89,7 @@
       </patternCoding>
       <binding>
         <strength value="extensible" />
-        <valueSet value="http://charite.de/fhir/ValueSet/ace-inhibitors-atc" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ace-inhibitors-atc" />
       </binding>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe.system">

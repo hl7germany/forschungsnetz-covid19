@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/respiratory-therapies" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies" />
   <name value="RespiratoryTherapies" />
   <title value="Respiratory Therapies" />
   <status value="draft" />
@@ -65,7 +65,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/respiratory-therapies" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies" />
       </binding>
     </element>
   </differential>

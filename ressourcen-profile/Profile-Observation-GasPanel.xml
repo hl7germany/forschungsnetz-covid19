@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/blood-gas-panel" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-gas-panel" />
   <name value="BloodGasPanel" />
   <title value="Blood Gas Panel" />
   <status value="draft" />
@@ -134,10 +134,10 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://charite.de/fhir/StructureDefinition/pH" />
-        <targetProfile value="http://charite.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure" />
-        <targetProfile value="http://charite.de/fhir/StructureDefinition/oxygen-partial-pressure" />
-        <targetProfile value="http://charite.de/fhir/StructureDefinition/oxygen-saturation" />
+        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH" />
+        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure" />
+        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-partial-pressure" />
+        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation" />
       </type>
       <mustSupport value="true" />
     </element>

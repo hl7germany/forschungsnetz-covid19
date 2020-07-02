@@ -9,7 +9,7 @@
             <start value="2020-04-09T00:00:00+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/ValueSet/SARS-CoV-2-symptoms"/>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
@@ -17,11 +17,11 @@
     </identifier>
     <version value="2020-04-09T00:00:00"/>
     <name value="SARS-CoV-2-Symptoms"/>
-    <title value="Symptome"/>
+    <title value="SARS-CoV-2-Symptoms"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Symptome bei SARS-CoV-2 Infektion"/>
+    <description value="Symptoms for SARS-CoV-2 infection"/>
     <immutable value="false"/>
     <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
     <compose>

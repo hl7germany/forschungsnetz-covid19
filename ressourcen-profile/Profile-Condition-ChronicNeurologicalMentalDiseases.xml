@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/chronic-neurological-mental-diseases" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-neurological-mental-diseases" />
   <name value="ChronicNeurologicalMentalDiseases" />
   <title value="Chronic Neurological or Mental Diseases" />
   <status value="draft" />
@@ -62,7 +62,7 @@
       <sliceName value="icd10-gm" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/chronic-neurological-mental-diseases-icd" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases-icd" />
       </binding>
     </element>
     <element id="Condition.code.coding:alpha-id">
@@ -75,7 +75,7 @@
       <sliceName value="sct" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/chronic-neurological-mental-diseases" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases" />
       </binding>
     </element>
     <element id="Condition.code.coding:orphanet">

@@ -8,7 +8,7 @@
             <start value="2020-05-03T23:24:10+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/stage-at-diagnosis"/>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/stage-at-diagnosis"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>

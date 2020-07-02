@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/oxygen-saturation" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation" />
   <name value="OxygenSaturation" />
   <title value="Oxygen Saturation" />
   <status value="draft" />

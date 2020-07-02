@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/high-flow-nasal-oxygen-therapy" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/high-flow-nasal-oxygen-therapy" />
   <name value="HighFlowNasalOxygenTherapy" />
   <title value="High Flow Nasal Oxygen Therapy" />
   <status value="draft" />

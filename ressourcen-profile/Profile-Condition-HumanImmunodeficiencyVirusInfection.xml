@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection" />
   <name value="HumanImmunodeficiencyVirusInfection" />
   <title value="Human Immunodeficiency Virus Infection" />
   <status value="draft" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/pharmacological-therapy" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy" />
   <name value="PharmacologicalTherapy" />
   <title value="Pharmacological Therapy" />
   <status value="draft" />
@@ -61,7 +61,7 @@
       </patternCoding>
       <binding>
         <strength value="extensible" />
-        <valueSet value="http://charite.de/fhir/ValueSet/pharmacological-therapy-atc" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-atc" />
       </binding>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe.system">
@@ -80,7 +80,7 @@
       </patternCoding>
       <binding>
         <strength value="extensible" />
-        <valueSet value="http://charite.de/fhir/ValueSet/pharmacological-therapy-ops" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-ops" />
       </binding>
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:ops.system">

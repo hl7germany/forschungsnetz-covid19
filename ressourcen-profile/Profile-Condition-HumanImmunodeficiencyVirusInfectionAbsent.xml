@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection-absent" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection-absent" />
   <name value="HumanImmunodeficiencyVirusInfectionAbsent" />
   <title value="Human Immunodeficiency Virus Infection Absent" />
   <status value="draft" />
@@ -40,7 +40,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Condition" />
-  <baseDefinition value="http://charite.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection" />
+  <baseDefinition value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection" />
   <derivation value="constraint" />
   <differential>
     <element id="Condition.extension">
@@ -60,7 +60,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://charite.de/fhir/StructureDefinition/certainty-of-absence" />
+        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-absence" />
       </type>
     </element>
   </differential>

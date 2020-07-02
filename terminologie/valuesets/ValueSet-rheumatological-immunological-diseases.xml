@@ -8,7 +8,7 @@
             <start value="2020-04-25T23:32:23+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/rheumatological-immunological-diseases"/>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>

@@ -68,13 +68,21 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/ValueSet/SARS-CoV-2-symptoms" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms" />
       </binding>
     </element>
     <element id="Condition.code.coding:orphanet">
       <path value="Condition.code.coding" />
       <sliceName value="orphanet" />
       <max value="0" />
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

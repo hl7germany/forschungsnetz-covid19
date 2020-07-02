@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/history-of-travel" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/history-of-travel" />
   <name value="HistoryOfTravel" />
   <title value="History Of Travel" />
   <status value="draft" />

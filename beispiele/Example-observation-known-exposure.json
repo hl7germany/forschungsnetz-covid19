@@ -1,7 +1,7 @@
 {
     "meta": {
         "profile": [
-            "http://charite.de/fhir/StructureDefinition/known-exposure"
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/known-exposure"
         ]
     },
     "code": {

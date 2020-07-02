@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/FiO2" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/FiO2" />
   <name value="FiO2" />
   <title value="FiO2" />
   <status value="draft" />

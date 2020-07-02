@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/known-exposure" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/known-exposure" />
   <name value="KnownExposure" />
   <title value="Known Exposure to Covid-19" />
   <status value="draft" />
@@ -85,7 +85,7 @@
       </type>
       <binding>
         <strength value="preferred" />
-        <valueSet value="http://charite.de/fhir/ValueSet/known-exposure" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/known-exposure" />
       </binding>
     </element>
   </differential>

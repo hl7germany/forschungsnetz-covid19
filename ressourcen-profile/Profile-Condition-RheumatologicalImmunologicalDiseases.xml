@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/rheumatological-immunological-diseases" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/rheumatological-immunological-diseases" />
   <name value="RheumatologicalImmunologicalDiseases" />
   <title value="Rheumatological Immunological Diseases" />
   <status value="draft" />
@@ -62,7 +62,7 @@
       <sliceName value="icd10-gm" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/rheumatological-immunological-diseases-icd" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases-icd" />
       </binding>
     </element>
     <element id="Condition.code.coding:alpha-id">
@@ -75,7 +75,7 @@
       <sliceName value="sct" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/rheumatological-immunological-diseases" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases" />
       </binding>
     </element>
     <element id="Condition.code.coding:orphanet">

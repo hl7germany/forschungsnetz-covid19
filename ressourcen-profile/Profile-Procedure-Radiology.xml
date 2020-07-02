@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/radiology-procedures" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures" />
   <name value="RadiologyProcedures" />
   <title value="Radiology Procedures" />
   <status value="draft" />
@@ -64,7 +64,7 @@
       <sliceName value="sct" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/radiology-procedures" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures" />
       </binding>
     </element>
     <element id="Procedure.code.coding:dicom">
@@ -73,7 +73,7 @@
       <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/radiology-procedures-dicom" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures-dicom" />
       </binding>
     </element>
     <element id="Procedure.code.coding:dicom.system">
@@ -135,7 +135,7 @@
       <path value="Procedure.report" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://charite.de/fhir/StructureDefinition/diagnostic-report-radiology" />
+        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnostic-report-radiology" />
       </type>
     </element>
   </differential>

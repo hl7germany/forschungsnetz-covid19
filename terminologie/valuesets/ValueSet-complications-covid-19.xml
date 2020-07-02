@@ -8,7 +8,7 @@
             <start value="2020-05-03T22:49:13+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/complications-covid-19"/>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complications-covid-19"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>

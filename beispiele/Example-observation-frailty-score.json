@@ -1,7 +1,7 @@
 {
     "meta": {
         "profile": [
-            "http://charite.de/fhir/StructureDefinition/frailty-score"
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score"
         ]
     },
     "code": {

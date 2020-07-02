@@ -9,7 +9,7 @@
             <start value="2020-04-25T22:00:02+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/chronic-neurological-mental-diseases"/>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>

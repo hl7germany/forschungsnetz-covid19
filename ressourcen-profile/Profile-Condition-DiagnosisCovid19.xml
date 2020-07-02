@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/diagnosis-covid-19" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19" />
   <name value="DiagnosisCovid19" />
   <title value="Diagnosis Covid-19" />
   <status value="draft" />
@@ -84,7 +84,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="http://charite.de/fhir/ValueSet/stage-at-diagnosis" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/stage-at-diagnosis" />
       </binding>
     </element>
     <element id="Condition.stage.summary.coding:snomed.system">

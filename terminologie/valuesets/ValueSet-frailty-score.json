@@ -2,7 +2,7 @@
     "compose": {
         "include": [
             {
-                "system": "http://charite.de/fhir/CodeSystem/frailty-score"
+                "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score"
             }
         ]
     },
@@ -23,6 +23,6 @@
     "name": "Frailty-Score",
     "publisher": "Charité",
     "status": "draft",
-    "url": "http://charite.de/fhir/ValueSet/frailty-score",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score",
     "resourceType": "ValueSet"
 }

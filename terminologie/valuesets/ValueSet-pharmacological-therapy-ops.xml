@@ -8,7 +8,7 @@
             <start value="2020-05-29T15:04:32+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/pharmacological-therapy-ops"/>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-ops"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/chronic-kidney-diseases" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-kidney-diseases" />
   <name value="ChronicKidneyDiseases" />
   <title value="Chronic Kidney Diseases" />
   <status value="draft" />
@@ -62,7 +62,7 @@
       <sliceName value="icd10-gm" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/chronic-kidney-diseases-icd" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases-icd" />
       </binding>
     </element>
     <element id="Condition.code.coding:alpha-id">
@@ -75,13 +75,21 @@
       <sliceName value="sct" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/chronic-kidney-diseases" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases" />
       </binding>
     </element>
     <element id="Condition.code.coding:orphanet">
       <path value="Condition.code.coding" />
       <sliceName value="orphanet" />
       <max value="0" />
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>

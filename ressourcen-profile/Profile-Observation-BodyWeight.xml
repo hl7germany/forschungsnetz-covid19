@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/body-weight" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight" />
   <name value="BodyWeight" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />

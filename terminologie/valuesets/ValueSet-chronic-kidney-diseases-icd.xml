@@ -8,7 +8,7 @@
             <start value="2020-05-04T22:57:39+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/chronic-kidney-diseases-icd"/>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases-icd"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>

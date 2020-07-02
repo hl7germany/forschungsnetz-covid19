@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/resuscitation-status" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/resuscitation-status" />
   <name value="ResuscitationStatus" />
   <title value="Resuscitation Status" />
   <status value="draft" />
@@ -94,7 +94,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/resuscitation-status" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/resuscitation-status" />
       </binding>
     </element>
     <element id="Observation.bodySite">

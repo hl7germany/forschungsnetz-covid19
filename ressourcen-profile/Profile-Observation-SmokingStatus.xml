@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/smoking-status" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/smoking-status" />
   <name value="SmokingStatus" />
   <title value="Smoking Status" />
   <status value="active" />

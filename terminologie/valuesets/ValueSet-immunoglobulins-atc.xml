@@ -8,7 +8,7 @@
             <start value="2020-05-04T22:51:50+02:00"/>
         </valuePeriod>
     </extension>
-    <url value="http://charite.de/fhir/ValueSet/immunoglobulins-atc"/>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunoglobulins-atc"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>

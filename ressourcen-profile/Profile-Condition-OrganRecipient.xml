@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/organ-recipient" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/organ-recipient" />
   <name value="HistoryOfOrganRecipient" />
   <title value="History of Organ Recipient" />
   <status value="draft" />
@@ -86,7 +86,7 @@
       <sliceName value="snomed-ct" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/organs-for-transplant" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/organs-for-transplant" />
       </binding>
     </element>
   </differential>

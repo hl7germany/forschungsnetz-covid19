@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/heart-rate" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate" />
   <name value="HeartRate" />
   <status value="draft" />
   <description value="Heart rate" />
