@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/StructureDefinition/ethnic-group" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group" />
   <name value="EthnicGroup" />
   <title value="Ethnic Group" />
   <status value="draft" />
@@ -30,7 +30,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://charite.de/StructureDefinition/ethnic-group" />
+      <fixedUri value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -39,7 +39,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/ethnic-groups" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ethnic-groups" />
       </binding>
     </element>
   </differential>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://charite.de/fhir/StructureDefinition/certainty-of-presence" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-presence" />
   <name value="CertaintyOfPresence" />
   <title value="Certainty of Presence" />
   <status value="draft" />
@@ -27,7 +27,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://charite.de/fhir/StructureDefinition/certainty-of-presence" />
+      <fixedUri value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-presence" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -37,7 +37,7 @@
       <isModifier value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://charite.de/fhir/ValueSet/certainty-of-presence" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence" />
       </binding>
     </element>
   </differential>
