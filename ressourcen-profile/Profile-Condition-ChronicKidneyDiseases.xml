@@ -49,13 +49,40 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.meta">
-      <path value="Condition.meta" />
+    <element id="Condition.category">
+      <path value="Condition.category" />
       <min value="1" />
     </element>
-    <element id="Condition.meta.profile">
-      <path value="Condition.meta.profile" />
+    <element id="Condition.category.coding">
+      <path value="Condition.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
+    </element>
+    <element id="Condition.category.coding:nephrology">
+      <path value="Condition.category.coding" />
+      <sliceName value="nephrology" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="394589003" />
+      </patternCoding>
+    </element>
+    <element id="Condition.category.coding:nephrology.system">
+      <path value="Condition.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:nephrology.code">
+      <path value="Condition.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
@@ -65,11 +92,6 @@
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases-icd" />
       </binding>
     </element>
-    <element id="Condition.code.coding:alpha-id">
-      <path value="Condition.code.coding" />
-      <sliceName value="alpha-id" />
-      <max value="0" />
-    </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />
       <sliceName value="sct" />
@@ -77,11 +99,6 @@
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases" />
       </binding>
-    </element>
-    <element id="Condition.code.coding:orphanet">
-      <path value="Condition.code.coding" />
-      <sliceName value="orphanet" />
-      <max value="0" />
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />

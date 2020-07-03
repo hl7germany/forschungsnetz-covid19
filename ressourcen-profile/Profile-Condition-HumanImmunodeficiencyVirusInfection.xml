@@ -49,17 +49,56 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding">
+      <path value="Condition.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:infectiousDiseases">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.category.coding" />
+      <sliceName value="infectiousDiseases" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="394807007" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:infectiousDiseases.system">
+      <path value="Condition.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:infectiousDiseases.code">
+      <path value="Condition.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
       <sliceName value="icd10-gm" />
       <patternCoding>
         <code value="B24" />
       </patternCoding>
-    </element>
-    <element id="Condition.code.coding:alpha-id">
-      <path value="Condition.code.coding" />
-      <sliceName value="alpha-id" />
-      <max value="0" />
     </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />

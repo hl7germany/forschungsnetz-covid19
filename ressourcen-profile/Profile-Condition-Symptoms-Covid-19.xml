@@ -43,13 +43,47 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.meta">
-      <path value="Condition.meta" />
+    <element id="Condition.category">
+      <path value="Condition.category" />
       <min value="1" />
     </element>
-    <element id="Condition.meta.profile">
-      <path value="Condition.meta.profile" />
+    <element id="Condition.category.coding">
+      <path value="Condition.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
+    </element>
+    <element id="Condition.category.coding:symptoms">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.category.coding" />
+      <sliceName value="symptoms" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="75325-1" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:symptoms.system">
+      <path value="Condition.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:symptoms.code">
+      <path value="Condition.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.severity">
       <path value="Condition.severity" />

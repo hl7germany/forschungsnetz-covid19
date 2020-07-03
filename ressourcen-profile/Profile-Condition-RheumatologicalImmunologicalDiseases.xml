@@ -49,13 +49,74 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.meta">
-      <path value="Condition.meta" />
+    <element id="Condition.category">
+      <path value="Condition.category" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Condition.meta.profile">
-      <path value="Condition.meta.profile" />
+    <element id="Condition.category.coding">
+      <path value="Condition.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:rheumatology">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.category.coding" />
+      <sliceName value="rheumatology" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="394810000" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:rheumatology.system">
+      <path value="Condition.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:rheumatology.code">
+      <path value="Condition.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:immunology">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Condition.category.coding" />
+      <sliceName value="immunology" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="408480009" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:immunology.system">
+      <path value="Condition.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:immunology.code">
+      <path value="Condition.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
@@ -64,11 +125,6 @@
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases-icd" />
       </binding>
-    </element>
-    <element id="Condition.code.coding:alpha-id">
-      <path value="Condition.code.coding" />
-      <sliceName value="alpha-id" />
-      <max value="0" />
     </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />

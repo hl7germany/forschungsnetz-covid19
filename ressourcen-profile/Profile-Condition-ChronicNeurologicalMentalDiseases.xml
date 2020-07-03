@@ -49,12 +49,59 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.meta">
-      <path value="Condition.meta" />
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding">
+      <path value="Condition.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:neurology">
+      <path value="Condition.category.coding" />
+      <sliceName value="neurology" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="394591006" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:neurology.system">
+      <path value="Condition.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:neurology.code">
+      <path value="Condition.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:psychiatry">
+      <path value="Condition.category.coding" />
+      <sliceName value="psychiatry" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="394587001" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding:psychiatry.system">
+      <path value="Condition.category.coding.system" />
       <min value="1" />
     </element>
-    <element id="Condition.meta.profile">
-      <path value="Condition.meta.profile" />
+    <element id="Condition.category.coding:psychiatry.code">
+      <path value="Condition.category.coding.code" />
       <min value="1" />
     </element>
     <element id="Condition.code.coding:icd10-gm">
@@ -65,11 +112,6 @@
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases-icd" />
       </binding>
     </element>
-    <element id="Condition.code.coding:alpha-id">
-      <path value="Condition.code.coding" />
-      <sliceName value="alpha-id" />
-      <max value="0" />
-    </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />
       <sliceName value="sct" />
@@ -77,11 +119,6 @@
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases" />
       </binding>
-    </element>
-    <element id="Condition.code.coding:orphanet">
-      <path value="Condition.code.coding" />
-      <sliceName value="orphanet" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
