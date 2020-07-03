@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/MalignantNeoplasticDisease" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/malignant-neoplastic-disease" />
   <name value="MalignantNeoplasticDisease" />
   <title value="Malignant Neoplastic Disease" />
   <status value="draft" />

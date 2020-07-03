@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Symptoms-Covid-19" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19" />
   <name value="SymptomsCovid19" />
   <title value="Symptoms Covid-19" />
   <status value="draft" />
@@ -46,6 +46,7 @@
     <element id="Condition.category">
       <path value="Condition.category" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding">
       <path value="Condition.category.coding" />
@@ -57,6 +58,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:symptoms">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

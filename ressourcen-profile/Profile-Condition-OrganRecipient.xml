@@ -52,6 +52,7 @@
     <element id="Condition.category">
       <path value="Condition.category" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding">
       <path value="Condition.category.coding" />
@@ -63,6 +64,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:transplantMedicine">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">

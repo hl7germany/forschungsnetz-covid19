@@ -63,6 +63,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:nephrology">
       <path value="Condition.category.coding" />
@@ -73,6 +74,7 @@
         <system value="http://snomed.info/sct" />
         <code value="394589003" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:nephrology.system">
       <path value="Condition.category.coding.system" />

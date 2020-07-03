@@ -52,6 +52,7 @@
     <element id="Condition.category">
       <path value="Condition.category" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding">
       <path value="Condition.category.coding" />
@@ -63,6 +64,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:diabeticMedicine">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -79,6 +81,7 @@
         <system value="http://snomed.info/sct" />
         <code value="408475000" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:diabeticMedicine.system">
       <path value="Condition.category.coding.system" />
