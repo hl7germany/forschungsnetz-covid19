@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization" />
+  <name value="Immunization" />
+  <status value="draft" />
+  <publisher value="Charité" />
+  <description value="A patient's history of vaccination" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Immunization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Immunization.status">
+      <path value="Immunization.status" />
+      <fixedCode value="completed" />
+    </element>
+    <element id="Immunization.vaccineCode">
+      <path value="Immunization.vaccineCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.vaccineCode.extension">
+      <path value="Immunization.vaccineCode.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.vaccineCode.extension:dataAbsentReason">
+      <path value="Immunization.vaccineCode.extension" />
+      <sliceName value="dataAbsentReason" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
+    </element>
+    <element id="Immunization.vaccineCode.coding">
+      <path value="Immunization.vaccineCode.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="snomed" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List" />
+      </binding>
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:atc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="atc" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List_ATC" />
+      </binding>
+    </element>
+    <element id="Immunization.vaccineCode.coding:atc.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:atc.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pzn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="pzn" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://fhir.de/CodeSystem/ifa/pzn" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://fhir.de/ValueSet/ifa/pzn" />
+      </binding>
+    </element>
+    <element id="Immunization.vaccineCode.coding:pzn.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pzn.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.patient">
+      <path value="Immunization.patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.occurrence[x]">
+      <path value="Immunization.occurrence[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.occurrence[x]:occurrenceDateTime">
+      <path value="Immunization.occurrenceDateTime" />
+      <sliceName value="occurrenceDateTime" />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.protocolApplied">
+      <path value="Immunization.protocolApplied" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease">
+      <path value="Immunization.protocolApplied.targetDisease" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="TargetDisease" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease" />
+      </binding>
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding">
+      <path value="Immunization.protocolApplied.targetDisease.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.system">
+      <path value="Immunization.protocolApplied.targetDisease.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.code">
+      <path value="Immunization.protocolApplied.targetDisease.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]">
+      <path value="Immunization.protocolApplied.doseNumber[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString">
+      <path value="Immunization.protocolApplied.doseNumberString" />
+      <sliceName value="doseNumberString" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension">
+      <path value="Immunization.protocolApplied.doseNumberString.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:dataAbsentReason">
+      <path value="Immunization.protocolApplied.doseNumberString.extension" />
+      <sliceName value="dataAbsentReason" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:dataAbsentReason.value[x]">
+      <path value="Immunization.protocolApplied.doseNumberString.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:dataAbsentReason.value[x]:valueCode">
+      <path value="Immunization.protocolApplied.doseNumberString.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <fixedCode value="unknown" />
+    </element>
+  </differential>
+</StructureDefinition>
