@@ -34,10 +34,6 @@
                 <code value="373067005"/>
                 <display value="No (qualifier value)"/>
             </concept>
-            <concept>
-                <code value="261665006"/>
-                <display value="Unknown (qualifier value)"/>
-            </concept>
         </include>
     </compose>
 </ValueSet>
