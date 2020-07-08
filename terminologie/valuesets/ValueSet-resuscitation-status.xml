@@ -15,12 +15,12 @@
         <value value="1.2.276.0.76.11.486"/>
     </identifier>
     <version value="2020-05-03T14:43:03"/>
-    <name value="Resuscitation-Status"/>
-    <title value="DNR-Anordnung"/>
+    <name value="Do-not-resuscitate-order"/>
+    <title value="Do-not-resuscitate-order"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Do-not-resuscitate-Anordnung im Rahmen von Covid-19"/>
+    <description value="Do-not-resuscitate (DNR) order in the context of Covid-19"/>
     <immutable value="false"/>
     <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
     <compose>
@@ -33,10 +33,6 @@
             <concept>
                 <code value="304253006"/>
                 <display value="Not for resuscitation (finding)"/>
-            </concept>
-            <concept>
-                <code value="261665006"/>
-                <display value="Unknown (qualifier value)"/>
             </concept>
         </include>
     </compose>
