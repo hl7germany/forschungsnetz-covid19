@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="1.2.276.0.76.11.471--20200425213520"/>
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
@@ -16,15 +17,46 @@
     </identifier>
     <version value="2020-04-25T21:35:20"/>
     <name value="Chronic-Kidney-Diseases"/>
-    <title value="Chronische Nierenerkrankungen"/>
+    <title value="Chronic-Kidney-Diseases"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Chronische Nierenerkrankungen im Zusammenhang mit Covid-19"/>
+    <description value="Chronic kidney diseases in the context of Covid-19"/>
     <immutable value="false"/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="709044004"/>
+                <display value="Chronic kidney disease (disorder)"/>
+            </concept>
+            <concept>
+                <code value="714152005"/>
+                <display value="Chronic kidney disease stage 5 on dialysis (disorder)"/>
+            </concept>
+            <concept>
+                <code value="431855005"/>
+                <display value="Chronic kidney disease stage 1 (disorder)"/>
+            </concept>
+            <concept>
+                <code value="431856006"/>
+                <display value="Chronic kidney disease stage 2 (disorder)"/>
+            </concept>
+            <concept>
+                <code value="433144002"/>
+                <display value="Chronic kidney disease stage 3 (disorder)"/>
+            </concept>
+            <concept>
+                <code value="431857002"/>
+                <display value="Chronic kidney disease stage 4 (disorder)"/>
+            </concept>
+            <concept>
+                <code value="433146000"/>
+                <display value="Chronic kidney disease stage 5 (disorder)"/>
+            </concept>
+        </include>
+        <include>
+            <system value="urn:oid:2.16.840.1.1138836.96"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
