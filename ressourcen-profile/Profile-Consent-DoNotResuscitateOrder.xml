@@ -81,6 +81,14 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Consent.provision">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="provision" />
+      </extension>
+      <path value="Consent.provision" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Consent.provision.code">
       <path value="Consent.provision.code" />
       <min value="1" />
@@ -113,6 +121,7 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Consent.provision.code.extension:dataAbsentReason.value[x]">
       <path value="Consent.provision.code.extension.value[x]" />
