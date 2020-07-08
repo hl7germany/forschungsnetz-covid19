@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="1.2.276.0.76.11.501--20200504225739"/>
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
@@ -29,6 +30,42 @@
                 <code value="N18.9"/>
                 <display value="Chronische Nierenkrankheit, nicht näher bezeichnet"/>
             </concept>
+            <concept>
+                <code value="N18.5"/>
+                <display value="Chronische Nierenkrankheit, Stadium 5"/>
+            </concept>
+            <concept>
+                <code value="N18.1"/>
+                <display value="Chronische Nierenkrankheit, Stadium 1"/>
+            </concept>
+            <concept>
+                <code value="N18.2"/>
+                <display value="Chronische Nierenkrankheit, Stadium 2"/>
+            </concept>
+            <concept>
+                <code value="N18.3"/>
+                <display value="Chronische Nierenkrankheit, Stadium 3"/>
+            </concept>
+            <concept>
+                <code value="N18.4"/>
+                <display value="Chronische Nierenkrankheit, Stadium 4"/>
+            </concept>
+            <concept>
+                <code value="N18.5"/>
+                <display value="Chronische Nierenkrankheit, Stadium 5"/>
+            </concept>
+            <concept>
+                <code value="Z99.2"/>
+                <display value="Langzeitige Abhängigkeit von Dialyse bei Niereninsuffizienz"/>
+            </concept>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="N18"/>
+            </filter>
         </include>
     </compose>
 </ValueSet>
