@@ -96,16 +96,18 @@
     <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
       <sliceName value="icd10-gm" />
-      <patternCoding>
-        <code value="B24" />
-      </patternCoding>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections-icd" />
+      </binding>
     </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />
       <sliceName value="sct" />
-      <patternCoding>
-        <code value="86406008" />
-      </patternCoding>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections" />
+      </binding>
     </element>
     <element id="Condition.code.coding:orphanet">
       <path value="Condition.code.coding" />

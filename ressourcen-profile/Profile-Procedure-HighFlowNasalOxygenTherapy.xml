@@ -103,12 +103,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.usedCode.coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Procedure.usedCode.coding" />
       <sliceName value="snomed" />
       <min value="1" />
