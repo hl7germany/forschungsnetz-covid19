@@ -1,0 +1,86 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.531--20200709133929"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-07-09T13:39:29+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/history-of-organ-transplantation-icd"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.531"/>
+    </identifier>
+    <version value="2020-07-09T13:39:29"/>
+    <name value="History-of-transplantation-icd"/>
+    <title value="History-of-transplantation-icd"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="History of organ transplantation ICD codes"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <concept>
+                <code value="Z94.1"/>
+                <display value="Zustand nach Herztransplantation"/>
+            </concept>
+            <concept>
+                <code value="Z94.2"/>
+                <display value="Zustand nach Lungentransplantation"/>
+            </concept>
+            <concept>
+                <code value="Z94.4"/>
+                <display value="Zustand nach Lebertransplantation"/>
+            </concept>
+            <concept>
+                <code value="Z94.0"/>
+                <display value="Zustand nach Nierentransplantation"/>
+            </concept>
+            <concept>
+                <code value="Z94.88"/>
+                <display value="Zustand nach sonstiger Organ- oder Gewebetransplantation Inkl.: Darm Pankreas"/>
+            </concept>
+            <concept>
+                <code value="Z94.5"/>
+                <display value="Zustand nach Hauttransplantation"/>
+            </concept>
+            <concept>
+                <code value="Z94.7"/>
+                <display value="Zustand nach Keratoplastik"/>
+            </concept>
+            <concept>
+                <code value="Z95.5"/>
+                <display value="Vorhandensein eines Implantates oder Transplantates nach koronarer Gefäßplastik"/>
+            </concept>
+            <concept>
+                <code value="Z95.88"/>
+                <display value="Vorhandensein von sonstigen kardialen oder vaskulären Implantaten oder Transplantaten"/>
+            </concept>
+            <concept>
+                <code value="Z94.6"/>
+                <display value="Zustand nach Knochentransplantation"/>
+            </concept>
+            <concept>
+                <code value="Z94.9"/>
+                <display value="Zustand nach Organ- oder Gewebetransplantation, nicht näher bezeichnet"/>
+            </concept>
+            <concept>
+                <code value="Z94.80"/>
+                <display value="Zustand nach hämatopoetischer Stammzelltransplantation ohne gegenwärtige Immunsuppression"/>
+            </concept>
+            <concept>
+                <code value="Z94.81"/>
+                <display value="Zustand nach hämatopoetischer Stammzelltransplantation mit gegenwärtiger Immunsuppression"/>
+            </concept>
+            <concept>
+                <code value="Z94.3"/>
+                <display value="Zustand nach Herz-Lungen-Transplantation"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
