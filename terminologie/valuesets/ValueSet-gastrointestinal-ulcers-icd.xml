@@ -30,5 +30,13 @@
                 <display value="Ulcus pepticum jejuni : Weder als akut noch als chronisch bezeichnet, ohne Blutung oder Perforation"/>
             </concept>
         </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="K28"/>
+            </filter>
+        </include>
     </compose>
 </ValueSet>
