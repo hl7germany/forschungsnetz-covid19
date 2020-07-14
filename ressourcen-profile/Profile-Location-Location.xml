@@ -54,6 +54,7 @@
         <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode" />
         <code value="ICU" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Location.type.coding:intensiveCareUnit.system">
       <path value="Location.type.coding.system" />
