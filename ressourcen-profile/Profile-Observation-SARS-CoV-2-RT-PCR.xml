@@ -5,6 +5,7 @@
   <title value="Sars-CoV-2-RT-PCR" />
   <status value="draft" />
   <publisher value="Charité" />
+  <description value="Qualitative detection of SARS-CoV-2 in respiratory specimens by RT-PCR" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -45,8 +46,13 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.value[x]:valueQuantity">
+      <path value="Observation.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <max value="0" />
+    </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <binding>
