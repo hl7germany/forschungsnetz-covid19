@@ -1,0 +1,35 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.536--20200720125411"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-07-20T12:54:11+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/dialysis-procedures-ops"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.536"/>
+    </identifier>
+    <version value="2020-07-20T12:54:11"/>
+    <name value="Dialysis-Procedures-OPS"/>
+    <title value="Dialysis-Procedures-OPS"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Dialysis procedures OPS"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="8-85"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>
