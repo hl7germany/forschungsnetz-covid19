@@ -1,0 +1,35 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.538--20200721131410"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-07-21T13:14:10+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures-ops"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.538"/>
+    </identifier>
+    <version value="2020-07-21T13:14:10"/>
+    <name value="Apheresis-Procedures-OPS"/>
+    <title value="Apheresis-Procedures-OPS"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Aphereseverfahren OPS"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="8-82"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>

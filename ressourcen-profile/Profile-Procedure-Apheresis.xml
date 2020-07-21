@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dialysis" />
-  <name value="Dialysis" />
-  <title value="Dialysis" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/apheresis" />
+  <name value="Apheresis" />
   <status value="draft" />
-  <publisher value="Charité" />
-  <description value="Dialysis procedures" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -33,30 +30,12 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
-    <element id="Procedure.category.coding">
-      <path value="Procedure.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Procedure.category.coding:sct">
-      <path value="Procedure.category.coding" />
-      <sliceName value="sct" />
-      <patternCoding>
-        <system value="http://snomed.info/sct" />
-        <code value="277132007" />
-      </patternCoding>
-    </element>
     <element id="Procedure.code.coding:ops">
       <path value="Procedure.code.coding" />
       <sliceName value="ops" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/dialysis-procedures-ops" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures-ops" />
       </binding>
     </element>
     <element id="Procedure.code.coding:sct">
@@ -64,7 +43,7 @@
       <sliceName value="sct" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/dialysis-procedures" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures" />
       </binding>
     </element>
     <element id="Procedure.subject">
@@ -111,19 +90,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.performed[x]:performedDateTime.extension:dataAbsentReason.value[x]">
-      <path value="Procedure.performedDateTime.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Procedure.performed[x]:performedDateTime.extension:dataAbsentReason.value[x]:valueCode">
-      <path value="Procedure.performedDateTime.extension.valueCode" />
-      <sliceName value="valueCode" />
-      <min value="1" />
     </element>
     <element id="Procedure.performed[x]:performedPeriod">
       <path value="Procedure.performedPeriod" />
@@ -151,19 +117,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.performed[x]:performedPeriod.extension:dataAbsentReason.value[x]">
-      <path value="Procedure.performedPeriod.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Procedure.performed[x]:performedPeriod.extension:dataAbsentReason.value[x]:valueCode">
-      <path value="Procedure.performedPeriod.extension.valueCode" />
-      <sliceName value="valueCode" />
-      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>
