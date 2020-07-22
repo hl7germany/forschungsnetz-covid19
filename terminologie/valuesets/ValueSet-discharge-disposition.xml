@@ -1,0 +1,55 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.528--20200701102738"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-07-01T10:27:38+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/discharge-disposition"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.528"/>
+    </identifier>
+    <version value="2020-07-01T10:27:38"/>
+    <name value="Discharge-Disposition"/>
+    <title value="Discharge-Disposition"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="The type of discharge from a hospital"/>
+    <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="261665006"/>
+                <display value="Unknown (qualifier value)"/>
+            </concept>
+            <concept>
+                <code value="32485007"/>
+                <display value="Hospital admission (procedure)"/>
+            </concept>
+            <concept>
+                <code value="419099009"/>
+                <display value="Dead (finding)"/>
+            </concept>
+            <concept>
+                <code value="371827001"/>
+                <display value="Patient discharged alive (finding)"/>
+            </concept>
+            <concept>
+                <code value="107724000"/>
+                <display value="Patient transfer (procedure)"/>
+            </concept>
+            <concept>
+                <code value="306237005"/>
+                <display value="Referral to palliative care service (procedure)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
