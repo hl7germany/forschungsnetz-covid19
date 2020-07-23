@@ -1,0 +1,31 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies-devices"/>
+    <version value="2020-07-23T09:45:00"/>
+    <name value="Respiratory-Therapy-Devices"/>
+    <title value="Respiratory-Therapy-Devices"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Devices used in respiratory therapy procedures"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="426854004"/>
+                <display value="High flow oxygen nasal cannula (physical object)"/>
+            </concept>
+            <concept>
+                <code value="26412008"/>
+                <display value="Endotracheal tube, device (physical object)"/>
+            </concept>
+            <concept>
+                <code value="129121000"/>
+                <display value="Tracheostomy tube, device (physical object)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
