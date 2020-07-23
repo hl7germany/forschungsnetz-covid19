@@ -43,8 +43,8 @@
                 <display value="Patient discharged alive (finding)"/>
             </concept>
             <concept>
-                <code value="107724000"/>
-                <display value="Patient transfer (procedure)"/>
+                <code value="3457005"/>
+                <display value="Patient referral (procedure)"/>
             </concept>
             <concept>
                 <code value="306237005"/>
