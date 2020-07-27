@@ -2,7 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-present" />
   <name value="ChronicLungDiseasesPresent" />
+  <title value="Chronic Lung Diseases Present" />
   <status value="draft" />
+  <publisher value="Charité" />
+  <description value="Presence of chronic lung diseases as a risk factor for a severe course of an infection with SARS-Cov-2" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

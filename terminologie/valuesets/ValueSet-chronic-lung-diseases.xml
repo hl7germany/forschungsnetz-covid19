@@ -1,7 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="1.2.276.0.76.11.470--20200425212714"/>
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
@@ -130,6 +131,14 @@
                     <value value="Cystische Fibrose"/>
                 </designation>
             </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="106048009"/>
+            </filter>
         </include>
     </compose>
 </ValueSet>
