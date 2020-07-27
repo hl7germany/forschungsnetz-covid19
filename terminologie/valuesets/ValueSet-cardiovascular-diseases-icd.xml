@@ -55,5 +55,13 @@
                 <display value="Verschluss und Stenose der A. carotis"/>
             </concept>
         </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="regex"/>
+                <value value="^I.*"/>
+            </filter>
+        </include>
     </compose>
 </ValueSet>
