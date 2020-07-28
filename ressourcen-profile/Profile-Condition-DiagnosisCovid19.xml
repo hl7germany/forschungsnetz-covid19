@@ -40,7 +40,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Condition" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Diagnose" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
     <element id="Condition.meta">
