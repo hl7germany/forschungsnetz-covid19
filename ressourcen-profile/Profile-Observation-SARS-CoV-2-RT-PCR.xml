@@ -10,7 +10,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ObservationLab" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab" />
   <derivation value="constraint" />
   <differential>
     <element id="Observation.code.coding">

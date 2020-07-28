@@ -16,7 +16,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
   <derivation value="constraint" />
   <differential>
     <element id="Patient.extension">

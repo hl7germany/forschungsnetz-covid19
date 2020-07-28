@@ -36,7 +36,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Procedure" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Procedure" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
     <element id="Procedure.meta">
@@ -72,7 +72,7 @@
       <path value="Procedure.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
         <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
       </type>
       <mustSupport value="true" />
