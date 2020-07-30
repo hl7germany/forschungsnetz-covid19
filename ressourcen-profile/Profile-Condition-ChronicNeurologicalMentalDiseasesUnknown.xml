@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-neurological-mental-diseases-absent" />
-  <name value="ChronicNeurologicalMentalDiseasesAbsent" />
-  <title value="Chronic Neurological Mental Diseases Absent" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-neurological-mental-diseases-unknown" />
+  <name value="ChronicNeurologicalMentalDiseasesUnknown" />
+  <title value="Chronic Neurological Mental Diseases Unknown" />
   <status value="draft" />
   <publisher value="Charité" />
-  <description value="Absence of chronic neurological or mental diseases as a risk factor for a severe course of an infection with SARS-Cov-2" />
+  <description value="Unknown presence of chronic neurological mental diseases as a risk factor for a severe course of an infection with SARS-Cov-2" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -53,14 +53,14 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Condition.extension:certaintyOfAbsence">
+    <element id="Condition.extension:uncertaintyOfPresence">
       <path value="Condition.extension" />
-      <sliceName value="certaintyOfAbsence" />
+      <sliceName value="uncertaintyOfPresence" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-absence" />
+        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence" />
       </type>
       <mustSupport value="true" />
     </element>
