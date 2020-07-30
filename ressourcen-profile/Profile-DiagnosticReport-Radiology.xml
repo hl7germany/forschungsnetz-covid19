@@ -39,18 +39,11 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
-    <element id="DiagnosticReport.meta">
-      <path value="DiagnosticReport.meta" />
-      <min value="1" />
-    </element>
-    <element id="DiagnosticReport.meta.profile">
-      <path value="DiagnosticReport.meta.profile" />
-      <min value="1" />
-    </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding">
       <path value="DiagnosticReport.category.coding" />
@@ -62,6 +55,7 @@
         <rules value="open" />
       </slicing>
       <min value="2" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc">
       <path value="DiagnosticReport.category.coding" />
@@ -72,6 +66,7 @@
         <system value="http://loinc.org" />
         <code value="18726-0" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:loinc.system">
       <path value="DiagnosticReport.category.coding.system" />
@@ -90,6 +85,7 @@
         <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
         <code value="RAD" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.system">
       <path value="DiagnosticReport.category.coding.system" />
@@ -98,6 +94,10 @@
     <element id="DiagnosticReport.category.coding:diagnostic-service-sections.code">
       <path value="DiagnosticReport.category.coding.code" />
       <min value="1" />
+    </element>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding">
       <path value="DiagnosticReport.code.coding" />
@@ -109,6 +109,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc">
       <path value="DiagnosticReport.code.coding" />
@@ -119,6 +120,7 @@
         <system value="http://loinc.org" />
         <code value="18748-4" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code.coding:loinc.system">
       <path value="DiagnosticReport.code.coding.system" />
@@ -136,11 +138,13 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="AdjunctDiagnosis" />
@@ -159,6 +163,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.conclusionCode.coding:snomed">
       <path value="DiagnosticReport.conclusionCode.coding" />
@@ -168,6 +173,7 @@
       <patternCoding>
         <system value="http://snomed.info/sct" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.conclusionCode.coding:snomed.system">
       <path value="DiagnosticReport.conclusionCode.coding.system" />
