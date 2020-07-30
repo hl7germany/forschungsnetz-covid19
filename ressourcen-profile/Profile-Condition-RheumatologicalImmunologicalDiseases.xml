@@ -67,12 +67,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:rheumatology">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.category.coding" />
       <sliceName value="rheumatology" />
       <max value="1" />
@@ -93,12 +87,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:immunology">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.category.coding" />
       <sliceName value="immunology" />
       <max value="1" />
@@ -133,11 +121,6 @@
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases" />
       </binding>
-    </element>
-    <element id="Condition.code.coding:orphanet">
-      <path value="Condition.code.coding" />
-      <sliceName value="orphanet" />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
