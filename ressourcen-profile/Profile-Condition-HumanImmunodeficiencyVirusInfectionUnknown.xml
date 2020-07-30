@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/rheumatological-immunological-diseases-unknown" />
-  <name value="RheumatologicalImmunologicalDiseasesUnknown" />
-  <title value="Rheumatological Immunological Diseases Unknown" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection-unknown" />
+  <name value="HumanImmunodeficiencyVirusInfectionUnknown" />
+  <title value="Human Immunodeficiency Virus Infection Unknown" />
   <status value="draft" />
   <publisher value="Charité" />
-  <description value="Unknown presence of rheumatological or immunological diseases as a risk factor for a severe course of an infection with SARS-Cov-2" />
+  <description value="Unknown presence of HIV infection as a risk factor for a severe course of an infection with SARS-Cov-2" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -40,7 +40,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Condition" />
-  <baseDefinition value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/rheumatological-immunological-diseases" />
+  <baseDefinition value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection" />
   <derivation value="constraint" />
   <differential>
     <element id="Condition.extension">
