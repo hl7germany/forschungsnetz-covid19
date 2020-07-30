@@ -11,6 +11,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
+  <description value="A patient's history of travel" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -48,6 +49,52 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:socialHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.category.coding" />
+      <sliceName value="socialHistory" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="social-history" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:socialHistory.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.category.coding:socialHistory.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <slicing>
@@ -58,6 +105,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
@@ -68,6 +116,7 @@
         <system value="http://loinc.org" />
         <code value="88636-6" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
@@ -85,6 +134,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
@@ -111,11 +161,13 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:TravelStartDate">
       <path value="Observation.component" />
       <sliceName value="TravelStartDate" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:TravelStartDate.code">
       <path value="Observation.component.code" />
@@ -156,10 +208,10 @@
       <path value="Observation.component" />
       <sliceName value="Country" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:Country.code">
       <path value="Observation.component.code" />
-      <min value="1" />
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org" />
@@ -201,10 +253,10 @@
       <path value="Observation.component" />
       <sliceName value="State" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:State.code">
       <path value="Observation.component.code" />
-      <min value="1" />
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org" />
@@ -246,10 +298,10 @@
       <path value="Observation.component" />
       <sliceName value="City" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:City.code">
       <path value="Observation.component.code" />
-      <min value="1" />
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org" />
@@ -286,8 +338,8 @@
     <element id="Observation.component:TravelEndDate">
       <path value="Observation.component" />
       <sliceName value="TravelEndDate" />
-      <min value="0" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.component:TravelEndDate.code">
       <path value="Observation.component.code" />
