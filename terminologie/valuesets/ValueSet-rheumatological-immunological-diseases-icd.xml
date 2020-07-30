@@ -30,8 +30,8 @@
                 <display value="Nichtinfektiöse Gastroenteritis und Kolitis, nicht näher bezeichnet"/>
             </concept>
             <concept>
-                <code value="I00"/>
-                <display value="Rheumatisches Fieber ohne Angabe einer Herzbeteiligung"/>
+                <code value="M06.99"/>
+                <display value="Chronische Polyarthritis, nicht näher bezeichnet : Nicht näher bezeichnete Lokalisation"/>
             </concept>
             <concept>
                 <code value="M35.9"/>
@@ -45,6 +45,150 @@
                 <code value="D84.8"/>
                 <display value="Sonstige näher bezeichnete Immundefekte"/>
             </concept>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="K50"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="K51"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="K52"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="M30"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="M31"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="M32"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="M33"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="M34"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="M35"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="M36"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="D80"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="D81"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="D82"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="D83"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="D84"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="D86"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="D89"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="D90"/>
+            </filter>
         </include>
     </compose>
 </ValueSet>

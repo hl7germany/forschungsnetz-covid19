@@ -41,8 +41,8 @@
                 </designation>
             </concept>
             <concept>
-                <code value="123803006"/>
-                <display value="Rheumatic arteritis (disorder)"/>
+                <code value="69896004"/>
+                <display value="Rheumatoid arthritis (disorder)"/>
                 <designation>
                     <language value="de-DE"/>
                     <use>
