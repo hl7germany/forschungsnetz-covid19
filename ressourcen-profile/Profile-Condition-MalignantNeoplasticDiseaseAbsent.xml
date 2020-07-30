@@ -40,7 +40,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Condition" />
-  <baseDefinition value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/MalignantNeoplasticDisease" />
+  <baseDefinition value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/malignant-neoplastic-disease" />
   <derivation value="constraint" />
   <differential>
     <element id="Condition.extension">
@@ -62,6 +62,7 @@
         <code value="Extension" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-absence" />
       </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

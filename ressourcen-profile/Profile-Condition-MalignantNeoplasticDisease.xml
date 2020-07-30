@@ -67,12 +67,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:oncology">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.category.coding" />
       <sliceName value="oncology" />
       <min value="1" />
@@ -99,18 +93,18 @@
       <patternCoding>
         <code value="C80.9" />
       </patternCoding>
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases-icd" />
+      </binding>
     </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />
       <sliceName value="sct" />
-      <patternCoding>
-        <code value="363346000" />
-      </patternCoding>
-    </element>
-    <element id="Condition.code.coding:orphanet">
-      <path value="Condition.code.coding" />
-      <sliceName value="orphanet" />
-      <max value="0" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
