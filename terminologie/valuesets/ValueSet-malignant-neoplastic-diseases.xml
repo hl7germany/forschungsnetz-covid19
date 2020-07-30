@@ -1,0 +1,35 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.533--20200710115833"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-07-10T11:58:33+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.533"/>
+    </identifier>
+    <version value="2020-07-10T11:58:33"/>
+    <name value="Malignant-Neoplastic-Diseases"/>
+    <title value="Malignant-Neoplastic-Diseases"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="Charité"/>
+    <description value="Malignant neoplastic diseases in the context of Covid-19"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="363346000"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>

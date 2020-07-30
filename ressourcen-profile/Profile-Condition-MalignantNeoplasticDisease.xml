@@ -90,9 +90,6 @@
     <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
       <sliceName value="icd10-gm" />
-      <patternCoding>
-        <code value="C80.9" />
-      </patternCoding>
       <binding>
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases-icd" />
