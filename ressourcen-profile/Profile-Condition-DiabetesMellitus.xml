@@ -67,12 +67,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Condition.category.coding:diabeticMedicine">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Condition.category.coding" />
       <sliceName value="diabeticMedicine" />
       <min value="1" />

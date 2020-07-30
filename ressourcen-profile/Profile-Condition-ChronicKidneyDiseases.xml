@@ -102,13 +102,5 @@
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases" />
       </binding>
     </element>
-    <element id="Condition.subject">
-      <path value="Condition.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
-        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
-      </type>
-    </element>
   </differential>
 </StructureDefinition>
