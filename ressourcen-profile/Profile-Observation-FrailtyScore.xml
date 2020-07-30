@@ -51,6 +51,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <slicing>
@@ -61,6 +65,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:snomed">
       <path value="Observation.code.coding" />
@@ -71,6 +76,7 @@
         <system value="http://snomed.info/sct" />
         <code value="713636003" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:snomed.system">
       <path value="Observation.code.coding.system" />
@@ -88,12 +94,14 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="http://charite.de/fhir/ValueSet/frailty-score" />
@@ -102,6 +110,10 @@
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
       <max value="0" />
+    </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.method.coding">
       <path value="Observation.method.coding" />
@@ -112,6 +124,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.method.coding:snomed-scale">
       <path value="Observation.method.coding" />
@@ -122,6 +135,7 @@
         <system value="http://snomed.info/sct" />
         <code value="445414007" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.method.coding:snomed-scale.system">
       <path value="Observation.method.coding.system" />

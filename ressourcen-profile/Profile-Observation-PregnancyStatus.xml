@@ -27,12 +27,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <min value="1" />
     </element>
@@ -51,7 +45,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -97,9 +91,10 @@
           <path value="$this" />
         </discriminator>
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -109,42 +104,6 @@
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pregnancy-status" />
       </binding>
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Observation.valueCodeableConcept.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding.system">
-      <path value="Observation.valueCodeableConcept.coding.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding.version">
-      <path value="Observation.valueCodeableConcept.coding.version" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding.code">
-      <path value="Observation.valueCodeableConcept.coding.code" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.valueCodeableConcept.coding.display" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.valueCodeableConcept.text" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
