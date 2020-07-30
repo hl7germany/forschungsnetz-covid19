@@ -62,6 +62,7 @@
         <code value="Extension" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-absence" />
       </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

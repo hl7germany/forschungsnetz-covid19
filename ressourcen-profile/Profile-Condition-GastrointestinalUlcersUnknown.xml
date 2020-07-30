@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-ulcers-present" />
-  <name value="GastrointestinalUlcersPresent" />
-  <title value="Gastrointestinal Ulcers Present" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-ulcers-unknown" />
+  <name value="GastrointestinalUlcersUnknown" />
+  <title value="Gastrointestinal Ulcers Unknown" />
   <status value="draft" />
   <publisher value="Charité" />
-  <description value="Presence of gastrointestinal ulcers as a risk factor for a severe course of an infection with SARS-Cov-2" />
+  <description value="Unknown presence of cardiovascular diseases as a risk factor for a severe course of an infection with SARS-Cov-2" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -53,16 +53,15 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Condition.extension:certaintyOfPresence">
+    <element id="Condition.extension:uncertaintyOfPresence">
       <path value="Condition.extension" />
-      <sliceName value="certaintyOfPresence" />
+      <sliceName value="uncertaintyOfPresence" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-presence" />
+        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence" />
       </type>
-      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
