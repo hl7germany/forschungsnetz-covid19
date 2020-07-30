@@ -74,11 +74,6 @@
     <element id="Consent.patient">
       <path value="Consent.patient" />
       <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Consent.provision">
@@ -115,8 +110,6 @@
     <element id="Consent.provision.code.extension:dataAbsentReason">
       <path value="Consent.provision.code.extension" />
       <sliceName value="dataAbsentReason" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
@@ -131,7 +124,7 @@
       <min value="1" />
     </element>
     <element id="Consent.provision.code.extension:dataAbsentReason.value[x]:valueCode">
-      <path value="Consent.provision.code.extension.valueCode" />
+      <path value="Consent.provision.code.extension.value[x]" />
       <sliceName value="valueCode" />
       <min value="1" />
     </element>
