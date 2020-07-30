@@ -1,52 +1,68 @@
 <ValueSet xmlns="http://hl7.org/fhir">
+    <id value="1.2.276.0.76.11.471--20200425213520"/>
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
         <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
-    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-antibody-tests-immunoassay"/>
-    <version value="2020-07-20T09:15:00"/>
-    <name value="SARS-CoV-2-Antibody-Tests-Immunoassay"/>
-    <title value="SARS-CoV-2-Antibody-Tests-Immunoassay"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2020-04-25T21:35:20+02:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="1.2.276.0.76.11.471"/>
+    </identifier>
+    <version value="2020-04-25T21:35:20"/>
+    <name value="Chronic-Kidney-Diseases"/>
+    <title value="Chronic-Kidney-Diseases"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Laboratory tests for detection of SARS-CoV-2 antibodies by immunoassay"/>
+    <description value="Chronic kidney diseases in the context of Covid-19"/>
     <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
     <compose>
         <include>
-            <system value="http://loinc.org"/>
+            <system value="http://snomed.info/sct"/>
             <concept>
-                <code value="94769-7"/>
-                <display value="SARS-CoV-2 (COVID-19) Ab IA Qn"/>
+                <code value="714152005"/>
+                <display value="Chronic kidney disease stage 5 on dialysis (disorder)"/>
             </concept>
             <concept>
-                <code value="94762-2"/>
-                <display value="SARS-CoV-2 (COVID-19) Ab IA Ql"/>
+                <code value="431855005"/>
+                <display value="Chronic kidney disease stage 1 (disorder)"/>
             </concept>
             <concept>
-                <code value="94720-0"/>
-                <display value="SARS-CoV-2 (COVID-19) IgA IA Qn"/>
+                <code value="431856006"/>
+                <display value="Chronic kidney disease stage 2 (disorder)"/>
             </concept>
             <concept>
-                <code value="94562-6"/>
-                <display value="SARS-CoV-2 (COVID-19) IgA IA Ql"/>
+                <code value="433144002"/>
+                <display value="Chronic kidney disease stage 3 (disorder)"/>
             </concept>
             <concept>
-                <code value="94506-3"/>
-                <display value="SARS-CoV-2 (COVID-19) IgM IA Qn"/>
+                <code value="431857002"/>
+                <display value="Chronic kidney disease stage 4 (disorder)"/>
             </concept>
             <concept>
-                <code value="94564-2"/>
-                <display value="SARS-CoV-2 (COVID-19) IgM IA Ql"/>
+                <code value="433146000"/>
+                <display value="Chronic kidney disease stage 5 (disorder)"/>
             </concept>
             <concept>
-                <code value="94505-5"/>
-                <display value="SARS-CoV-2 (COVID-19) IgG IA Qn"/>
+                <code value="709044004"/>
+                <display value="Chronic kidney disease (disorder)"/>
             </concept>
-            <concept>
-                <code value="94563-4"/>
-                <display value="SARS-CoV-2 (COVID-19) IgG IA Ql"/>
-            </concept>
+        </include>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="709044004"/>
+            </filter>
         </include>
     </compose>
 </ValueSet>
