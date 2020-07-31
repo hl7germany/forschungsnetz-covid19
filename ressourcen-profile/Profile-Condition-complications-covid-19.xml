@@ -104,10 +104,5 @@
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complications-covid-19" />
       </binding>
     </element>
-    <element id="Condition.code.coding:orphanet">
-      <path value="Condition.code.coding" />
-      <sliceName value="orphanet" />
-      <max value="0" />
-    </element>
   </differential>
 </StructureDefinition>
