@@ -54,8 +54,8 @@
                 </designation>
             </concept>
             <concept>
-                <code value="76783007"/>
-                <display value="Chronic hepatitis (disorder)"/>
+                <code value="10295004"/>
+                <display value="Chronic viral hepatitis (disorder)"/>
                 <designation>
                     <language value="de-DE"/>
                     <use>

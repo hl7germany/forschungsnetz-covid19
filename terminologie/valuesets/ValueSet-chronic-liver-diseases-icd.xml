@@ -35,8 +35,8 @@
                 <display value="Fibrose und Zirrhose der Leber"/>
             </concept>
             <concept>
-                <code value="K73.9"/>
-                <display value="Chronische Hepatitis, nicht näher bezeichnet"/>
+                <code value="B18.9"/>
+                <display value="Chronische Virushepatitis, nicht näher bezeichnet"/>
             </concept>
             <concept>
                 <code value="K76.9"/>
@@ -49,6 +49,14 @@
                 <property value="concept"/>
                 <op value="regex"/>
                 <value value="^K7.*"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="B18"/>
             </filter>
         </include>
     </compose>
