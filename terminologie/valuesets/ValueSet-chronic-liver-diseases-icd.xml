@@ -31,6 +31,10 @@
                 <display value="Fettleber [fettige Degeneration], anderenorts nicht klassifiziert"/>
             </concept>
             <concept>
+                <code value="K70.0"/>
+                <display value="Alkoholische Fettleber"/>
+            </concept>
+            <concept>
                 <code value="K74.6"/>
                 <display value="Fibrose und Zirrhose der Leber"/>
             </concept>
