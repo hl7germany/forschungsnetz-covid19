@@ -35,8 +35,8 @@
                 <display value="Essentielle Hypertonie, nicht näher bezeichnet : Ohne Angabe einer hypertensiven Krise"/>
             </concept>
             <concept>
-                <code value="I70.9"/>
-                <display value="Generalisierte und nicht näher bezeichnete Atherosklerose"/>
+                <code value="I73.9"/>
+                <display value="Periphere Gefäßkrankheit, nicht näher bezeichnet"/>
             </concept>
             <concept>
                 <code value="I49.9"/>
@@ -53,6 +53,14 @@
             <concept>
                 <code value="I65.2"/>
                 <display value="Verschluss und Stenose der A. carotis"/>
+            </concept>
+            <concept>
+                <code value="Z95.1"/>
+                <display value="Vorhandensein eines aortokoronaren Bypasses"/>
+            </concept>
+            <concept>
+                <code value="Z95.5"/>
+                <display value="Vorhandensein eines Implantates oder Transplantates nach koronarer Gefäßplastik"/>
             </concept>
         </include>
         <include>
