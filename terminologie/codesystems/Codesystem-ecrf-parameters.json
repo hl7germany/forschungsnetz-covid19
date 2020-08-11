@@ -1,0 +1,50 @@
+{
+    "caseSensitive": true,
+    "concept": [
+        {
+            "code": "01",
+            "definition": "Is the patient currently being treated in the intensive care unit?",
+            "display": "Is the patient in the intensive care unit?"
+        },
+        {
+            "code": "02",
+            "definition": "Confirmed Covid-19 diagnosis as main reason for enrolment in the study",
+            "display": "Study inclusion due to Covid-19"
+        },
+        {
+            "code": "03",
+            "definition": "Has the patient participated in one or more interventional clinical trials?",
+            "display": "Participation in interventional clinical trials"
+        },
+        {
+            "code": "04",
+            "definition": "EudraCT (European Union Drug Regulating Authorities Clinical Trials) registration number",
+            "display": "EudraCT Number‎"
+        },
+        {
+            "code": "05",
+            "definition": "A unique identification code given to each clinical study registered on ClinicalTrials.gov.",
+            "display": "NCT number"
+        }
+    ],
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+                }
+            ]
+        }
+    ],
+    "content": "complete",
+    "date": "2020-08-10",
+    "description": "Codes for GECCO eCRF parameters where no code from standard terminologies is available.",
+    "experimental": true,
+    "name": "Parameter-Codes-eCRF",
+    "publisher": "Charité",
+    "status": "draft",
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+    "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ecrf-parameter-codes",
+    "resourceType": "CodeSystem"
+}

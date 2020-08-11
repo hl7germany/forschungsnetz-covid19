@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/patient-in-icu" />
+  <name value="PatientInICU" />
+  <title value="Patient in ICU" />
+  <status value="draft" />
+  <description value="This observation captures if the patient is currently treated in the intensive care unit." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:icu">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.code.coding" />
+      <sliceName value="icu" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes" />
+        <code value="01" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:icu.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:icu.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na" />
+      </binding>
+    </element>
+    <element id="Observation.value[x].coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.value[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x].coding:snomed">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.value[x].coding" />
+      <sliceName value="snomed" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x].coding:snomed.system">
+      <path value="Observation.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x].coding:snomed.code">
+      <path value="Observation.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

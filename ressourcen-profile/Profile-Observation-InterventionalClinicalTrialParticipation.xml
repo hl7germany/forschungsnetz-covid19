@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/interventional-clinical-trial-participation" />
+  <name value="InterventionalClinicalTrialParticipation" />
+  <title value="Interventional Clinical Trial Participation" />
+  <status value="draft" />
+  <publisher value="Charité" />
+  <description value="This observation captures if the patient participated in one or more interventional clinical trials." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:trialParticipation">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.code.coding" />
+      <sliceName value="trialParticipation" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes" />
+        <code value="03" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:trialParticipation.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:trialParticipation.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na" />
+      </binding>
+    </element>
+    <element id="Observation.value[x].coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.value[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x].coding:snomed">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.value[x].coding" />
+      <sliceName value="snomed" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x].coding:snomed.system">
+      <path value="Observation.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x].coding:snomed.code">
+      <path value="Observation.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:eudraCT">
+      <path value="Observation.component" />
+      <sliceName value="eudraCT" />
+      <short value="EudraCT number" />
+      <definition value="EudraCT (European Union Drug Regulating Authorities Clinical Trials) registration number" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:eudraCT.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes" />
+          <code value="04" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:eudraCT.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:eudraCT.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:eudraCT.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:eudraCT.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:nct">
+      <path value="Observation.component" />
+      <sliceName value="nct" />
+      <short value="NCT number" />
+      <definition value="A unique identification code given to each clinical study registered on ClinicalTrials.gov." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:nct.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes" />
+          <code value="05" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:nct.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:nct.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:nct.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:nct.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
