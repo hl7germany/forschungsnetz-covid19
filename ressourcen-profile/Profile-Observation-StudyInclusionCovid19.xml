@@ -60,12 +60,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:studyInclusion">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="studyInclusion" />
       <min value="1" />
@@ -86,6 +80,11 @@
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]">
@@ -100,12 +99,6 @@
       </binding>
     </element>
     <element id="Observation.value[x].coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.value[x].coding" />
       <slicing>
         <discriminator>
@@ -117,12 +110,6 @@
       <min value="1" />
     </element>
     <element id="Observation.value[x].coding:snomed">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.value[x].coding" />
       <sliceName value="snomed" />
       <min value="1" />

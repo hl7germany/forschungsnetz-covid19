@@ -25,6 +25,11 @@
             "code": "05",
             "definition": "A unique identification code given to each clinical study registered on ClinicalTrials.gov.",
             "display": "NCT number"
+        },
+        {
+            "code": "06",
+            "definition": "Sepsis-related organ failure assessment score",
+            "display": "SOFA-Score"
         }
     ],
     "contact": [

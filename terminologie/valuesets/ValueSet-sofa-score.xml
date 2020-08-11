@@ -1,0 +1,24 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+      <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+    </meta>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score" />
+    <version value="20200811" />
+    <name value="SOFA-Score" />
+    <status value="draft" />
+    <experimental value="true" />
+    <date value="2020-08-11" />
+    <publisher value="Charité" />
+    <contact>
+      <telecom>
+        <system value="url" />
+        <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+      </telecom>
+    </contact>
+    <description value="SOFA score based on: Vincent JL, Moreno R, Takala J, et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine. Intensive Care Med. 1996;22(7):707-710. doi:10.1007/BF01709751." />
+    <compose>
+      <include>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+      </include>
+    </compose>
+  </ValueSet>

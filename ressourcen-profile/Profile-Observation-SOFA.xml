@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score" />
+  <name value="SOFA" />
+  <title value="SOFA Score" />
+  <status value="draft" />
+  <publisher value="Charité" />
+  <description value="Observation to capture the SOFA score. Based on: Vincent JL, Moreno R, Takala J, et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine. Intensive Care Med. 1996;22(7):707-710. doi:10.1007/BF01709751" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:survey">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.category.coding" />
+      <sliceName value="survey" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="survey" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:survey.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.category.coding:survey.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sofaScore">
+      <path value="Observation.code.coding" />
+      <sliceName value="sofaScore" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes" />
+        <code value="06" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding:sofaScore.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:sofaScore.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:respiratorySystem">
+      <path value="Observation.component" />
+      <sliceName value="respiratorySystem" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:respiratorySystem.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+          <code value="resp" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:respiratorySystem.code.coding">
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:respiratorySystem.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:respiratorySystem.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:respiratorySystem.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score" />
+      </binding>
+    </element>
+    <element id="Observation.component:respiratorySystem.value[x].coding">
+      <path value="Observation.component.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:respiratorySystem.value[x].coding.system">
+      <path value="Observation.component.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:respiratorySystem.value[x].coding.code">
+      <path value="Observation.component.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:nervousSystem">
+      <path value="Observation.component" />
+      <sliceName value="nervousSystem" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:nervousSystem.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+          <code value="ns" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:nervousSystem.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:nervousSystem.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:nervousSystem.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:nervousSystem.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score" />
+      </binding>
+    </element>
+    <element id="Observation.component:nervousSystem.value[x].coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:nervousSystem.value[x].coding.system">
+      <path value="Observation.component.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:nervousSystem.value[x].coding.code">
+      <path value="Observation.component.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:cardiovascularSystem">
+      <path value="Observation.component" />
+      <sliceName value="cardiovascularSystem" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:cardiovascularSystem.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+          <code value="cvs" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:cardiovascularSystem.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:cardiovascularSystem.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:cardiovascularSystem.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:cardiovascularSystem.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score" />
+      </binding>
+    </element>
+    <element id="Observation.component:cardiovascularSystem.value[x].coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:cardiovascularSystem.value[x].coding.system">
+      <path value="Observation.component.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:cardiovascularSystem.value[x].coding.code">
+      <path value="Observation.component.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:liver">
+      <path value="Observation.component" />
+      <sliceName value="liver" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:liver.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+          <code value="liv" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:liver.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:liver.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:liver.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:liver.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score" />
+      </binding>
+    </element>
+    <element id="Observation.component:liver.value[x].coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:liver.value[x].coding.system">
+      <path value="Observation.component.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:liver.value[x].coding.code">
+      <path value="Observation.component.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:coagulation">
+      <path value="Observation.component" />
+      <sliceName value="coagulation" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:coagulation.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+          <code value="coa" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:coagulation.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:coagulation.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:coagulation.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:coagulation.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score" />
+      </binding>
+    </element>
+    <element id="Observation.component:coagulation.value[x].coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:coagulation.value[x].coding.system">
+      <path value="Observation.component.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:coagulation.value[x].coding.code">
+      <path value="Observation.component.value[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:kidneys">
+      <path value="Observation.component" />
+      <sliceName value="kidneys" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:kidneys.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+          <code value="kid" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:kidneys.code.coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:kidneys.code.coding.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:kidneys.code.coding.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:kidneys.value[x]">
+      <path value="Observation.component.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score" />
+      </binding>
+    </element>
+    <element id="Observation.component:kidneys.value[x].coding">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Observation.component.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:kidneys.value[x].coding.system">
+      <path value="Observation.component.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:kidneys.value[x].coding.code">
+      <path value="Observation.component.value[x].coding.code" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
