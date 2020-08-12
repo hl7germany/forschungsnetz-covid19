@@ -49,6 +49,27 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition.clinicalStatus.extension">
+      <path value="Condition.clinicalStatus.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.clinicalStatus.extension:dataAbsentReason">
+      <path value="Condition.clinicalStatus.extension" />
+      <sliceName value="dataAbsentReason" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Condition.category">
       <path value="Condition.category" />
       <min value="1" />
@@ -102,6 +123,54 @@
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases" />
       </binding>
+    </element>
+    <element id="Condition.onset[x]:onsetPeriod">
+      <path value="Condition.onset[x]" />
+      <sliceName value="onsetPeriod" />
+    </element>
+    <element id="Condition.onset[x]:onsetPeriod.extension">
+      <path value="Condition.onset[x].extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.onset[x]:onsetPeriod.extension:dataAbsentReason">
+      <path value="Condition.onset[x].extension" />
+      <sliceName value="dataAbsentReason" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
+    </element>
+    <element id="Condition.onset[x]:onsetDateTime">
+      <path value="Condition.onset[x]" />
+      <sliceName value="onsetDateTime" />
+    </element>
+    <element id="Condition.onset[x]:onsetDateTime.extension">
+      <path value="Condition.onset[x].extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.onset[x]:onsetDateTime.extension:dataAbsentReason">
+      <path value="Condition.onset[x].extension" />
+      <sliceName value="dataAbsentReason" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
