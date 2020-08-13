@@ -3,7 +3,7 @@
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-pnl-ser-pl-ia" />
   <name value="SarsCoV2AbPnlSerPlIA" />
   <title value="SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay" />
-  <status value="active" />
+  <status value="draft" />
   <experimental value="true" />
   <publisher value="Charité" />
   <description value="SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay" />
