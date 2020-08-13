@@ -10,7 +10,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationStatement" />
-  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatement" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement" />
   <derivation value="constraint" />
   <differential>
     <element id="MedicationStatement.meta">
