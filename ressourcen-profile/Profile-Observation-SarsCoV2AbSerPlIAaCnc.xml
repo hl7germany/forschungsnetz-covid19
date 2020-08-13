@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr" />
-  <name value="SarsCoV2RTPCR" />
-  <title value="Sars-CoV-2-RT-PCR" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ia-acnc" />
+  <name value="SarsCoV2AbSerPlIAaCnc" />
+  <title value="SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay" />
   <status value="draft" />
-  <publisher value="Charité" />
-  <description value="Qualitative detection of SARS-CoV-2 in respiratory specimens by RT-PCR" />
+  <description value="SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -141,7 +140,6 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -149,28 +147,25 @@
       </extension>
       <path value="Observation.code.coding.display" />
     </element>
-    <element id="Observation.code.coding:loinc-resp">
+    <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
-      <sliceName value="loinc-resp" />
+      <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="94500-6" />
+        <code value="94769-7" />
       </patternCoding>
-      <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:loinc-resp.system">
+    <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:loinc-resp.code">
+    <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:loinc-resp.display">
+    <element id="Observation.code.coding:loinc.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -280,19 +275,30 @@
       </extension>
       <path value="Observation.performer.display" />
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Observation.value[x].unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.value[x].unit" />
+    </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
-      <max value="0" />
+    </element>
+    <element id="Observation.value[x]:valueQuantity.code">
+      <path value="Observation.value[x].code" />
+      <fixedCode value="[IU]/mL" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.value[x]" />
+      <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
-      <min value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive" />
-      </binding>
+      <max value="0" />
     </element>
     <element id="Observation.dataAbsentReason.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

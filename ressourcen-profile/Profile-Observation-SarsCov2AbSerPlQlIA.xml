@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr" />
-  <name value="SarsCoV2RTPCR" />
-  <title value="Sars-CoV-2-RT-PCR" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ql-ia" />
+  <name value="SarsCoV2AbSerPlQlIA" />
+  <title value="SARS-CoV-2 (COVID-19) Ab [Presence] in Serum or Plasma by Immunoassay" />
   <status value="draft" />
   <publisher value="Charité" />
-  <description value="Qualitative detection of SARS-CoV-2 in respiratory specimens by RT-PCR" />
+  <description value="SARS-CoV-2 (COVID-19) Ab [Presence] in Serum or Plasma by Immunoassay" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -52,6 +52,22 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Observation.identifier.type.coding.display" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2">
+      <path value="Observation.identifier.type.coding" />
+      <sliceName value="observationInstanceV2" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.identifier.type.coding.display" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.identifier.type.text" />
     </element>
     <element id="Observation.identifier:analyseBefundCode.assigner.identifier.type.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -125,11 +141,43 @@
       </extension>
       <path value="Observation.partOf.display" />
     </element>
+    <element id="Observation.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
+      <path value="Observation.status" />
+    </element>
     <element id="Observation.category.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="Observation.category.coding.display" />
+    </element>
+    <element id="Observation.category.coding:loinc-observation">
+      <path value="Observation.category.coding" />
+      <sliceName value="loinc-observation" />
+    </element>
+    <element id="Observation.category.coding:loinc-observation.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.category.coding.display" />
+    </element>
+    <element id="Observation.category.coding:observation-category">
+      <path value="Observation.category.coding" />
+      <sliceName value="observation-category" />
+    </element>
+    <element id="Observation.category.coding:observation-category.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.category.coding.display" />
+    </element>
+    <element id="Observation.category.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.category.text" />
     </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
@@ -141,7 +189,6 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -149,32 +196,41 @@
       </extension>
       <path value="Observation.code.coding.display" />
     </element>
-    <element id="Observation.code.coding:loinc-resp">
+    <element id="Observation.code.coding:loinc">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding" />
-      <sliceName value="loinc-resp" />
+      <sliceName value="loinc" />
       <min value="1" />
       <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="94500-6" />
+        <code value="94762-2" />
       </patternCoding>
-      <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:loinc-resp.system">
+    <element id="Observation.code.coding:loinc.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:loinc-resp.code">
+    <element id="Observation.code.coding:loinc.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding:loinc-resp.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.code.coding.display" />
     </element>
     <element id="Observation.code.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -281,18 +337,35 @@
       <path value="Observation.performer.display" />
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.value[x]" />
+      <path value="Observation.valueQuantity" />
       <sliceName value="valueQuantity" />
       <max value="0" />
     </element>
+    <element id="Observation.value[x]:valueQuantity.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.valueQuantity.unit" />
+    </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.value[x]" />
+      <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
-      <min value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive" />
       </binding>
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.valueCodeableConcept.coding.display" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.valueCodeableConcept.text" />
     </element>
     <element id="Observation.dataAbsentReason.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -359,6 +432,12 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Observation.specimen.identifier.assigner.display" />
+    </element>
+    <element id="Observation.specimen.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Observation.specimen.display" />
     </element>
     <element id="Observation.device.identifier.type.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
