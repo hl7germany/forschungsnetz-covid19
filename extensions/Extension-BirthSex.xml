@@ -137,9 +137,12 @@
           <path value="$this" />
         </discriminator>
       </slicing>
+      <type>
+        <code value="code" />
+      </type>
     </element>
     <element id="Extension.value[x]:valueCode">
-      <path value="Extension.valueCode" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueCode" />
       <type>
         <code value="code" />
