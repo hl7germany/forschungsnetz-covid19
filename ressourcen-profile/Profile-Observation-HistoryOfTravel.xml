@@ -67,12 +67,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:socialHistory">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.category.coding" />
       <sliceName value="socialHistory" />
       <min value="1" />
@@ -246,7 +240,8 @@
       </type>
       <binding>
         <strength value="preferred" />
-        <valueSet value="http://fhir.logicahealth.org/covid19/ValueSet/country-codes-vs" />
+        <description value="ISO 3166 Part 1 2-letter codes" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/iso3166-1-2" />
       </binding>
     </element>
     <element id="Observation.component:State">
