@@ -137,6 +137,27 @@
       <path value="Immunization.vaccineCode.coding.code" />
       <min value="1" />
     </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="absentOrUnknownImmunization" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips" />
+      </binding>
+    </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <min value="1" />
+    </element>
     <element id="Immunization.patient">
       <path value="Immunization.patient" />
       <mustSupport value="true" />
@@ -172,9 +193,6 @@
       <min value="1" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="TargetDisease" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease" />
       </binding>
