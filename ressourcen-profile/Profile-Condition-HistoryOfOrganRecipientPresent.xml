@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/OrganRecipientPresent" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/history-of-organ-recipient-present" />
   <name value="HistoryOfOrganRecipientPresent" />
   <title value="History of Organ Recipient Present" />
   <status value="draft" />
