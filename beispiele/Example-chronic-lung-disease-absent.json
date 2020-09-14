@@ -1,0 +1,64 @@
+{
+    "resourceType": "Condition",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-absent"
+        ]
+    },
+    "extension": [
+        {
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-absence",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "410594000",
+                        "display": "Definitely NOT present (qualifier value)"
+                    }
+                ],
+                "text": "{Condition} is confirmed absent."
+            }
+        }
+    ],
+    "clinicalStatus": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "not-applicable"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "418112009",
+                    "display": "Pulmonary medicine (qualifier value)"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "413839001",
+                "display": "Chronic lung disease (disorder)"
+            }
+        ],
+        "text": "{Lung Disease}"
+    },
+    "subject": {
+        "reference": "Patient/example"
+    },
+    "onsetDateTime": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "not-applicable"
+            }
+        ]
+    },
+    "recordedDate": "2020-06-16"
+}
