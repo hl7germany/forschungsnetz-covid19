@@ -77,9 +77,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Consent.provision">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="provision" />
-      </extension>
       <path value="Consent.provision" />
       <min value="1" />
       <mustSupport value="true" />
@@ -90,43 +87,9 @@
       <max value="1" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ConsentContentCode" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/resuscitation-status" />
       </binding>
-    </element>
-    <element id="Consent.provision.code.extension">
-      <path value="Consent.provision.code.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Consent.provision.code.extension:dataAbsentReason">
-      <path value="Consent.provision.code.extension" />
-      <sliceName value="dataAbsentReason" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Consent.provision.code.extension:dataAbsentReason.value[x]">
-      <path value="Consent.provision.code.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Consent.provision.code.extension:dataAbsentReason.value[x]:valueCode">
-      <path value="Consent.provision.code.extension.value[x]" />
-      <sliceName value="valueCode" />
-      <min value="1" />
     </element>
     <element id="Consent.provision.code.coding">
       <path value="Consent.provision.code.coding" />
