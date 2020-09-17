@@ -34,6 +34,10 @@
                 <code value="304253006"/>
                 <display value="Not for resuscitation (finding)"/>
             </concept>
+            <concept>
+                <code value="261665006"/>
+                <display value="Unknown (qualifier value)"/>
+            </concept>
         </include>
     </compose>
 </ValueSet>
