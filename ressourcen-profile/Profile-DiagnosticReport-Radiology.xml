@@ -146,11 +146,8 @@
       <max value="1" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="AdjunctDiagnosis" />
-        </extension>
         <strength value="preferred" />
-        <valueSet value="http://charite.de/fhir/ValueSet/radiology-findings" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-findings" />
       </binding>
     </element>
     <element id="DiagnosticReport.conclusionCode.coding">
