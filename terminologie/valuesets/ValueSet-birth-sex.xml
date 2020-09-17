@@ -33,6 +33,10 @@
                 <code value="female"/>
                 <display value="Female"/>
             </concept>
+            <concept>
+                <code value="unknown"/>
+                <display value="Unknown"/>
+            </concept>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/gender-amtlich-de"/>
