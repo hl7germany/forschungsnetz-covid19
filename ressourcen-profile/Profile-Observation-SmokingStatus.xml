@@ -24,16 +24,13 @@
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
-      </type>
       <patternCodeableConcept>
         <coding>
           <system value="http://loinc.org" />
           <code value="72166-2" />
         </coding>
       </patternCodeableConcept>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
@@ -67,9 +64,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Observation.effective[x].extension:myExtension">
+    <element id="Observation.effective[x].extension:dataAbsentReason">
       <path value="Observation.effective[x].extension" />
-      <sliceName value="myExtension" />
+      <sliceName value="dataAbsentReason" />
       <short value="effective[x] absence reason" />
       <definition value="Provides a reason why the effectiveTime is missing." />
       <type>
@@ -88,11 +85,10 @@
       </slicing>
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.value[x]" />
+      <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <binding>
         <strength value="required" />
