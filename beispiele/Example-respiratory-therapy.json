@@ -1,0 +1,31 @@
+{
+	"resourceType": "Procedure",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
+		]
+	},
+	"status": "in-progress",
+	"category": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "277132007",
+				"display": "Therapeutic procedure (procedure)"
+			}
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "53950000",
+				"display": "Respiratory therapy (procedure)"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/example"
+	},
+	"performedDateTime": "2020-09-21"
+}
