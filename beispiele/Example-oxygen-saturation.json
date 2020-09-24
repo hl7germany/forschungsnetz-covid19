@@ -1,0 +1,61 @@
+{
+	"resourceType": "Observation",
+	"id": "63bd2c95-baa5-4a9a-8075-80f8c22a38ff",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation"
+		]
+	},
+	"identifier": [
+		{
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+						"code": "OBI"
+					}
+				]
+			},
+			"system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+			"value": "2708-6_oxygenSaturation",
+			"assigner": {
+				"reference": "Organization/Charité"
+			}
+		}
+	],
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://loinc.org",
+					"code": "26436-6"
+				},
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2708-6",
+				"display": "SaO2% (BldA) [Mass fraction]"
+			}
+		],
+		"text": "Oxygen saturation in Arterial blood"
+	},
+	"subject": {
+		"reference": "Patient/a481a002-0146-4215-944f-bf1617a0d5b5"
+	},
+	"effectiveDateTime": "2020-09-21",
+	"valueQuantity": {
+		"value": 98,
+		"unit": "%",
+		"system": "http://unitsofmeasure.org",
+		"code": "%"
+	}
+}

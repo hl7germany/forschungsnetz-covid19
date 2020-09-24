@@ -1,0 +1,23 @@
+{
+	"resourceType": "Patient",
+	"id": "a481a002-0146-4215-944f-bf1617a0d5b5",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+		]
+	},
+	"extension": [
+		{
+			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/birth-sex",
+			"valueCode": "female"
+		},
+		{
+			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+			"valueCoding": {
+				"system": "http://snomed.info/sct",
+				"code": "186019001",
+				"display": "Other ethnic, mixed origin (ethnic group)"
+			}
+		}
+	]
+}

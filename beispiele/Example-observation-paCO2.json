@@ -1,0 +1,61 @@
+{
+	"resourceType": "Observation",
+	"id": "e6021602-29e9-4fdf-aa8f-495a7bf44ce7",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure"
+		]
+	},
+	"identifier": [
+		{
+			"type": {
+				"coding": [
+					{
+						"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+						"code": "OBI"
+					}
+				]
+			},
+			"system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+			"value": "2019-8_paCO2",
+			"assigner": {
+				"reference": "Organization/Charité"
+			}
+		}
+	],
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://loinc.org",
+					"code": "26436-6"
+				},
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "laboratory"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "2019-8",
+				"display": "CO2 (BldA) [Partial pressure]"
+			}
+		],
+		"text": "Carbon dioxide [Partial pressure] in Arterial blood"
+	},
+	"subject": {
+		"reference": "Patient/a481a002-0146-4215-944f-bf1617a0d5b5"
+	},
+	"effectiveDateTime": "2020-09-21",
+	"valueQuantity": {
+		"value": 44,
+		"unit": "mmHg",
+		"system": "http://unitsofmeasure.org",
+		"code": "mm[Hg]"
+	}
+}
