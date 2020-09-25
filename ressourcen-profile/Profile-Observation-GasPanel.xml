@@ -207,6 +207,7 @@
       <path value="Observation.category.coding" />
       <sliceName value="blood-gas-studies" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:blood-gas-studies.system">
       <path value="Observation.category.coding.system" />

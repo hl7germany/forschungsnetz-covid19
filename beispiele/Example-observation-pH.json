@@ -1,6 +1,6 @@
 {
 	"resourceType": "Observation",
-	"id": "b84b5eba-d768-4938-bccf-593d662b2f38",
+	"id": "ac8b697d-7088-4fbe-9ece-51df2d3f1e04",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH"
@@ -34,6 +34,10 @@
 				{
 					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
 					"code": "laboratory"
+				},
+				{
+					"system": "http://loinc.org",
+					"code": "18767-4"
 				}
 			]
 		}
@@ -49,7 +53,7 @@
 		"text": "pH of Arterial blood"
 	},
 	"subject": {
-		"reference": "Patient/a481a002-0146-4215-944f-bf1617a0d5b5"
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
 	},
 	"effectiveDateTime": "2020-09-21",
 	"valueQuantity": {

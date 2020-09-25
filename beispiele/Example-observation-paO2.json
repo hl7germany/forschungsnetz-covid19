@@ -1,6 +1,6 @@
 {
 	"resourceType": "Observation",
-	"id": "5d97ebb6-9508-4265-9622-2fc7c11cc32f",
+	"id": "e39a18a6-63d7-4117-a38e-1f29be15f6fa",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-partial-pressure"
@@ -34,6 +34,10 @@
 				{
 					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
 					"code": "laboratory"
+				},
+				{
+					"system": "http://loinc.org",
+					"code": "18767-4"
 				}
 			]
 		}
@@ -49,7 +53,7 @@
 		"text": "Oxygen [Partial pressure] in Arterial blood"
 	},
 	"subject": {
-		"reference": "Patient/a481a002-0146-4215-944f-bf1617a0d5b5"
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
 	},
 	"effectiveDateTime": "2020-09-21",
 	"valueQuantity": {
