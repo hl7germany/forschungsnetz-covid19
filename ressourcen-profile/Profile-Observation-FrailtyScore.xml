@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score" />
-  <name value="ClinicalFrailtyScale" />
-  <title value="Clinical Frailty Scale" />
+  <name value="ClinicalFrailtyScaleScore" />
+  <title value="Clinical Frailty Scale Score" />
   <status value="draft" />
   <date value="2020-05-20" />
   <publisher value="Charité" />
@@ -12,7 +12,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
-  <description value="Clinical Frailty Scale" />
+  <description value="Clinical Frailty Scale score" />
   <copyright value="This artefact includes content under copyright from Geriatric Medicine Research, Dalhousie University, Halifax, Canada. Implementers of these artefacts must complete a Permission for Use Agreement - for more information visit https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -51,6 +51,49 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
+    </element>
+    <element id="Observation.meta.profile">
+      <path value="Observation.meta.profile" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category">
+      <path value="Observation.category.coding" />
+      <sliceName value="observation-category" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="survey" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.category.coding:observation-category.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
