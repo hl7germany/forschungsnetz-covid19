@@ -1,69 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/FiO2" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/inhaled-oxygen-concentration" />
   <name value="FiO2" />
   <title value="FiO2" />
   <status value="draft" />
-  <date value="2020-05-19" />
   <publisher value="Charité" />
-  <contact>
-    <telecom>
-      <system value="url" />
-      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
-    </telecom>
-  </contact>
   <description value="Fraction of inspired oxygen" />
   <fhirVersion value="4.0.1" />
-  <mapping>
-    <identity value="workflow" />
-    <uri value="http://hl7.org/fhir/workflow" />
-    <name value="Workflow Pattern" />
-  </mapping>
-  <mapping>
-    <identity value="sct-concept" />
-    <uri value="http://snomed.info/conceptdomain" />
-    <name value="SNOMED CT Concept Domain Binding" />
-  </mapping>
-  <mapping>
-    <identity value="v2" />
-    <uri value="http://hl7.org/v2" />
-    <name value="HL7 v2 Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="rim" />
-    <uri value="http://hl7.org/v3" />
-    <name value="RIM Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="w5" />
-    <uri value="http://hl7.org/fhir/fivews" />
-    <name value="FiveWs Pattern Mapping" />
-  </mapping>
-  <mapping>
-    <identity value="sct-attr" />
-    <uri value="http://snomed.org/attributebinding" />
-    <name value="SNOMED CT Attribute Binding" />
-  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category.coding:blood-gas-studies">
+      <path value="Observation.category.coding" />
+      <sliceName value="blood-gas-studies" />
+      <max value="1" />
+    </element>
+    <element id="Observation.category.coding:blood-gas-studies.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <patternUri value="http://loinc.org" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:blood-gas-studies.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <patternCode value="18767-4" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:loinc">
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
+      <min value="1" />
       <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
@@ -73,12 +55,10 @@
     <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://loinc.org" />
     </element>
     <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <patternCode value="3150-0" />
     </element>
     <element id="Observation.code.coding:snomed">
       <path value="Observation.code.coding" />
@@ -92,48 +72,27 @@
     <element id="Observation.code.coding:snomed.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://snomed.info/sct" />
     </element>
     <element id="Observation.code.coding:snomed.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <patternCode value="250774007" />
     </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-      </type>
-    </element>
-    <element id="Observation.value[x]">
+    <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
-      <type>
-        <code value="Quantity" />
-      </type>
+      <sliceName value="valueQuantity" />
     </element>
-    <element id="Observation.value[x].value">
-      <path value="Observation.value[x].value" />
-      <min value="1" />
-    </element>
-    <element id="Observation.value[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Observation.value[x].unit" />
-      <min value="1" />
-    </element>
-    <element id="Observation.value[x].system">
-      <path value="Observation.value[x].system" />
-      <min value="1" />
-      <fixedUri value="http://unitsofmeasure.org" />
-    </element>
-    <element id="Observation.value[x].code">
+    <element id="Observation.value[x]:valueQuantity.code">
       <path value="Observation.value[x].code" />
-      <min value="1" />
       <fixedCode value="%" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <path value="Observation.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <binding>
+        <strength value="example" />
+        <description value="O2_mask / Oxygen by mask" />
+        <valueSet value="http://loinc.org/vs/LL738-6" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>

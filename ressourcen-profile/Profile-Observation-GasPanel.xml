@@ -49,9 +49,185 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
+    </element>
+    <element id="Observation.meta.source">
+      <path value="Observation.meta.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.meta.profile">
+      <path value="Observation.meta.profile" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode">
+      <path value="Observation.identifier" />
+      <sliceName value="analyseBefundCode" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type">
+      <path value="Observation.identifier.type" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+          <code value="OBI" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding">
+      <path value="Observation.identifier.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2">
+      <path value="Observation.identifier.type.coding" />
+      <sliceName value="observationInstanceV2" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.system">
+      <path value="Observation.identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.code">
+      <path value="Observation.identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="OBI" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.system">
+      <path value="Observation.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.value">
+      <path value="Observation.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.identifier:analyseBefundCode.assigner">
+      <path value="Observation.identifier.assigner" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="system" />
+        </discriminator>
+        <discriminator>
+          <type value="pattern" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:loinc-observation">
+      <path value="Observation.category.coding" />
+      <sliceName value="loinc-observation" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:loinc-observation.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <patternUri value="http://loinc.org" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:loinc-observation.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <patternCode value="26436-6" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category">
+      <path value="Observation.category.coding" />
+      <sliceName value="observation-category" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <patternUri value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:observation-category.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <patternCode value="laboratory" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:blood-gas-studies">
+      <path value="Observation.category.coding" />
+      <sliceName value="blood-gas-studies" />
+      <max value="1" />
+    </element>
+    <element id="Observation.category.coding:blood-gas-studies.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <patternUri value="http://loinc.org" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:blood-gas-studies.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <patternCode value="18767-4" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, NR STATS, PATH.PROTOCOLS.*}  } }" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips" />
+      </binding>
     </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
@@ -138,6 +314,7 @@
         <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure" />
         <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-partial-pressure" />
         <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation" />
+        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/inhaled-oxygen-concentration" />
       </type>
       <mustSupport value="true" />
     </element>

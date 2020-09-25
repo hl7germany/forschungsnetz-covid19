@@ -50,6 +50,23 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.category.coding:blood-gas-studies">
+      <path value="Observation.category.coding" />
+      <sliceName value="blood-gas-studies" />
+      <max value="1" />
+    </element>
+    <element id="Observation.category.coding:blood-gas-studies.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+      <patternUri value="http://loinc.org" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding:blood-gas-studies.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+      <patternCode value="18767-4" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
       <slicing>
