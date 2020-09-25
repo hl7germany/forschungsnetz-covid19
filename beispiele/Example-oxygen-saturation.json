@@ -43,7 +43,7 @@
 			{
 				"system": "http://loinc.org",
 				"code": "2708-6",
-				"display": "SaO2% (BldA) [Mass fraction]"
+				"display": "Oxygen saturation in Arterial blood"
 			}
 		],
 		"text": "Oxygen saturation in Arterial blood"

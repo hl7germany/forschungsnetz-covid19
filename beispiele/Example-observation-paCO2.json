@@ -43,7 +43,7 @@
 			{
 				"system": "http://loinc.org",
 				"code": "2019-8",
-				"display": "CO2 (BldA) [Partial pressure]"
+				"display": "Carbon dioxide [Partial pressure] in Arterial blood"
 			}
 		],
 		"text": "Carbon dioxide [Partial pressure] in Arterial blood"

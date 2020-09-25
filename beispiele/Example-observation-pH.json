@@ -43,7 +43,7 @@
 			{
 				"system": "http://loinc.org",
 				"code": "2744-1",
-				"display": "pH (BldA)"
+				"display": "pH of Arterial blood"
 			}
 		],
 		"text": "pH of Arterial blood"

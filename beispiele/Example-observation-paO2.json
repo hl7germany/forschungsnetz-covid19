@@ -43,7 +43,7 @@
 			{
 				"system": "http://loinc.org",
 				"code": "2703-7",
-				"display": "Oxygen (BldA) [Partial pressure]"
+				"display": "Oxygen [Partial pressure] in Arterial blood"
 			}
 		],
 		"text": "Oxygen [Partial pressure] in Arterial blood"
