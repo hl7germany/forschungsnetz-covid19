@@ -187,17 +187,14 @@
     <element id="Observation.component:TravelStartDate.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:TravelStartDate.code.coding.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="82752-7" />
     </element>
     <element id="Observation.component:TravelStartDate.code.coding.display">
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
-      <fixedString value="Date travel started" />
     </element>
     <element id="Observation.component:TravelStartDate.value[x]">
       <path value="Observation.component.value[x]" />
@@ -228,17 +225,14 @@
     <element id="Observation.component:Country.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:Country.code.coding.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="94651-7" />
     </element>
     <element id="Observation.component:Country.code.coding.display">
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
-      <fixedString value="Country of travel" />
     </element>
     <element id="Observation.component:Country.value[x]">
       <path value="Observation.component.value[x]" />
@@ -274,17 +268,14 @@
     <element id="Observation.component:State.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:State.code.coding.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="82754-3" />
     </element>
     <element id="Observation.component:State.code.coding.display">
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
-      <fixedString value="State of travel" />
     </element>
     <element id="Observation.component:State.value[x]">
       <path value="Observation.component.value[x]" />
@@ -319,17 +310,14 @@
     <element id="Observation.component:City.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:City.code.coding.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="94653-3" />
     </element>
     <element id="Observation.component:City.code.coding.display">
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
-      <fixedString value="City of travel" />
     </element>
     <element id="Observation.component:City.value[x]">
       <path value="Observation.component.value[x]" />
@@ -360,17 +348,14 @@
     <element id="Observation.component:TravelEndDate.code.coding.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://loinc.org" />
     </element>
     <element id="Observation.component:TravelEndDate.code.coding.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="91560-3" />
     </element>
     <element id="Observation.component:TravelEndDate.code.coding.display">
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
-      <fixedString value="Date of departure from travel destination" />
     </element>
     <element id="Observation.component:TravelEndDate.value[x]">
       <path value="Observation.component.value[x]" />
