@@ -49,6 +49,13 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
+    </element>
+    <element id="Observation.meta.profile">
+      <path value="Observation.meta.profile" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
@@ -108,7 +115,7 @@
       <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
-        <code value="88636-6" />
+        <code value="8691-8" />
       </patternCoding>
       <mustSupport value="true" />
     </element>
@@ -186,9 +193,6 @@
       <min value="1" />
     </element>
     <element id="Observation.component:TravelStartDate.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
     </element>
@@ -227,9 +231,6 @@
       <min value="1" />
     </element>
     <element id="Observation.component:Country.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
     </element>
@@ -273,9 +274,6 @@
       <min value="1" />
     </element>
     <element id="Observation.component:State.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
     </element>
@@ -318,9 +316,6 @@
       <min value="1" />
     </element>
     <element id="Observation.component:City.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
     </element>
@@ -359,9 +354,6 @@
       <min value="1" />
     </element>
     <element id="Observation.component:TravelEndDate.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.component.code.coding.display" />
       <min value="1" />
     </element>
