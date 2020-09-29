@@ -1,0 +1,60 @@
+{
+    "resourceType": "Immunization",
+    "id": "86cb9236-504d-421f-996d-5ff29cef8b15",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization"
+        ]
+    },
+    "status": "completed",
+    "vaccineCode": {
+        "coding": [
+            {
+                "system": "http://fhir.de/CodeSystem/dimdi/atc",
+                "code": "J07AL",
+                "display": "Pneumokokken-Impfstoffe"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "333598008",
+                "display": "Pneumococcal vaccine (product)"
+            }
+        ],
+        "text": "Pneumococcal vaccine"
+    },
+    "patient": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "occurrenceDateTime": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "unknown"
+            }
+        ]
+    },
+    "protocolApplied": [
+        {
+            "doseNumberString": {
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                        "valueCode": "unknown"
+                    }
+                ]
+            },
+            "targetDisease": [
+                {
+                    "coding": [
+                        {
+                            "code": "16814004",
+                            "display": "Pneumococcal infectious disease (disorder)",
+                            "system": "http://snomed.info/sct"
+                        }
+                    ],
+                    "text": "Pneumococcal infection"
+                }
+            ]
+        }
+    ]
+}
