@@ -1,0 +1,39 @@
+<Condition xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiovascular-diseases-unknown" />
+    </meta>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="261665006" />
+                <display value="Unknown (qualifier value)" />
+            </coding>
+            <text value="Presence of {Condition} is unknown." />
+        </valueCodeableConcept>
+    </extension>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct" />
+             <code value="722414000" />
+            <display value="Vascular medicine (qualifier value)" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="38341003" />
+            <display value="Hypertensive disorder, systemic arterial (disorder)" />
+        </coding>
+        <text value="{Cardiovascular Disease}" />
+    </code>
+    <subject>
+        <reference value="Patient/example" />
+    </subject>
+    <onsetDateTime>
+        <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+            <valueCode value="unknown" />
+        </extension>
+    </onsetDateTime>
+    <recordedDate value="2020-06-16" />
+</Condition>
