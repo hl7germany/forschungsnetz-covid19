@@ -29,8 +29,8 @@
     <code>
         <coding>
             <system value="http://snomed.info/sct" />
-            <code value="84114007" />
-            <display value="Heart failure (disorder)" />
+            <code value="698247007" />
+            <display value="Cardiac arrhythmia (disorder)" />
         </coding>
         <text value="{Cardiovascular Disease}" />
     </code>
