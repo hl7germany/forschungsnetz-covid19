@@ -90,7 +90,7 @@
   </text>
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/birth-sex" />
   <name value="BirthSex" />
-  <title value="Birth Sex Extension" />
+  <title value="Birth Sex" />
   <status value="draft" />
   <publisher value="Charité" />
   <description value="A code classifying the person's sex assigned at birth." />
@@ -142,7 +142,7 @@
       </type>
     </element>
     <element id="Extension.value[x]:valueCode">
-      <path value="Extension.valueCode" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueCode" />
       <type>
         <code value="code" />
