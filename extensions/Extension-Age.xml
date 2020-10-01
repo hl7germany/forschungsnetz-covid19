@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age" />
+  <name value="Age" />
+  <title value="Age" />
+  <status value="draft" />
+  <publisher value="Charité" />
+  <description value="This extension captures a patient's age at a certain point in time." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Patient" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:dateTimeOfDocumentation">
+      <path value="Extension.extension" />
+      <sliceName value="dateTimeOfDocumentation" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:dateTimeOfDocumentation.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="dateTimeOfDocumentation" />
+    </element>
+    <element id="Extension.extension:dateTimeOfDocumentation.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:age">
+      <path value="Extension.extension" />
+      <sliceName value="age" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:age.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="age" />
+    </element>
+    <element id="Extension.extension:age.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Age" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
