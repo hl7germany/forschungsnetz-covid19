@@ -142,7 +142,7 @@
       </type>
     </element>
     <element id="Extension.value[x]:valueCode">
-      <path value="Extension.value[x]" />
+      <path value="Extension.valueCode" />
       <sliceName value="valueCode" />
       <type>
         <code value="code" />
@@ -150,7 +150,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Code for sex assigned at birth" />
-        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/biological-sex" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/birth-sex" />
       </binding>
     </element>
   </differential>
