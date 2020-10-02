@@ -1,0 +1,18 @@
+{
+    "extension": [
+        {
+            "url": "dateTimeOfDocumentation",
+            "valueDateTime": "2020-10-01"
+        },
+        {
+            "url": "age",
+            "valueAge": {
+                "code": "a",
+                "system": "http://unitsofmeasure.org",
+                "unit": "years",
+                "value": 67
+            }
+        }
+    ],
+    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
+}
