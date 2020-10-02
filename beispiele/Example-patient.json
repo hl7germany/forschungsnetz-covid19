@@ -37,5 +37,6 @@
 			],
 			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
 		}
-	]
+	],
+	"birthDate": "1953-09-30"
 }
