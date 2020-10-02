@@ -88,12 +88,12 @@
       </table>
     </div>
   </text>
-  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/birth-sex" />
-  <name value="BirthSex" />
-  <title value="Birth Sex" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/biological-sex" />
+  <name value="BiologicalSex" />
+  <title value="Biological Sex" />
   <status value="draft" />
   <publisher value="Charité" />
-  <description value="A code classifying the person's sex assigned at birth." />
+  <description value="A code classifying the patient's biological sex." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -127,7 +127,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/birth-sex" />
+      <fixedUri value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/biological-sex" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -150,7 +150,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Code for sex assigned at birth" />
-        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/birth-sex" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/biological-sex" />
       </binding>
     </element>
   </differential>

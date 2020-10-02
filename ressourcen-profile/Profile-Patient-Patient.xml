@@ -37,12 +37,14 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group" />
       </type>
     </element>
-    <element id="Patient.extension:birthSex">
+    <element id="Patient.extension:biologicalSex">
       <path value="Patient.extension" />
-      <sliceName value="birthSex" />
+      <sliceName value="biologicalSex" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/birth-sex" />
+        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/biological-sex" />
       </type>
     </element>
     <element id="Patient.extension:age">
