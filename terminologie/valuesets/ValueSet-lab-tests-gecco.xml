@@ -153,10 +153,6 @@
                 <display value="Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma"/>
             </concept>
             <concept>
-                <code value="2529-6"/>
-                <display value="Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid"/>
-            </concept>
-            <concept>
                 <code value="14805-6"/>
                 <display value="Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction"/>
             </concept>
