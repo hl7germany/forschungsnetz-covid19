@@ -86,7 +86,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="http://charite.de/fhir/ValueSet/condition-severity" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/condition-severity" />
       </binding>
     </element>
     <element id="Condition.code.coding:sct">
