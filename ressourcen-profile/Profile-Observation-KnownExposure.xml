@@ -49,6 +49,13 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
+    </element>
+    <element id="Observation.meta.profile">
+      <path value="Observation.meta.profile" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
@@ -67,12 +74,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:socialHistory">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.category.coding" />
       <sliceName value="socialHistory" />
       <min value="1" />
@@ -136,6 +137,10 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <type>
@@ -150,6 +155,30 @@
     <element id="Observation.value[x].coding">
       <path value="Observation.value[x].coding" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
+    <element id="Observation.device">
+      <path value="Observation.device" />
+      <max value="0" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <max value="0" />
+    </element>
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
