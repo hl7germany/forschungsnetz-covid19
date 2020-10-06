@@ -1,9 +1,9 @@
 {
 	"resourceType": "Condition",
-	"id": "13617854-509e-4816-b6bc-ef070b6ff257",
+	"id": "c4133a98-9106-41a9-ac06-97a255e8087c",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-present"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiovascular-diseases-present"
 		]
 	},
 	"extension": [
@@ -26,8 +26,8 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "418112009",
-					"display": "Pulmonary medicine"
+					"code": "722414000",
+					"display": "Vascular medicine"
 				}
 			]
 		}
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "84114007",
+				"display": "Heart failure"
 			}
 		]
 	},

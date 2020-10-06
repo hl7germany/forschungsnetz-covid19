@@ -1,9 +1,9 @@
 {
 	"resourceType": "Condition",
-	"id": "6fb7feb0-c19f-4789-9281-c17672f3b48e",
+	"id": "960a6780-fe7b-4b09-9323-89c5131e74cb",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-unknown"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-liver-diseases-unknown"
 		]
 	},
 	"extension": [
@@ -26,8 +26,8 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "418112009",
-					"display": "Pulmonary medicine"
+					"code": "408472002",
+					"display": "Hepatology"
 				}
 			]
 		}
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "19943007",
+				"display": "Cirrhosis of liver"
 			}
 		]
 	},

@@ -1,9 +1,9 @@
 {
 	"resourceType": "Condition",
-	"id": "bcd77a62-7bd2-4a59-9417-7545048d876f",
+	"id": "81c5dfe0-a925-4284-a734-3841c66ab5ad",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-absent"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-liver-diseases-absent"
 		]
 	},
 	"extension": [
@@ -26,8 +26,8 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "418112009",
-					"display": "Pulmonary medicine"
+					"code": "408472002",
+					"display": "Hepatology"
 				}
 			]
 		}
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "10295004",
+				"display": "Chronic viral hepatitis"
 			}
 		]
 	},

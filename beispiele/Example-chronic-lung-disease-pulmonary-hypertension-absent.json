@@ -1,23 +1,23 @@
 {
 	"resourceType": "Condition",
-	"id": "6fb7feb0-c19f-4789-9281-c17672f3b48e",
+	"id": "62e32994-eb9a-458d-8c2d-8990c7b61650",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-unknown"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-absent"
 		]
 	},
 	"extension": [
 		{
-			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-absence",
 			"valueCodeableConcept": {
 				"coding": [
 					{
 						"system": "http://snomed.info/sct",
-						"code": "261665006",
-						"display": "Unknown (qualifier value)"
+						"code": "410594000",
+						"display": "Definitely NOT present (qualifier value)"
 					}
 				],
-				"text": "Presence of condition is unknown."
+				"text": "Condition is confirmed absent."
 			}
 		}
 	],
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "70995007",
+				"display": "Pulmonary hypertension"
 			}
 		]
 	},

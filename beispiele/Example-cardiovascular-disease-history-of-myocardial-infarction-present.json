@@ -1,9 +1,9 @@
 {
 	"resourceType": "Condition",
-	"id": "13617854-509e-4816-b6bc-ef070b6ff257",
+	"id": "299de23c-1778-4016-9d5c-45cf2941d024",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-present"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiovascular-diseases-present"
 		]
 	},
 	"extension": [
@@ -26,8 +26,8 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "418112009",
-					"display": "Pulmonary medicine"
+					"code": "722414000",
+					"display": "Vascular medicine"
 				}
 			]
 		}
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "417662000:246090004=22298006",
+				"display": "History of myocardial infarction"
 			}
 		]
 	},

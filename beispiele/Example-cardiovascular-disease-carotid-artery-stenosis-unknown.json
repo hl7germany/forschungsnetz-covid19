@@ -1,9 +1,9 @@
 {
 	"resourceType": "Condition",
-	"id": "6fb7feb0-c19f-4789-9281-c17672f3b48e",
+	"id": "ff941d29-61c7-4e49-a643-7cd89964378c",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-unknown"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiovascular-diseases-unknown"
 		]
 	},
 	"extension": [
@@ -26,8 +26,8 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "418112009",
-					"display": "Pulmonary medicine"
+					"code": "722414000",
+					"display": "Vascular medicine"
 				}
 			]
 		}
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "64586002",
+				"display": "Carotid artery stenosis"
 			}
 		]
 	},

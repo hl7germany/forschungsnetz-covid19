@@ -1,9 +1,9 @@
 {
 	"resourceType": "Condition",
-	"id": "bcd77a62-7bd2-4a59-9417-7545048d876f",
+	"id": "634de480-fd31-48b0-a1de-a3f1b8d2aaa2",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-absent"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiovascular-diseases-absent"
 		]
 	},
 	"extension": [
@@ -26,8 +26,8 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "418112009",
-					"display": "Pulmonary medicine"
+					"code": "722414000",
+					"display": "Vascular medicine"
 				}
 			]
 		}
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "698247007",
+				"display": "Cardiac arrhythmia"
 			}
 		]
 	},

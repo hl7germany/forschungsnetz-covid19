@@ -1,6 +1,6 @@
 {
 	"resourceType": "Condition",
-	"id": "6fb7feb0-c19f-4789-9281-c17672f3b48e",
+	"id": "217b2493-04a0-4255-99e4-693c499c7682",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-unknown"
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "78275009",
+				"display": "Obstructive sleep apnea syndrome"
 			}
 		]
 	},

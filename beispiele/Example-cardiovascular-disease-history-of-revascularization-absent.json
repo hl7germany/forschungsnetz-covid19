@@ -1,9 +1,9 @@
 {
 	"resourceType": "Condition",
-	"id": "bcd77a62-7bd2-4a59-9417-7545048d876f",
+	"id": "cefcc933-9821-4bc2-ac89-d932f0e5a8a0",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-absent"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiovascular-diseases-absent"
 		]
 	},
 	"extension": [
@@ -26,8 +26,8 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "418112009",
-					"display": "Pulmonary medicine"
+					"code": "722414000",
+					"display": "Vascular medicine"
 				}
 			]
 		}
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "416940007:363589002=81266008",
+				"display": "History of heart revascularization"
 			}
 		]
 	},

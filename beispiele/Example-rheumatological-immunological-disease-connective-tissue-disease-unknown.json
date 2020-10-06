@@ -1,9 +1,9 @@
 {
 	"resourceType": "Condition",
-	"id": "6fb7feb0-c19f-4789-9281-c17672f3b48e",
+	"id": "96db11a3-0149-4304-9477-fa40e9f2193d",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-unknown"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/rheumatological-immunological-diseases-unknown"
 		]
 	},
 	"extension": [
@@ -26,8 +26,13 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "418112009",
-					"display": "Pulmonary medicine"
+					"code": "394810000",
+					"display": "Rheumatology"
+				},
+				{
+					"system": "http://snomed.info/sct",
+					"code": "408480009",
+					"display": "Clinical immunology"
 				}
 			]
 		}
@@ -36,8 +41,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "105969002",
+				"display": "Disorder of connective tissue"
 			}
 		]
 	},

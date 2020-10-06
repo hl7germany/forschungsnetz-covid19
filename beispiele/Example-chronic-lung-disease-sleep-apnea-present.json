@@ -1,23 +1,23 @@
 {
 	"resourceType": "Condition",
-	"id": "6fb7feb0-c19f-4789-9281-c17672f3b48e",
+	"id": "c64606d8-d841-425b-a785-7dd0fe697e2d",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-unknown"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-present"
 		]
 	},
 	"extension": [
 		{
-			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-presence",
 			"valueCodeableConcept": {
 				"coding": [
 					{
 						"system": "http://snomed.info/sct",
-						"code": "261665006",
-						"display": "Unknown (qualifier value)"
+						"code": "410605003",
+						"display": "Confirmed present (qualifier value)"
 					}
 				],
-				"text": "Presence of condition is unknown."
+				"text": "Condition is confirmed present."
 			}
 		}
 	],
@@ -36,8 +36,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "73430006",
+				"display": "Sleep apnea"
 			}
 		]
 	},

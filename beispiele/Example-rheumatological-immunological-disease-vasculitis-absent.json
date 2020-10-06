@@ -1,9 +1,9 @@
 {
 	"resourceType": "Condition",
-	"id": "bcd77a62-7bd2-4a59-9417-7545048d876f",
+	"id": "25277818-3438-4d77-b305-9ebb0b1a3c8b",
 	"meta": {
 		"profile": [
-			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases-absent"
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/rheumatological-immunological-diseases-absent"
 		]
 	},
 	"extension": [
@@ -26,8 +26,13 @@
 			"coding": [
 				{
 					"system": "http://snomed.info/sct",
-					"code": "418112009",
-					"display": "Pulmonary medicine"
+					"code": "394810000",
+					"display": "Rheumatology"
+				},
+				{
+					"system": "http://snomed.info/sct",
+					"code": "408480009",
+					"display": "Clinical immunology"
 				}
 			]
 		}
@@ -36,8 +41,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "413839001",
-				"display": "Chronic lung disease"
+				"code": "31996006",
+				"display": "Vasculitis"
 			}
 		]
 	},
