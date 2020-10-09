@@ -1,0 +1,44 @@
+{
+    "id": "None",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/smoking-status"
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "code": "social-history",
+                    "display": "Social History",
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "code": "72166-2",
+                "display": "Tobacco smoking status",
+                "system": "http://loinc.org"
+            }
+        ]
+    },
+    "effectiveDateTime": "2020-10-06",
+    "status": "final",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "code": "LA18980-5",
+                "display": "Unknown if ever smoked",
+                "system": "http://loinc.org"
+            }
+        ],
+        "text": "Unknown if patient ever smoked"
+    },
+    "resourceType": "Observation"
+}

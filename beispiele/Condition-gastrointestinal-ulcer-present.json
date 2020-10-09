@@ -1,0 +1,57 @@
+{
+    "id": "87de8475-874d-4876-8278-0deefcdffed9",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-ulcers-present"
+        ]
+    },
+    "extension": [
+        {
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-presence",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "code": "410605003",
+                        "display": "Confirmed present (qualifier value)",
+                        "system": "http://snomed.info/sct"
+                    }
+                ],
+                "text": "Condition is confirmed present."
+            }
+        }
+    ],
+    "category": [
+        {
+            "coding": [
+                {
+                    "code": "394584008",
+                    "display": "Gastroenterology",
+                    "system": "http://snomed.info/sct"
+                }
+            ]
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "code": "active",
+                "display": "Active",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "code": "40845000",
+                "display": "Gastrointestinal ulcer",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "recordedDate": "2020-10-06",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "resourceType": "Condition"
+}

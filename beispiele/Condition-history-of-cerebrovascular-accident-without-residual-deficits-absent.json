@@ -1,0 +1,53 @@
+{
+    "id": "85498ad7-bbe4-4d43-a7b3-d252ce086846",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diabetes-mellitus-absent"
+        ]
+    },
+    "extension": [
+        {
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/certainty-of-absence",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "code": "410594000",
+                        "display": "Definitely NOT present (qualifier value)",
+                        "system": "http://snomed.info/sct"
+                    }
+                ],
+                "text": "Condition is confirmed absent."
+            }
+        }
+    ],
+    "category": [
+        {
+            "coding": [
+                {
+                    "code": "394591006",
+                    "display": "Neurology",
+                    "system": "http://snomed.info/sct"
+                },
+                {
+                    "code": "394587001",
+                    "display": "Psychiatry",
+                    "system": "http://snomed.info/sct"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "code": "429993008",
+                "display": "History of cerebrovascular accident without residual deficits",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "recordedDate": "2020-20-06",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "resourceType": "Condition"
+}
