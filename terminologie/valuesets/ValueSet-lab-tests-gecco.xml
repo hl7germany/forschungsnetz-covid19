@@ -469,6 +469,10 @@
                 <display value="Antithrombin [Units/volume] in Platelet poor plasma by Chromogenic method"/>
             </concept>
             <concept>
+                <code value="27811-9"/>
+                <display value="Antithrombin actual/normal in Platelet poor plasma by Chromogenic method"/>
+            </concept>
+            <concept>
                 <code value="75241-0"/>
                 <display value="Procalcitonin [Mass/volume] in Serum or Plasma by Immunoassay"/>
             </concept>
@@ -495,6 +499,10 @@
             <concept>
                 <code value="33762-6"/>
                 <display value="Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"/>
+            </concept>
+            <concept>
+                <code value="83107-3"/>
+                <display value="Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma by Immunoassay"/>
             </concept>
             <concept>
                 <code value="16859-1"/>
