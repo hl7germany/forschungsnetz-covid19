@@ -5,7 +5,14 @@
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization"
         ]
     },
-    "occurrenceDateTime": null,
+    "occurrenceDateTime": {
+        "extension":  [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "unknown"
+            }
+        ]
+    },
     "patient": {
         "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
     },
