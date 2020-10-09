@@ -38,10 +38,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
   <derivation value="constraint" />
   <differential>
-    <element id="Immunization.status">
-      <path value="Immunization.status" />
-      <fixedCode value="completed" />
-    </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
       <mustSupport value="true" />
@@ -184,8 +180,6 @@
     </element>
     <element id="Immunization.protocolApplied">
       <path value="Immunization.protocolApplied" />
-      <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Immunization.protocolApplied.targetDisease">
