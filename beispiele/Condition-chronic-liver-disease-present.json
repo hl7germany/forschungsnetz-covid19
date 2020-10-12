@@ -1,0 +1,56 @@
+{
+    "id": "83b2b0ef-5862-46f6-be23-73700d81f49d",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-liver-diseases"
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "code": "408472002",
+                    "display": "Hepatology",
+                    "system": "http://snomed.info/sct"
+                }
+            ]
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "code": "active",
+                "display": "Active",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "code": "328383001",
+                "display": "Chronic liver disease",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "recordedDate": "2020-10-06",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "verificationStatus": {
+        "coding": [
+            {
+                "code": "confirmed",
+                "display": "Confirmed",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            },
+            {
+                "code": "410605003",
+                "display": "Confirmed present (qualifier value)",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "resourceType": "Condition"
+}
