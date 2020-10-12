@@ -1,48 +1,48 @@
 {
-    "id": "653929f1-a493-44de-ace5-77f17d9aeace",
-    "meta": {
-        "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases"
-        ]
-    },
-    "extension": [
-        {
-            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
-            "valueCodeableConcept": {
-                "coding": [
-                    {
-                        "code": "261665006",
-                        "display": "Unknown (qualifier value)",
-                        "system": "http://snomed.info/sct"
-                    }
-                ],
-                "text": "Presence of condition is unknown."
-            }
-        }
-    ],
-    "category": [
-        {
-            "coding": [
-                {
-                    "code": "418112009",
-                    "display": "Pulmonary medicine",
-                    "system": "http://snomed.info/sct"
-                }
-            ]
-        }
-    ],
-    "code": {
-        "coding": [
-            {
-                "code": "190966007",
-                "display": "Extreme obesity with alveolar hypoventilation",
-                "system": "http://snomed.info/sct"
-            }
-        ]
-    },
-    "recordedDate": "2020-10-06",
-    "subject": {
-        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
-    },
-    "resourceType": "Condition"
+	"resourceType": "Condition",
+	"id": "653929f1-a493-44de-ace5-77f17d9aeace",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases"
+		]
+	},
+	"extension": [
+		{
+			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "261665006",
+						"display": "Unknown (qualifier value)"
+					}
+				],
+				"text": "Presence of condition is unknown."
+			}
+		}
+	],
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "418112009",
+					"display": "Pulmonary medicine"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "190966007",
+				"display": "Extreme obesity with alveolar hypoventilation"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+	},
+	"recordedDate": "2020-10-06"
 }

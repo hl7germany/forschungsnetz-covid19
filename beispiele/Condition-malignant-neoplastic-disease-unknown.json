@@ -1,48 +1,48 @@
 {
-    "id": "2d8aed72-6a97-489e-8980-73f45bae024d",
-    "meta": {
-        "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diabetes-mellitus"
-        ]
-    },
-    "extension": [
-        {
-            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
-            "valueCodeableConcept": {
-                "coding": [
-                    {
-                        "code": "261665006",
-                        "display": "Unknown (qualifier value)",
-                        "system": "http://snomed.info/sct"
-                    }
-                ],
-                "text": "Presence of condition is unknown."
-            }
-        }
-    ],
-    "category": [
-        {
-            "coding": [
-                {
-                    "code": "408475000",
-                    "display": "Diabetic medicine",
-                    "system": "http://snomed.info/sct"
-                }
-            ]
-        }
-    ],
-    "code": {
-        "coding": [
-            {
-                "code": "363346000",
-                "display": "Malignant neoplastic disease",
-                "system": "http://snomed.info/sct"
-            }
-        ]
-    },
-    "recordedDate": "2020-10-06",
-    "subject": {
-        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
-    },
-    "resourceType": "Condition"
+	"resourceType": "Condition",
+	"id": "2d8aed72-6a97-489e-8980-73f45bae024d",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diabetes-mellitus"
+		]
+	},
+	"extension": [
+		{
+			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+			"valueCodeableConcept": {
+				"coding": [
+					{
+						"system": "http://snomed.info/sct",
+						"code": "261665006",
+						"display": "Unknown (qualifier value)"
+					}
+				],
+				"text": "Presence of condition is unknown."
+			}
+		}
+	],
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "408475000",
+					"display": "Diabetic medicine"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "363346000",
+				"display": "Malignant neoplastic disease"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+	},
+	"recordedDate": "2020-10-06"
 }
