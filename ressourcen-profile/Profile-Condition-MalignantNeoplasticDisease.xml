@@ -49,81 +49,6 @@
   <baseDefinition value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.meta.security.display" />
-    </element>
-    <element id="Condition.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.meta.tag.display" />
-    </element>
-    <element id="Condition.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.identifier.type.coding.display" />
-    </element>
-    <element id="Condition.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.identifier.type.text" />
-    </element>
-    <element id="Condition.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.identifier.assigner.display" />
-    </element>
-    <element id="Condition.clinicalStatus.extension">
-      <path value="Condition.clinicalStatus.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Condition.clinicalStatus.extension:dataAbsentReason">
-      <path value="Condition.clinicalStatus.extension" />
-      <sliceName value="dataAbsentReason" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Condition.clinicalStatus.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.clinicalStatus.coding.display" />
-    </element>
-    <element id="Condition.clinicalStatus.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.clinicalStatus.text" />
-    </element>
-    <element id="Condition.verificationStatus.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.verificationStatus.coding.display" />
-    </element>
-    <element id="Condition.verificationStatus.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.verificationStatus.text" />
-    </element>
     <element id="Condition.category">
       <path value="Condition.category" />
       <min value="1" />
@@ -140,12 +65,6 @@
       </slicing>
       <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="Condition.category.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.category.coding.display" />
     </element>
     <element id="Condition.category.coding:oncology">
       <path value="Condition.category.coding" />
@@ -168,36 +87,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Condition.category.coding:oncology.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.category.coding.display" />
-    </element>
-    <element id="Condition.category.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.category.text" />
-    </element>
-    <element id="Condition.severity.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.severity.coding.display" />
-    </element>
-    <element id="Condition.severity.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.severity.text" />
-    </element>
-    <element id="Condition.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.code.coding.display" />
-    </element>
     <element id="Condition.code.coding:icd10-gm">
       <path value="Condition.code.coding" />
       <sliceName value="icd10-gm" />
@@ -206,15 +95,29 @@
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases-icd" />
       </binding>
     </element>
+    <element id="Condition.code.coding:icd10-gm.extension">
+      <path value="Condition.code.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Condition.code.coding:icd10-gm.extension:Diagnosesicherheit">
       <path value="Condition.code.coding.extension" />
       <sliceName value="Diagnosesicherheit" />
     </element>
-    <element id="Condition.code.coding:icd10-gm.extension:Diagnosesicherheit.value[x].display">
+    <element id="Condition.code.coding:icd10-gm.extension:Diagnosesicherheit.url">
+      <path value="Condition.code.coding.extension.url" />
+      <fixedUri value="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit" />
+    </element>
+    <element id="Condition.code.coding:icd10-gm.extension:Diagnosesicherheit.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
-      <path value="Condition.code.coding.extension.value[x].display" />
+      <path value="Condition.code.coding.extension.display" />
     </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />
@@ -223,60 +126,6 @@
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases" />
       </binding>
-    </element>
-    <element id="Condition.bodySite.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.bodySite.coding.display" />
-    </element>
-    <element id="Condition.subject.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.subject.identifier.type.coding.display" />
-    </element>
-    <element id="Condition.subject.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.subject.identifier.type.text" />
-    </element>
-    <element id="Condition.subject.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.subject.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="Condition.subject.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.subject.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="Condition.subject.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.subject.identifier.assigner.display" />
-    </element>
-    <element id="Condition.encounter.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.encounter.identifier.type.coding.display" />
-    </element>
-    <element id="Condition.encounter.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.encounter.identifier.type.text" />
-    </element>
-    <element id="Condition.encounter.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.encounter.display" />
     </element>
     <element id="Condition.onset[x]:onsetPeriod">
       <path value="Condition.onset[x]" />
@@ -295,8 +144,6 @@
     <element id="Condition.onset[x]:onsetPeriod.extension:dataAbsentReason">
       <path value="Condition.onset[x].extension" />
       <sliceName value="dataAbsentReason" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
@@ -319,120 +166,10 @@
     <element id="Condition.onset[x]:onsetDateTime.extension:dataAbsentReason">
       <path value="Condition.onset[x].extension" />
       <sliceName value="dataAbsentReason" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
       </type>
-    </element>
-    <element id="Condition.recorder.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.recorder.identifier.type.coding.display" />
-    </element>
-    <element id="Condition.recorder.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.recorder.identifier.type.text" />
-    </element>
-    <element id="Condition.recorder.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.recorder.display" />
-    </element>
-    <element id="Condition.asserter.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.asserter.identifier.type.coding.display" />
-    </element>
-    <element id="Condition.asserter.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.asserter.identifier.type.text" />
-    </element>
-    <element id="Condition.asserter.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.asserter.display" />
-    </element>
-    <element id="Condition.stage.summary.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.stage.summary.coding.display" />
-    </element>
-    <element id="Condition.stage.summary.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.stage.summary.text" />
-    </element>
-    <element id="Condition.stage.assessment.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.stage.assessment.identifier.type.coding.display" />
-    </element>
-    <element id="Condition.stage.assessment.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.stage.assessment.identifier.type.text" />
-    </element>
-    <element id="Condition.stage.assessment.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.stage.assessment.display" />
-    </element>
-    <element id="Condition.stage.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.stage.type.coding.display" />
-    </element>
-    <element id="Condition.stage.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.stage.type.text" />
-    </element>
-    <element id="Condition.evidence.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.evidence.code.coding.display" />
-    </element>
-    <element id="Condition.evidence.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.evidence.code.text" />
-    </element>
-    <element id="Condition.evidence.detail.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.evidence.detail.identifier.type.coding.display" />
-    </element>
-    <element id="Condition.evidence.detail.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.evidence.detail.identifier.type.text" />
-    </element>
-    <element id="Condition.evidence.detail.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.evidence.detail.display" />
     </element>
   </differential>
 </StructureDefinition>
