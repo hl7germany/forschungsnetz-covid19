@@ -56,7 +56,6 @@
     <element id="Condition.extension:uncertaintyOfPresence">
       <path value="Condition.extension" />
       <sliceName value="uncertaintyOfPresence" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -67,6 +66,7 @@
         <severity value="error" />
         <human value="If presence of condition is unknown, verificationStatus SHALL NOT be present." />
         <expression value="extension.exists() != verificationStatus.exists()" />
+        <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -77,6 +77,7 @@
         <severity value="error" />
         <human value="If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present." />
         <expression value="verificationStatus.exists() != Condition.extension.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence').exists()" />
+        <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -96,6 +97,9 @@
       <sliceName value="conditionVerificationStatus" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+      </patternCoding>
     </element>
     <element id="Condition.verificationStatus.coding:conditionVerificationStatus.system">
       <path value="Condition.verificationStatus.coding.system" />
@@ -110,6 +114,9 @@
       <sliceName value="snomed" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
       <binding>
         <strength value="required" />
         <description value="Confirmed present | Definitely NOT present" />
