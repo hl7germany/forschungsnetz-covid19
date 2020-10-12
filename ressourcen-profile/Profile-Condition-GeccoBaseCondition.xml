@@ -2,7 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
   <name value="GeccoBaseCondition" />
+  <title value="Gecco Base Condition" />
   <status value="draft" />
+  <publisher value="Charité" />
+  <description value="Base condition for the GECCO dataset that contains an additional extension and constraints on the verificationStatus-element." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
