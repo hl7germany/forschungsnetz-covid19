@@ -24,6 +24,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
+      <short value="Uncertainty of presence" />
+      <definition value="Extension used on a condition resource if the presence of the condition is unknown." />
       <isModifier value="true" />
     </element>
     <element id="Extension.url">
@@ -32,13 +34,25 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/uncertainty-of-presence" />
-      </binding>
+    </element>
+    <element id="Extension.value[x].coding">
+      <path value="Extension.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.value[x].coding.system">
+      <path value="Extension.value[x].coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Extension.value[x].coding.code">
+      <path value="Extension.value[x].coding.code" />
+      <min value="1" />
+      <fixedCode value="261665006" />
     </element>
   </differential>
 </StructureDefinition>
