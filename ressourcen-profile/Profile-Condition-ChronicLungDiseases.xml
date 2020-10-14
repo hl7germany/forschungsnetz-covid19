@@ -49,43 +49,6 @@
   <baseDefinition value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
   <derivation value="constraint" />
   <differential>
-    <element id="Condition.extension">
-      <path value="Condition.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Condition.extension:uncertaintyOfPresence">
-      <path value="Condition.extension" />
-      <sliceName value="uncertaintyOfPresence" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence" />
-      </type>
-      <constraint>
-        <key value="unk-1" />
-        <severity value="error" />
-        <human value="If presence of condition is unknown, verificationStatus SHALL NOT be present." />
-        <expression value="extension.exists() != verificationStatus.exists()" />
-      </constraint>
-      <mustSupport value="true" />
-    </element>
-    <element id="Condition.verificationStatus">
-      <path value="Condition.verificationStatus" />
-      <constraint>
-        <key value="unk-2" />
-        <severity value="error" />
-        <human value="If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present." />
-        <expression value="verificationStatus.exists() != Condition.extension.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence').exists()" />
-      </constraint>
-      <mustSupport value="true" />
-    </element>
     <element id="Condition.category">
       <path value="Condition.category" />
       <min value="1" />
