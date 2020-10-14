@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="gecco-base-condition" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
   <name value="GeccoBaseCondition" />
   <title value="Gecco Base Condition" />
@@ -43,6 +44,15 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition">
+      <path value="Condition" />
+      <constraint>
+        <key value="unk-1" />
+        <severity value="error" />
+        <human value="If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present." />
+        <expression value="verificationStatus.exists() != Condition.extension.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence').exists()" />
+      </constraint>
+    </element>
     <element id="Condition.extension">
       <path value="Condition.extension" />
       <slicing>
@@ -61,24 +71,10 @@
         <code value="Extension" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence" />
       </type>
-      <constraint>
-        <key value="unk-1" />
-        <severity value="error" />
-        <human value="If presence of condition is unknown, verificationStatus SHALL NOT be present." />
-        <expression value="extension.exists() != verificationStatus.exists()" />
-        <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
-      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Condition.verificationStatus">
       <path value="Condition.verificationStatus" />
-      <constraint>
-        <key value="unk-2" />
-        <severity value="error" />
-        <human value="If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present." />
-        <expression value="verificationStatus.exists() != Condition.extension.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence').exists()" />
-        <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
-      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Condition.verificationStatus.coding">
