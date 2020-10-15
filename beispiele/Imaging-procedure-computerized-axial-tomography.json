@@ -1,0 +1,54 @@
+{
+    "id": "f5084a70-d217-47aa-858a-7565e45b922b",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures"
+        ]
+    },
+    "bodySite": [
+        {
+            "coding": [
+                {
+                    "code": "39607008",
+                    "display": "Lung structure (body structure)",
+                    "system": "http://snomed.info/sct"
+                }
+            ]
+        }
+    ],
+    "category": {
+        "coding": [
+            {
+                "code": "103693007",
+                "display": "Diagnostic procedure (procedure)",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "code": "77477000",
+                "display": "Computerized axial tomography (procedure)",
+                "system": "http://snomed.info/sct"
+            },
+            {
+                "code": "CT",
+                "display": "Computed Tomography",
+                "system": "http://dicom.nema.org/resources/ontology/DCM"
+            }
+        ],
+        "text": "Computed Tomography"
+    },
+    "performedDateTime": "2020-09-30",
+    "report": [
+        {
+            "reference": "DiagnosticReport/example"
+        }
+    ],
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "resourceType": "Procedure"
+}

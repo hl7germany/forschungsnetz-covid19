@@ -1,0 +1,54 @@
+{
+    "id": "07e2eecd-b52c-4ae3-aca7-f9c12e184ede",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures"
+        ]
+    },
+    "bodySite": [
+        {
+            "coding": [
+                {
+                    "code": "39607008",
+                    "display": "Lung structure (body structure)",
+                    "system": "http://snomed.info/sct"
+                }
+            ]
+        }
+    ],
+    "category": {
+        "coding": [
+            {
+                "code": "103693007",
+                "display": "Diagnostic procedure (procedure)",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "code": "168537006",
+                "display": "Plain radiography",
+                "system": "http://snomed.info/sct"
+            },
+            {
+                "code": "RG",
+                "display": "Radiographic imaging",
+                "system": "http://dicom.nema.org/resources/ontology/DCM"
+            }
+        ],
+        "text": "Chest x-ray"
+    },
+    "performedDateTime": "2020-09-30",
+    "report": [
+        {
+            "reference": "DiagnosticReport/example"
+        }
+    ],
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "resourceType": "Procedure"
+}
