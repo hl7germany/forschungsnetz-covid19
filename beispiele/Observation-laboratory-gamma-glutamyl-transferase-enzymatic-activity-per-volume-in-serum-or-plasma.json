@@ -1,0 +1,61 @@
+{
+    "id": "a4c0ba25-eb4e-4d30-8e8f-762234609c0e",
+    "meta": {
+        "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "code": "26436-6",
+                    "system": "http://loinc.org"
+                },
+                {
+                    "code": "laboratory",
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "code": "2324-2",
+                "display": "Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma",
+                "system": "http://loinc.org"
+            }
+        ],
+        "text": "Gamma glutamyl transferase"
+    },
+    "effectiveDateTime": "2020-10-16T08:49:21+02:00",
+    "identifier": [
+        {
+            "assigner": {
+                "reference": "Organization/Charit\u00e9"
+            },
+            "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+            "type": {
+                "coding": [
+                    {
+                        "code": "OBI",
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                    }
+                ]
+            },
+            "value": "2324-2_gamma-glutamyl-transferase-enzymatic-activity-per-volume-in-serum-or-plasma"
+        }
+    ],
+    "status": "final",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "valueQuantity": {
+        "code": "U/L",
+        "system": "http://unitsofmeasure.org",
+        "unit": "U/L",
+        "value": 25
+    },
+    "resourceType": "Observation"
+}
