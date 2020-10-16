@@ -43,6 +43,48 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.meta.profile">
+      <path value="Observation.meta.profile" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category.coding">
+      <path value="Observation.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.category.coding:observationCategory">
+      <path value="Observation.category.coding" />
+      <sliceName value="observationCategory" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="survey" />
+      </patternCoding>
+    </element>
+    <element id="Observation.category.coding:observationCategory.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.category.coding:observationCategory.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
@@ -87,19 +129,32 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <mustSupport value="true" />
+    </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <path value="Observation.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
-      <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na" />
-      </binding>
     </element>
-    <element id="Observation.value[x].coding">
-      <path value="Observation.value[x].coding" />
+    <element id="Observation.value[x]:valueCodeableConcept.coding">
+      <path value="Observation.valueCodeableConcept.coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -109,22 +164,25 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="Observation.value[x].coding:snomed">
-      <path value="Observation.value[x].coding" />
+    <element id="Observation.value[x]:valueCodeableConcept.coding:snomed">
+      <path value="Observation.valueCodeableConcept.coding" />
       <sliceName value="snomed" />
       <min value="1" />
       <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
       </patternCoding>
-      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na" />
+      </binding>
     </element>
-    <element id="Observation.value[x].coding:snomed.system">
-      <path value="Observation.value[x].coding.system" />
+    <element id="Observation.value[x]:valueCodeableConcept.coding:snomed.system">
+      <path value="Observation.valueCodeableConcept.coding.system" />
       <min value="1" />
     </element>
-    <element id="Observation.value[x].coding:snomed.code">
-      <path value="Observation.value[x].coding.code" />
+    <element id="Observation.value[x]:valueCodeableConcept.coding:snomed.code">
+      <path value="Observation.valueCodeableConcept.coding.code" />
       <min value="1" />
     </element>
     <element id="Observation.bodySite">
