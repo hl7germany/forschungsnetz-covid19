@@ -1,0 +1,56 @@
+{
+    "id": "aa3399f8-b0fc-4279-a5f8-253e979a5aca",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/complications-covid-19"
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "code": "116223007",
+                    "display": "Complication (disorder)",
+                    "system": "http://snomed.info/sct"
+                }
+            ]
+        }
+    ],
+    "clinicalStatus": {
+        "coding": [
+            {
+                "code": "active",
+                "display": "Active",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "code": "111293003",
+                "display": "Venous thrombosis (disorder)",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "recordedDate": "2020-10-15T16:07:48+02:00",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "verificationStatus": {
+        "coding": [
+            {
+                "code": "confirmed",
+                "display": "Confirmed",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            },
+            {
+                "code": "410605003",
+                "display": "Confirmed present (qualifier value)",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "resourceType": "Condition"
+}
