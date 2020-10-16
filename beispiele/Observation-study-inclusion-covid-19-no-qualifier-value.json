@@ -1,5 +1,5 @@
 {
-    "id": "56c5342b-7304-451e-ab20-78bb4da83a56",
+    "id": "02f66f11-74ec-4877-9825-a64ca3f63e19",
     "meta": {
         "profile": [
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/study-inclusion-covid-19"
@@ -54,7 +54,8 @@
                 "display": "No (qualifier value)",
                 "system": "http://snomed.info/sct"
             }
-        ]
+        ],
+        "text": "Covid-19 not the primary reason for study inclusion"
     },
     "resourceType": "Observation"
 }
