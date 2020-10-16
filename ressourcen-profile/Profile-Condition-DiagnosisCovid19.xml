@@ -43,6 +43,14 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose" />
   <derivation value="constraint" />
   <differential>
+    <element id="Condition.verificationStatus">
+      <path value="Condition.verificationStatus" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <mustSupport value="true" />
+    </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />
       <sliceName value="sct" />
@@ -56,6 +64,7 @@
     </element>
     <element id="Condition.stage.summary">
       <path value="Condition.stage.summary" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Condition.stage.summary.coding">
@@ -92,6 +101,7 @@
     </element>
     <element id="Condition.stage.type">
       <path value="Condition.stage.type" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Condition.stage.type.coding">
