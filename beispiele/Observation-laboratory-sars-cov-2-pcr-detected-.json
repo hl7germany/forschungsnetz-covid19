@@ -1,0 +1,65 @@
+{
+    "id": "3925fe1b-1b94-4132-bb32-7b4bc34b2a1e",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr"
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "code": "26436-6",
+                    "system": "http://loinc.org"
+                },
+                {
+                    "code": "laboratory",
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "code": "94500-6",
+                "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection",
+                "system": "http://loinc.org"
+            }
+        ],
+        "text": "SARS-CoV-2-RNA (PCR)"
+    },
+    "effectiveDateTime": "2020-10-16T08:49:21+02:00",
+    "identifier": [
+        {
+            "assigner": {
+                "reference": "Organization/Charit\u00e9"
+            },
+            "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+            "type": {
+                "coding": [
+                    {
+                        "code": "OBI",
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                    }
+                ]
+            },
+            "value": "94500-6_SARS-CoV-2-RNA-Presence-in-Respiratory-specimen"
+        }
+    ],
+    "status": "final",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "code": "260373001",
+                "display": "Detected (qualifier value)",
+                "system": "http://snomed.info/sct"
+            }
+        ],
+        "text": "SARS-CoV-2-RNA positiv"
+    },
+    "resourceType": "Observation"
+}
