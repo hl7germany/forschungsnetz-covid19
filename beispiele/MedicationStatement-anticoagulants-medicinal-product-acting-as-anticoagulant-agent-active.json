@@ -30,7 +30,7 @@
 		{
 			"coding": [
 				{
-					"system": "http://snoreason.info/sct",
+					"system": "http://snomed.info/sct",
 					"code": "360271000",
 					"display": "Prophylaxis - procedure intent (qualifier value)"
 				}
