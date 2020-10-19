@@ -1,0 +1,29 @@
+{
+	"resourceType": "MedicationStatement",
+	"id": "10cfe21d-cb81-4590-8d4e-9f43f1521866",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-immunoglobulins"
+		]
+	},
+	"status": "unknown",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "333710000",
+				"display": "Product containing immunoglobulin (product)"
+			},
+			{
+				"system": "http://fhir.de/CodeSystem/dimdi/atc",
+				"code": "J06B",
+				"display": "IMMUNGLOBULINE"
+			}
+		],
+		"text": "immunoglobulins"
+	},
+	"subject": {
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+	},
+	"effectiveDateTime": "2020-10-19T08:43:33+02:00"
+}

@@ -64,5 +64,39 @@
       <path value="MedicationStatement.medication[x].coding.code" />
       <min value="1" />
     </element>
+    <element id="MedicationStatement.reasonCode">
+      <path value="MedicationStatement.reasonCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.reasonCode.coding">
+      <path value="MedicationStatement.reasonCode.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.reasonCode.coding:snomed">
+      <path value="MedicationStatement.reasonCode.coding" />
+      <sliceName value="snomed" />
+      <min value="1" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="Prophylaxis | Curative" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/therapeutic-intent" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.reasonCode.coding:snomed.system">
+      <path value="MedicationStatement.reasonCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.reasonCode.coding:snomed.code">
+      <path value="MedicationStatement.reasonCode.coding.code" />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>
