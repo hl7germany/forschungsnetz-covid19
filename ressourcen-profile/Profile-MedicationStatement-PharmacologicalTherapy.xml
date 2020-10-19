@@ -13,14 +13,6 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationStatement.meta">
-      <path value="MedicationStatement.meta" />
-      <min value="1" />
-    </element>
-    <element id="MedicationStatement.meta.profile">
-      <path value="MedicationStatement.meta.profile" />
-      <min value="1" />
-    </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]" />
       <slicing>
@@ -87,6 +79,21 @@
       <min value="1" />
     </element>
     <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:ops.code">
+      <path value="MedicationStatement.medication[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed">
+      <path value="MedicationStatement.medication[x].coding" />
+      <sliceName value="snomed" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed.system">
+      <path value="MedicationStatement.medication[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:snomed.code">
       <path value="MedicationStatement.medication[x].coding.code" />
       <min value="1" />
     </element>
