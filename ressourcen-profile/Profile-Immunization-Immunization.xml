@@ -42,24 +42,6 @@
       <path value="Immunization.vaccineCode" />
       <mustSupport value="true" />
     </element>
-    <element id="Immunization.vaccineCode.extension">
-      <path value="Immunization.vaccineCode.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Immunization.vaccineCode.extension:dataAbsentReason">
-      <path value="Immunization.vaccineCode.extension" />
-      <sliceName value="dataAbsentReason" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
-      </type>
-    </element>
     <element id="Immunization.vaccineCode.coding">
       <path value="Immunization.vaccineCode.coding" />
       <slicing>

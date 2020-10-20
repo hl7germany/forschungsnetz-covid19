@@ -33,6 +33,10 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
+    <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <min value="1" />
+    </element>
     <element id="Procedure.category.coding">
       <path value="Procedure.category.coding" />
       <slicing>
@@ -71,8 +75,7 @@
       <path value="Procedure.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
-        <targetProfile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
     </element>
     <element id="Procedure.performed[x]">
@@ -86,14 +89,14 @@
       </slicing>
     </element>
     <element id="Procedure.performed[x]:performedDateTime">
-      <path value="Procedure.performedDateTime" />
+      <path value="Procedure.performed[x]" />
       <sliceName value="performedDateTime" />
       <type>
         <code value="dateTime" />
       </type>
     </element>
     <element id="Procedure.performed[x]:performedDateTime.extension">
-      <path value="Procedure.performedDateTime.extension" />
+      <path value="Procedure.performed[x].extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -103,10 +106,8 @@
       </slicing>
     </element>
     <element id="Procedure.performed[x]:performedDateTime.extension:dataAbsentReason">
-      <path value="Procedure.performedDateTime.extension" />
+      <path value="Procedure.performed[x].extension" />
       <sliceName value="dataAbsentReason" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
@@ -114,21 +115,21 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performed[x]:performedDateTime.extension:dataAbsentReason.value[x]">
-      <path value="Procedure.performedDateTime.extension.value[x]" />
+      <path value="Procedure.performed[x].extension.value[x]" />
       <slicing>
         <rules value="open" />
       </slicing>
       <min value="1" />
     </element>
     <element id="Procedure.performed[x]:performedPeriod">
-      <path value="Procedure.performedPeriod" />
+      <path value="Procedure.performed[x]" />
       <sliceName value="performedPeriod" />
       <type>
         <code value="Period" />
       </type>
     </element>
     <element id="Procedure.performed[x]:performedPeriod.extension">
-      <path value="Procedure.performedPeriod.extension" />
+      <path value="Procedure.performed[x].extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -138,10 +139,8 @@
       </slicing>
     </element>
     <element id="Procedure.performed[x]:performedPeriod.extension:dataAbsentReason">
-      <path value="Procedure.performedPeriod.extension" />
+      <path value="Procedure.performed[x].extension" />
       <sliceName value="dataAbsentReason" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
@@ -149,7 +148,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performed[x]:performedPeriod.extension:dataAbsentReason.value[x]">
-      <path value="Procedure.performedPeriod.extension.value[x]" />
+      <path value="Procedure.performed[x].extension.value[x]" />
       <slicing>
         <rules value="open" />
       </slicing>
