@@ -63,16 +63,6 @@
         <code value="225287004" />
       </patternCoding>
     </element>
-    <element id="Procedure.code.coding">
-      <path value="Procedure.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Procedure.code.coding:sct">
       <path value="Procedure.code.coding" />
       <sliceName value="sct" />
@@ -81,6 +71,10 @@
         <system value="http://snomed.info/sct" />
         <code value="431182000" />
       </patternCoding>
+    </element>
+    <element id="Procedure.code.coding:sct.code">
+      <path value="Procedure.code.coding.code" />
+      <patternCode value="431182000" />
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
