@@ -1,15 +1,15 @@
 {
-    "id": "3def6ffd-45de-4b02-a98f-f0ba54a3adcd",
+    "id": "ccbf6e11-aa1c-497b-8b4c-da00cdf8dd70",
     "meta": {
         "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dialysis"
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/prone-position"
         ]
     },
     "category": {
         "coding": [
             {
-                "code": "277132007",
-                "display": "Therapeutic procedure (procedure)",
+                "code": "225287004",
+                "display": "Procedures relating to positioning and support (procedure)",
                 "system": "http://snomed.info/sct"
             }
         ]
@@ -17,12 +17,12 @@
     "code": {
         "coding": [
             {
-                "code": "108241001",
-                "display": "Dialysis procedure (procedure)",
+                "code": "431182000",
+                "display": "Placing subject in prone position (procedure)",
                 "system": "http://snomed.info/sct"
             }
         ],
-        "text": "Dialysis"
+        "text": "Prone position"
     },
     "performedDateTime": {
         "extension": [
