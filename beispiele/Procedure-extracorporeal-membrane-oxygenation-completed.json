@@ -1,0 +1,40 @@
+{
+    "id": "4b25d237-886d-4aa7-945d-a70d903d8eea",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/extracorporeal-membrane-oxygenation"
+        ]
+    },
+    "category": {
+        "coding": [
+            {
+                "code": "277132007",
+                "display": "Therapeutic procedure (procedure)",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "code": "233573008",
+                "display": "Extracorporeal membrane oxygenation (procedure)",
+                "system": "http://snomed.info/sct"
+            }
+        ],
+        "text": "ECMO"
+    },
+    "performedDateTime": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "unknown"
+            }
+        ]
+    },
+    "status": "completed",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "resourceType": "Procedure"
+}
