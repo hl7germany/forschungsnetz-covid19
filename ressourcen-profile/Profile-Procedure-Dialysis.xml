@@ -5,6 +5,12 @@
   <title value="Dialysis" />
   <status value="draft" />
   <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability" />
+    </telecom>
+  </contact>
   <description value="Dialysis procedures" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -46,10 +52,12 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Procedure.category.coding:sct">
       <path value="Procedure.category.coding" />
       <sliceName value="sct" />
+      <min value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
         <code value="277132007" />
