@@ -1,5 +1,5 @@
 {
-    "id": "dc0db978-9042-4e69-90c3-0d0159e1a135",
+    "id": "018ed637-c0b3-4b6d-8b8f-e8686949cc7f",
     "meta": {
         "profile": [
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19"
@@ -34,7 +34,7 @@
             }
         ]
     },
-    "recordedDate": "2020-10-16T08:49:21+02:00",
+    "recordedDate": "2020-10-23T12:48:23+02:00",
     "stage": [
         {
             "summary": {
@@ -43,6 +43,16 @@
                         "code": "24484000",
                         "display": "Severe (severity modifier) (qualifier value)",
                         "system": "http://snomed.info/sct"
+                    }
+                ],
+                "text": "Critical phase"
+            },
+            "type": {
+                "coding": [
+                    {
+                        "code": "88859-4",
+                        "display": "Disease stage score for risk calculation",
+                        "system": "http://loinc.org"
                     }
                 ],
                 "text": "Critical phase"
