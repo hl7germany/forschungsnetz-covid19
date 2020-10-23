@@ -54,8 +54,7 @@
                         "display": "Disease stage score for risk calculation",
                         "system": "http://loinc.org"
                     }
-                ],
-                "text": "Critical phase"
+                ]
             }
         }
     ],
