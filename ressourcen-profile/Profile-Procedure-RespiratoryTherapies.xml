@@ -58,7 +58,7 @@
     </element>
     <element id="Procedure.category.coding:sct.code">
       <path value="Procedure.category.coding.code" />
-      <patternCode value="277132007" />
+      <patternCode value="53950000" />
     </element>
     <element id="Procedure.code.coding:sct">
       <path value="Procedure.code.coding" />
