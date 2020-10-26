@@ -1,0 +1,40 @@
+{
+    "id": "9e5567a1-994e-4100-8945-4e27e21edfd2",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
+        ]
+    },
+    "category": {
+        "coding": [
+            {
+                "code": "53950000",
+                "display": "Respiratory therapy (procedure)",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "code": "40617009",
+                "display": "Artificial respiration (procedure)",
+                "system": "http://snomed.info/sct"
+            }
+        ],
+        "text": "Artificial respiration"
+    },
+    "performedDateTime": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "not-performed"
+            }
+        ]
+    },
+    "status": "not-done",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "resourceType": "Procedure"
+}

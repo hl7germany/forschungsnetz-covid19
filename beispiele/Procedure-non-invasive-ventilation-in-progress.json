@@ -1,0 +1,43 @@
+{
+    "id": "7ce8bfe6-6a36-4f59-942f-7a76906e5c74",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
+        ]
+    },
+    "category": {
+        "coding": [
+            {
+                "code": "53950000",
+                "display": "Respiratory therapy (procedure)",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "code": "428311008",
+                "display": "Noninvasive ventilation (procedure)",
+                "system": "http://snomed.info/sct"
+            }
+        ],
+        "text": "Non-invasive ventilation"
+    },
+    "performedDateTime": {
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                "valueCode": "unknown"
+            }
+        ]
+    },
+    "status": "in-progress",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "usedCode": [
+        null
+    ],
+    "resourceType": "Procedure"
+}
