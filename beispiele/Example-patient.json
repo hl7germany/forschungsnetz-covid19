@@ -8,10 +8,6 @@
 	},
 	"extension": [
 		{
-			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/biological-sex",
-			"valueCode": "female"
-		},
-		{
 			"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
 			"valueCoding": {
 				"system": "http://snomed.info/sct",
