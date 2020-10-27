@@ -1,0 +1,48 @@
+{
+    "id": "8cb12ab0-3563-4154-bfeb-25aa897c2105",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19"
+        ]
+    },
+    "extension": [
+        {
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "code": "261665006",
+                        "display": "Unknown (qualifier value)",
+                        "system": "http://snomed.info/sct"
+                    }
+                ],
+                "text": "Presence of symptom is unknown."
+            }
+        }
+    ],
+    "category": [
+        {
+            "coding": [
+                {
+                    "code": "75325-1",
+                    "display": "Symptom",
+                    "system": "http://loinc.org"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "code": "36955009",
+                "display": "Loss of taste",
+                "system": "http://snomed.info/sct"
+            }
+        ]
+    },
+    "recordedDate": "2020-10-05",
+    "subject": {
+        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+    },
+    "resourceType": "Condition"
+}
