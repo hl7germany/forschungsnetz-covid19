@@ -3,7 +3,7 @@
     <language value="en-US"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
-            <start value="2020-04-08T13:04:13+02:00"/>
+            <start value="2020-04-08T13:04:13+01:00"/>
         </valuePeriod>
     </extension><!-- http:/art-decor.org/fhir/4.0/covid19f-/StructureDefinition/2.16.840.1.113883.3.1937.777.53.1.1-\-20200408130413 -->
     <url value="http://art-decor.org/fhir/StructureDefinition/2.16.840.1.113883.3.1937.777.53.1.1--20200408130413"/>
@@ -318,7 +318,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1130--20200408000000.coding:certainty-of-absence">
@@ -344,7 +344,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1120--20200408000000">
@@ -467,7 +467,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1120--20200408000000.coding:certainty-of-presence">
@@ -493,7 +493,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1120--20200408000000.coding:cardiovascular-diseases-surrogat">
@@ -667,7 +667,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1170--20200408000000.coding:certainty-of-absence">
@@ -693,7 +693,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1170--20200408000000.coding:chronic-liver-diseases-surrogate">
@@ -710,7 +710,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Chronische Lebererkrankungen ICD"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.496--20200504212558"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-liver-diseases-icd"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1170--20200408000000.coding:chronic-liver-diseases">
@@ -736,7 +736,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Chronische Lebererkrankungen"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.472--20200425215002"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-liver-diseases"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1170--20200408000000.coding:uncertainty-of-presence">
@@ -850,7 +850,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Rheumatologische und immunologische Erkrankungen ICD"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.512--20200504223024"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases-icd"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1230--20200408000000.coding:uncertainty-of-presence">
@@ -919,7 +919,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1230--20200408000000.coding:certainty-of-presence">
@@ -945,7 +945,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1230--20200408000000.coding:immune-system-diseases">
@@ -971,7 +971,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Rheumatologische und immunologische Erkrankungen"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.474--20200425233223"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000">
@@ -1068,7 +1068,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="HIV Infektionen"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.530--20200709125648"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000.coding:human-immunodeficiency-virus-infections-icd">
@@ -1085,7 +1085,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="HIV Infektionen ICD"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.532--20200709152345"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections-icd"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000.coding:certainty-of-absence">
@@ -1111,7 +1111,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000.coding:certainty-of-presence">
@@ -1137,7 +1137,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000.coding:uncertainty-of-presence">
@@ -1277,7 +1277,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1210--20200408000000.coding:certainty-of-presence">
@@ -1303,7 +1303,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1210--20200408000000.coding:data-absent-reason-expansion">
@@ -1337,7 +1337,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Transplantationsorgane ICD"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.531--20200709133929"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/history-of-organ-transplantation-icd"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1210--20200408000000.coding:uncertainty-of-presence">
@@ -1380,7 +1380,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Transplantationsorgane"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.479--20200430213808"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/organs-for-transplant"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1220--20200408000000">
@@ -1468,7 +1468,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Diabetes Erkrankungen"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.480--20200501132110"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1220--20200408000000.coding:certainty-of-absence">
@@ -1494,7 +1494,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1220--20200408000000.coding:data-absent-reason-expansion">
@@ -1537,7 +1537,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Diabetes Erkrankungen ICD"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.497--20200504221730"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases-icd"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1220--20200408000000.coding:uncertainty-of-presence">
@@ -1589,7 +1589,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000">
@@ -1703,7 +1703,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000.coding:certainty-of-presence">
@@ -1729,7 +1729,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000.coding:malignant-neoplastic-diseases">
@@ -1755,7 +1755,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Maligne Tumorerkrankungen"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.533--20200710115833"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000.coding:malignant-neoplastic-diseases-icd">
@@ -1772,7 +1772,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Maligne Tumorerkrankungen ICD"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.534--20200710123750"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases-icd"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000.coding:tumor-disease-status">
@@ -1975,7 +1975,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Chronische neurologische oder psychiatrische Erkrankungen"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.473--20200425220002"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1180--20200408000000.coding:certainty-of-absence">
@@ -2001,7 +2001,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1180--20200408000000.coding:certainty-of-presence">
@@ -2027,7 +2027,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1180--20200408000000.coding:data-absent-reason-expansion">
@@ -2087,7 +2087,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Chronische neurologische oder psychiatrische Erkrankungen ICD"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.498--20200504223508"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases-icd"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1140--20200408000000">
@@ -2213,7 +2213,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Sauerstoff- / Beatmungstherapien"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.482--20200503123751"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1160--20200408000000">
@@ -2327,7 +2327,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1160--20200408000000.coding:certainty-of-absence">
@@ -2353,7 +2353,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1160--20200408000000.coding:chronic-kidney-diseases">
@@ -2484,7 +2484,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Ja/Nein/Unbekannt"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.511--20200513095116"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2210--20200430155106">
@@ -2650,7 +2650,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2210--20200430155106.coding:certainty-of-absence">
@@ -2676,7 +2676,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2210--20200430155106.coding:uncertainty-of-presence">
@@ -2962,7 +2962,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Bildgebungsverfahren"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.487--20200503152827"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures-dicom"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1540--20200408000000">
@@ -3347,7 +3347,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Frailty Score"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.515--20200520134449"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1080--20200408000000">
@@ -3619,7 +3619,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Exposition mit SARS-CoV-2"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.520--20200608123231"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/known-exposure"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.20--20200408000000">
@@ -3740,7 +3740,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Komplikationen ICD"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.509--20200505130915"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complications-covid-19-icd"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1930--20200408000000.coding:complications">
@@ -3757,7 +3757,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Komplikationen"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.491--20200503224913"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complications-covid-19"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.14--20200408000000">
@@ -3848,7 +3848,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Erkrankungsphase bei Diagnose"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.492--20200503232410"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/stage-at-diagnosis"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.19--20200408000000">
@@ -4420,11 +4420,6 @@
                 </valueCodeableConcept>
             </extension>
             <path value="forschungsdatensatz_gecco.gecco.laborwerte.ldh"/>
-            <code>
-                <system value="http://loinc.org"/>
-                <code value="2529-6"/>
-                <display value="Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid"/>
-            </code>
             <code>
                 <system value="http://loinc.org"/>
                 <code value="2532-0"/>
@@ -5493,6 +5488,11 @@
             <path value="forschungsdatensatz_gecco.gecco.laborwerte.antithrombin_iii"/>
             <code>
                 <system value="http://loinc.org"/>
+                <code value="27811-9"/>
+                <display value="Antithrombin actual/normal in Platelet poor plasma by Chromogenic method"/>
+            </code>
+            <code>
+                <system value="http://loinc.org"/>
                 <code value="3176-5"/>
                 <display value="Antithrombin [Moles/volume] in Platelet poor plasma by Chromogenic method"/>
             </code>
@@ -5692,6 +5692,11 @@
             <path value="forschungsdatensatz_gecco.gecco.laborwerte.ntprobnp"/>
             <code>
                 <system value="http://loinc.org"/>
+                <code value="83107-3"/>
+                <display value="Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma by Immunoassay"/>
+            </code>
+            <code>
+                <system value="http://loinc.org"/>
                 <code value="33762-6"/>
                 <display value="Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"/>
             </code>
@@ -5860,7 +5865,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Detected/Not-Detected/Inconclusive"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2248--20200522181625">
@@ -5913,7 +5918,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Detected/Not-Detected/Inconclusive"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.75--20200918123223">
@@ -6004,7 +6009,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Detected/Not-Detected/Inconclusive"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.77--20200918123759">
@@ -6095,7 +6100,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Detected/Not-Detected/Inconclusive"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.79--20200918124007">
@@ -6186,7 +6191,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Detected/Not-Detected/Inconclusive"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.81--20200918124222">
@@ -6353,7 +6358,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Medikamentöse Therapie ATC"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.494--20200504201742"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-atc"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1990--20200408000000.coding:drug-therapy-snomed">
@@ -6370,7 +6375,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Medikamentöse Therapie SNOMED"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.539--20200722173536"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-snomed"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1990--20200408000000.coding:drug-therapy-ops">
@@ -6387,7 +6392,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Medikamentöse Therapie OPS"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.516--20200529150432"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-ops"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1990--20200408000000.coding:medikamentoese_therapie_UNII">
@@ -6538,7 +6543,7 @@
             <binding>
                 <strength value="example"/>
                 <description value="ACE-Hemmer"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.499--20200504224822"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ace-inhibitors-atc"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2040--20200408000000">
@@ -6655,7 +6660,7 @@
             <binding>
                 <strength value="example"/>
                 <description value="Immunglobuline"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.500--20200504225150"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunoglobulins-atc"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2080--20200408000000">
@@ -6772,7 +6777,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Antikoagulantien"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.503--20200504231119"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/anticoagulants-atc"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2080--20200408000000.coding:therapeutic-intent">
@@ -6798,7 +6803,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Therapeutische Intention"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.541--20200918121718"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/therapeutic-intent"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.22--20200408000000">
@@ -6923,7 +6928,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Presence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2140--20200408000000.coding:certainty-of-absence">
@@ -6949,7 +6954,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Certainty of Absence"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2100--20200408000000">
@@ -7002,7 +7007,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Entlassungsart"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.528--20200701102738"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/discharge-disposition"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2120--20200408000000">
@@ -7050,7 +7055,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Detected/Not-Detected/Inconclusive"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.10--20200408000000">
@@ -7122,7 +7127,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Ja/Nein/Unbekannt"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.511--20200513095116"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1020--20200408000000">
@@ -7170,7 +7175,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Ja/Nein/Unbekannt"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.511--20200513095116"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.16--20200408000000">
@@ -7295,7 +7300,7 @@
             <binding>
                 <strength value="extensible"/>
                 <description value="Symptome"/>
-                <valueSet value="http://charite.de/ValueSet/SARS-CoV-2-symptoms"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1380--20200408000000.coding:SARS-CoV-2-symptoms-surrogate">
@@ -7360,7 +7365,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Schweregrad"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.514--20200519223054"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/condition-severity"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2207--20200430153848">
@@ -7476,7 +7481,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Dialyseverfahren OPS"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.536--20200720125411"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/dialysis-procedures-ops"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2223--20200504125208.coding:dialysis-procedures">
@@ -7502,7 +7507,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Dialyseverfahren"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.535--20200720122817"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/dialysis-procedures"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2223--20200504125208.coding:data-absent-reason-expansion">
@@ -7619,7 +7624,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Aphereseverfahren OPS"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.538--20200721131410"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures-ops"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2224--20200504125321.coding:apheresis-procedures">
@@ -7645,7 +7650,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Aphereseverfahren"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.537--20200721123257"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.2224--20200504125321.coding:data-absent-reason-expansion">
@@ -7896,7 +7901,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="ECMO-Therapien"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.513--20200519104721"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/extracorporeal-membrane-oxygenation"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1950--20200408000000">
@@ -7991,7 +7996,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Ja/Nein/Unbekannt"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.511--20200513095116"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1810--20200408000000">
@@ -8078,7 +8083,7 @@
             <binding>
                 <strength value="required"/>
                 <description value="Beatmungstherapien"/>
-                <valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.525--20200630102944"/>
+                <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies-devices"/>
             </binding>
         </element>
         <element xmlns="http://hl7.org/fhir" id="2.16.840.1.113883.3.1937.777.53.2.1.1810--20200408000000.coding:event-status-expansion">
@@ -9117,7 +9122,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1130--20200408000000.coding:certainty-of-absence">
@@ -9143,7 +9148,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1120--20200408000000">
@@ -9266,7 +9271,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1120--20200408000000.coding:certainty-of-presence">
@@ -9292,7 +9297,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1120--20200408000000.coding:cardiovascular-diseases-surrogat">
@@ -9466,7 +9471,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1170--20200408000000.coding:certainty-of-absence">
@@ -9492,7 +9497,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1170--20200408000000.coding:chronic-liver-diseases-surrogate">
@@ -9509,7 +9514,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Chronische Lebererkrankungen ICD"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.496--20200504212558"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-liver-diseases-icd"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1170--20200408000000.coding:chronic-liver-diseases">
@@ -9535,7 +9540,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Chronische Lebererkrankungen"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.472--20200425215002"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-liver-diseases"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1170--20200408000000.coding:uncertainty-of-presence">
@@ -9649,7 +9654,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Rheumatologische und immunologische Erkrankungen ICD"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.512--20200504223024"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases-icd"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1230--20200408000000.coding:uncertainty-of-presence">
@@ -9718,7 +9723,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1230--20200408000000.coding:certainty-of-presence">
@@ -9744,7 +9749,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1230--20200408000000.coding:immune-system-diseases">
@@ -9770,7 +9775,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Rheumatologische und immunologische Erkrankungen"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.474--20200425233223"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000">
@@ -9867,7 +9872,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="HIV Infektionen"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.530--20200709125648"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000.coding:human-immunodeficiency-virus-infections-icd">
@@ -9884,7 +9889,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="HIV Infektionen ICD"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.532--20200709152345"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections-icd"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000.coding:certainty-of-absence">
@@ -9910,7 +9915,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000.coding:certainty-of-presence">
@@ -9936,7 +9941,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1200--20200408000000.coding:uncertainty-of-presence">
@@ -10076,7 +10081,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1210--20200408000000.coding:certainty-of-presence">
@@ -10102,7 +10107,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1210--20200408000000.coding:data-absent-reason-expansion">
@@ -10136,7 +10141,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Transplantationsorgane ICD"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.531--20200709133929"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/history-of-organ-transplantation-icd"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1210--20200408000000.coding:uncertainty-of-presence">
@@ -10179,7 +10184,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Transplantationsorgane"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.479--20200430213808"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/organs-for-transplant"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1220--20200408000000">
@@ -10267,7 +10272,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Diabetes Erkrankungen"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.480--20200501132110"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1220--20200408000000.coding:certainty-of-absence">
@@ -10293,7 +10298,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1220--20200408000000.coding:data-absent-reason-expansion">
@@ -10336,7 +10341,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Diabetes Erkrankungen ICD"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.497--20200504221730"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases-icd"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1220--20200408000000.coding:uncertainty-of-presence">
@@ -10388,7 +10393,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000">
@@ -10502,7 +10507,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000.coding:certainty-of-presence">
@@ -10528,7 +10533,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000.coding:malignant-neoplastic-diseases">
@@ -10554,7 +10559,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Maligne Tumorerkrankungen"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.533--20200710115833"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000.coding:malignant-neoplastic-diseases-icd">
@@ -10571,7 +10576,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Maligne Tumorerkrankungen ICD"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.534--20200710123750"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases-icd"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1190--20200408000000.coding:tumor-disease-status">
@@ -10774,7 +10779,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Chronische neurologische oder psychiatrische Erkrankungen"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.473--20200425220002"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1180--20200408000000.coding:certainty-of-absence">
@@ -10800,7 +10805,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1180--20200408000000.coding:certainty-of-presence">
@@ -10826,7 +10831,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1180--20200408000000.coding:data-absent-reason-expansion">
@@ -10886,7 +10891,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Chronische neurologische oder psychiatrische Erkrankungen ICD"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.498--20200504223508"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases-icd"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1140--20200408000000">
@@ -11012,7 +11017,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Sauerstoff- / Beatmungstherapien"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.482--20200503123751"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1160--20200408000000">
@@ -11126,7 +11131,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1160--20200408000000.coding:certainty-of-absence">
@@ -11152,7 +11157,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1160--20200408000000.coding:chronic-kidney-diseases">
@@ -11283,7 +11288,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Ja/Nein/Unbekannt"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.511--20200513095116"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2210--20200430155106">
@@ -11449,7 +11454,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2210--20200430155106.coding:certainty-of-absence">
@@ -11475,7 +11480,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2210--20200430155106.coding:uncertainty-of-presence">
@@ -11761,7 +11766,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Bildgebungsverfahren"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.487--20200503152827"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures-dicom"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1540--20200408000000">
@@ -12146,7 +12151,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Frailty Score"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.515--20200520134449"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1080--20200408000000">
@@ -12418,7 +12423,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Exposition mit SARS-CoV-2"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.520--20200608123231"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/known-exposure"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.20--20200408000000">
@@ -12539,7 +12544,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Komplikationen ICD"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.509--20200505130915"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complications-covid-19-icd"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1930--20200408000000.coding:complications">
@@ -12556,7 +12561,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Komplikationen"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.491--20200503224913"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complications-covid-19"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.14--20200408000000">
@@ -12647,7 +12652,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Erkrankungsphase bei Diagnose"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.492--20200503232410"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/stage-at-diagnosis"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.19--20200408000000">
@@ -13219,11 +13224,6 @@
                 </f:valueCodeableConcept>
             </f:extension>
             <f:path value="forschungsdatensatz_gecco.gecco.laborwerte.ldh"/>
-            <f:code>
-                <f:system value="http://loinc.org"/>
-                <f:code value="2529-6"/>
-                <f:display value="Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid"/>
-            </f:code>
             <f:code>
                 <f:system value="http://loinc.org"/>
                 <f:code value="2532-0"/>
@@ -14292,6 +14292,11 @@
             <f:path value="forschungsdatensatz_gecco.gecco.laborwerte.antithrombin_iii"/>
             <f:code>
                 <f:system value="http://loinc.org"/>
+                <f:code value="27811-9"/>
+                <f:display value="Antithrombin actual/normal in Platelet poor plasma by Chromogenic method"/>
+            </f:code>
+            <f:code>
+                <f:system value="http://loinc.org"/>
                 <f:code value="3176-5"/>
                 <f:display value="Antithrombin [Moles/volume] in Platelet poor plasma by Chromogenic method"/>
             </f:code>
@@ -14491,6 +14496,11 @@
             <f:path value="forschungsdatensatz_gecco.gecco.laborwerte.ntprobnp"/>
             <f:code>
                 <f:system value="http://loinc.org"/>
+                <f:code value="83107-3"/>
+                <f:display value="Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma by Immunoassay"/>
+            </f:code>
+            <f:code>
+                <f:system value="http://loinc.org"/>
                 <f:code value="33762-6"/>
                 <f:display value="Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"/>
             </f:code>
@@ -14659,7 +14669,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Detected/Not-Detected/Inconclusive"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2248--20200522181625">
@@ -14712,7 +14722,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Detected/Not-Detected/Inconclusive"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.75--20200918123223">
@@ -14803,7 +14813,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Detected/Not-Detected/Inconclusive"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.77--20200918123759">
@@ -14894,7 +14904,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Detected/Not-Detected/Inconclusive"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.79--20200918124007">
@@ -14985,7 +14995,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Detected/Not-Detected/Inconclusive"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.81--20200918124222">
@@ -15152,7 +15162,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Medikamentöse Therapie ATC"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.494--20200504201742"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-atc"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1990--20200408000000.coding:drug-therapy-snomed">
@@ -15169,7 +15179,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Medikamentöse Therapie SNOMED"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.539--20200722173536"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-snomed"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1990--20200408000000.coding:drug-therapy-ops">
@@ -15186,7 +15196,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Medikamentöse Therapie OPS"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.516--20200529150432"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-ops"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1990--20200408000000.coding:medikamentoese_therapie_UNII">
@@ -15337,7 +15347,7 @@
             <f:binding>
                 <f:strength value="example"/>
                 <f:description value="ACE-Hemmer"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.499--20200504224822"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ace-inhibitors-atc"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2040--20200408000000">
@@ -15454,7 +15464,7 @@
             <f:binding>
                 <f:strength value="example"/>
                 <f:description value="Immunglobuline"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.500--20200504225150"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunoglobulins-atc"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2080--20200408000000">
@@ -15571,7 +15581,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Antikoagulantien"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.503--20200504231119"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/anticoagulants-atc"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2080--20200408000000.coding:therapeutic-intent">
@@ -15597,7 +15607,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Therapeutische Intention"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.541--20200918121718"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/therapeutic-intent"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.22--20200408000000">
@@ -15722,7 +15732,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Presence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.523--20200618132946"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-presence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2140--20200408000000.coding:certainty-of-absence">
@@ -15748,7 +15758,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Certainty of Absence"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.524--20200618143847"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/certainty-of-absence"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2100--20200408000000">
@@ -15801,7 +15811,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Entlassungsart"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.528--20200701102738"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/discharge-disposition"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2120--20200408000000">
@@ -15849,7 +15859,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Detected/Not-Detected/Inconclusive"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.522--20200609161852"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.10--20200408000000">
@@ -15921,7 +15931,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Ja/Nein/Unbekannt"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.511--20200513095116"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1020--20200408000000">
@@ -15969,7 +15979,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Ja/Nein/Unbekannt"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.511--20200513095116"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.16--20200408000000">
@@ -16094,7 +16104,7 @@
             <f:binding>
                 <f:strength value="extensible"/>
                 <f:description value="Symptome"/>
-                <f:valueSet value="http://charite.de/ValueSet/SARS-CoV-2-symptoms"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1380--20200408000000.coding:SARS-CoV-2-symptoms-surrogate">
@@ -16159,7 +16169,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Schweregrad"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.514--20200519223054"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/condition-severity"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2207--20200430153848">
@@ -16275,7 +16285,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Dialyseverfahren OPS"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.536--20200720125411"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/dialysis-procedures-ops"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2223--20200504125208.coding:dialysis-procedures">
@@ -16301,7 +16311,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Dialyseverfahren"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.535--20200720122817"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/dialysis-procedures"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2223--20200504125208.coding:data-absent-reason-expansion">
@@ -16418,7 +16428,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Aphereseverfahren OPS"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.538--20200721131410"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures-ops"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2224--20200504125321.coding:apheresis-procedures">
@@ -16444,7 +16454,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Aphereseverfahren"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.537--20200721123257"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.2224--20200504125321.coding:data-absent-reason-expansion">
@@ -16695,7 +16705,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="ECMO-Therapien"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.513--20200519104721"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/extracorporeal-membrane-oxygenation"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1950--20200408000000">
@@ -16790,7 +16800,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Ja/Nein/Unbekannt"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.511--20200513095116"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1810--20200408000000">
@@ -16877,7 +16887,7 @@
             <f:binding>
                 <f:strength value="required"/>
                 <f:description value="Beatmungstherapien"/>
-                <f:valueSet value="http://art-decor.org/fhir/ValueSet/1.2.276.0.76.11.525--20200630102944"/>
+                <f:valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies-devices"/>
             </f:binding>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1810--20200408000000.coding:event-status-expansion">
