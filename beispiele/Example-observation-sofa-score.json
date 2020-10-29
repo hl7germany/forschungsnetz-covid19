@@ -1,5 +1,10 @@
 {
 	"resourceType": "Observation",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score"
+		]
+	},
 	"status": "final",
 	"category": [
 		{
