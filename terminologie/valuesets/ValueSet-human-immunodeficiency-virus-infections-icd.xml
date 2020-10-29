@@ -38,21 +38,17 @@
                 <display value="Sonstige näher bezeichnete Krankheiten infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"/>
             </concept>
             <concept>
-                <code value="B23.-"/>
-                <display value="Sonstige Krankheitszustände infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"/>
-            </concept>
-            <concept>
-                <code value="B23.0"/>
-                <display value="Akutes HIV-Infektionssyndrom"/>
-            </concept>
-            <concept>
-                <code value="B23.8"/>
-                <display value="Sonstige näher bezeichnete Krankheitszustände infolge HIV-Krankheit"/>
-            </concept>
-            <concept>
                 <code value="B24"/>
                 <display value="Nicht näher bezeichnete HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"/>
             </concept>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="B23"/>
+            </filter>
         </include>
     </compose>
 </ValueSet>
