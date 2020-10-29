@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-pnl-ser-pl-ia" />
+  <version value="0.9" />
   <name value="SarsCoV2AbPnlSerPlIA" />
   <title value="SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay" />
-  <status value="draft" />
-  <experimental value="true" />
+  <status value="active" />
+  <date value="2020-10-29" />
   <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
   <description value="SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -14,9 +21,8 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.id">
-      <path value="Observation.id" />
-      <mustSupport value="true" />
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
     </element>
     <element id="Observation.meta.source">
       <path value="Observation.meta.source" />
@@ -24,6 +30,10 @@
     </element>
     <element id="Observation.meta.profile">
       <path value="Observation.meta.profile" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.id">
+      <path value="Observation.id" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.identifier">
@@ -107,9 +117,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
-        <valueString value="default: final" />
-      </extension>
       <path value="Observation.status" />
       <mustSupport value="true" />
     </element>
@@ -194,12 +201,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />

@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ia-acnc" />
+  <version value="0.9" />
   <name value="SarsCoV2AbSerPlIAaCnc" />
   <title value="SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay" />
-  <status value="draft" />
+  <status value="active" />
+  <date value="2020-10-29" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
   <description value="SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

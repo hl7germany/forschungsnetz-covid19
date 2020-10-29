@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score" />
+  <version value="0.9" />
   <name value="SOFA" />
   <title value="SOFA Score" />
-  <status value="draft" />
+  <status value="active" />
+  <date value="2020-10-29" />
   <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
   <description value="Observation to capture the SOFA score. Based on: Vincent JL, Moreno R, Takala J, et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine. Intensive Care Med. 1996;22(7):707-710. doi:10.1007/BF01709751" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -61,12 +69,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:survey">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.category.coding" />
       <sliceName value="survey" />
       <min value="1" />
@@ -227,12 +229,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:nervousSystem.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.code.coding" />
       <min value="1" />
       <max value="1" />
@@ -258,12 +254,6 @@
       </binding>
     </element>
     <element id="Observation.component:nervousSystem.value[x].coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.value[x].coding" />
       <min value="1" />
       <max value="1" />
@@ -297,12 +287,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:cardiovascularSystem.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.code.coding" />
       <min value="1" />
       <max value="1" />
@@ -328,12 +312,6 @@
       </binding>
     </element>
     <element id="Observation.component:cardiovascularSystem.value[x].coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.value[x].coding" />
       <min value="1" />
       <max value="1" />
@@ -367,12 +345,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:liver.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.code.coding" />
       <min value="1" />
       <max value="1" />
@@ -398,12 +370,6 @@
       </binding>
     </element>
     <element id="Observation.component:liver.value[x].coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.value[x].coding" />
       <min value="1" />
       <max value="1" />
@@ -437,12 +403,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:coagulation.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.code.coding" />
       <min value="1" />
       <max value="1" />
@@ -468,12 +428,6 @@
       </binding>
     </element>
     <element id="Observation.component:coagulation.value[x].coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.value[x].coding" />
       <min value="1" />
       <max value="1" />
@@ -507,12 +461,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:kidneys.code.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.code.coding" />
       <min value="1" />
       <max value="1" />
@@ -538,12 +486,6 @@
       </binding>
     </element>
     <element id="Observation.component:kidneys.value[x].coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.component.value[x].coding" />
       <min value="1" />
       <max value="1" />

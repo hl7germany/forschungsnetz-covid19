@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/study-inclusion-covid-19" />
+  <version value="0.9" />
   <name value="StudyInclusionCovid19" />
   <title value="Study Inclusion due to Covid-19" />
-  <status value="draft" />
+  <status value="active" />
   <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
   <description value="This observation captures if a confirmed Covid-19 diagnosis is the main reason for enrolment in the study." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -146,15 +153,22 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding">
-      <path value="Observation.valueCodeableConcept.coding" />
+      <path value="Observation.value[x].coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -165,7 +179,7 @@
       <min value="1" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding:snomed">
-      <path value="Observation.valueCodeableConcept.coding" />
+      <path value="Observation.value[x].coding" />
       <sliceName value="snomed" />
       <min value="1" />
       <max value="1" />
@@ -178,11 +192,11 @@
       </binding>
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding:snomed.system">
-      <path value="Observation.valueCodeableConcept.coding.system" />
+      <path value="Observation.value[x].coding.system" />
       <min value="1" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding:snomed.code">
-      <path value="Observation.valueCodeableConcept.coding.code" />
+      <path value="Observation.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Observation.bodySite">

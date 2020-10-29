@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/smoking-status" />
+  <version value="0.9" />
   <name value="SmokingStatus" />
   <title value="Smoking Status" />
   <status value="active" />
+  <date value="2020-10-29" />
   <publisher value="Charité" />
   <contact>
     <telecom>
