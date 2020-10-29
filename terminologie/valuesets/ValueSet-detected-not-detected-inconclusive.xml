@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.522"/>
     </identifier>
-    <version value="2020-06-09T16:18:52"/>
+    <version value="0.9"/>
     <name value="Detected-Not-detected-Inconclusive"/>
     <title value="Detected-Not-detected-Inconclusive"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="A set of codes representing the result of a test as detected, not detected, or inconclusive."/>

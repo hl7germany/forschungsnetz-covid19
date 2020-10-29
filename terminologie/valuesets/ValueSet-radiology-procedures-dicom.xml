@@ -8,10 +8,10 @@
         </valuePeriod>
     </extension>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures-dicom"/>
-    <version value="2020-05-03T15:28:27"/>
+    <version value="0.9"/>
     <name value="Imaging-Procedures-DICOM"/>
     <title value="Bildgebungsverfahren DICOM"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Bildgebungsverfahren der Lunge im Rahmen von Covid-19 mittels DICOM"/>

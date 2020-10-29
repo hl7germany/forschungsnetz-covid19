@@ -15,10 +15,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.501"/>
     </identifier>
-    <version value="2020-05-04T22:57:39"/>
+    <version value="0.9"/>
     <name value="Chronic-Kidney-Diseases-ICD"/>
     <title value="Chronische Nierenerkrankungen ICD-10-GM"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Chronische Nierenerkrankungen im Zusammenhang mit Covid-19 mittels ICD-10-GM"/>

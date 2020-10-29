@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.484"/>
     </identifier>
-    <version value="2020-05-03T13:34:19"/>
+    <version value="0.9"/>
     <name value="Gastrointestinal-Ulcers"/>
     <title value="Gastrointestinal-Ulcers"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Gastrointestinal ulcers in the context of Covid-19"/>

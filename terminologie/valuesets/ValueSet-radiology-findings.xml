@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.488"/>
     </identifier>
-    <version value="2020-05-03T16:03:42"/>
+    <version value="0.9"/>
     <name value="Radiologic-Findings"/>
     <title value="Radiology Findings"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Radiology findings in the context of Covid-19"/>

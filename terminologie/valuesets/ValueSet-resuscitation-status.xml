@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.486"/>
     </identifier>
-    <version value="2020-05-03T14:43:03"/>
+    <version value="0.9"/>
     <name value="Do-not-resuscitate-order"/>
     <title value="Do-not-resuscitate-order"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Do-not-resuscitate (DNR) order in the context of Covid-19"/>

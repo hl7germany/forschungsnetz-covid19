@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.541"/>
     </identifier>
-    <version value="2020-09-18T12:17:18"/>
+    <version value="0.9"/>
     <name value="Therapeutic-intent"/>
     <title value="Therapeutic Intent"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="The therapeutic intent why a medication is taken or administered."/>

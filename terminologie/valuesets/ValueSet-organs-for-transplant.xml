@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.479"/>
     </identifier>
-    <version value="2020-04-30T21:38:08"/>
+    <version value="0.9"/>
     <name value="Organs-for-Transplant"/>
     <title value="Organs for Transplantation"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Organs in the context of transplantation"/>

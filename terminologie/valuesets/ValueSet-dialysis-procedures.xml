@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.535"/>
     </identifier>
-    <version value="2020-07-20T12:28:17"/>
+    <version value="0.9"/>
     <name value="Dialysis-Procedures"/>
     <title value="Dialysis-Procedures"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Dialysis procedures"/>

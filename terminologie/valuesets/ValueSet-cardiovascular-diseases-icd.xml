@@ -15,10 +15,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.495"/>
     </identifier>
-    <version value="2020-05-04T21:23:32"/>
+    <version value="0.9"/>
     <name value="Cardiovascular-Diseases-ICD"/>
     <title value="Herz-Kreislauf-Erkrankungen ICD-10-GM"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Herz-Kreislauf-Erkrankungen im Zusammenhang mit Covid-19 mittels ICD-10-GM"/>

@@ -15,10 +15,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.470"/>
     </identifier>
-    <version value="2020-04-25T21:27:14"/>
+    <version value="0.9"/>
     <name value="Chronic-Lung-Diseases"/>
     <title value="Chronic-Lung-Diseases"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Chronic lung diseases in the context of Covid-19"/>

@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.532"/>
     </identifier>
-    <version value="2020-07-09T15:23:45"/>
+    <version value="0.9"/>
     <name value="Human-immunodeficiency-virus-infections-ICD"/>
     <title value="Human-immunodeficiency-virus-infections-ICD"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="HIV infections in the context of Covid-19"/>

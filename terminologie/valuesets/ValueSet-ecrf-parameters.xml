@@ -3,9 +3,9 @@
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
     </meta>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ecrf-parameter-codes" />
-    <version value="20200810" />
+    <version value="0.9" />
     <name value="Parameter-Codes-eCRF" />
-    <status value="draft" />
+    <status value="active" />
     <experimental value="true" />
     <date value="2020-08-10" />
     <publisher value="Charité" />

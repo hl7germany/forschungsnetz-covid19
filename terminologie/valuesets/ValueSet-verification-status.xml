@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.542"/>
     </identifier>
-    <version value="2020-10-12T16:11:58"/>
+    <version value="0.9"/>
     <name value="Condition-verification-status-sct"/>
     <title value="ConditionVerificationStatus SNOMED"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Condition.verificationStatus Codes"/>

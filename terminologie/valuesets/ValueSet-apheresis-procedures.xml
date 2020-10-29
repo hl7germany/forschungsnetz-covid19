@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.537"/>
     </identifier>
-    <version value="2020-07-21T12:32:57"/>
+    <version value="0.9"/>
     <name value="Apheresis-Procedures"/>
     <title value="Apheresis-Procedures"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Apheresis procedures"/>

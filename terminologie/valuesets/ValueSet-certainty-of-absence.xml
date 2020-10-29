@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.524"/>
     </identifier>
-    <version value="2020-06-18T14:38:47"/>
+    <version value="0.9"/>
     <name value="Certainty-of-Absence"/>
     <title value="Certainty of Absence"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Captures the degree certainty of the non-existence of a condition."/>

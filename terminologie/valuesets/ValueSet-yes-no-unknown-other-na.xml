@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.511"/>
     </identifier>
-    <version value="2020-05-13T09:51:16"/>
+    <version value="0.9"/>
     <name value="Yes-No-Unknown-Other-Na"/>
     <title value="Yes-No-Unknown-Other-Na"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Yes/No/Unknown/Other/Na response options"/>

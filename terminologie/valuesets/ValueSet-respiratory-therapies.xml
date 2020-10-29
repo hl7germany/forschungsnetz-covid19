@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.482"/>
     </identifier>
-    <version value="2020-05-03T12:37:51"/>
+    <version value="0.9"/>
     <name value="Respiratory-Therapies"/>
     <title value="Respiratory Therapies"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Therapeutic respiratory procedures"/>

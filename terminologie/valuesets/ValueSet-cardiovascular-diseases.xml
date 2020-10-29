@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.469"/>
     </identifier>
-    <version value="2020-04-25T20:21:19"/>
+    <version value="0.9"/>
     <name value="Cardiovascular-Diseases"/>
     <title value="Cardiovascular-Diseases"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Cardiovascular diseases in the context of Covid-19"/>

@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.520"/>
     </identifier>
-    <version value="2020-06-08T12:32:31"/>
+    <version value="0.9"/>
     <name value="Known-Exposure-SARS-CoV-2"/>
     <title value="Exposition mit SARS-CoV-2"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="A set of answers if the patient had contact with a person suffering from Covid-19."/>

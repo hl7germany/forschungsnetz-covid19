@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="2.16.840.1.113883.3.1937.99.61.65.11.4"/>
     </identifier>
-    <version value="2020-07-06T12:02:16"/>
+    <version value="0.9"/>
     <name value="Birth-Sex"/>
     <title value="Birth-Sex"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Sex at birth"/>

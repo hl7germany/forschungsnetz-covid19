@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.513"/>
     </identifier>
-    <version value="2020-05-19T10:47:21"/>
+    <version value="0.9"/>
     <name value="ECMO-therapies"/>
     <title value="ECMO-Therapien"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Extrakorporale Membranoxygenation (ECMO) im Rahmen von Covid-19"/>

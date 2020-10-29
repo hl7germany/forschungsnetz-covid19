@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.523"/>
     </identifier>
-    <version value="2020-06-18T13:29:46"/>
+    <version value="0.9"/>
     <name value="Certainty-of-Presence"/>
     <title value="Certainty of Presence"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Captures the degree of certainty of the existence of a condition."/>

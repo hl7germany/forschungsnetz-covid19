@@ -14,10 +14,10 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.500"/>
     </identifier>
-    <version value="2020-05-04T22:51:50"/>
+    <version value="0.9"/>
     <name value="Immunoglobulins-ATC"/>
     <title value="Immunoglobulins ATC"/>
-    <status value="draft"/>
+    <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
     <description value="Pharmacological therapy using immunoglobulins in the context of Covid-19"/>
