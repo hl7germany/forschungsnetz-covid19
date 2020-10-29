@@ -2,10 +2,18 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-base-condition" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
+  <version value="0.9" />
   <name value="GeccoBaseCondition" />
   <title value="Gecco Base Condition" />
-  <status value="draft" />
+  <status value="active" />
+  <date value="2020-10-29" />
   <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
   <description value="Base condition for the GECCO dataset that contains an additional extension and constraints on the verificationStatus-element." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -51,6 +59,7 @@
         <severity value="error" />
         <human value="If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present." />
         <expression value="verificationStatus.exists() != Condition.extension.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence').exists()" />
+        <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
       </constraint>
     </element>
     <element id="Condition.extension">

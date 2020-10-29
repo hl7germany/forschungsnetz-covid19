@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases" />
+  <version value="0.9" />
   <name value="ChronicLungDiseases" />
   <title value="Chronic Lung Diseases" />
-  <status value="draft" />
+  <status value="active" />
+  <date value="2020-10-29" />
   <publisher value="Charité" />
   <contact>
     <telecom>
@@ -11,7 +13,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
-  <description value="Chronic lung diseases as a risk factor for a severe course of an infection with SARS-Cov-2" />
+  <description value="Chronic lung diseases as a risk factor for a severe course of an infection with SARS-CoV-2" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

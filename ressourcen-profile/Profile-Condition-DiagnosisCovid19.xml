@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19" />
+  <version value="0.9" />
   <name value="DiagnosisCovid19" />
   <title value="Diagnosis Covid-19" />
-  <status value="draft" />
+  <status value="active" />
+  <date value="2020-10-29" />
   <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
   <description value="Profile to capture the diagnosis of disease caused by 2019 novel coronavirus. Includes the stage at diagnosis." />
   <fhirVersion value="4.0.1" />
   <mapping>

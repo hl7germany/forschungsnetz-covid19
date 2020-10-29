@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle" />
+  <version value="0.9" />
   <name value="GeccoBundle" />
   <title value="GECCO Bundle" />
-  <status value="draft" />
+  <status value="active" />
+  <date value="2020-10-29" />
   <publisher value="Charité" />
   <contact>
     <telecom>
       <system value="url" />
-      <value value="https://www.bihealth.org/en/forschung/core-facilities/interoperabilitaet" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
   <description value="Bundle of type 'transaction' used to collect the set of resources as part of the GECCO dataset into a single instance." />
@@ -546,43 +548,6 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/study-inclusion-covid-19" />
       </type>
     </element>
-    <element id="Bundle.entry:studyInclusion.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:studyInclusion.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:studyInclusion.resource.value[x]:valueCodeableConcept">
-      <path value="Bundle.entry.resource.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="Bundle.entry:studyInclusion.resource.value[x]:valueCodeableConcept.coding">
-      <path value="Bundle.entry.resource.value[x].coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
     <element id="Bundle.entry:studyParticipation">
       <path value="Bundle.entry" />
       <sliceName value="studyParticipation" />
@@ -594,73 +559,6 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/interventional-clinical-trial-participation" />
       </type>
     </element>
-    <element id="Bundle.entry:studyParticipation.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:studyParticipation.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:studyParticipation.resource.value[x]:valueCodeableConcept">
-      <path value="Bundle.entry.resource.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="Bundle.entry:studyParticipation.resource.value[x]:valueCodeableConcept.coding">
-      <path value="Bundle.entry.resource.value[x].coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:studyParticipation.resource.component:eudraCT">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="eudraCT" />
-    </element>
-    <element id="Bundle.entry:studyParticipation.resource.component:eudraCT.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:studyParticipation.resource.component:nct">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="nct" />
-    </element>
-    <element id="Bundle.entry:studyParticipation.resource.component:nct.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
     <element id="Bundle.entry:symptom">
       <path value="Bundle.entry" />
       <sliceName value="symptom" />
@@ -671,50 +569,6 @@
         <code value="Resource" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19" />
       </type>
-    </element>
-    <element id="Bundle.entry:symptom.resource.verificationStatus.coding">
-      <path value="Bundle.entry.resource.verificationStatus.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:symptom.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:symptom.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:symptom.resource.bodySite.coding">
-      <path value="Bundle.entry.resource.bodySite.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:dialysisHemofiltration">
       <path value="Bundle.entry" />
@@ -749,28 +603,6 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/prone-position" />
       </type>
     </element>
-    <element id="Bundle.entry:pronePosition.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:pronePosition.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
     <element id="Bundle.entry:extracorporealMembraneOxygenation">
       <path value="Bundle.entry" />
       <sliceName value="extracorporealMembraneOxygenation" />
@@ -781,28 +613,6 @@
         <code value="Resource" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/extracorporeal-membrane-oxygenation" />
       </type>
-    </element>
-    <element id="Bundle.entry:extracorporealMembraneOxygenation.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:extracorporealMembraneOxygenation.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:treatmentIntensiveCareUnit">
       <path value="Bundle.entry" />
@@ -815,32 +625,6 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/patient-in-icu" />
       </type>
     </element>
-    <element id="Bundle.entry:treatmentIntensiveCareUnit.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:treatmentIntensiveCareUnit.resource.value[x]:valueCodeableConcept">
-      <path value="Bundle.entry.resource.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-    </element>
-    <element id="Bundle.entry:treatmentIntensiveCareUnit.resource.value[x]:valueCodeableConcept.coding">
-      <path value="Bundle.entry.resource.value[x].coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
     <element id="Bundle.entry:bloodGasPanel">
       <path value="Bundle.entry" />
       <sliceName value="bloodGasPanel" />
@@ -851,59 +635,6 @@
         <code value="Resource" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-gas-panel" />
       </type>
-    </element>
-    <element id="Bundle.entry:bloodGasPanel.resource.identifier">
-      <path value="Bundle.entry.resource.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:bloodGasPanel.resource.identifier:analyseBefundCode">
-      <path value="Bundle.entry.resource.identifier" />
-      <sliceName value="analyseBefundCode" />
-    </element>
-    <element id="Bundle.entry:bloodGasPanel.resource.identifier:analyseBefundCode.type.coding">
-      <path value="Bundle.entry.resource.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:bloodGasPanel.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="pattern" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="Bundle.entry:bloodGasPanel.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <ordered value="true" />
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:carbonDioxidePartialPressure">
       <path value="Bundle.entry" />
@@ -916,58 +647,6 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure" />
       </type>
     </element>
-    <element id="Bundle.entry:carbonDioxidePartialPressure.resource.identifier">
-      <path value="Bundle.entry.resource.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:carbonDioxidePartialPressure.resource.identifier:analyseBefundCode">
-      <path value="Bundle.entry.resource.identifier" />
-      <sliceName value="analyseBefundCode" />
-    </element>
-    <element id="Bundle.entry:carbonDioxidePartialPressure.resource.identifier:analyseBefundCode.type.coding">
-      <path value="Bundle.entry.resource.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:carbonDioxidePartialPressure.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="pattern" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="Bundle.entry:carbonDioxidePartialPressure.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
     <element id="Bundle.entry:oxygenPartialPressure">
       <path value="Bundle.entry" />
       <sliceName value="oxygenPartialPressure" />
@@ -978,58 +657,6 @@
         <code value="Resource" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-partial-pressure" />
       </type>
-    </element>
-    <element id="Bundle.entry:oxygenPartialPressure.resource.identifier">
-      <path value="Bundle.entry.resource.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:oxygenPartialPressure.resource.identifier:analyseBefundCode">
-      <path value="Bundle.entry.resource.identifier" />
-      <sliceName value="analyseBefundCode" />
-    </element>
-    <element id="Bundle.entry:oxygenPartialPressure.resource.identifier:analyseBefundCode.type.coding">
-      <path value="Bundle.entry.resource.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:oxygenPartialPressure.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="pattern" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="Bundle.entry:oxygenPartialPressure.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:inhaledOxygenConcentration">
       <path value="Bundle.entry" />
@@ -1042,58 +669,6 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/inhaled-oxygen-concentration" />
       </type>
     </element>
-    <element id="Bundle.entry:inhaledOxygenConcentration.resource.identifier">
-      <path value="Bundle.entry.resource.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:inhaledOxygenConcentration.resource.identifier:analyseBefundCode">
-      <path value="Bundle.entry.resource.identifier" />
-      <sliceName value="analyseBefundCode" />
-    </element>
-    <element id="Bundle.entry:inhaledOxygenConcentration.resource.identifier:analyseBefundCode.type.coding">
-      <path value="Bundle.entry.resource.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:inhaledOxygenConcentration.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="pattern" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="Bundle.entry:inhaledOxygenConcentration.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
     <element id="Bundle.entry:pH">
       <path value="Bundle.entry" />
       <sliceName value="pH" />
@@ -1104,58 +679,6 @@
         <code value="Resource" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH" />
       </type>
-    </element>
-    <element id="Bundle.entry:pH.resource.identifier">
-      <path value="Bundle.entry.resource.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:pH.resource.identifier:analyseBefundCode">
-      <path value="Bundle.entry.resource.identifier" />
-      <sliceName value="analyseBefundCode" />
-    </element>
-    <element id="Bundle.entry:pH.resource.identifier:analyseBefundCode.type.coding">
-      <path value="Bundle.entry.resource.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:pH.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="pattern" />
-          <path value="code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="2" />
-    </element>
-    <element id="Bundle.entry:pH.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Bundle.entry:sofaScore">
       <path value="Bundle.entry" />
@@ -1168,28 +691,6 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score" />
       </type>
     </element>
-    <element id="Bundle.entry:sofaScore.resource.category.coding">
-      <path value="Bundle.entry.resource.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:sofaScore.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
     <element id="Bundle.entry:respiratoryRate">
       <path value="Bundle.entry" />
       <sliceName value="respiratoryRate" />
@@ -1200,37 +701,6 @@
         <code value="Resource" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate" />
       </type>
-    </element>
-    <element id="Bundle.entry:respiratoryRate.resource.category">
-      <path value="Bundle.entry.resource.category" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:respiratoryRate.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Bundle.entry:bloodPressure">
       <path value="Bundle.entry" />
@@ -1243,75 +713,6 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure" />
       </type>
     </element>
-    <element id="Bundle.entry:bloodPressure.resource.category">
-      <path value="Bundle.entry.resource.category" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:bloodPressure.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:bloodPressure.resource.component:SystolicBP">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="SystolicBP" />
-    </element>
-    <element id="Bundle.entry:bloodPressure.resource.component:SystolicBP.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Bundle.entry:bloodPressure.resource.component:DiastolicBP">
-      <path value="Bundle.entry.resource.component" />
-      <sliceName value="DiastolicBP" />
-    </element>
-    <element id="Bundle.entry:bloodPressure.resource.component:DiastolicBP.code.coding">
-      <path value="Bundle.entry.resource.component.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Bundle.entry:heartRate">
       <path value="Bundle.entry" />
       <sliceName value="heartRate" />
@@ -1322,37 +723,6 @@
         <code value="Resource" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate" />
       </type>
-    </element>
-    <element id="Bundle.entry:heartRate.resource.category">
-      <path value="Bundle.entry.resource.category" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:heartRate.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Bundle.entry:bodyTemperature">
       <path value="Bundle.entry" />
@@ -1365,37 +735,6 @@
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature" />
       </type>
     </element>
-    <element id="Bundle.entry:bodyTemperature.resource.category">
-      <path value="Bundle.entry.resource.category" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:bodyTemperature.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Bundle.entry:oxygenSaturation">
       <path value="Bundle.entry" />
       <sliceName value="oxygenSaturation" />
@@ -1406,37 +745,6 @@
         <code value="Resource" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation" />
       </type>
-    </element>
-    <element id="Bundle.entry:oxygenSaturation.resource.category">
-      <path value="Bundle.entry.resource.category" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Bundle.entry:oxygenSaturation.resource.code.coding">
-      <path value="Bundle.entry.resource.code.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="code" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
     </element>
   </differential>
 </StructureDefinition>
