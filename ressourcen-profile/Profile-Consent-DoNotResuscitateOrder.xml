@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.netzwerk-universitaetsmedizin.de//fhir/StructureDefinition/do-not-resuscitate-order" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/do-not-resuscitate-order" />
   <name value="DoNotResuscitateOrder" />
   <title value="Do-Not-Resuscitate Order" />
   <status value="draft" />
