@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight" />
+  <version value="0.9" />
   <name value="BodyWeight" />
-  <status value="draft" />
+  <status value="active" />
+  <date value="2020-10-29" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
