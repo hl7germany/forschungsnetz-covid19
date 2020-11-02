@@ -195,53 +195,5 @@
       <path value="Immunization.protocolApplied.targetDisease.coding.code" />
       <min value="1" />
     </element>
-    <element id="Immunization.protocolApplied.doseNumber[x]">
-      <path value="Immunization.protocolApplied.doseNumber[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString">
-      <path value="Immunization.protocolApplied.doseNumber[x]" />
-      <sliceName value="doseNumberString" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
-    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension">
-      <path value="Immunization.protocolApplied.doseNumber[x].extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:dataAbsentReason">
-      <path value="Immunization.protocolApplied.doseNumber[x].extension" />
-      <sliceName value="dataAbsentReason" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
-      </type>
-    </element>
-    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:dataAbsentReason.value[x]">
-      <path value="Immunization.protocolApplied.doseNumber[x].extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
-    </element>
-    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:dataAbsentReason.value[x]:valueCode">
-      <path value="Immunization.protocolApplied.doseNumber[x].extension.value[x]" />
-      <sliceName value="valueCode" />
-      <min value="1" />
-      <fixedCode value="unknown" />
-    </element>
   </differential>
 </StructureDefinition>
