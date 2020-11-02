@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature" />
-  <version value="0.9" />
+  <version value="0.9.1" />
   <name value="BodyTemperature" />
+  <title value="Body Temperature" />
   <status value="active" />
   <date value="2020-10-29" />
   <publisher value="Charité" />
@@ -12,6 +13,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
+  <description value="Body temperature of a patient" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -64,14 +66,20 @@
       <min value="1" />
       <fixedCode value="386725007" />
     </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <slicing>
+        <rules value="closed" />
+      </slicing>
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
     </element>
     <element id="Observation.value[x]:valueQuantity.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Observation.value[x].unit" />
       <fixedString value="°C" />
     </element>
