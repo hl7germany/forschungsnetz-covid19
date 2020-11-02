@@ -225,7 +225,6 @@
     <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:dataAbsentReason">
       <path value="Immunization.protocolApplied.doseNumber[x].extension" />
       <sliceName value="dataAbsentReason" />
-      <min value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
