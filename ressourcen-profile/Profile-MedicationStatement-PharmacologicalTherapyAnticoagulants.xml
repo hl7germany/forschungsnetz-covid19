@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants" />
-  <version value="0.9" />
+  <version value="0.9.1" />
   <name value="PharmacologicalTherapyAnticoagulants" />
   <title value="Pharmacological Therapy Anticoagulants" />
   <status value="active" />
@@ -92,6 +92,9 @@
       <sliceName value="snomed" />
       <min value="1" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
       <binding>
         <strength value="required" />
         <description value="Prophylaxis | Curative" />
