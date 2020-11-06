@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies" />
-  <version value="0.9" />
+  <version value="0.9.1" />
   <name value="RespiratoryTherapies" />
   <title value="Respiratory Therapies" />
   <status value="active" />
