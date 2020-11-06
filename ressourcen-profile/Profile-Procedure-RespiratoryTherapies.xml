@@ -58,10 +58,6 @@
         <code value="277132007" />
       </patternCoding>
     </element>
-    <element id="Procedure.category.coding:sct.code">
-      <path value="Procedure.category.coding.code" />
-      <patternCode value="277132007" />
-    </element>
     <element id="Procedure.code.coding:sct">
       <path value="Procedure.code.coding" />
       <sliceName value="sct" />
