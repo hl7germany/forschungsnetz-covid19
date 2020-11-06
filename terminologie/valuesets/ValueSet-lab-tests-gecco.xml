@@ -13,7 +13,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.521"/>
     </identifier>
-    <version value="0.9"/>
+    <version value="0.9.1"/>
     <name value="Lab-tests-gecco"/>
     <title value="Laborparameter"/>
     <status value="active"/>
@@ -95,6 +95,10 @@
             <concept>
                 <code value="48066-5"/>
                 <display value="Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"/>
+            </concept>
+            <concept>
+                <code value="48065-7"/>
+                <display value="Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma"/>
             </concept>
             <concept>
                 <code value="48067-3"/>
@@ -473,6 +477,10 @@
                 <display value="Antithrombin actual/normal in Platelet poor plasma by Chromogenic method"/>
             </concept>
             <concept>
+                <code value="27812-7"/>
+                <display value="Antithrombin Ag actual/normal in Platelet poor plasma by Immunoassay"/>
+            </concept>
+            <concept>
                 <code value="75241-0"/>
                 <display value="Procalcitonin [Mass/volume] in Serum or Plasma by Immunoassay"/>
             </concept>
@@ -499,10 +507,6 @@
             <concept>
                 <code value="33762-6"/>
                 <display value="Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"/>
-            </concept>
-            <concept>
-                <code value="83107-3"/>
-                <display value="Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma by Immunoassay"/>
             </concept>
             <concept>
                 <code value="16859-1"/>
