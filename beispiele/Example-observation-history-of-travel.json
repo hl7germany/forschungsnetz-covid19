@@ -53,6 +53,15 @@
 		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
 	},
 	"effectiveDateTime": "2020-09-28",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"code": "373066001",
+				"display": "Yes (qualifier value)",
+				"system": "http://snomed.info/sct"
+			}
+		]
+	},
 	"component": [
 		{
 			"code": {

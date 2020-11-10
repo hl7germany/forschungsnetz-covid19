@@ -149,10 +149,16 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
       <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -161,6 +167,18 @@
         <description value="Yes | No | Unknown" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na" />
       </binding>
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding">
+      <path value="Observation.valueCodeableConcept.coding" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding.system">
+      <path value="Observation.valueCodeableConcept.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding.code">
+      <path value="Observation.valueCodeableConcept.coding.code" />
+      <min value="1" />
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
