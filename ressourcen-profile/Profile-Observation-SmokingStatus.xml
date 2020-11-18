@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/smoking-status" />
-  <version value="0.9" />
+  <version value="0.9.1" />
   <name value="SmokingStatus" />
   <title value="Smoking Status" />
   <status value="active" />
@@ -85,6 +85,10 @@
           <path value="$this" />
         </discriminator>
       </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
       <path value="Observation.valueCodeableConcept" />
@@ -94,7 +98,8 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips" />
+        <description value="Smoking status codes" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/smoking-status" />
       </binding>
     </element>
     <element id="Observation.component">
