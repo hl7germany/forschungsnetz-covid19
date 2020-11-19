@@ -84,6 +84,7 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="open" />
       </slicing>
       <type>
         <code value="CodeableConcept" />
