@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score" />
-  <version value="0.9" />
+  <version value="0.9.1" />
   <name value="SOFA" />
   <title value="SOFA Score" />
   <status value="active" />
@@ -51,6 +51,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <constraint>
+        <key value="value-1" />
+        <severity value="error" />
+        <human value="A value or dataAbsentReason SHALL be present." />
+        <expression value="valueInteger.exists() or dataAbsentReason.exists()" />
+      </constraint>
+    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
@@ -138,10 +147,24 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <type>
-        <code value="string" />
+        <code value="integer" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueInteger">
+      <path value="Observation.valueInteger" />
+      <sliceName value="valueInteger" />
+      <type>
+        <code value="integer" />
+      </type>
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
@@ -152,13 +175,11 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:respiratorySystem">
       <path value="Observation.component" />
       <sliceName value="respiratorySystem" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:respiratorySystem.code">
       <path value="Observation.component.code" />
@@ -216,7 +237,6 @@
       <path value="Observation.component" />
       <sliceName value="nervousSystem" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:nervousSystem.code">
       <path value="Observation.component.code" />
@@ -274,7 +294,6 @@
       <path value="Observation.component" />
       <sliceName value="cardiovascularSystem" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:cardiovascularSystem.code">
       <path value="Observation.component.code" />
@@ -332,7 +351,6 @@
       <path value="Observation.component" />
       <sliceName value="liver" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:liver.code">
       <path value="Observation.component.code" />
@@ -390,7 +408,6 @@
       <path value="Observation.component" />
       <sliceName value="coagulation" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:coagulation.code">
       <path value="Observation.component.code" />
@@ -448,7 +465,6 @@
       <path value="Observation.component" />
       <sliceName value="kidneys" />
       <max value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component:kidneys.code">
       <path value="Observation.component.code" />
