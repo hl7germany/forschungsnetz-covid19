@@ -143,6 +143,7 @@
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]">
