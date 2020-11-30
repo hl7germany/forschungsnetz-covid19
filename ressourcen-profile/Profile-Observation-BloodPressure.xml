@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure" />
-  <version value="0.9" />
+  <version value="0.9.1" />
   <name value="BloodPressure" />
+  <title value="Blood Pressure" />
   <status value="active" />
   <date value="2020-10-29" />
   <publisher value="Charité" />
@@ -12,6 +13,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
+  <description value="The blood pressure of a patient." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -46,61 +48,355 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/bp" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:BPCodeSnomed">
-      <path value="Observation.code.coding" />
-      <sliceName value="BPCodeSnomed" />
-      <max value="1" />
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding:BPCodeSnomed.system">
+    <element id="Observation.category:vitalSignsCategory">
+      <path value="Observation.category" />
+      <sliceName value="vitalSignsCategory" />
+      <min value="1" />
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+          <code value="vital-signs" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category:vitalSignsCategory.coding">
+      <path value="Observation.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.category:vitalSignsCategory.coding:vitalSignsCoding">
+      <path value="Observation.category.coding" />
+      <sliceName value="vitalSignsCoding" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+        <code value="vital-signs" />
+      </patternCoding>
+    </element>
+    <element id="Observation.category:vitalSignsCategory.coding:vitalSignsCoding.system">
+      <path value="Observation.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.category:vitalSignsCategory.coding:vitalSignsCoding.code">
+      <path value="Observation.category.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="85354-9" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Observation.code.coding:BPCodeSnomed.code">
+    <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="75367002" />
     </element>
-    <element id="Observation.component:SystolicBP">
-      <path value="Observation.component" />
-      <sliceName value="SystolicBP" />
-    </element>
-    <element id="Observation.component:SystolicBP.code.coding:SBPCodeSnomed">
-      <path value="Observation.component.code.coding" />
-      <sliceName value="SBPCodeSnomed" />
+    <element id="Observation.code.coding:snomed">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomed" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="75367002" />
+      </patternCoding>
     </element>
-    <element id="Observation.component:SystolicBP.code.coding:SBPCodeSnomed.system">
+    <element id="Observation.code.coding:snomed.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:snomed.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <max value="0" />
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure">
+      <path value="Observation.component" />
+      <sliceName value="systolicBloodPressure" />
+      <short value="Systolic blood pressure" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="8480-6" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8480-6" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:systolicBloodPressure.code.coding:loinc.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Observation.component:SystolicBP.code.coding:SBPCodeSnomed.code">
+    <element id="Observation.component:systolicBloodPressure.code.coding:loinc.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="271649006" />
     </element>
-    <element id="Observation.component:DiastolicBP">
-      <path value="Observation.component" />
-      <sliceName value="DiastolicBP" />
-    </element>
-    <element id="Observation.component:DiastolicBP.code.coding:DBPCodeSnomed">
+    <element id="Observation.component:systolicBloodPressure.code.coding:snomed">
       <path value="Observation.component.code.coding" />
-      <sliceName value="DBPCodeSnomed" />
+      <sliceName value="snomed" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="271649006" />
+      </patternCoding>
     </element>
-    <element id="Observation.component:DiastolicBP.code.coding:DBPCodeSnomed.system">
+    <element id="Observation.component:systolicBloodPressure.code.coding:snomed.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Observation.component:DiastolicBP.code.coding:DBPCodeSnomed.code">
+    <element id="Observation.component:systolicBloodPressure.code.coding:snomed.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
-      <fixedCode value="271650006" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <short value="Systolic blood pressure value" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure.value[x]:valueQuantity.value">
+      <path value="Observation.component.valueQuantity.value" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure.value[x]:valueQuantity.unit">
+      <path value="Observation.component.valueQuantity.unit" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure.value[x]:valueQuantity.system">
+      <path value="Observation.component.valueQuantity.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.component:systolicBloodPressure.value[x]:valueQuantity.code">
+      <path value="Observation.component.valueQuantity.code" />
+      <min value="1" />
+      <fixedCode value="mm[Hg]" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure">
+      <path value="Observation.component" />
+      <sliceName value="diastolicBloodPressure" />
+      <short value="Diastolic blood pressure" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.code">
+      <path value="Observation.component.code" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="8462-4" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.code.coding">
+      <path value="Observation.component.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.code.coding:loinc">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="8462-4" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.code.coding:loinc.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.code.coding:loinc.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.code.coding:snomed">
+      <path value="Observation.component.code.coding" />
+      <sliceName value="snomed" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="271650006" />
+      </patternCoding>
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.code.coding:snomed.system">
+      <path value="Observation.component.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.code.coding:snomed.code">
+      <path value="Observation.component.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.value[x]">
+      <path value="Observation.component.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.value[x]:valueQuantity">
+      <path value="Observation.component.valueQuantity" />
+      <sliceName value="valueQuantity" />
+      <short value="Diastolic blood pressure value" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.value[x]:valueQuantity.value">
+      <path value="Observation.component.valueQuantity.value" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.value[x]:valueQuantity.unit">
+      <path value="Observation.component.valueQuantity.unit" />
+      <min value="1" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.value[x]:valueQuantity.system">
+      <path value="Observation.component.valueQuantity.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Observation.component:diastolicBloodPressure.value[x]:valueQuantity.code">
+      <path value="Observation.component.valueQuantity.code" />
+      <min value="1" />
+      <fixedCode value="mm[Hg]" />
     </element>
   </differential>
 </StructureDefinition>
