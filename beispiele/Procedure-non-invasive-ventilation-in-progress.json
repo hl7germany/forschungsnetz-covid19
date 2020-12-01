@@ -11,8 +11,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "53950000",
-				"display": "Respiratory therapy (procedure)"
+				"code": "277132007",
+				"display": "Therapeutic procedure (procedure)"
 			}
 		]
 	},
