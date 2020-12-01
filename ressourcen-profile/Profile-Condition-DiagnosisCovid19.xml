@@ -55,9 +55,81 @@
       <path value="Condition.verificationStatus" />
       <mustSupport value="true" />
     </element>
+    <element id="Condition.verificationStatus.coding">
+      <path value="Condition.verificationStatus.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Condition.verificationStatus.coding:conditionVerificationStatus">
+      <path value="Condition.verificationStatus.coding" />
+      <sliceName value="conditionVerificationStatus" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+      </patternCoding>
+    </element>
+    <element id="Condition.verificationStatus.coding:conditionVerificationStatus.system">
+      <path value="Condition.verificationStatus.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Condition.verificationStatus.coding:conditionVerificationStatus.code">
+      <path value="Condition.verificationStatus.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Condition.verificationStatus.coding:snomed">
+      <path value="Condition.verificationStatus.coding" />
+      <sliceName value="snomed" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <binding>
+        <strength value="required" />
+        <description value="Present | Not present" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/verification-status" />
+      </binding>
+    </element>
     <element id="Condition.category">
       <path value="Condition.category" />
+      <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Condition.category.coding">
+      <path value="Condition.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Condition.category.coding:infectiousDiseases">
+      <path value="Condition.category.coding" />
+      <sliceName value="infectiousDiseases" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="394807007" />
+      </patternCoding>
+    </element>
+    <element id="Condition.category.coding:infectiousDiseases.system">
+      <path value="Condition.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Condition.category.coding:infectiousDiseases.code">
+      <path value="Condition.category.coding.code" />
+      <min value="1" />
     </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />
