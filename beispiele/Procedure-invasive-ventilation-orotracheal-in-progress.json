@@ -1,51 +1,51 @@
 {
-    "id": "c01d0750-4cc2-4a0b-a1b1-faf08d9fdd7f",
-    "meta": {
-        "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
-        ]
-    },
-    "category": {
-        "coding": [
-            {
-                "code": "53950000",
-                "display": "Respiratory therapy (procedure)",
-                "system": "http://snomed.info/sct"
-            }
-        ]
-    },
-    "code": {
-        "coding": [
-            {
-                "code": "40617009",
-                "display": "Artificial respiration (procedure)",
-                "system": "http://snomed.info/sct"
-            }
-        ],
-        "text": "Invasive ventilation (orotracheal)"
-    },
-    "performedDateTime": {
-        "extension": [
-            {
-                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                "valueCode": "unknown"
-            }
-        ]
-    },
-    "status": "in-progress",
-    "subject": {
-        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
-    },
-    "usedCode": [
-        {
-            "coding": [
-                {
-                    "code": "26412008",
-                    "display": "Endotracheal tube, device (physical object)",
-                    "system": "http://snomed.info/sct"
-                }
-            ]
-        }
-    ],
-    "resourceType": "Procedure"
+	"resourceType": "Procedure",
+	"id": "c01d0750-4cc2-4a0b-a1b1-faf08d9fdd7f",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
+		]
+	},
+	"status": "in-progress",
+	"category": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "277132007",
+				"display": "Therapeutic procedure (procedure)"
+			}
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "40617009",
+				"display": "Artificial respiration (procedure)"
+			}
+		],
+		"text": "Invasive ventilation (orotracheal)"
+	},
+	"subject": {
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+	},
+	"_performedDateTime": {
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+				"valueCode": "unknown"
+			}
+		]
+	},
+	"usedCode": [
+		{
+			"coding": [
+				{
+					"system": "http://snomed.info/sct",
+					"code": "26412008",
+					"display": "Endotracheal tube, device (physical object)"
+				}
+			]
+		}
+	]
 }
