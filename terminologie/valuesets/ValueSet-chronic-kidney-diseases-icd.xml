@@ -16,7 +16,7 @@
         <value value="1.2.276.0.76.11.501"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Chronic-Kidney-Diseases-ICD"/>
+    <name value="ChronicKidneyDiseasesICD"/>
     <title value="Chronische Nierenerkrankungen ICD-10-GM"/>
     <status value="active"/>
     <experimental value="false"/>
