@@ -69,6 +69,10 @@
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
       <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
         <rules value="closed" />
       </slicing>
       <type>
@@ -78,10 +82,6 @@
     <element id="Observation.value[x]:valueQuantity">
       <path value="Observation.value[x]" />
       <sliceName value="valueQuantity" />
-    </element>
-    <element id="Observation.value[x]:valueQuantity.unit">
-      <path value="Observation.value[x].unit" />
-      <fixedString value="°C" />
     </element>
     <element id="Observation.value[x]:valueQuantity.code">
       <path value="Observation.value[x].code" />
