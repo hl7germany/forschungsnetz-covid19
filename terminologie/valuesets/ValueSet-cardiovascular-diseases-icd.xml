@@ -16,7 +16,7 @@
         <value value="1.2.276.0.76.11.495"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Cardiovascular-Diseases-ICD"/>
+    <name value="CardiovascularDiseasesICD"/>
     <title value="Herz-Kreislauf-Erkrankungen ICD-10-GM"/>
     <status value="active"/>
     <experimental value="false"/>
