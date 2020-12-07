@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.509"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Complications-Covid-19-ICD"/>
+    <name value="ComplicationsCovid19ICD"/>
     <title value="Komplikationen im Rahmen von Covid-19"/>
     <status value="active"/>
     <experimental value="false"/>

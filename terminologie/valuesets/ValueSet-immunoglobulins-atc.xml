@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.500"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Immunoglobulins-ATC"/>
+    <name value="ImmunoglobulinsATC"/>
     <title value="Immunoglobulins ATC"/>
     <status value="active"/>
     <experimental value="false"/>

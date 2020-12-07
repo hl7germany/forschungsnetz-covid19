@@ -9,7 +9,7 @@
     </extension>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures-dicom"/>
     <version value="0.9"/>
-    <name value="Imaging-Procedures-DICOM"/>
+    <name value="ImagingProceduresDICOM"/>
     <title value="Bildgebungsverfahren DICOM"/>
     <status value="active"/>
     <experimental value="false"/>

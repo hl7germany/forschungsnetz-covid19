@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.487"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Imaging-Procedures"/>
+    <name value="ImagingProcedures"/>
     <title value="Radiology Procedures"/>
     <status value="active"/>
     <experimental value="false"/>

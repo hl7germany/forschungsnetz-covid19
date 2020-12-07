@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.516"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Drug-Therapy-OPS"/>
+    <name value="DrugTherapyOPS"/>
     <title value="Pharmacological Therapy OPS"/>
     <status value="active"/>
     <experimental value="false"/>

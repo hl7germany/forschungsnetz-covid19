@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.479"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Organs-for-Transplant"/>
+    <name value="OrgansForTransplant"/>
     <title value="Organs for Transplantation"/>
     <status value="active"/>
     <experimental value="false"/>

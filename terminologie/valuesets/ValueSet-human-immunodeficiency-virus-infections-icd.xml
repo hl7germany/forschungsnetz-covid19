@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.532"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Human-immunodeficiency-virus-infections-ICD"/>
-    <title value="Human-immunodeficiency-virus-infections-ICD"/>
+    <name value="HumanImmunodeficiencyVirusInfectionsICD"/>
+    <title value="Human Immunodeficiency Virus Infections ICD"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

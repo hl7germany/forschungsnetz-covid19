@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.482"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Respiratory-Therapies"/>
+    <name value="RespiratoryTherapies"/>
     <title value="Respiratory Therapies"/>
     <status value="active"/>
     <experimental value="false"/>

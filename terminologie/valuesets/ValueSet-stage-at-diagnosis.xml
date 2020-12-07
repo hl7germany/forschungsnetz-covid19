@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.492"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Stage-at-Diagnosis"/>
-    <title value="Stage-at-Diagnosis"/>
+    <name value="StageAtDiagnosis"/>
+    <title value="Stage at Diagnosis"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

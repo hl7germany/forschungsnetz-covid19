@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.539"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Drug-therapy-snomed"/>
-    <title value="Drug-Therapy-SNOMED"/>
+    <name value="DrugTherapySnomed"/>
+    <title value="Drug Therapy SNOMED"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

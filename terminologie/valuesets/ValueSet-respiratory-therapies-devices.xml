@@ -4,8 +4,8 @@
     </meta>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies-devices"/>
     <version value="0.9"/>
-    <name value="Respiratory-Therapy-Devices"/>
-    <title value="Respiratory-Therapy-Devices"/>
+    <name value="RespiratoryTherapyDevices"/>
+    <title value="Respiratory Therapy Devices"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

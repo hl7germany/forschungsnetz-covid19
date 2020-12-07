@@ -16,7 +16,7 @@
         <value value="1.2.276.0.76.11.494"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Drug-Therapy-ATC"/>
+    <name value="DrugTherapyATC"/>
     <title value="Pharmacological Therapy ATC"/>
     <status value="active"/>
     <experimental value="false"/>

@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.534"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Malignant-Neoplastic-Diseases-ICD"/>
+    <name value="MalignantNeoplasticDiseasesICD"/>
     <title value="Maligne Tumorerkrankungen ICD"/>
     <status value="active"/>
     <experimental value="false"/>

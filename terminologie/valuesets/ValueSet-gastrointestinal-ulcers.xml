@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.484"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Gastrointestinal-Ulcers"/>
-    <title value="Gastrointestinal-Ulcers"/>
+    <name value="GastrointestinalUlcers"/>
+    <title value="Gastrointestinal Ulcers"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

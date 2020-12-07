@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.520"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Known-Exposure-SARS-CoV-2"/>
-    <title value="Exposition mit SARS-CoV-2"/>
+    <name value="KnownExposureSARSCoV2"/>
+    <title value="Known Exposure to SARS-CoV-2"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

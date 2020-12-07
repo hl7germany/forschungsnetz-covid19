@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.541"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Therapeutic-intent"/>
+    <name value="TherapeuticIntent"/>
     <title value="Therapeutic Intent"/>
     <status value="active"/>
     <experimental value="false"/>

@@ -16,8 +16,8 @@
         <value value="1.2.276.0.76.11.490"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Ethnic-Groups"/>
-    <title value="Ethnic-Groups"/>
+    <name value="EthnicGroups"/>
+    <title value="Ethnic Groups"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

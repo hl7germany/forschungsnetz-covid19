@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.522"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Detected-Not-detected-Inconclusive"/>
-    <title value="Detected-Not-detected-Inconclusive"/>
+    <name value="DetectedNotDetectedInconclusive"/>
+    <title value="Detected Not-detected Inconclusive"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.489"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Pregnancy-Status"/>
-    <title value="Pregnancy-Status"/>
+    <name value="PregnancyStatus"/>
+    <title value="Pregnancy Status"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

@@ -16,8 +16,8 @@
         <value value="1.2.276.0.76.11.473"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Chronic-Neurological-Mental-Diseases"/>
-    <title value="Chronic-Neurological-Mental-Diseases"/>
+    <name value="ChronicNeurologicalMentalDiseases"/>
+    <title value="Chronic Neurological Mental Diseases"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
