@@ -16,7 +16,7 @@
         <value value="1.2.276.0.76.11.493"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Chronic-Lung-Diseases-ICD"/>
+    <name value="ChronicLungDiseasesICD"/>
     <title value="Chronische Lungenerkrankungen ICD-10-GM"/>
     <status value="active"/>
     <experimental value="false"/>

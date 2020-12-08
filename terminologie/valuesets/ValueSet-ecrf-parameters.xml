@@ -4,7 +4,8 @@
     </meta>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ecrf-parameter-codes" />
     <version value="0.9" />
-    <name value="Parameter-Codes-eCRF" />
+    <name value="ParameterCodeseCRF" />
+    <title value= "Parameter Codes eCRF" />
     <status value="active" />
     <experimental value="true" />
     <date value="2020-08-10" />

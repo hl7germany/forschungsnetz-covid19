@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.513"/>
     </identifier>
     <version value="0.9"/>
-    <name value="ECMO-therapies"/>
-    <title value="ECMO-Therapien"/>
+    <name value="ECMOTherapiesOPS"/>
+    <title value="ECMO Therapies OPS"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

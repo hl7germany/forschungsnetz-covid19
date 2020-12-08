@@ -14,8 +14,8 @@
         <value value="1.2.276.0.76.11.521"/>
     </identifier>
     <version value="0.9.1"/>
-    <name value="Lab-tests-gecco"/>
-    <title value="Laborparameter"/>
+    <name value="LaboratoryTestsGECCO"/>
+    <title value="Laboratory Tests GECCO"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

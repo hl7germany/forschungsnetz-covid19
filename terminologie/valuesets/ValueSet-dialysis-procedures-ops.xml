@@ -15,8 +15,8 @@
         <value value="1.2.276.0.76.11.536"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Dialysis-Procedures-OPS"/>
-    <title value="Dialysis-Procedures-OPS"/>
+    <name value="DialysisProceduresOPS"/>
+    <title value="Dialysis Procedures OPS"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>

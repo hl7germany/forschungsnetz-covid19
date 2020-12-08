@@ -15,7 +15,7 @@
         <value value="1.2.276.0.76.11.542"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Condition-verification-status-sct"/>
+    <name value="ConditionVerificationStatusSNOMED"/>
     <title value="ConditionVerificationStatus SNOMED"/>
     <status value="active"/>
     <experimental value="false"/>
