@@ -7,7 +7,7 @@
     <name value="SOFAScore" />
     <title value="SOFA Score" />
     <status value="active" />
-    <experimental value="true" />
+    <experimental value="false" />
     <date value="2020-08-11" />
     <publisher value="Charité" />
     <contact>
