@@ -16,8 +16,8 @@
         <value value="1.2.276.0.76.11.470"/>
     </identifier>
     <version value="0.9"/>
-    <name value="Chronic-Lung-Diseases"/>
-    <title value="Chronic-Lung-Diseases"/>
+    <name value="ChronicLungDiseases"/>
+    <title value="Chronic Lung Diseases"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
