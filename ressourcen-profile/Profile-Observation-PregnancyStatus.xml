@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pregnancy-status" />
-  <version value="0.9" />
+  <version value="0.9.1" />
   <name value="PregnancyStatus" />
   <title value="Pregnancy Status" />
   <status value="active" />
@@ -20,10 +20,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation">
-      <path value="Observation" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <patternCodeableConcept>
@@ -98,11 +94,15 @@
           <type value="type" />
           <path value="$this" />
         </discriminator>
+        <rules value="open" />
       </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.value[x]" />
+      <path value="Observation.valueCodeableConcept" />
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -110,8 +110,55 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
+        <description value="Pregnant | Not pregnant | Unknown" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pregnancy-status" />
       </binding>
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding">
+      <path value="Observation.valueCodeableConcept.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding:valueLoinc">
+      <path value="Observation.valueCodeableConcept.coding" />
+      <sliceName value="valueLoinc" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding:valueLoinc.system">
+      <path value="Observation.valueCodeableConcept.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding:valueLoinc.code">
+      <path value="Observation.valueCodeableConcept.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding:valueSnomed">
+      <path value="Observation.valueCodeableConcept.coding" />
+      <sliceName value="valueSnomed" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding:valueSnomed.system">
+      <path value="Observation.valueCodeableConcept.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding:valueSnomed.code">
+      <path value="Observation.valueCodeableConcept.coding.code" />
+      <min value="1" />
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
@@ -141,12 +188,10 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Observation.hasMember.reference">
       <path value="Observation.hasMember.reference" />
       <min value="1" />
-      <mustSupport value="true" />
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
