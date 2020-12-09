@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/study-inclusion-covid-19" />
-  <version value="0.9" />
+  <version value="0.9.1" />
   <name value="StudyInclusionCovid19" />
   <title value="Study Inclusion due to Covid-19" />
   <status value="active" />
@@ -151,14 +151,6 @@
       </slicing>
       <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-      <min value="1" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
       <path value="Observation.value[x]" />
