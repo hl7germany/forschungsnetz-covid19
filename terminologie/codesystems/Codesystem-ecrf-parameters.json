@@ -75,11 +75,12 @@
     "content": "complete",
     "date": "2020-10-29",
     "description": "Codes for GECCO eCRF parameters where no code from standard terminologies is available.",
-    "experimental": true,
-    "name": "Parameter-Codes-eCRF",
+    "experimental": false,
+    "title": "Parameter Codes eCRF",
+    "name": "ParameterCodeseCRF",
     "publisher": "Charité",
     "status": "active",
-    "version": "0.9",
+    "version": "0.9.1",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
     "resourceType": "CodeSystem"
 }
