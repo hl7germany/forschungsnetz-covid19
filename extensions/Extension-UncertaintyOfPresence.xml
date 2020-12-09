@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence" />
-  <version value="0.9" />
+  <version value="0.9.1" />
   <name value="UncertaintyOfPresence" />
   <title value="Uncertainty Of Presence" />
   <status value="active" />
@@ -43,23 +43,38 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.value[x].coding">
-      <path value="Extension.value[x].coding" />
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.valueCodeableConcept" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept.coding">
+      <path value="Extension.valueCodeableConcept.coding" />
       <min value="1" />
       <max value="1" />
     </element>
-    <element id="Extension.value[x].coding.system">
-      <path value="Extension.value[x].coding.system" />
+    <element id="Extension.value[x]:valueCodeableConcept.coding.system">
+      <path value="Extension.valueCodeableConcept.coding.system" />
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Extension.value[x].coding.code">
-      <path value="Extension.value[x].coding.code" />
+    <element id="Extension.value[x]:valueCodeableConcept.coding.code">
+      <path value="Extension.valueCodeableConcept.coding.code" />
       <min value="1" />
       <fixedCode value="261665006" />
     </element>
