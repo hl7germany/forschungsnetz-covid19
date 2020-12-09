@@ -50,14 +50,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Patient.meta">
-      <path value="Patient.meta" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.meta.profile">
-      <path value="Patient.meta.profile" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.birthDate">
       <path value="Patient.birthDate" />
       <mustSupport value="true" />
