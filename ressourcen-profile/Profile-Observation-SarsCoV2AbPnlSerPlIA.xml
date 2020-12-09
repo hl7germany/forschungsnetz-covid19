@@ -32,10 +32,6 @@
       <path value="Observation.meta.profile" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.id">
-      <path value="Observation.id" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier" />
       <slicing>
