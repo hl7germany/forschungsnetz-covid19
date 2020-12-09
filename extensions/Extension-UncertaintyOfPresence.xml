@@ -35,6 +35,7 @@
       <short value="Uncertainty of presence" />
       <definition value="Extension used on a condition resource if the presence of the condition is unknown." />
       <isModifier value="true" />
+      <isModifierReason value="Modifies the meaning of the presence of a condition to being unknown." />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
