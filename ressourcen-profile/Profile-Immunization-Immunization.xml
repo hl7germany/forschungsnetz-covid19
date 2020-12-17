@@ -161,10 +161,30 @@
       </slicing>
       <mustSupport value="true" />
     </element>
+    <element id="Immunization.occurrence[x].extension">
+      <path value="Immunization.occurrence[x].extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.occurrence[x].extension:dataAbsentReason">
+      <path value="Immunization.occurrence[x].extension" />
+      <sliceName value="dataAbsentReason" />
+      <short value="occurrence[x] absence reason" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
+    </element>
     <element id="Immunization.occurrence[x]:occurrenceDateTime">
-      <path value="Immunization.occurrence[x]" />
+      <path value="Immunization.occurrenceDateTime" />
       <sliceName value="occurrenceDateTime" />
-      <min value="1" />
       <type>
         <code value="dateTime" />
       </type>
