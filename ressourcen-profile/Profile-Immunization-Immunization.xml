@@ -69,7 +69,8 @@
       </patternCoding>
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
+        <description value="SNOMED Vaccine Codes" />
         <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List" />
       </binding>
     </element>
@@ -90,7 +91,8 @@
       </patternCoding>
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
+        <description value="ATC Vaccine Codes" />
         <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List_ATC" />
       </binding>
     </element>
@@ -177,7 +179,7 @@
       <min value="1" />
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease" />
       </binding>
     </element>
