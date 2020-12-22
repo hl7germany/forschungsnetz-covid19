@@ -1,12 +1,12 @@
 {
 	"resourceType": "Procedure",
-	"id": "7da8302b-b1b5-40bb-978e-210664998e18",
+	"id": "0ecfbae7-743f-4c35-aa4e-428890deb9df",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
 		]
 	},
-	"status": "in-progress",
+	"status": "not-done",
 	"category": {
 		"coding": [
 			{
@@ -28,5 +28,12 @@
 	"subject": {
 		"reference": "Patient/example"
 	},
-	"performedDateTime": "2020-09-21"
+	"_performedDateTime": {
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+				"valueCode": "not-performed"
+			}
+		]
+	}
 }
