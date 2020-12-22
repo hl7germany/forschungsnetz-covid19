@@ -1,5 +1,6 @@
 {
 	"resourceType": "Bundle",
+	"id": "gecco-example-bundle",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
