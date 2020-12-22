@@ -1,5 +1,6 @@
 {
 	"resourceType": "Observation",
+	"id": "cf5b0f7f-c05f-4620-9f7b-cd1372f44900",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/smoking-status"
