@@ -1,40 +1,40 @@
 {
-    "id": "1ea252e6-bfca-4520-bbd6-0be15222ced3",
-    "meta": {
-        "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/prone-position"
-        ]
-    },
-    "category": {
-        "coding": [
-            {
-                "code": "225287004",
-                "display": "Procedures relating to positioning and support (procedure)",
-                "system": "http://snomed.info/sct"
-            }
-        ]
-    },
-    "code": {
-        "coding": [
-            {
-                "code": "431182000",
-                "display": "Placing subject in prone position (procedure)",
-                "system": "http://snomed.info/sct"
-            }
-        ],
-        "text": "Prone position"
-    },
-    "performedDateTime": {
-        "extension": [
-            {
-                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                "valueCode": "unknown"
-            }
-        ]
-    },
-    "status": "in-progress",
-    "subject": {
-        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
-    },
-    "resourceType": "Procedure"
+	"resourceType": "Procedure",
+	"id": "1ea252e6-bfca-4520-bbd6-0be15222ced3",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/prone-position"
+		]
+	},
+	"status": "in-progress",
+	"category": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "225287004",
+				"display": "Procedures relating to positioning and support (procedure)"
+			}
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "431182000",
+				"display": "Placing subject in prone position (procedure)"
+			}
+		],
+		"text": "Prone position"
+	},
+	"subject": {
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+	},
+	"_performedDateTime": {
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+				"valueCode": "unknown"
+			}
+		]
+	}
 }

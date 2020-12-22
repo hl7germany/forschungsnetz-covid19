@@ -1,40 +1,40 @@
 {
-    "meta": {
-        "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score"
-        ]
-    },
-    "code": {
-        "coding": [
-            {
-                "code": "713636003",
-                "display": "Frailty Index score (observable entity)",
-                "system": "http://snomed.info/sct"
-            }
-        ]
-    },
-    "effectiveDateTime": "2020-06-16",
-    "method": {
-        "coding": [
-            {
-                "code": "445414007",
-                "display": "Canadian Study of Health and Aging clinical frailty scale (assessment scale)",
-                "system": "http://snomed.info/sct"
-            }
-        ]
-    },
-    "status": "final",
-    "subject": {
-        "reference": "Patient/example"
-    },
-    "valueCodeableConcept": {
-        "coding": [
-            {
-                "code": "5",
-                "display": "Mildly Frail",
-                "system": "http://charite.de/CodeSystem/frailty-score"
-            }
-        ]
-    },
-    "resourceType": "Observation"
+	"resourceType": "Observation",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score"
+		]
+	},
+	"status": "final",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "713636003",
+				"display": "Frailty Index score (observable entity)"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/example"
+	},
+	"effectiveDateTime": "2020-06-16",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://charite.de/CodeSystem/frailty-score",
+				"code": "5",
+				"display": "Mildly Frail"
+			}
+		]
+	},
+	"method": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "445414007",
+				"display": "Canadian Study of Health and Aging clinical frailty scale (assessment scale)"
+			}
+		]
+	}
 }

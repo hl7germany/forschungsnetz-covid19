@@ -1,43 +1,43 @@
 {
-    "id": "90cf27fe-5dde-4e92-a66b-7235144b1e65",
-    "meta": {
-        "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/patient-in-icu"
-        ]
-    },
-    "category": [
-        {
-            "coding": [
-                {
-                    "code": "survey",
-                    "display": "Survey",
-                    "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-                }
-            ]
-        }
-    ],
-    "code": {
-        "coding": [
-            {
-                "code": "01",
-                "display": "Is the patient in the intensive care unit?",
-                "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes"
-            }
-        ]
-    },
-    "effectiveDateTime": "2020-10-14",
-    "status": "final",
-    "subject": {
-        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
-    },
-    "valueCodeableConcept": {
-        "coding": [
-            {
-                "code": "373066001",
-                "display": "Yes (qualifier value)",
-                "system": "http://snomed.info/sct"
-            }
-        ]
-    },
-    "resourceType": "Observation"
+	"resourceType": "Observation",
+	"id": "90cf27fe-5dde-4e92-a66b-7235144b1e65",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/patient-in-icu"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "survey",
+					"display": "Survey"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+				"code": "01",
+				"display": "Is the patient in the intensive care unit?"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+	},
+	"effectiveDateTime": "2020-10-14",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "373066001",
+				"display": "Yes (qualifier value)"
+			}
+		]
+	}
 }

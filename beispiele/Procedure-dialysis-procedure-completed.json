@@ -1,40 +1,40 @@
 {
-    "id": "3def6ffd-45de-4b02-a98f-f0ba54a3adcd",
-    "meta": {
-        "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dialysis"
-        ]
-    },
-    "category": {
-        "coding": [
-            {
-                "code": "277132007",
-                "display": "Therapeutic procedure (procedure)",
-                "system": "http://snomed.info/sct"
-            }
-        ]
-    },
-    "code": {
-        "coding": [
-            {
-                "code": "108241001",
-                "display": "Dialysis procedure (procedure)",
-                "system": "http://snomed.info/sct"
-            }
-        ],
-        "text": "Dialysis"
-    },
-    "performedDateTime": {
-        "extension": [
-            {
-                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                "valueCode": "unknown"
-            }
-        ]
-    },
-    "status": "completed",
-    "subject": {
-        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
-    },
-    "resourceType": "Procedure"
+	"resourceType": "Procedure",
+	"id": "3def6ffd-45de-4b02-a98f-f0ba54a3adcd",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dialysis"
+		]
+	},
+	"status": "completed",
+	"category": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "277132007",
+				"display": "Therapeutic procedure (procedure)"
+			}
+		]
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "108241001",
+				"display": "Dialysis procedure (procedure)"
+			}
+		],
+		"text": "Dialysis"
+	},
+	"subject": {
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+	},
+	"_performedDateTime": {
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+				"valueCode": "unknown"
+			}
+		]
+	}
 }

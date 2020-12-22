@@ -1,44 +1,44 @@
 {
-    "id": "None",
-    "meta": {
-        "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sex-assigned-at-birth"
-        ]
-    },
-    "category": [
-        {
-            "coding": [
-                {
-                    "code": "social-history",
-                    "display": "Social History",
-                    "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-                }
-            ]
-        }
-    ],
-    "code": {
-        "coding": [
-            {
-                "code": "76689-9",
-                "display": "Sex assigned at birth",
-                "system": "http://loinc.org"
-            }
-        ]
-    },
-    "effectiveDateTime": "2020-10-26T10:51:48+01:00",
-    "status": "final",
-    "subject": {
-        "reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
-    },
-    "valueCodeableConcept": {
-        "coding": [
-            {
-                "code": "male",
-                "display": "Male",
-                "system": "http://hl7.org/fhir/administrative-gender"
-            }
-        ],
-        "text": "Male"
-    },
-    "resourceType": "Observation"
+	"resourceType": "Observation",
+	"id": "d3f16c6f-e67d-4a77-8873-d4ab024e9257",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sex-assigned-at-birth"
+		]
+	},
+	"status": "final",
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+					"code": "social-history",
+					"display": "Social History"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "76689-9",
+				"display": "Sex assigned at birth"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+	},
+	"effectiveDateTime": "2020-10-26T10:51:48+01:00",
+	"valueCodeableConcept": {
+		"coding": [
+			{
+				"system": "http://hl7.org/fhir/administrative-gender",
+				"code": "male",
+				"display": "Male"
+			}
+		],
+		"text": "Male"
+	}
 }
