@@ -56,25 +56,24 @@
       </type>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
-      <path value="Extension.valueCodeableConcept" />
+      <path value="Extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
-      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding">
-      <path value="Extension.valueCodeableConcept.coding" />
+      <path value="Extension.value[x].coding" />
       <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.system">
-      <path value="Extension.valueCodeableConcept.coding.system" />
+      <path value="Extension.value[x].coding.system" />
       <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept.coding.code">
-      <path value="Extension.valueCodeableConcept.coding.code" />
+      <path value="Extension.value[x].coding.code" />
       <min value="1" />
       <fixedCode value="261665006" />
     </element>
