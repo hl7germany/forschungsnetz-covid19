@@ -3,7 +3,7 @@
     "id": "5e8956bf-0231-43c4-a538-c8629e990985",
     "meta": {
         "profile": [
-            "https://www.netzwerk-universitaetsmedizin.de//fhir/StructureDefinition/do-not-resuscitate-order"
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/do-not-resuscitate-order"
         ]
     },
 	"status": "active",
