@@ -62,7 +62,7 @@
     <element id="Observation.code.coding:BodyHeightCodeSnomed.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="50373000" />
+      <fixedCode value="248334005" />
     </element>
   </differential>
 </StructureDefinition>
