@@ -83,7 +83,7 @@
             <system value="http://snomed.info/sct"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="73211009"/>
             </filter>
         </include>
