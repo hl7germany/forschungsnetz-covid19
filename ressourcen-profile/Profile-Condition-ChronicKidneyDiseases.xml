@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-kidney-diseases" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="ChronicKidneyDiseases" />
   <title value="Chronic Kidney Diseases" />
   <status value="active" />

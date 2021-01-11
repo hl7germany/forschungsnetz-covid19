@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-base-condition" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="GeccoBaseCondition" />
   <title value="Gecco Base Condition" />
   <status value="active" />

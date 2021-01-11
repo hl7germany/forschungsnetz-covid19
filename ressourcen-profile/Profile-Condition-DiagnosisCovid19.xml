@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="DiagnosisCovid19" />
   <title value="Diagnosis Covid-19" />
   <status value="active" />

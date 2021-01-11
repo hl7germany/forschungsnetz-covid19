@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="HumanImmunodeficiencyVirusInfection" />
   <title value="Human Immunodeficiency Virus Infection" />
   <status value="active" />
@@ -96,30 +96,6 @@
         <strength value="required" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections-icd" />
       </binding>
-    </element>
-    <element id="Condition.code.coding:icd10-gm.extension">
-      <path value="Condition.code.coding.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Condition.code.coding:icd10-gm.extension:Diagnosesicherheit">
-      <path value="Condition.code.coding.extension" />
-      <sliceName value="Diagnosesicherheit" />
-    </element>
-    <element id="Condition.code.coding:icd10-gm.extension:Diagnosesicherheit.url">
-      <path value="Condition.code.coding.extension.url" />
-      <fixedUri value="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit" />
-    </element>
-    <element id="Condition.code.coding:icd10-gm.extension:Diagnosesicherheit.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.code.coding.extension.display" />
     </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />
