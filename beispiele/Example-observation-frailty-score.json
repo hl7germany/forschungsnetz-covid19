@@ -6,15 +6,26 @@
 		]
 	},
 	"status": "final",
-	"code": {
-		"coding": [
-			{
-				"system": "http://snomed.info/sct",
-				"code": "713636003",
-				"display": "Frailty Index score (observable entity)"
-			}
-		]
-	},
+    "category":  [
+        {
+            "coding":  [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                    "code": "survey"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding":  [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "763264000",
+                "display": "Canadian Study of Health and Aging Clinical Frailty Scale score"
+            }
+        ],
+        "text": "Frailty Scale Score"
+    },
 	"subject": {
 		"reference": "Patient/example"
 	},
@@ -22,7 +33,7 @@
 	"valueCodeableConcept": {
 		"coding": [
 			{
-				"system": "http://charite.de/CodeSystem/frailty-score",
+				"system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score",
 				"code": "5",
 				"display": "Mildly Frail"
 			}
