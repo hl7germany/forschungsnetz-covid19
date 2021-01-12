@@ -6,7 +6,7 @@
     ]
   },
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/smoking-status",
-  "version": "0.9",
+  "version": "1.0",
   "name": "SmokingStatus",
   "title": "Smoking Status",
   "status": "active",

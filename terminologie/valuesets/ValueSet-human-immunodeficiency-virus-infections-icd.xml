@@ -14,7 +14,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.532"/>
     </identifier>
-    <version value="0.9"/>
+    <version value="1.0"/>
     <name value="HumanImmunodeficiencyVirusInfectionsICD"/>
     <title value="Human Immunodeficiency Virus Infections ICD"/>
     <status value="active"/>

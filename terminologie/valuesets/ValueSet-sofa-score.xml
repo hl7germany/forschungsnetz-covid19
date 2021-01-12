@@ -3,7 +3,7 @@
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
     </meta>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score" />
-    <version value="0.9" />
+    <version value="1.0" />
     <name value="SOFAScore" />
     <title value="SOFA Score" />
     <status value="active" />

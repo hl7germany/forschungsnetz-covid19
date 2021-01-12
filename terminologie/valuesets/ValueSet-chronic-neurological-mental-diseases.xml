@@ -15,7 +15,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.473"/>
     </identifier>
-    <version value="0.9"/>
+    <version value="1.0"/>
     <name value="ChronicNeurologicalMentalDiseases"/>
     <title value="Chronic Neurological Mental Diseases"/>
     <status value="active"/>

@@ -13,7 +13,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.521"/>
     </identifier>
-    <version value="0.9.1"/>
+    <version value="1.0"/>
     <name value="LaboratoryTestsGECCO"/>
     <title value="Laboratory Tests GECCO"/>
     <status value="active"/>

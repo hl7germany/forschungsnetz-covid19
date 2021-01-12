@@ -14,7 +14,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.504"/>
     </identifier>
-    <version value="0.9"/>
+    <version value="1.0"/>
     <name value="GastrointestinalUlcersICD"/>
     <title value="Magengeschwüre ICD-10-GM"/>
     <status value="active"/>

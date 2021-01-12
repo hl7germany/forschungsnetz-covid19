@@ -15,7 +15,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.498"/>
     </identifier>
-    <version value="0.9"/>
+    <version value="1.0"/>
     <name value="ChronicNeurologicalMentalDiseasesICD"/>
     <title value="Chronische neurologische oder psychiatrische Erkrankungen Surrogat"/>
     <status value="active"/>

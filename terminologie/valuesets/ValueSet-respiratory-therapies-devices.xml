@@ -3,7 +3,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies-devices"/>
-    <version value="0.9"/>
+    <version value="1.0"/>
     <name value="RespiratoryTherapyDevices"/>
     <title value="Respiratory Therapy Devices"/>
     <status value="active"/>
