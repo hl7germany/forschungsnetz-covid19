@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/apheresis" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="Apheresis" />
   <title value="Apheresis" />
   <status value="active" />
@@ -47,13 +47,6 @@
     </element>
     <element id="Procedure.category.coding">
       <path value="Procedure.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
     </element>
     <element id="Procedure.category.coding:sct">
@@ -61,7 +54,6 @@
       <sliceName value="sct" />
       <min value="1" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
         <code value="277132007" />
       </patternCoding>
     </element>

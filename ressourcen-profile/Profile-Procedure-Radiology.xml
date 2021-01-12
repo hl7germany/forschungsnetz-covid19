@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="RadiologyProcedures" />
   <title value="Radiology Procedures" />
   <status value="active" />
@@ -45,7 +45,6 @@
       <path value="Procedure.category.coding" />
       <sliceName value="sct" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
         <code value="103693007" />
       </patternCoding>
     </element>

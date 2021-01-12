@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies" />
-  <version value="0.9.1" />
+  <version value="1.0" />
   <name value="RespiratoryTherapies" />
   <title value="Respiratory Therapies" />
   <status value="active" />
@@ -54,7 +54,6 @@
       <sliceName value="sct" />
       <min value="1" />
       <patternCoding>
-        <system value="http://snomed.info/sct" />
         <code value="277132007" />
       </patternCoding>
     </element>

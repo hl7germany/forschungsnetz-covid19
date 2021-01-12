@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle" />
-  <version value="0.9.1" />
+  <version value="1.0" />
   <name value="GeccoBundle" />
   <title value="GECCO Bundle" />
   <status value="active" />

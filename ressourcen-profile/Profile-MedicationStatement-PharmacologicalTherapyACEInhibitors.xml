@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-ace-inhibitors" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="PharmacologicalTherapyACEInhibitors" />
   <title value="Pharmacological Therapy ACE Inhibitors" />
   <status value="active" />

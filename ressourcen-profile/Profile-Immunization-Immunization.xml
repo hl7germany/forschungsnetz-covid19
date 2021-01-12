@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="Immunization" />
   <title value="History of Vaccination" />
   <status value="active" />
@@ -46,6 +46,25 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
   <derivation value="constraint" />
   <differential>
+    <element id="Immunization.extension">
+      <path value="Immunization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.extension:dataAbsentReason">
+      <path value="Immunization.extension" />
+      <sliceName value="dataAbsentReason" />
+      <short value="occurrence[x] absence reason" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
+    </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
       <mustSupport value="true" />
@@ -161,29 +180,8 @@
       </slicing>
       <mustSupport value="true" />
     </element>
-    <element id="Immunization.occurrence[x].extension">
-      <path value="Immunization.occurrence[x].extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Immunization.occurrence[x].extension:dataAbsentReason">
-      <path value="Immunization.occurrence[x].extension" />
-      <sliceName value="dataAbsentReason" />
-      <short value="occurrence[x] absence reason" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
-      </type>
-    </element>
     <element id="Immunization.occurrence[x]:occurrenceDateTime">
-      <path value="Immunization.occurrenceDateTime" />
+      <path value="Immunization.occurrence[x]" />
       <sliceName value="occurrenceDateTime" />
       <type>
         <code value="dateTime" />
