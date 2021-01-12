@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/history-of-travel" />
-  <version value="0.9.1" />
+  <version value="1.0" />
   <name value="HistoryOfTravel" />
   <title value="History Of Travel" />
   <status value="active" />
@@ -154,30 +154,29 @@
         <code value="CodeableConcept" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <min value="1" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
       <binding>
         <strength value="required" />
         <description value="Yes | No | Unknown" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na" />
       </binding>
     </element>
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding">
-      <path value="Observation.valueCodeableConcept.coding" />
+      <path value="Observation.value[x].coding" />
       <min value="1" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding.system">
-      <path value="Observation.valueCodeableConcept.coding.system" />
+      <path value="Observation.value[x].coding.system" />
       <min value="1" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding.code">
-      <path value="Observation.valueCodeableConcept.coding.code" />
+      <path value="Observation.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Observation.bodySite">

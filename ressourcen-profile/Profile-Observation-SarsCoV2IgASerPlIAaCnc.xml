@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-iga-ser-pl-ia-acnc" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="SarsCoV2IgASerPlIAaCnc" />
   <title value="SARS-CoV-2 (COVID-19) IgA Ab [Units/volume] in Serum or Plasma by Immunoassay" />
   <status value="active" />
@@ -34,12 +34,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.code.coding:loinc">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Observation.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -74,7 +68,7 @@
       <fixedCode value="[IU]/mL" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <max value="0" />
     </element>

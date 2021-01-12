@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH" />
-  <version value="0.9.1" />
+  <version value="1.0" />
   <name value="PH" />
   <title value="pH" />
   <status value="active" />
@@ -148,7 +148,7 @@
       <fixedCode value="[pH]" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <max value="0" />
     </element>

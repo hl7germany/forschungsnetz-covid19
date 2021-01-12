@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/known-exposure" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="KnownExposure" />
   <title value="Known Exposure to Covid-19" />
   <status value="active" />
@@ -145,6 +145,13 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -154,9 +161,40 @@
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/known-exposure" />
       </binding>
     </element>
-    <element id="Observation.value[x].coding">
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding">
       <path value="Observation.value[x].coding" />
-      <mustSupport value="true" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding:snomed">
+      <path value="Observation.value[x].coding" />
+      <sliceName value="snomed" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding:snomed.system">
+      <path value="Observation.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding:snomed.code">
+      <path value="Observation.value[x].coding.code" />
+      <min value="1" />
     </element>
     <element id="Observation.dataAbsentReason">
       <path value="Observation.dataAbsentReason" />

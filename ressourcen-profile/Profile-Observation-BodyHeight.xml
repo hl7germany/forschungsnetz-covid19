@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="BodyHeight" />
+  <title value="Body Height" />
   <status value="active" />
   <date value="2020-10-29" />
   <publisher value="Charité" />
@@ -12,6 +13,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
+  <description value="Body height of a patient" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-pnl-ser-pl-ia" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="SarsCoV2AbPnlSerPlIA" />
   <title value="SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay" />
   <status value="active" />

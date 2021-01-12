@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sex-assigned-at-birth" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="SexAssignedAtBirth" />
   <title value="Sex assigned at birth" />
   <status value="active" />
@@ -150,12 +150,6 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -166,8 +160,23 @@
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/birth-sex" />
       </binding>
     </element>
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding">
-      <path value="Observation.valueCodeableConcept.coding" />
+      <path value="Observation.value[x].coding" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding.system">
+      <path value="Observation.value[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]:valueCodeableConcept.coding.code">
+      <path value="Observation.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Observation.bodySite">

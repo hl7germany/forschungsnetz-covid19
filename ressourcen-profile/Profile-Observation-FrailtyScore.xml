@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="ClinicalFrailtyScaleScore" />
   <title value="Clinical Frailty Scale Score" />
   <status value="active" />

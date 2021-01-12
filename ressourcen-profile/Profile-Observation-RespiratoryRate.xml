@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="RespiratoryRate" />
   <title value="Respiratory Rate" />
   <status value="active" />
@@ -13,7 +13,7 @@
       <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
     </telecom>
   </contact>
-  <description value="Respiratory rate" />
+  <description value="Respiratory rate of a patient" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

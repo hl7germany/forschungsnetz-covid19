@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-partial-pressure" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="PaO2" />
   <title value="PaO2" />
   <status value="active" />
@@ -148,7 +148,7 @@
       <fixedCode value="mm[Hg]" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <max value="0" />
     </element>

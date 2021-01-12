@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/interventional-clinical-trial-participation" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="InterventionalClinicalTrialParticipation" />
   <title value="Interventional Clinical Trial Participation" />
   <status value="active" />
@@ -151,18 +151,20 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
-      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding">
-      <path value="Observation.valueCodeableConcept.coding" />
+      <path value="Observation.value[x].coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -173,7 +175,7 @@
       <min value="1" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding:snomed">
-      <path value="Observation.valueCodeableConcept.coding" />
+      <path value="Observation.value[x].coding" />
       <sliceName value="snomed" />
       <min value="1" />
       <max value="1" />
@@ -182,15 +184,16 @@
       </patternCoding>
       <binding>
         <strength value="required" />
+        <description value="Yes | No | Unknown" />
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na" />
       </binding>
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding:snomed.system">
-      <path value="Observation.valueCodeableConcept.coding.system" />
+      <path value="Observation.value[x].coding.system" />
       <min value="1" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding:snomed.code">
-      <path value="Observation.valueCodeableConcept.coding.code" />
+      <path value="Observation.value[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Observation.bodySite">
@@ -272,7 +275,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.component:eudraCT.value[x]:valueString">
-      <path value="Observation.component.valueString" />
+      <path value="Observation.component.value[x]" />
       <sliceName value="valueString" />
       <min value="1" />
       <type>
@@ -338,7 +341,7 @@
       <min value="1" />
     </element>
     <element id="Observation.component:nct.value[x]:valueString">
-      <path value="Observation.component.valueString" />
+      <path value="Observation.component.value[x]" />
       <sliceName value="valueString" />
       <type>
         <code value="string" />

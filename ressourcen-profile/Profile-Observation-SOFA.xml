@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score" />
-  <version value="0.9.1" />
+  <version value="1.0" />
   <name value="SOFA" />
   <title value="SOFA Score" />
   <status value="active" />
@@ -58,6 +58,7 @@
         <severity value="error" />
         <human value="A value or dataAbsentReason SHALL be present." />
         <expression value="valueInteger.exists() or dataAbsentReason.exists()" />
+        <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score" />
       </constraint>
     </element>
     <element id="Observation.category">
@@ -161,7 +162,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x]:valueInteger">
-      <path value="Observation.valueInteger" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueInteger" />
       <type>
         <code value="integer" />

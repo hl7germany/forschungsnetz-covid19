@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/inhaled-oxygen-concentration" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="FiO2" />
   <title value="FiO2" />
   <status value="active" />
@@ -94,7 +94,7 @@
       <fixedCode value="%" />
     </element>
     <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.valueCodeableConcept" />
+      <path value="Observation.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <binding>
         <strength value="example" />
