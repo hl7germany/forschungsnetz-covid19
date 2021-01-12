@@ -111,7 +111,7 @@
     "name": "FrailtyScore",
     "publisher": "Charité",
     "status": "active",
-    "version": "0.9.1",
+    "version": "1.0",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score",
     "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score",
     "resourceType": "CodeSystem"

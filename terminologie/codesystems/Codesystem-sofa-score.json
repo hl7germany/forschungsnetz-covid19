@@ -602,7 +602,7 @@
     "name": "SOFAScore",
     "publisher": "Charité",
     "status": "active",
-    "version": "0.9.1",
+    "version": "1.0",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score",
     "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score",
     "resourceType": "CodeSystem"
