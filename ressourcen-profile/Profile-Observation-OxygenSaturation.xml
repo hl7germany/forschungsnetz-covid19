@@ -64,7 +64,7 @@
     <element id="Observation.code.coding:OxygenSatCodeSnomed.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="442476006" />
+      <fixedCode value="431314004" />
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
