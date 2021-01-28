@@ -97,7 +97,7 @@
             <system value="http://snomed.info/sct"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="128139000"/>
             </filter>
         </include>
@@ -105,7 +105,7 @@
             <system value="http://snomed.info/sct"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="414029004"/>
             </filter>
         </include>
@@ -113,7 +113,7 @@
             <system value="http://snomed.info/sct"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="81573002"/>
             </filter>
         </include>
