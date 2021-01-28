@@ -240,7 +240,7 @@
                 <display value="Nausea (finding)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Überlkeit"/>
+                    <value value="Übelkeit"/>
                 </designation>
             </concept>
             <concept>
@@ -256,7 +256,7 @@
                 <display value="Rigor (finding)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Fieber"/>
+                    <value value="Starre"/>
                 </designation>
             </concept>
             <concept>
@@ -264,7 +264,7 @@
                 <display value="Seizure (finding)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Starre"/>
+                    <value value="Krampfanfall"/>
                 </designation>
             </concept>
             <concept>
