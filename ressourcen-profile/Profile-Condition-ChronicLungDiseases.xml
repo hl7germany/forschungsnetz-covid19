@@ -94,7 +94,7 @@
       <sliceName value="icd10-gm" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronicLungDiseases-icd" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-lung-diseases-icd" />
       </binding>
     </element>
     <element id="Condition.code.coding:sct">
