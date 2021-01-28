@@ -92,6 +92,19 @@
                 </designation>
             </concept>
             <concept>
+                <code value="113276009"/>
+                <display value="Intestinal structure (body structure)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Darm"/>
+                </designation>
+            </concept>
+            <concept>
                 <code value="181250005"/>
                 <display value="Entire small intestine (body structure)"/>
                 <designation>
