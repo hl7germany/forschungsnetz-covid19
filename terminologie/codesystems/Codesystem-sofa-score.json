@@ -605,5 +605,6 @@
     "version": "1.0",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score",
     "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score",
+    "id": "gecco-codesystem-sofa-score",
     "resourceType": "CodeSystem"
 }

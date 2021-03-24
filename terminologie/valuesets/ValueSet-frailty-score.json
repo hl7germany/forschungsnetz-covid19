@@ -26,5 +26,6 @@
     "publisher": "Charité",
     "status": "active",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score",
+    "id": "gecco-valueset-frailty-score",
     "resourceType": "ValueSet"
 }

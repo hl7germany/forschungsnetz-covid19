@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="gecco-observation-sars-cov-2-ab-pnl-ser-pl-ia" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-pnl-ser-pl-ia" />
   <version value="1.0" />
   <name value="SarsCoV2AbPnlSerPlIA" />

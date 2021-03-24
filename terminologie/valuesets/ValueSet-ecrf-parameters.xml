@@ -1,25 +1,26 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <meta>
-      <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
-    </meta>
-    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ecrf-parameter-codes" />
-    <version value="1.0" />
-    <name value="ParameterCodeseCRF" />
-    <title value= "Parameter Codes eCRF" />
-    <status value="active" />
-    <experimental value="false" />
-    <date value="2020-08-10" />
-    <publisher value="Charité" />
-    <contact>
-      <telecom>
-        <system value="url" />
-        <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
-      </telecom>
-    </contact>
-    <description value="Contains the codes for GECCO eCRF parameters where no code from standard terminologies is available." />
-    <compose>
-      <include>
-        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes" />
-      </include>
-    </compose>
-  </ValueSet>
+  <id value="gecco-valueset-ecrf-parameter-codes" />
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+  </meta>
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ecrf-parameter-codes" />
+  <version value="1.0" />
+  <name value="ParameterCodeseCRF" />
+  <title value="Parameter Codes eCRF" />
+  <status value="active" />
+  <experimental value="false" />
+  <date value="2020-08-10" />
+  <publisher value="Charité" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.bihealth.org/en/research/core-facilities/interoperability/" />
+    </telecom>
+  </contact>
+  <description value="Contains the codes for GECCO eCRF parameters where no code from standard terminologies is available." />
+  <compose>
+    <include>
+      <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes" />
+    </include>
+  </compose>
+</ValueSet>

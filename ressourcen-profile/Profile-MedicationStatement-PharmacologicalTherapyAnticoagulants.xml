@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="gecco-medication-statement-anticoagulants" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants" />
   <version value="1.0" />
   <name value="PharmacologicalTherapyAnticoagulants" />

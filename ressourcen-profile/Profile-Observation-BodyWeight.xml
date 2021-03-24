@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="gecco-observation-body-weight" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight" />
   <version value="1.0" />
   <name value="BodyWeight" />

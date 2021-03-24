@@ -82,5 +82,6 @@
     "status": "active",
     "version": "1.0",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+    "id": "gecco-codesystem-ecrf-parameter-codes",
     "resourceType": "CodeSystem"
 }
