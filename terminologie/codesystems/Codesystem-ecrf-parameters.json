@@ -1,87 +1,166 @@
 {
-    "caseSensitive": true,
-    "concept": [
-        {
-            "code": "01",
-            "definition": "Is the patient currently being treated in the intensive care unit?",
-            "display": "Is the patient in the intensive care unit?"
-        },
-        {
-            "code": "02",
-            "definition": "Confirmed Covid-19 diagnosis as main reason for enrolment in the study",
-            "display": "Study inclusion due to Covid-19"
-        },
-        {
-            "code": "03",
-            "definition": "Has the patient participated in one or more interventional clinical trials?",
-            "display": "Participation in interventional clinical trials"
-        },
-        {
-            "code": "04",
-            "definition": "EudraCT (European Union Drug Regulating Authorities Clinical Trials) registration number",
-            "display": "EudraCT Number‎"
-        },
-        {
-            "code": "05",
-            "definition": "A unique identification code given to each clinical study registered on ClinicalTrials.gov.",
-            "display": "NCT number"
-        },
-        {
-            "code": "06",
-            "definition": "Sepsis-related organ failure assessment score",
-            "display": "SOFA-Score"
-        },
-        {
-            "code": "antipyretic",
-            "definition": "Pharmaceutical product containing a substance that reduces fever",
-            "display": "Product containing antipyretic"
-        },
-        {
-            "code": "camostat",
-            "definition": "Pharmaceutical product containing the substance camostat",
-            "display": "Product containing camostat"
-        },
-        {
-            "code": "favipiravir",
-            "definition": "Pharmaceutical product containing the substance favipiravir",
-            "display": "Product containing favipiravir"
-        },
-        {
-            "code": "convalescent-plasma",
-            "definition": "Convalescent plasma from patients who have recovered from COVID-19",
-            "display": "Convalescent plasma"
-        },
-        {
-            "code": "steroids-gt",
-            "definition": "A dose of steroids that is greater than an equivalent dose of prednisone of 0.5 mg/kg",
-            "display": "Steroids (> 0.5 mg/kg prednisone equivalents)"
-        },
-        {
-            "code": "steroids-lt",
-            "definition": "A dose of steroids that is equal or less than an equivalent dose of prednisone of 0.5 mg/kg",
-            "display": "Steroids (<= 0.5 mg/kg prednisone equivalents)"
-        }
-    ],
-    "contact": [
-        {
-            "telecom": [
-                {
-                    "system": "url",
-                    "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-                }
-            ]
-        }
-    ],
-    "content": "complete",
-    "date": "2020-10-29",
-    "description": "Codes for GECCO eCRF parameters where no code from standard terminologies is available.",
-    "experimental": false,
-    "title": "Parameter Codes eCRF",
-    "name": "ParameterCodeseCRF",
-    "publisher": "Charité",
-    "status": "active",
-    "version": "1.0",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
-    "id": "gecco-codesystem-ecrf-parameter-codes",
-    "resourceType": "CodeSystem"
+	"resourceType": "CodeSystem",
+	"id": "gecco-codesystem-ecrf-parameter-codes",
+	"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+	"version": "1.0.4",
+	"name": "ParameterCodeseCRF",
+	"title": "Parameter Codes eCRF",
+	"status": "active",
+	"experimental": false,
+	"date": "2020-10-29",
+	"publisher": "Charité",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+				}
+			]
+		}
+	],
+	"description": "Codes for GECCO eCRF parameters where no code from standard terminologies is available.",
+	"caseSensitive": true,
+	"content": "complete",
+	"property": [
+		{
+			"code": "inactive",
+			"description": "Whether the code is active or not (defaults to false).",
+			"type": "boolean"
+		}
+	],
+	"concept": [
+		{
+			"code": "01",
+			"display": "Is the patient in the intensive care unit?",
+			"definition": "Is the patient currently being treated in the intensive care unit?",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": true
+				}
+			]
+		},
+		{
+			"code": "02",
+			"display": "Study inclusion due to Covid-19",
+			"definition": "Confirmed Covid-19 diagnosis as main reason for enrolment in the study",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "03",
+			"display": "Participation in interventional clinical trials",
+			"definition": "Has the patient participated in one or more interventional clinical trials?",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "04",
+			"display": "EudraCT Number‎",
+			"definition": "EudraCT (European Union Drug Regulating Authorities Clinical Trials) registration number",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "05",
+			"display": "NCT number",
+			"definition": "A unique identification code given to each clinical study registered on ClinicalTrials.gov.",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "06",
+			"display": "SOFA-Score",
+			"definition": "Sepsis-related organ failure assessment score",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "antipyretic",
+			"display": "Product containing antipyretic",
+			"definition": "Pharmaceutical product containing a substance that reduces fever",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "camostat",
+			"display": "Product containing camostat",
+			"definition": "Pharmaceutical product containing the substance camostat",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "favipiravir",
+			"display": "Product containing favipiravir",
+			"definition": "Pharmaceutical product containing the substance favipiravir",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "convalescent-plasma",
+			"display": "Convalescent plasma",
+			"definition": "Convalescent plasma from patients who have recovered from COVID-19",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "steroids-gt",
+			"display": "Steroids (> 0.5 mg/kg prednisone equivalents)",
+			"definition": "A dose of steroids that is greater than an equivalent dose of prednisone of 0.5 mg/kg",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		},
+		{
+			"code": "steroids-lt",
+			"display": "Steroids (<= 0.5 mg/kg prednisone equivalents)",
+			"definition": "A dose of steroids that is equal or less than an equivalent dose of prednisone of 0.5 mg/kg",
+			"property": [
+				{
+					"code": "inactive",
+					"valueBoolean": false
+				}
+			]
+		}
+	]
 }

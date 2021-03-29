@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-observation-patient-in-icu" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/patient-in-icu" />
-  <version value="1.0" />
+  <version value="1.0.4" />
   <name value="PatientInICU" />
   <title value="Patient in ICU" />
   <status value="active" />
@@ -78,8 +78,8 @@
       <min value="1" />
       <max value="1" />
       <patternCoding>
-        <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes" />
-        <code value="01" />
+        <system value="http://loinc.org" />
+        <code value="95420-6" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:icu.system">

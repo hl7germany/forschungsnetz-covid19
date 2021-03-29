@@ -21,9 +21,9 @@
 	"code": {
 		"coding": [
 			{
-				"system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
-				"code": "01",
-				"display": "Is the patient in the intensive care unit?"
+				"system": "http://loinc.org",
+				"code": "95420-6",
+				"display": "Whether the patient was admitted to intensive care unit (ICU) for condition of interest"
 			}
 		]
 	},
