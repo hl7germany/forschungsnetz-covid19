@@ -35,6 +35,30 @@
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
+                <value value="K25"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="K26"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="K27"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
                 <value value="K28"/>
             </filter>
         </include>
