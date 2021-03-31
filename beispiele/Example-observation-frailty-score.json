@@ -1,5 +1,6 @@
 {
 	"resourceType": "Observation",
+	"id": "example-observation-frailty-score",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score"

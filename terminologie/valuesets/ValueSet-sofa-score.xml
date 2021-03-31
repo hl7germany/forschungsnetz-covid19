@@ -6,7 +6,7 @@
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score" />
   <version value="1.0" />
   <name value="SOFAScore" />
-  <title value="SOFA Score" />
+  <title value="SOFA-Score" />
   <status value="active" />
   <experimental value="false" />
   <date value="2020-08-11" />

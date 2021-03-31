@@ -1,5 +1,6 @@
 {
 	"resourceType": "Procedure",
+	"id": "example-dialysis-procedure-not-done",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dialysis"

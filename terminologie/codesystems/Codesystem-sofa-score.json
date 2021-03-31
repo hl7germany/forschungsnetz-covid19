@@ -1,610 +1,610 @@
 {
-    "caseSensitive": true,
-    "concept": [
-        {
-            "code": "resp",
-            "definition": "SOFA Respiratory system scoring category",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "SOFA Kategorie Atmung"
-                }
-            ],
-            "display": "Respiratory system"
-        },
-        {
-            "code": "resp0",
-            "definition": "PaO2/FiO2 [mmHg (kPa)] ≥ 400 (53.3)",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Atmung SOFA score 0"
-                }
-            ],
-            "display": "Respiratory system SOFA score 0",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "resp"
-                }
-            ]
-        },
-        {
-            "code": "resp1",
-            "definition": "PaO2/FiO2 [mmHg (kPa)] < 400 (53.3)",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Atmung SOFA score 1"
-                }
-            ],
-            "display": "Respiratory system SOFA score 1",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "resp"
-                }
-            ]
-        },
-        {
-            "code": "resp2",
-            "definition": "PaO2/FiO2 [mmHg (kPa)] < 300 (40)",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Atmung SOFA score 2"
-                }
-            ],
-            "display": "Respiratory system SOFA score 2",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "resp"
-                }
-            ]
-        },
-        {
-            "code": "resp3",
-            "definition": "PaO2/FiO2 [mmHg (kPa)] < 200 (26.7) and mechanically ventilated",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Atmung SOFA score 3"
-                }
-            ],
-            "display": "Respiratory system SOFA score 3",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "resp"
-                }
-            ]
-        },
-        {
-            "code": "resp4",
-            "definition": "PaO2/FiO2 [mmHg (kPa)] < 100 (13.3) and mechanically ventilated",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Atmung SOFA score 4"
-                }
-            ],
-            "display": "Respiratory system SOFA score 4",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "resp"
-                }
-            ]
-        },
-        {
-            "code": "ns",
-            "definition": "SOFA Nervous system scoring category",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "SOFA Kategorie Nervensystem"
-                }
-            ],
-            "display": "Nervous system",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "ns"
-                }
-            ]
-        },
-        {
-            "code": "ns0",
-            "definition": "Glasgow Coma Scale (GCS) 15",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Nervensystem SOFA score 0"
-                }
-            ],
-            "display": "Nervous system SOFA score 0",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "ns"
-                }
-            ]
-        },
-        {
-            "code": "ns1",
-            "definition": "Glasgow Coma Scale (GCS) 13-14",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Nervensystem SOFA score 1"
-                }
-            ],
-            "display": "Nervous system SOFA score 1",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "ns"
-                }
-            ]
-        },
-        {
-            "code": "ns2",
-            "definition": "Glasgow Coma Scale (GCS) 10-12",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Nervensystem SOFA score 2"
-                }
-            ],
-            "display": "Nervous system SOFA score 2",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "ns"
-                }
-            ]
-        },
-        {
-            "code": "ns3",
-            "definition": "Glasgow Coma Scale (GCS) 6-9",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Nervensystem SOFA score 3"
-                }
-            ],
-            "display": "Nervous system SOFA score 3",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "ns"
-                }
-            ]
-        },
-        {
-            "code": "ns4",
-            "definition": "Glasgow Coma Scale (GCS) < 6",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Nervensystem SOFA score 4"
-                }
-            ],
-            "display": "Nervous system SOFA score 4",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "ns"
-                }
-            ]
-        },
-        {
-            "code": "cvs",
-            "definition": "SOFA Cardiovascular system scoring category",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "SOFA Kategorie Herz-Kreislauf-System"
-                }
-            ],
-            "display": "Cardiovascular system"
-        },
-        {
-            "code": "cvs0",
-            "definition": "Mean arterial pressure (MAP) ≥ 70 mmHg",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Herz-Kreislauf-System SOFA score 0"
-                }
-            ],
-            "display": "Cardiovascular system SOFA score 0",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "cvs"
-                }
-            ]
-        },
-        {
-            "code": "cvs1",
-            "definition": "Mean arterial pressure (MAP) < 70 mmHg",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Herz-Kreislauf-System SOFA score 1"
-                }
-            ],
-            "display": "Cardiovascular system SOFA score 1",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "cvs"
-                }
-            ]
-        },
-        {
-            "code": "cvs2",
-            "definition": "Administration of dopamine ≤ 5 ug/kg/min or dobutamine (any dose)",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Herz-Kreislauf-System SOFA score 2"
-                }
-            ],
-            "display": "Cardiovascular system SOFA score 2",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "cvs"
-                }
-            ]
-        },
-        {
-            "code": "cvs3",
-            "definition": "Administration of dopamine > 5 ug/kg/min OR epinephrine ≤ 0.1 ug/kg/min OR norepinephrine ≤ 0.1 ug/kg/min",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Herz-Kreislauf-System SOFA score 3"
-                }
-            ],
-            "display": "Cardiovascular system SOFA score 3",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "cvs"
-                }
-            ]
-        },
-        {
-            "code": "cvs4",
-            "definition": "Administration of dopamine > 15 ug/kg/min OR epinephrine > 0.1 ug/kg/min OR norepinephrine > 0.1 ug/kg/min",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Herz-Kreislauf-System SOFA score 4"
-                }
-            ],
-            "display": "Cardiovascular system SOFA score 4",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "cvs"
-                }
-            ]
-        },
-        {
-            "code": "liv",
-            "definition": "SOFA Liver scoring category",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "SOFA Kategorie Leber"
-                }
-            ],
-            "display": "Liver"
-        },
-        {
-            "code": "liv0",
-            "definition": "Bilirubin (mg/dl) [umol/L] < 1.2 [< 20]",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Leber SOFA score 0"
-                }
-            ],
-            "display": "Liver SOFA score 0",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "liv"
-                }
-            ]
-        },
-        {
-            "code": "liv1",
-            "definition": "Bilirubin (mg/dl) [umol/L] 1.2-1.9 [20-32]",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Leber SOFA score 1"
-                }
-            ],
-            "display": "Liver SOFA score 1",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "liv"
-                }
-            ]
-        },
-        {
-            "code": "liv2",
-            "definition": "Bilirubin (mg/dl) [umol/L] 2.0-5.9 [33-101]",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Leber SOFA score 2"
-                }
-            ],
-            "display": "Liver SOFA score 2",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "liv"
-                }
-            ]
-        },
-        {
-            "code": "liv3",
-            "definition": "Bilirubin (mg/dl) [umol/L] 6.0-11.9 [102-204]",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Leber SOFA score 3"
-                }
-            ],
-            "display": "Liver SOFA score 3",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "liv"
-                }
-            ]
-        },
-        {
-            "code": "liv4",
-            "definition": "Bilirubin (mg/dl) [umol/L] > 12.0 [> 204]",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Leber SOFA score 4"
-                }
-            ],
-            "display": "Liver SOFA score 4",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "liv"
-                }
-            ]
-        },
-        {
-            "code": "coa",
-            "definition": "SOFA Coagulation scoring category",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "SOFA Kategorie Gerinnung"
-                }
-            ],
-            "display": "Coagulation"
-        },
-        {
-            "code": "coa0",
-            "definition": "Platelets×10^3/ul ? 150",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Gerinnung SOFA score 0"
-                }
-            ],
-            "display": "Coagulation SOFA score 0",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "coa"
-                }
-            ]
-        },
-        {
-            "code": "coa1",
-            "definition": "Platelets×10^3/ul < 150",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Gerinnung SOFA score 1"
-                }
-            ],
-            "display": "Coagulation SOFA score 1",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "coa"
-                }
-            ]
-        },
-        {
-            "code": "coa2",
-            "definition": "Platelets×10^3/ul < 100",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Gerinnung SOFA score 2"
-                }
-            ],
-            "display": "Coagulation SOFA score 2",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "coa"
-                }
-            ]
-        },
-        {
-            "code": "coa3",
-            "definition": "Platelets×10^3/ul < 50",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Gerinnung SOFA score 3"
-                }
-            ],
-            "display": "Coagulation SOFA score 3",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "coa"
-                }
-            ]
-        },
-        {
-            "code": "coa4",
-            "definition": "Platelets×10^3/ul < 20",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Gerinnung SOFA score 4"
-                }
-            ],
-            "display": "Coagulation SOFA score 4",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "coa"
-                }
-            ]
-        },
-        {
-            "code": "kid",
-            "definition": "SOFA Kidneys scoring category",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "SOFA Kategorie Niere"
-                }
-            ],
-            "display": "Kidneys"
-        },
-        {
-            "code": "kid0",
-            "definition": "Creatinine (mg/dl) [umol/L] (or urine output) < 1.2 [< 110]",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Niere SOFA score 0"
-                }
-            ],
-            "display": "Kidneys SOFA score 0",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "kid"
-                }
-            ]
-        },
-        {
-            "code": "kid1",
-            "definition": "Creatinine (mg/dl) [umol/L] (or urine output) 1.2-1.9 [110-170]",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Niere SOFA score 1"
-                }
-            ],
-            "display": "Kidneys SOFA score 1",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "kid"
-                }
-            ]
-        },
-        {
-            "code": "kid2",
-            "definition": "Creatinine (mg/dl) [?mol/L] (or urine output) 2.0-3.4 [171-299]",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Niere SOFA score 2"
-                }
-            ],
-            "display": "Kidneys SOFA score 2",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "kid"
-                }
-            ]
-        },
-        {
-            "code": "kid3",
-            "definition": "Creatinine (mg/dl) [umol/L] (or urine output) 3.5-4.9 [300-440] (or < 500 ml/d)",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Niere SOFA score 3"
-                }
-            ],
-            "display": "Kidneys SOFA score 3",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "kid"
-                }
-            ]
-        },
-        {
-            "code": "kid4",
-            "definition": "Creatinine (mg/dl) [umol/L] (or urine output) > 5.0 [> 440] (or < 200 ml/d)",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Niere SOFA score 4"
-                }
-            ],
-            "display": "Kidneys SOFA score 4",
-            "property": [
-                {
-                    "code": "category",
-                    "valueCode": "kid"
-                }
-            ]
-        }
-    ],
-    "contact": [
-        {
-            "telecom": [
-                {
-                    "system": "url",
-                    "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-                }
-            ]
-        }
-    ],
-    "content": "complete",
-    "date": "2020-10-29",
-    "description": "SOFA score based on: Vincent JL, Moreno R, Takala J, et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine. Intensive Care Med. 1996;22(7):707-710. doi:10.1007/BF01709751",
-    "experimental": false,
-    "title": "SOFA Score",
-    "name": "SOFAScore",
-    "publisher": "Charité",
-    "status": "active",
-    "version": "1.0",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score",
-    "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score",
-    "id": "gecco-codesystem-sofa-score",
-    "resourceType": "CodeSystem"
+	"resourceType": "CodeSystem",
+	"id": "gecco-codesystem-sofa-score",
+	"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score",
+	"version": "1.0",
+	"name": "SOFAScore",
+	"title": "SOFA Score",
+	"status": "active",
+	"experimental": false,
+	"date": "2020-10-29",
+	"publisher": "Charité",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+				}
+			]
+		}
+	],
+	"description": "SOFA score based on: Vincent JL, Moreno R, Takala J, et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine. Intensive Care Med. 1996;22(7):707-710. doi:10.1007/BF01709751",
+	"caseSensitive": true,
+	"valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score",
+	"content": "complete",
+	"concept": [
+		{
+			"code": "resp",
+			"display": "Respiratory system",
+			"definition": "SOFA Respiratory system scoring category",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "SOFA Kategorie Atmung"
+				}
+			]
+		},
+		{
+			"code": "resp0",
+			"display": "Respiratory system SOFA score 0",
+			"definition": "PaO2/FiO2 [mmHg (kPa)] ≥ 400 (53.3)",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Atmung SOFA score 0"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "resp"
+				}
+			]
+		},
+		{
+			"code": "resp1",
+			"display": "Respiratory system SOFA score 1",
+			"definition": "PaO2/FiO2 [mmHg (kPa)] < 400 (53.3)",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Atmung SOFA score 1"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "resp"
+				}
+			]
+		},
+		{
+			"code": "resp2",
+			"display": "Respiratory system SOFA score 2",
+			"definition": "PaO2/FiO2 [mmHg (kPa)] < 300 (40)",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Atmung SOFA score 2"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "resp"
+				}
+			]
+		},
+		{
+			"code": "resp3",
+			"display": "Respiratory system SOFA score 3",
+			"definition": "PaO2/FiO2 [mmHg (kPa)] < 200 (26.7) and mechanically ventilated",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Atmung SOFA score 3"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "resp"
+				}
+			]
+		},
+		{
+			"code": "resp4",
+			"display": "Respiratory system SOFA score 4",
+			"definition": "PaO2/FiO2 [mmHg (kPa)] < 100 (13.3) and mechanically ventilated",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Atmung SOFA score 4"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "resp"
+				}
+			]
+		},
+		{
+			"code": "ns",
+			"display": "Nervous system",
+			"definition": "SOFA Nervous system scoring category",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "SOFA Kategorie Nervensystem"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "ns"
+				}
+			]
+		},
+		{
+			"code": "ns0",
+			"display": "Nervous system SOFA score 0",
+			"definition": "Glasgow Coma Scale (GCS) 15",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Nervensystem SOFA score 0"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "ns"
+				}
+			]
+		},
+		{
+			"code": "ns1",
+			"display": "Nervous system SOFA score 1",
+			"definition": "Glasgow Coma Scale (GCS) 13-14",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Nervensystem SOFA score 1"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "ns"
+				}
+			]
+		},
+		{
+			"code": "ns2",
+			"display": "Nervous system SOFA score 2",
+			"definition": "Glasgow Coma Scale (GCS) 10-12",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Nervensystem SOFA score 2"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "ns"
+				}
+			]
+		},
+		{
+			"code": "ns3",
+			"display": "Nervous system SOFA score 3",
+			"definition": "Glasgow Coma Scale (GCS) 6-9",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Nervensystem SOFA score 3"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "ns"
+				}
+			]
+		},
+		{
+			"code": "ns4",
+			"display": "Nervous system SOFA score 4",
+			"definition": "Glasgow Coma Scale (GCS) < 6",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Nervensystem SOFA score 4"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "ns"
+				}
+			]
+		},
+		{
+			"code": "cvs",
+			"display": "Cardiovascular system",
+			"definition": "SOFA Cardiovascular system scoring category",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "SOFA Kategorie Herz-Kreislauf-System"
+				}
+			]
+		},
+		{
+			"code": "cvs0",
+			"display": "Cardiovascular system SOFA score 0",
+			"definition": "Mean arterial pressure (MAP) ≥ 70 mmHg",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Herz-Kreislauf-System SOFA score 0"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "cvs"
+				}
+			]
+		},
+		{
+			"code": "cvs1",
+			"display": "Cardiovascular system SOFA score 1",
+			"definition": "Mean arterial pressure (MAP) < 70 mmHg",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Herz-Kreislauf-System SOFA score 1"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "cvs"
+				}
+			]
+		},
+		{
+			"code": "cvs2",
+			"display": "Cardiovascular system SOFA score 2",
+			"definition": "Administration of dopamine ≤ 5 ug/kg/min or dobutamine (any dose)",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Herz-Kreislauf-System SOFA score 2"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "cvs"
+				}
+			]
+		},
+		{
+			"code": "cvs3",
+			"display": "Cardiovascular system SOFA score 3",
+			"definition": "Administration of dopamine > 5 ug/kg/min OR epinephrine ≤ 0.1 ug/kg/min OR norepinephrine ≤ 0.1 ug/kg/min",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Herz-Kreislauf-System SOFA score 3"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "cvs"
+				}
+			]
+		},
+		{
+			"code": "cvs4",
+			"display": "Cardiovascular system SOFA score 4",
+			"definition": "Administration of dopamine > 15 ug/kg/min OR epinephrine > 0.1 ug/kg/min OR norepinephrine > 0.1 ug/kg/min",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Herz-Kreislauf-System SOFA score 4"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "cvs"
+				}
+			]
+		},
+		{
+			"code": "liv",
+			"display": "Liver",
+			"definition": "SOFA Liver scoring category",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "SOFA Kategorie Leber"
+				}
+			]
+		},
+		{
+			"code": "liv0",
+			"display": "Liver SOFA score 0",
+			"definition": "Bilirubin (mg/dl) [umol/L] < 1.2 [< 20]",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Leber SOFA score 0"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "liv"
+				}
+			]
+		},
+		{
+			"code": "liv1",
+			"display": "Liver SOFA score 1",
+			"definition": "Bilirubin (mg/dl) [umol/L] 1.2-1.9 [20-32]",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Leber SOFA score 1"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "liv"
+				}
+			]
+		},
+		{
+			"code": "liv2",
+			"display": "Liver SOFA score 2",
+			"definition": "Bilirubin (mg/dl) [umol/L] 2.0-5.9 [33-101]",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Leber SOFA score 2"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "liv"
+				}
+			]
+		},
+		{
+			"code": "liv3",
+			"display": "Liver SOFA score 3",
+			"definition": "Bilirubin (mg/dl) [umol/L] 6.0-11.9 [102-204]",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Leber SOFA score 3"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "liv"
+				}
+			]
+		},
+		{
+			"code": "liv4",
+			"display": "Liver SOFA score 4",
+			"definition": "Bilirubin (mg/dl) [umol/L] > 12.0 [> 204]",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Leber SOFA score 4"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "liv"
+				}
+			]
+		},
+		{
+			"code": "coa",
+			"display": "Coagulation",
+			"definition": "SOFA Coagulation scoring category",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "SOFA Kategorie Gerinnung"
+				}
+			]
+		},
+		{
+			"code": "coa0",
+			"display": "Coagulation SOFA score 0",
+			"definition": "Platelets×10^3/ul ? 150",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Gerinnung SOFA score 0"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "coa"
+				}
+			]
+		},
+		{
+			"code": "coa1",
+			"display": "Coagulation SOFA score 1",
+			"definition": "Platelets×10^3/ul < 150",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Gerinnung SOFA score 1"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "coa"
+				}
+			]
+		},
+		{
+			"code": "coa2",
+			"display": "Coagulation SOFA score 2",
+			"definition": "Platelets×10^3/ul < 100",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Gerinnung SOFA score 2"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "coa"
+				}
+			]
+		},
+		{
+			"code": "coa3",
+			"display": "Coagulation SOFA score 3",
+			"definition": "Platelets×10^3/ul < 50",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Gerinnung SOFA score 3"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "coa"
+				}
+			]
+		},
+		{
+			"code": "coa4",
+			"display": "Coagulation SOFA score 4",
+			"definition": "Platelets×10^3/ul < 20",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Gerinnung SOFA score 4"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "coa"
+				}
+			]
+		},
+		{
+			"code": "kid",
+			"display": "Kidneys",
+			"definition": "SOFA Kidneys scoring category",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "SOFA Kategorie Niere"
+				}
+			]
+		},
+		{
+			"code": "kid0",
+			"display": "Kidneys SOFA score 0",
+			"definition": "Creatinine (mg/dl) [umol/L] (or urine output) < 1.2 [< 110]",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Niere SOFA score 0"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "kid"
+				}
+			]
+		},
+		{
+			"code": "kid1",
+			"display": "Kidneys SOFA score 1",
+			"definition": "Creatinine (mg/dl) [umol/L] (or urine output) 1.2-1.9 [110-170]",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Niere SOFA score 1"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "kid"
+				}
+			]
+		},
+		{
+			"code": "kid2",
+			"display": "Kidneys SOFA score 2",
+			"definition": "Creatinine (mg/dl) [?mol/L] (or urine output) 2.0-3.4 [171-299]",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Niere SOFA score 2"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "kid"
+				}
+			]
+		},
+		{
+			"code": "kid3",
+			"display": "Kidneys SOFA score 3",
+			"definition": "Creatinine (mg/dl) [umol/L] (or urine output) 3.5-4.9 [300-440] (or < 500 ml/d)",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Niere SOFA score 3"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "kid"
+				}
+			]
+		},
+		{
+			"code": "kid4",
+			"display": "Kidneys SOFA score 4",
+			"definition": "Creatinine (mg/dl) [umol/L] (or urine output) > 5.0 [> 440] (or < 200 ml/d)",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Niere SOFA score 4"
+				}
+			],
+			"property": [
+				{
+					"code": "category",
+					"valueCode": "kid"
+				}
+			]
+		}
+	]
 }

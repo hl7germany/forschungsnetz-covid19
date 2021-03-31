@@ -1,31 +1,31 @@
 {
-    "compose": {
-        "include": [
-            {
-                "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score"
-            }
-        ]
-    },
-    "contact": [
-        {
-            "telecom": [
-                {
-                    "system": "url",
-                    "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-                }
-            ]
-        }
-    ],
-    "copyright": "This artefact includes content under copyright from Geriatric Medicine Research, Dalhousie University, Halifax, Canada. Implementers of these artefacts must complete a Permission for Use Agreement - for more information visit https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html.",
-    "date": "2020-05-20",
-    "version": "1.0",
-    "description": "Contains all Frailty Score codes",
-    "experimental": false,
-    "title": "Frailty Score",
-    "name": "FrailtyScore",
-    "publisher": "Charité",
-    "status": "active",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score",
-    "id": "gecco-valueset-frailty-score",
-    "resourceType": "ValueSet"
+	"resourceType": "ValueSet",
+	"id": "gecco-valueset-frailty-score",
+	"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score",
+	"version": "1.0",
+	"name": "FrailtyScore",
+	"title": "Frailty Score",
+	"status": "active",
+	"experimental": false,
+	"date": "2020-05-20",
+	"publisher": "Charité",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+				}
+			]
+		}
+	],
+	"description": "Contains all Frailty Score codes",
+	"copyright": "This artefact includes content under copyright from Geriatric Medicine Research, Dalhousie University, Halifax, Canada. Implementers of these artefacts must complete a Permission for Use Agreement - for more information visit https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html.",
+	"compose": {
+		"include": [
+			{
+				"system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score"
+			}
+		]
+	}
 }

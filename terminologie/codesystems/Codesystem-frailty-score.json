@@ -1,119 +1,119 @@
 {
-    "caseSensitive": false,
-    "concept": [
-        {
-            "code": "1",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Sehr fit"
-                }
-            ],
-            "display": "Very Fit"
-        },
-        {
-            "code": "2",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Durchschnittlich aktiv"
-                }
-            ],
-            "display": "Well"
-        },
-        {
-            "code": "3",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Gut zurechtkommend"
-                }
-            ],
-            "display": "Managing Well"
-        },
-        {
-            "code": "4",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Vulnerabel"
-                }
-            ],
-            "display": "Vulnerable"
-        },
-        {
-            "code": "5",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Geringgradig frail"
-                }
-            ],
-            "display": "Mildly Frail"
-        },
-        {
-            "code": "6",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Mittelgradig frail"
-                }
-            ],
-            "display": "Moderately Frail"
-        },
-        {
-            "code": "7",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Ausgeprägt frail"
-                }
-            ],
-            "display": "Severely Frail"
-        },
-        {
-            "code": "8",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Extrem frail"
-                }
-            ],
-            "display": "Very Severely Frail"
-        },
-        {
-            "code": "9",
-            "designation": [
-                {
-                    "language": "de-DE",
-                    "value": "Terminal erkrankt"
-                }
-            ],
-            "display": "Terminally Ill"
-        }
-    ],
-    "contact": [
-        {
-            "telecom": [
-                {
-                    "system": "url",
-                    "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-                }
-            ]
-        }
-    ],
-    "content": "complete",
-    "copyright": "This artefact includes content under copyright from Geriatric Medicine Research, Dalhousie University, Halifax, Canada. Implementers of these artefacts must complete a Permission for Use Agreement - for more information visit https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html.",
-    "date": "2020-10-29",
-    "description": "Clinical Frailty Scale",
-    "experimental": false,
-    "title": "Frailty Score",
-    "name": "FrailtyScore",
-    "publisher": "Charité",
-    "status": "active",
-    "version": "1.0",
-    "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score",
-    "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score",
-    "id": "gecco-codesystem-frailty-score",
-    "resourceType": "CodeSystem"
+	"resourceType": "CodeSystem",
+	"id": "gecco-codesystem-frailty-score",
+	"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score",
+	"version": "1.0",
+	"name": "FrailtyScore",
+	"title": "Frailty Score",
+	"status": "active",
+	"experimental": false,
+	"date": "2020-10-29",
+	"publisher": "Charité",
+	"contact": [
+		{
+			"telecom": [
+				{
+					"system": "url",
+					"value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+				}
+			]
+		}
+	],
+	"description": "Clinical Frailty Scale",
+	"copyright": "This artefact includes content under copyright from Geriatric Medicine Research, Dalhousie University, Halifax, Canada. Implementers of these artefacts must complete a Permission for Use Agreement - for more information visit https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html.",
+	"caseSensitive": false,
+	"valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score",
+	"content": "complete",
+	"concept": [
+		{
+			"code": "1",
+			"display": "Very Fit",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Sehr fit"
+				}
+			]
+		},
+		{
+			"code": "2",
+			"display": "Well",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Durchschnittlich aktiv"
+				}
+			]
+		},
+		{
+			"code": "3",
+			"display": "Managing Well",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Gut zurechtkommend"
+				}
+			]
+		},
+		{
+			"code": "4",
+			"display": "Vulnerable",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Vulnerabel"
+				}
+			]
+		},
+		{
+			"code": "5",
+			"display": "Mildly Frail",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Geringgradig frail"
+				}
+			]
+		},
+		{
+			"code": "6",
+			"display": "Moderately Frail",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Mittelgradig frail"
+				}
+			]
+		},
+		{
+			"code": "7",
+			"display": "Severely Frail",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Ausgeprägt frail"
+				}
+			]
+		},
+		{
+			"code": "8",
+			"display": "Very Severely Frail",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Extrem frail"
+				}
+			]
+		},
+		{
+			"code": "9",
+			"display": "Terminally Ill",
+			"designation": [
+				{
+					"language": "de-DE",
+					"value": "Terminal erkrankt"
+				}
+			]
+		}
+	]
 }
