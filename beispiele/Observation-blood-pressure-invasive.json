@@ -52,7 +52,16 @@
 	"subject": {
 		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
 	},
-	"effectiveDateTime": "2020-09-25",
+	"effectiveDateTime": "2021-04-14",
+	"method": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "10179008",
+				"display": "Invasive (qualifier value)"
+			}
+		]
+	},
 	"component": [
 		{
 			"code": {
