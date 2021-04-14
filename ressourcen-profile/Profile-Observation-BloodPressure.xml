@@ -223,7 +223,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
-      <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
         <code value="8480-6" />
@@ -240,7 +239,6 @@
     <element id="Observation.component:systolicBloodPressure.code.coding:snomed">
       <path value="Observation.component.code.coding" />
       <sliceName value="snomed" />
-      <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
         <code value="271649006" />
@@ -310,7 +308,6 @@
       <path value="Observation.component.code.coding" />
       <sliceName value="loinc" />
       <min value="1" />
-      <max value="1" />
       <patternCoding>
         <system value="http://loinc.org" />
         <code value="8462-4" />
@@ -327,7 +324,6 @@
     <element id="Observation.component:diastolicBloodPressure.code.coding:snomed">
       <path value="Observation.component.code.coding" />
       <sliceName value="snomed" />
-      <max value="1" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
         <code value="271650006" />
