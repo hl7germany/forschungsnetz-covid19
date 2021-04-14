@@ -1,6 +1,6 @@
 {
 	"resourceType": "Observation",
-	"id": "2a1e1c87-64f4-490b-912b-d8726b7b5f13",
+	"id": "example-observation-bp-invasive",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure"

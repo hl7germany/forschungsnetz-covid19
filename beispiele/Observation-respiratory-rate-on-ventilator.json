@@ -1,6 +1,6 @@
 {
 	"resourceType": "Observation",
-	"id": "a0897b04-2e57-43a7-9372-3c1f6a2fef1c",
+	"id": "example-observation-resp-rate-on-ventilator",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate"

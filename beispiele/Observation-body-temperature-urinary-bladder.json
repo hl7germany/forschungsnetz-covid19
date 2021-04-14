@@ -1,6 +1,6 @@
 {
 	"resourceType": "Observation",
-	"id": "162918dc-dc70-4767-a6d5-34c7d67e280a",
+	"id": "example-observation-bladder-temperature",
 	"meta": {
 		"profile": [
 			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature"
