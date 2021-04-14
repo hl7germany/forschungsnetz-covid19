@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-observation-blood-pressure" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure" />
-  <version value="1.0" />
+  <version value="1.0.4" />
   <name value="BloodPressure" />
   <title value="Blood Pressure" />
   <status value="active" />
