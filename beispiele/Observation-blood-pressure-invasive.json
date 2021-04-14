@@ -47,7 +47,7 @@
 				"display": "Blood pressure (observable entity)"
 			}
 		],
-		"text": "Blood pressure"
+		"text": "Blood pressure invasive"
 	},
 	"subject": {
 		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
@@ -87,10 +87,10 @@
 						"display": "Invasive systolic arterial pressure (observable entity)"
 					}
 				],
-				"text": "Systolic blood pressure"
+				"text": "Invasive systolic blood pressure"
 			},
 			"valueQuantity": {
-				"value": 120,
+				"value": 136,
 				"unit": "mmHg",
 				"system": "http://unitsofmeasure.org",
 				"code": "mm[Hg]"
@@ -116,14 +116,14 @@
 					},
 					{
 						"system": "http://snomed.info/sct",
-						"code": "271650006",
-						"display": "Diastolic blood pressure (observable entity)"
+						"code": "251073000",
+						"display": "Invasive diastolic arterial pressure (observable entity)"
 					}
 				],
-				"text": "Diastolic blood pressure"
+				"text": "Invasive diastolic blood pressure"
 			},
 			"valueQuantity": {
-				"value": 80,
+				"value": 87,
 				"unit": "mmHg",
 				"system": "http://unitsofmeasure.org",
 				"code": "mm[Hg]"
