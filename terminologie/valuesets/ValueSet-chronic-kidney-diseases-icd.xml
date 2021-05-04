@@ -31,10 +31,6 @@
                 <display value="Chronische Nierenkrankheit, nicht näher bezeichnet"/>
             </concept>
             <concept>
-                <code value="N18.5"/>
-                <display value="Chronische Nierenkrankheit, Stadium 5"/>
-            </concept>
-            <concept>
                 <code value="N18.1"/>
                 <display value="Chronische Nierenkrankheit, Stadium 1"/>
             </concept>
@@ -65,6 +61,11 @@
                 <property value="concept"/>
                 <op value="descendent-of"/>
                 <value value="N18"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
     </compose>
