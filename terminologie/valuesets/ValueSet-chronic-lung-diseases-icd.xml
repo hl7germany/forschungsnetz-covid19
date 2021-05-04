@@ -15,7 +15,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.493"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="ChronicLungDiseasesICD"/>
     <title value="Chronische Lungenerkrankungen ICD-10-GM"/>
     <status value="active"/>
@@ -185,6 +185,14 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="P27"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="J98"/>
             </filter>
         </include>
     </compose>
