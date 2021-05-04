@@ -14,7 +14,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.499"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="AceInhibitorsATC"/>
     <title value="ACE inhibitors ATC"/>
     <status value="active"/>
@@ -256,6 +256,10 @@
             <concept>
                 <code value="C09BX04"/>
                 <display value="Perindopril, Bisoprolol und Amlodipin"/>
+            </concept>
+            <concept>
+                <code value="C09BX05"/>
+                <display value="Ramipril und Bisoprolol"/>
             </concept>
         </include>
     </compose>
