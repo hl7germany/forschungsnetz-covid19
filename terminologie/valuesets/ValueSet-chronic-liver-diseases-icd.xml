@@ -15,7 +15,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.496"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="ChronicLiverDiseasesICD"/>
     <title value="Chronische Lebererkrankungen ICD-10-GM"/>
     <status value="active"/>
@@ -36,7 +36,7 @@
             </concept>
             <concept>
                 <code value="K74.6"/>
-                <display value="Fibrose und Zirrhose der Leber"/>
+                <display value="Sonstige und nicht näher bezeichnete Zirrhose der Leber"/>
             </concept>
             <concept>
                 <code value="B18.9"/>
@@ -54,13 +54,15 @@
                 <op value="regex"/>
                 <value value="^K7.*"/>
             </filter>
-        </include>
-        <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="B18"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
     </compose>
