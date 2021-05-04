@@ -30,10 +30,28 @@
             <concept>
                 <code value="439127006"/>
                 <display value="Thrombosis (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Thrombose"/>
+                </designation>
             </concept>
             <concept>
                 <code value="414086009"/>
                 <display value="Embolism (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Embolie"/>
+                </designation>
             </concept>
             <concept>
                 <code value="128601007"/>
@@ -114,8 +132,8 @@
                 </designation>
             </concept>
             <concept>
-                <code value="129561000119108"/>
-                <display value="Pre-renal acute kidney injury (disorder)"/>
+                <code value="14669001"/>
+                <display value="Acute renal failure syndrome (disorder)"/>
                 <designation>
                     <language value="de-DE"/>
                     <use>
