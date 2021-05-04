@@ -47,10 +47,6 @@
                 <display value="Sonstige interstitielle Lungenkrankheiten mit Fibrose"/>
             </concept>
             <concept>
-                <code value="A16.2"/>
-                <display value="Lungentuberkulose ohne Angabe einer bakteriologischen, molekularbiologischen oder histologischen Sicherung"/>
-            </concept>
-            <concept>
                 <code value="J60"/>
                 <display value="Kohlenbergarbeiter-Pneumokoniose"/>
             </concept>
@@ -61,34 +57,6 @@
             <concept>
                 <code value="J64"/>
                 <display value="Nicht näher bezeichnete Pneumokoniose"/>
-            </concept>
-            <concept>
-                <code value="J66.0"/>
-                <display value="Krankheit der Atemwege durch spezifischen organischen Staub"/>
-            </concept>
-            <concept>
-                <code value="J67.0"/>
-                <display value="Farmerlunge"/>
-            </concept>
-            <concept>
-                <code value="J67.1"/>
-                <display value="Bagassose"/>
-            </concept>
-            <concept>
-                <code value="J68.4"/>
-                <display value="Chronische Krankheiten der Atmungsorgane durch chemische Substanzen, Gase, Rauch und Dämpfe"/>
-            </concept>
-            <concept>
-                <code value="J70.1"/>
-                <display value="Chronische und sonstige Lungenbeteiligung bei Strahleneinwirkung"/>
-            </concept>
-            <concept>
-                <code value="J70.4"/>
-                <display value="Arzneimittelinduzierte interstitielle Lungenkrankheit, nicht näher bezeichnet"/>
-            </concept>
-            <concept>
-                <code value="P27.8"/>
-                <display value="Sonstige chronische Atemwegskrankheiten mit Ursprung in der Perinatalperiode"/>
             </concept>
             <concept>
                 <code value="Z87.0"/>
@@ -169,6 +137,54 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="E84"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="J66"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="A16"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="J67"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="J68"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="J70"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="P27"/>
             </filter>
         </include>
     </compose>
