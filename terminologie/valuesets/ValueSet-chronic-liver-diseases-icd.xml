@@ -55,6 +55,14 @@
                 <value value="^K7.*"/>
             </filter>
             <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="B18"/>
