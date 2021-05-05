@@ -15,7 +15,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.495"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="CardiovascularDiseasesICD"/>
     <title value="Herz-Kreislauf-Erkrankungen ICD-10-GM"/>
     <status value="active"/>
@@ -69,6 +69,11 @@
                 <property value="concept"/>
                 <op value="regex"/>
                 <value value="^I.*"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
     </compose>
