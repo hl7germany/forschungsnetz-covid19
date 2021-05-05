@@ -15,7 +15,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.497"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="DiabetesMellitusDiseasesICD"/>
     <title value="Diabetes Erkrankungen ICD-10-GM"/>
     <status value="active"/>
@@ -46,6 +46,11 @@
                 <op value="is-a"/>
                 <value value="E11"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -53,6 +58,11 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="E10"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -62,6 +72,11 @@
                 <op value="is-a"/>
                 <value value="E13"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -69,6 +84,11 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="E14"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
     </compose>
