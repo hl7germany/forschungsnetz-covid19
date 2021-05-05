@@ -15,7 +15,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.498"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="ChronicNeurologicalMentalDiseasesICD"/>
     <title value="Chronische neurologische oder psychiatrische Erkrankungen Surrogat"/>
     <status value="active"/>
@@ -86,6 +86,11 @@
                 <op value="descendent-of"/>
                 <value value="G20"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -93,6 +98,11 @@
                 <property value="concept"/>
                 <op value="descendent-of"/>
                 <value value="G35"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -102,6 +112,11 @@
                 <op value="descendent-of"/>
                 <value value="F40"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -109,6 +124,11 @@
                 <property value="concept"/>
                 <op value="descendent-of"/>
                 <value value="F41"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -118,6 +138,11 @@
                 <op value="descendent-of"/>
                 <value value="F32"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -125,6 +150,11 @@
                 <property value="concept"/>
                 <op value="descendent-of"/>
                 <value value="F33"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -134,6 +164,11 @@
                 <op value="descendent-of"/>
                 <value value="F23"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -141,6 +176,11 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="F28"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -150,6 +190,11 @@
                 <op value="is-a"/>
                 <value value="F29"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -157,6 +202,11 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="F00"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -166,6 +216,11 @@
                 <op value="is-a"/>
                 <value value="F01"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -173,6 +228,11 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="F02"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -182,6 +242,11 @@
                 <op value="is-a"/>
                 <value value="G70"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -189,6 +254,11 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="G71"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -198,6 +268,11 @@
                 <op value="is-a"/>
                 <value value="G72"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -205,6 +280,11 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="G73"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -214,6 +294,11 @@
                 <op value="is-a"/>
                 <value value="G40"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -221,6 +306,11 @@
                 <property value="concept"/>
                 <op value="is-a"/>
                 <value value="G41"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
         <include>
@@ -230,6 +320,11 @@
                 <op value="is-a"/>
                 <value value="G43"/>
             </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
+            </filter>
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
@@ -237,6 +332,11 @@
                 <property value="concept"/>
                 <op value="descendent-of"/>
                 <value value="I69"/>
+            </filter>
+            <filter>
+                <property value="child"/>
+                <op value="exists"/>
+                <value value="false"/>
             </filter>
         </include>
     </compose>
