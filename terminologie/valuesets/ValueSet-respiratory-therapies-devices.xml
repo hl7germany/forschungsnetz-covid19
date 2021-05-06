@@ -4,7 +4,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
     </meta>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies-devices"/>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="RespiratoryTherapyDevices"/>
     <title value="Respiratory Therapy Devices"/>
     <status value="active"/>
@@ -12,6 +12,7 @@
     <publisher value="Charité"/>
     <description value="Devices used in respiratory therapy procedures"/>
     <immutable value="false"/>
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
