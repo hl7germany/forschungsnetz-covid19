@@ -14,7 +14,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.487"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="ImagingProcedures"/>
     <title value="Radiology Procedures"/>
     <status value="active"/>
@@ -41,7 +41,7 @@
             </concept>
             <concept>
                 <code value="168537006"/>
-                <display value="Plain radiography"/>
+                <display value="Plain radiography (procedure)"/>
                 <designation>
                     <language value="de-DE"/>
                     <use>
