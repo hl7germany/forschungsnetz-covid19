@@ -15,9 +15,9 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.474"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="RheumatologicalImmunologicalDiseases"/>
-    <title value="Rheumatologische und immunologische Erkrankungen"/>
+    <title value="Rheumatological Immunological Diseases"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
@@ -76,7 +76,7 @@
                         <code value="900000000000013009"/>
                         <display value="Synonym"/>
                     </use>
-                    <value value="Vasculitis"/>
+                    <value value="Vaskulitis"/>
                 </designation>
             </concept>
             <concept>
