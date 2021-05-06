@@ -15,7 +15,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.494"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="DrugTherapyATC"/>
     <title value="Pharmacological Therapy ATC"/>
     <status value="active"/>
@@ -299,6 +299,14 @@
                 <display value="Cannabinoide"/>
             </concept>
             <concept>
+                <code value="N02BG11"/>
+                <display value="Mirogabalin"/>
+            </concept>
+            <concept>
+                <code value="N02BG12"/>
+                <display value="Tanezumab"/>
+            </concept>
+            <concept>
                 <code value="N02BH"/>
                 <display value="Homöopathische und anthroposophische Analgetika und Antipyretika"/>
             </concept>
@@ -325,10 +333,6 @@
             <concept>
                 <code value="N02BP02"/>
                 <display value="Lindenblüten"/>
-            </concept>
-            <concept>
-                <code value="N02BB54"/>
-                <display value="Propyphenazon, Kombinationen exkl. Psycholeptika"/>
             </concept>
             <concept>
                 <code value="G01B"/>
@@ -524,6 +528,10 @@
             </concept>
             <concept>
                 <code value="H02CA02"/>
+                <display value="Osilodrostat"/>
+            </concept>
+            <concept>
+                <code value="H02CA03"/>
                 <display value="Ketoconazol"/>
             </concept>
             <concept>
@@ -617,6 +625,10 @@
             <concept>
                 <code value="R03AK13"/>
                 <display value="Salbutamol und Beclometason"/>
+            </concept>
+            <concept>
+                <code value="R03AK14"/>
+                <display value="Indacaterol und Mometason"/>
             </concept>
             <concept>
                 <code value="R03AL"/>
@@ -811,6 +823,18 @@
                 <display value="Risankizumab"/>
             </concept>
             <concept>
+                <code value="L04AC19"/>
+                <display value="Satralizumab"/>
+            </concept>
+            <concept>
+                <code value="L04AC20"/>
+                <display value="Netakimab"/>
+            </concept>
+            <concept>
+                <code value="L04AC21"/>
+                <display value="Bimekizumab"/>
+            </concept>
+            <concept>
                 <code value="L03AB"/>
                 <display value="Interferone"/>
             </concept>
@@ -955,10 +979,6 @@
                 <display value="Ivermectin"/>
             </concept>
             <concept>
-                <code value="P02CF01"/>
-                <display value="Ivermectin"/>
-            </concept>
-            <concept>
                 <code value="J05AR10"/>
                 <display value="Lopinavir und Ritonavir"/>
             </concept>
@@ -1012,10 +1032,6 @@
             </concept>
             <concept>
                 <code value="L01XE10"/>
-                <display value="Everolimus"/>
-            </concept>
-            <concept>
-                <code value="L04AA18"/>
                 <display value="Everolimus"/>
             </concept>
             <concept>
