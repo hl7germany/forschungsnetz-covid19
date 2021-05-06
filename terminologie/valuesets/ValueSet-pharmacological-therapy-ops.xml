@@ -14,7 +14,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.516"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="DrugTherapyOPS"/>
     <title value="Pharmacological Therapy OPS"/>
     <status value="active"/>
@@ -26,32 +26,12 @@
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
             <concept>
-                <code value="6-005.m"/>
-                <display value="Tocilizumab, intravenös"/>
-            </concept>
-            <concept>
-                <code value="6-005.n"/>
-                <display value="Tocilizumab, subkutan"/>
-            </concept>
-            <concept>
                 <code value="6-00a.g"/>
                 <display value="Sarilumab, parenteral"/>
             </concept>
             <concept>
                 <code value="6-005.8"/>
                 <display value="Everolimus, oral"/>
-            </concept>
-            <concept>
-                <code value="6-004.e"/>
-                <display value="Temsirolimus, parenteral"/>
-            </concept>
-            <concept>
-                <code value="6-001.d"/>
-                <display value="Adalimumab, parenteral"/>
-            </concept>
-            <concept>
-                <code value="6-002.b"/>
-                <display value="Etanercept, parenteral"/>
             </concept>
             <concept>
                 <code value="6-005.7"/>
@@ -62,10 +42,6 @@
                 <display value="Golimumab, parenteral"/>
             </concept>
             <concept>
-                <code value="6-001.e"/>
-                <display value="Infliximab, parenteral"/>
-            </concept>
-            <concept>
                 <code value="6-006.7"/>
                 <display value="Canakinumab, parenteral"/>
             </concept>
@@ -73,6 +49,54 @@
                 <code value="6-009.4"/>
                 <display value="Ruxolitinib, oral"/>
             </concept>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="6-005.m"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="6-005.n"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="6-004.e"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="6-001.d"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="6-002.b"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="descendent-of"/>
+                <value value="6-001.e"/>
+            </filter>
         </include>
     </compose>
 </ValueSet>
