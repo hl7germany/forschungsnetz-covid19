@@ -14,7 +14,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.536"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="DialysisProceduresOPS"/>
     <title value="Dialysis Procedures OPS"/>
     <status value="active"/>
@@ -31,5 +31,28 @@
                 <value value="8-85"/>
             </filter>
         </include>
+        <exclude>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="8-851"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <filter>
+                <property value="concept"/>
+                <op value="is-a"/>
+                <value value="8-852"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <concept>
+                <code value="8-85b"/>
+                <display value="Anwendung von Blutegeln zur Sicherung des venösen Blutabstroms bei Lappenplastiken oder replantierten Gliedmaßenabschnitten"/>
+            </concept>
+        </exclude>
     </compose>
 </ValueSet>
