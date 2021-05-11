@@ -14,13 +14,13 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.532"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="HumanImmunodeficiencyVirusInfectionsICD"/>
-    <title value="Human Immunodeficiency Virus Infections ICD"/>
+    <title value="Human Immunodeficiency Virus Infections ICD-10-GM"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="HIV infections in the context of Covid-19"/>
+    <description value="HIV infections in the context of Covid-19 from ICD-10-GM"/>
     <immutable value="false"/>
     <compose>
         <include>

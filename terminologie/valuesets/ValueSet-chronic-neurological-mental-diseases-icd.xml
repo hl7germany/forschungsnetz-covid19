@@ -17,11 +17,11 @@
     </identifier>
     <version value="1.0.4"/>
     <name value="ChronicNeurologicalMentalDiseasesICD"/>
-    <title value="Chronische neurologische oder psychiatrische Erkrankungen Surrogat"/>
+    <title value="Chronic Neurological Mental Diseases ICD-10-GM"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Chronische neurologische Erkrankungen im Zusammenhang mit Covid-19 mittels ICD-10-GM"/>
+    <description value="Chronic neurological or mental diseases in the context of Covid-19 from ICD-10-GM"/>
     <immutable value="false"/>
     <compose>
         <include>

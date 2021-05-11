@@ -16,11 +16,11 @@
     </identifier>
     <version value="1.0.4"/>
     <name value="ComplicationsCovid19ICD"/>
-    <title value="Komplikationen im Rahmen von Covid-19"/>
+    <title value="Complications Covid-19 ICD-10-GM"/>
     <status value="active"/>
     <experimental value="false"/>
     <publisher value="Charité"/>
-    <description value="Komplikationen im Rahmen von Covid-19 mittels ICD-10-GM"/>
+    <description value="Complications in the context of Covid-19 from ICD-10-GM"/>
     <immutable value="false"/>
     <compose>
         <include>

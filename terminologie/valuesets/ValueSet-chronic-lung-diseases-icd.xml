@@ -17,11 +17,11 @@
     </identifier>
     <version value="1.0.4" />
     <name value="ChronicLungDiseasesICD" />
-    <title value="Chronische Lungenerkrankungen ICD-10-GM" />
+    <title value="Chronic Lung Diseases ICD-10-GM" />
     <status value="active" />
     <experimental value="false" />
     <publisher value="Charité" />
-    <description value="Chronische Lungenerkrankungen im Zusammenhang mit Covid-19" />
+    <description value="Chronic lung diseases in the context of Covid-19 from ICD-10-GM" />
     <immutable value="false" />
     <compose>
         <include>
