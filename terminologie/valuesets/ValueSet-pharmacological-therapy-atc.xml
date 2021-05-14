@@ -26,6 +26,7 @@
     <compose>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+            <version value="2020"/>
             <concept>
                 <code value="N02B"/>
                 <display value="ANDERE ANALGETIKA UND ANTIPYRETIKA"/>
