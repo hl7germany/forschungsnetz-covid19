@@ -8,13 +8,16 @@
             <start value="2020-05-03T16:03:42+02:00"/>
         </valuePeriod>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-supplement">
+        <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement" />
+    </extension>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-findings"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.488"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="RadiologicFindings"/>
     <title value="Radiology Findings"/>
     <status value="active"/>

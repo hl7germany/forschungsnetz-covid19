@@ -8,13 +8,16 @@
             <start value="2020-04-25T20:21:19+02:00"/>
         </valuePeriod>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-supplement">
+        <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement" />
+    </extension>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.565"/>
     </identifier>
-    <version value="1.0"/>
+    <version value="1.0.4"/>
     <name value="CardiovascularDiseases"/>
     <title value="Cardiovascular-Diseases"/>
     <status value="active"/>

@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "gecco-codesystem-snomed-pce-supplement",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement",
+  "version": "1.0.4",
+  "name": "SNOMEDsupplement",
+  "title": "SNOMED Supplement CodeSystem",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-05-14",
+  "publisher": "Charité",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem supplement for SNOMED CT post-coordinated expressions.",
+  "caseSensitive": true,
+  "content": "supplement",
+  "supplements": "http://snomed.info/sct/900000000000207008/version/20210131",
+  "concept": [
+    {
+      "code": "118247008:363713009=373068000",
+      "display": "Radiological finding of undetermined significance"
+    },
+    {
+      "code": "118247008:{363713009=263654008,42752001=840539006}",
+      "display": "Radiological finding characteristic for Covid-19"
+    },
+    {
+      "code": "118247008:363713009=17621005",
+      "display": "Radiological finding normal"
+    },
+    {
+      "code": "417662000:246090004=22298006",
+      "display": "History of myocardial infarction"
+    },
+    {
+      "code": "416940007:363589002=81266008",
+      "display": "History of heart revascularization"
+    }
+  ]
+}
