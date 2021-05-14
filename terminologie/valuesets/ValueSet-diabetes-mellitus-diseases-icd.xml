@@ -26,6 +26,7 @@
     <compose>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <concept>
                 <code value="E11.9"/>
                 <display value="Diabetes mellitus, Typ 2 : Ohne Komplikationen"/>

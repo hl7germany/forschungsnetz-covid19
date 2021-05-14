@@ -25,6 +25,7 @@
     <compose>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>

@@ -25,6 +25,7 @@
     <compose>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <version value="2021"/>
             <concept>
                 <code value="6-00a.g"/>
                 <display value="Sarilumab, parenteral"/>
@@ -52,6 +53,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>
@@ -60,6 +62,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>
@@ -68,6 +71,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>
@@ -76,6 +80,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>
@@ -84,6 +89,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>
@@ -92,6 +98,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>

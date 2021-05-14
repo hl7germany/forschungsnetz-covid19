@@ -25,6 +25,7 @@
     <compose>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <concept>
                 <code value="Z94.1"/>
                 <display value="Zustand nach Herztransplantation"/>
