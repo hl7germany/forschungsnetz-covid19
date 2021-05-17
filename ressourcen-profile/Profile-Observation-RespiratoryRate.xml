@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-observation-respiratory-rate" />
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
+    <valueString value="Clinical.Diagnostics" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
+    <valueCode value="patient" />
+  </extension>
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate" />
-  <version value="1.0" />
+  <version value="1.0.4" />
   <name value="RespiratoryRate" />
   <title value="Respiratory Rate" />
   <status value="active" />
-  <date value="2020-10-29" />
+  <experimental value="false" />
+  <date value="2021-05-17" />
   <publisher value="Charité" />
   <contact>
     <telecom>
@@ -49,23 +56,107 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/resprate" />
+  <baseDefinition value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base" />
   <derivation value="constraint" />
   <differential>
-    <element id="Observation.code.coding:RespRateCodeSnomed">
-      <path value="Observation.code.coding" />
-      <sliceName value="RespRateCodeSnomed" />
-      <max value="1" />
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <short value="Respiratory Rate" />
+      <definition value="Respiratory Rate" />
+      <comment value="Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system." />
     </element>
-    <element id="Observation.code.coding:RespRateCodeSnomed.system">
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:loinc">
+      <path value="Observation.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="*" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="9279-1" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:loinc.system">
       <path value="Observation.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://snomed.info/sct" />
     </element>
-    <element id="Observation.code.coding:RespRateCodeSnomed.code">
+    <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="86290005" />
+    </element>
+    <element id="Observation.code.coding:snomed">
+      <path value="Observation.code.coding" />
+      <sliceName value="snomed" />
+      <min value="0" />
+      <max value="*" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="86290005" />
+      </patternCoding>
+    </element>
+    <element id="Observation.code.coding:snomed.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding:snomed.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="Quantity" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.valueQuantity">
+      <path value="Observation.valueQuantity" />
+      <min value="0" />
+      <max value="1" />
+    </element>
+    <element id="Observation.valueQuantity.value">
+      <path value="Observation.valueQuantity.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.valueQuantity.unit">
+      <path value="Observation.valueQuantity.unit" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.valueQuantity.system">
+      <path value="Observation.valueQuantity.system" />
+      <min value="1" />
+      <patternUri value="http://unitsofmeasure.org" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.valueQuantity.code">
+      <path value="Observation.valueQuantity.code" />
+      <min value="1" />
+      <patternCode value="/min" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
