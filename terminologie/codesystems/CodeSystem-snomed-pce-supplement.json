@@ -7,7 +7,7 @@
   "title": "SNOMED Supplement CodeSystem",
   "status": "active",
   "experimental": false,
-  "date": "2021-05-14",
+  "date": "2021-05-19",
   "publisher": "Charité",
   "contact": [
     {
@@ -35,14 +35,6 @@
     {
       "code": "118247008:363713009=17621005",
       "display": "Radiological finding normal"
-    },
-    {
-      "code": "417662000:246090004=22298006",
-      "display": "History of myocardial infarction"
-    },
-    {
-      "code": "416940007:363589002=81266008",
-      "display": "History of heart revascularization"
     }
   ]
 }

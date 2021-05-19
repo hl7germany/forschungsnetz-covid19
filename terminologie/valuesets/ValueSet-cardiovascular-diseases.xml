@@ -43,8 +43,8 @@
                 </designation>
             </concept>
             <concept>
-                <code value="417662000:246090004=22298006"/>
-                <display value="|History of clinical finding in subject (situation)|:|Associated finding (attribute)|=|Myocardial infarction (disorder)|"/>
+                <code value="399211009"/>
+                <display value="History of myocardial infarction (situation)"/>
                 <designation>
                     <language value="de-DE"/>
                     <use>
@@ -95,8 +95,8 @@
                 </designation>
             </concept>
             <concept>
-                <code value="416940007:363589002=81266008"/>
-                <display value="|Past history of procedure (situation)|:|Associated procedure (attribute)|=|Heart revascularization (procedure)|"/>
+                <code value="399261000"/>
+                <display value="History of coronary artery bypass grafting (situation)"/>
                 <designation>
                     <language value="de-DE"/>
                     <use>
