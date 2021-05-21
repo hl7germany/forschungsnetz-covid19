@@ -8,9 +8,6 @@
             <start value="2020-04-25T20:21:19+02:00"/>
         </valuePeriod>
     </extension>
-    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-supplement">
-        <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement" />
-    </extension>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases"/>
     <identifier>
         <use value="official"/>
