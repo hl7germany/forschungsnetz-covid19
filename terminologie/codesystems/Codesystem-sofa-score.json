@@ -2,12 +2,12 @@
 	"resourceType": "CodeSystem",
 	"id": "gecco-codesystem-sofa-score",
 	"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score",
-	"version": "1.0",
+	"version": "1.0.4",
 	"name": "SOFAScore",
 	"title": "SOFA Score",
 	"status": "active",
 	"experimental": false,
-	"date": "2020-10-29",
+	"date": "2021-05-26",
 	"publisher": "Charité",
 	"contact": [
 		{
@@ -23,6 +23,12 @@
 	"caseSensitive": true,
 	"valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score",
 	"content": "complete",
+	"property": [
+		{
+		  "code": "category",
+		  "type": "code"
+		}
+	  ],
 	"concept": [
 		{
 			"code": "resp",

@@ -7,7 +7,7 @@
   "title": "SNOMED Supplement CodeSystem",
   "status": "active",
   "experimental": false,
-  "date": "2021-05-19",
+  "date": "2021-05-26",
   "publisher": "Charité",
   "contact": [
     {
@@ -22,18 +22,18 @@
   "description": "CodeSystem supplement for SNOMED CT post-coordinated expressions.",
   "caseSensitive": true,
   "content": "supplement",
-  "supplements": "http://snomed.info/sct/900000000000207008/version/20210131",
+  "supplements": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131",
   "concept": [
     {
-      "code": "118247008:363713009=373068000",
+      "code": "118247008| Radiologic finding|:{363713009| Has interpretation|=373068000| Undetermined|}",
       "display": "Radiological finding of undetermined significance"
     },
     {
-      "code": "118247008:{363713009=263654008,42752001=840539006}",
-      "display": "Radiological finding characteristic for Covid-19"
+      "code": "118247008| Radiologic finding|:{363713009| Has interpretation|=263654008| Abnormal|,42752001| Due to|=840539006| COVID-19|}",
+      "display": "Radiological finding characteristic for COVID-19"
     },
     {
-      "code": "118247008:363713009=17621005",
+      "code": "118247008| Radiologic finding|:{363713009| Has interpretation|=17621005| Normal|}",
       "display": "Radiological finding normal"
     }
   ]

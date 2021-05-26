@@ -1,71 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="1.2.276.0.76.11.488--20200503160342"/>
+    <id value="1.2.276.0.76.11.488--20200503160342" />
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
-            <start value="2020-05-03T16:03:42+02:00"/>
+            <start value="2020-05-03T16:03:42+02:00" />
         </valuePeriod>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/valueset-supplement">
-        <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement" />
+        <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement|1.0.4" />
     </extension>
-    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-findings"/>
+    <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-findings" />
     <identifier>
-        <use value="official"/>
-        <system value="http://art-decor.org/ns/oids/vs"/>
-        <value value="1.2.276.0.76.11.488"/>
+        <use value="official" />
+        <system value="http://art-decor.org/ns/oids/vs" />
+        <value value="1.2.276.0.76.11.488" />
     </identifier>
-    <version value="1.0.4"/>
-    <name value="RadiologicFindings"/>
-    <title value="Radiology Findings"/>
-    <status value="active"/>
-    <experimental value="false"/>
-    <publisher value="Charité"/>
-    <description value="Radiology findings in the context of Covid-19"/>
-    <immutable value="false"/>
-    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <version value="1.0.4" />
+    <name value="RadiologicFindings" />
+    <title value="Radiology Findings" />
+    <status value="active" />
+    <experimental value="false" />
+    <publisher value="Charité" />
+    <description value="Radiology findings in the context of Covid-19" />
+    <immutable value="false" />
+    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org." />
     <compose>
         <include>
-            <system value="http://snomed.info/sct"/>
+            <system value="http://snomed.info/sct" />
             <concept>
-                <code value="118247008:363713009=373068000"/>
-                <display value="|Radiologic finding (finding)|:|Has interpretation (attribute)|=|Undetermined (qualifier value)|"/>
+                <code value="118247008:{363713009=373068000}" />
+                <display value="|Radiologic finding (finding)|:|Has interpretation (attribute)|=|Undetermined (qualifier value)|" />
                 <designation>
-                    <language value="de-DE"/>
+                    <language value="de-DE" />
                     <use>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="900000000000013009"/>
-                        <display value="Synonym"/>
+                        <system value="http://snomed.info/sct" />
+                        <code value="900000000000013009" />
+                        <display value="Synonym" />
                     </use>
-                    <value value="Unspezifischer Befund"/>
+                    <value value="Unspezifischer Befund" />
                 </designation>
             </concept>
             <concept>
-                <code value="118247008:{363713009=263654008,42752001=840539006}"/>
-                <display value="|Radiologic finding (finding)|:{|Has interpretation (attribute)|=|Abnormal (qualifier value)|,|Due to (attribute)|=|Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)|}"/>
+                <code value="118247008:{363713009=263654008,42752001=840539006}" />
+                <display value="|Radiologic finding (finding)|:{|Has interpretation (attribute)|=|Abnormal (qualifier value)|,|Due to (attribute)|=|Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)|}" />
                 <designation>
-                    <language value="de-DE"/>
+                    <language value="de-DE" />
                     <use>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="900000000000013009"/>
-                        <display value="Synonym"/>
+                        <system value="http://snomed.info/sct" />
+                        <code value="900000000000013009" />
+                        <display value="Synonym" />
                     </use>
-                    <value value="COVID-19-typischer Befund"/>
+                    <value value="COVID-19-typischer Befund" />
                 </designation>
             </concept>
             <concept>
-                <code value="118247008:363713009=17621005"/>
-                <display value="|Radiologic finding (finding)|:|Has interpretation (attribute)|=|Normal (qualifier value)|"/>
+                <code value="118247008:{363713009=17621005}" />
+                <display value="|Radiologic finding (finding)|:|Has interpretation (attribute)|=|Normal (qualifier value)|" />
                 <designation>
-                    <language value="de-DE"/>
+                    <language value="de-DE" />
                     <use>
-                        <system value="http://snomed.info/sct"/>
-                        <code value="900000000000013009"/>
-                        <display value="Synonym"/>
+                        <system value="http://snomed.info/sct" />
+                        <code value="900000000000013009" />
+                        <display value="Synonym" />
                     </use>
-                    <value value="Normalbefund"/>
+                    <value value="Normalbefund" />
                 </designation>
             </concept>
         </include>
