@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-observation-carbon-dioxide-partial-pressure" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure" />
-  <version value="1.0" />
+  <version value="1.0.4" />
   <name value="PaCO2" />
   <title value="PaCO2" />
   <status value="active" />
-  <date value="2020-10-29" />
+  <date value="2021-05-28" />
   <publisher value="Charité" />
   <contact>
     <telecom>
@@ -56,18 +56,10 @@
       <path value="Observation.category.coding" />
       <sliceName value="blood-gas-studies" />
       <max value="1" />
-    </element>
-    <element id="Observation.category.coding:blood-gas-studies.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <patternUri value="http://loinc.org" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category.coding:blood-gas-studies.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
-      <patternCode value="18767-4" />
-      <mustSupport value="true" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="18767-4" />
+      </patternCoding>
     </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding" />
