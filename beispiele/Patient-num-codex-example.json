@@ -1,5 +1,6 @@
 {
     "resourceType": "Patient",
+    "id": "patient-num-codex-example",
     "meta": {
         "profile": [
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
