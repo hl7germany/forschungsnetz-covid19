@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-patient" />
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-category">
+    <valueString value="Base.Individuals" />
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
+    <valueCode value="patient" />
+  </extension>
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
-  <version value="1.0" />
+  <version value="1.0.5" />
   <name value="Patient" />
   <title value="Patient" />
   <status value="active" />
-  <date value="2020-10-29" />
+  <date value="2021-06-22" />
   <publisher value="Charité" />
   <contact>
     <telecom>
@@ -16,6 +22,31 @@
   </contact>
   <description value="Covers demographic data about the patient" />
   <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="loinc" />
+    <uri value="http://loinc.org" />
+    <name value="LOINC code for the element" />
+  </mapping>
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
@@ -35,6 +66,8 @@
     <element id="Patient.extension:ethnicGroup">
       <path value="Patient.extension" />
       <sliceName value="ethnicGroup" />
+      <min value="0" />
+      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group" />
@@ -44,12 +77,101 @@
     <element id="Patient.extension:age">
       <path value="Patient.extension" />
       <sliceName value="age" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.identifier:bloom-filter">
+      <path value="Patient.identifier" />
+      <sliceName value="bloom-filter" />
+      <definition value="Used withing the NUM-CODEX project for resolution of data integration center pseudonyms" />
+      <min value="0" />
+      <max value="1" />
+      <patternIdentifier>
+        <system value="http://www.netzwerk-universitaetsmedizin.de/sid/bloom-filter" />
+      </patternIdentifier>
+      <constraint>
+        <key value="idf-num-codex-bloom-filter" />
+        <severity value="error" />
+        <human value="If NUM-CODEX Bloom filter is present, CRR and DIC pseudonyms shall not be present." />
+        <expression value="$this.exists() implies (%resource.identifier.where(system='http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym').exists().not() and (%resource.identifier.where(system='http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym').exists().not()))" />
+        <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
+      </constraint>
+    </element>
+    <element id="Patient.identifier:bloom-filter.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://www.netzwerk-universitaetsmedizin.de/sid/bloom-filter" />
+    </element>
+    <element id="Patient.identifier:bloom-filter.value">
+      <path value="Patient.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:crr-pseudonym">
+      <path value="Patient.identifier" />
+      <sliceName value="crr-pseudonym" />
+      <definition value="Used withing the NUM-CODEX project for central research repository pseudonyms" />
+      <min value="0" />
+      <max value="1" />
+      <patternIdentifier>
+        <system value="http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym" />
+      </patternIdentifier>
+      <constraint>
+        <key value="idf-num-codex-crr-pseudonym" />
+        <severity value="error" />
+        <human value="If NUM-CODEX CRR pseudonym is present, Bloom filter and DIC pseudonym shall not be present." />
+        <expression value="$this.exists() implies (%resource.identifier.where(system='http://www.netzwerk-universitaetsmedizin.de/sid/bloom-filter').exists().not() and (%resource.identifier.where(system='http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym').exists().not()))" />
+        <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
+      </constraint>
+    </element>
+    <element id="Patient.identifier:crr-pseudonym.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym" />
+    </element>
+    <element id="Patient.identifier:crr-pseudonym.value">
+      <path value="Patient.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:dic-pseudonym">
+      <path value="Patient.identifier" />
+      <sliceName value="dic-pseudonym" />
+      <definition value="Used withing the NUM-CODEX project for data integration center pseudonyms" />
+      <min value="0" />
+      <max value="1" />
+      <patternIdentifier>
+        <system value="http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym" />
+      </patternIdentifier>
+      <constraint>
+        <key value="idf-num-codex-dic-pseudonym" />
+        <severity value="error" />
+        <human value="If NUM-CODEX DIC pseudonym is present, Bloom filter and CRR pseudonym shall not be present." />
+        <expression value="$this.exists() implies (%resource.identifier.where(system='http://www.netzwerk-universitaetsmedizin.de/sid/bloom-filter').exists().not() and (%resource.identifier.where(system='http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym').exists().not()))" />
+        <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
+      </constraint>
+    </element>
+    <element id="Patient.identifier:dic-pseudonym.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym" />
+    </element>
+    <element id="Patient.identifier:dic-pseudonym.value">
+      <path value="Patient.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Patient.birthDate">
       <path value="Patient.birthDate" />
