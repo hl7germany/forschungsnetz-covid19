@@ -56,7 +56,7 @@
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="6-005.m"/>
             </filter>
         </include>
@@ -65,7 +65,7 @@
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="6-005.n"/>
             </filter>
         </include>
@@ -74,7 +74,7 @@
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="6-004.e"/>
             </filter>
         </include>
@@ -83,7 +83,7 @@
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="6-001.d"/>
             </filter>
         </include>
@@ -92,7 +92,7 @@
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="6-002.b"/>
             </filter>
         </include>
@@ -101,7 +101,7 @@
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
-                <op value="descendent-of"/>
+                <op value="is-a"/>
                 <value value="6-001.e"/>
             </filter>
         </include>
