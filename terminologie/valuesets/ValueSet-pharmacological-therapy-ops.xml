@@ -14,7 +14,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.516"/>
     </identifier>
-    <version value="1.0.4"/>
+    <version value="1.0.5"/>
     <name value="DrugTherapyOPS"/>
     <title value="Pharmacological Therapy OPS"/>
     <status value="active"/>
