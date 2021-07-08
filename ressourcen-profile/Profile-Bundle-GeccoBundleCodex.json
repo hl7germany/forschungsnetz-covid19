@@ -19,7 +19,7 @@
       ]
     }
   ],
-  "description": "Oxygen saturation of a patient",
+  "description": "Constrains the GECCO-Bundle for the NUM-CODEX use case and requires that a Consent resource must always be included.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
