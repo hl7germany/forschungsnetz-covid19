@@ -1,0 +1,89 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "gecco-transaction-bundle-codex",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle-codex",
+  "version": "1.0.5",
+  "name": "GeccoBundleCodex",
+  "title": "GECCO Bundle NUM-CODEX",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-07-06",
+  "publisher": "Charité",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Oxygen saturation of a patient",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "resource"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Bundle.entry:Consent",
+        "path": "Bundle.entry",
+        "sliceName": "Consent",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:Consent.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Consent",
+            "profile": [
+              "http://fhir.de/ConsentManagement/StructureDefinition/Consent"
+            ]
+          }
+        ],
+        "min": 1,
+        "max": "1"
+      }
+    ]
+  }
+}
