@@ -64,7 +64,7 @@
                 <display value="Chill (finding)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Schüttelfrost"/>
+                    <value value="Plötzliches Kältegefühl"/>
                 </designation>
             </concept>
             <concept>
@@ -256,7 +256,7 @@
                 <display value="Rigor (finding)"/>
                 <designation>
                     <language value="de-DE"/>
-                    <value value="Starre"/>
+                    <value value="Schüttelfrost"/>
                 </designation>
             </concept>
             <concept>
