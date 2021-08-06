@@ -112,6 +112,28 @@
         <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
       </constraint>
     </element>
+    <element id="Patient.identifier:bloom-filter.type">
+      <path value="Patient.identifier.type" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+          <code value="ANON" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Patient.identifier:bloom-filter.type.coding">
+      <path value="Patient.identifier.type.coding" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:bloom-filter.type.coding.system">
+      <path value="Patient.identifier.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:bloom-filter.type.coding.code">
+      <path value="Patient.identifier.type.coding.code" />
+      <min value="1" />
+    </element>
     <element id="Patient.identifier:bloom-filter.system">
       <path value="Patient.identifier.system" />
       <min value="1" />
@@ -138,6 +160,28 @@
         <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
       </constraint>
     </element>
+    <element id="Patient.identifier:crr-pseudonym.type">
+      <path value="Patient.identifier.type" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+          <code value="ANON" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Patient.identifier:crr-pseudonym.type.coding">
+      <path value="Patient.identifier.type.coding" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:crr-pseudonym.type.coding.system">
+      <path value="Patient.identifier.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:crr-pseudonym.type.coding.code">
+      <path value="Patient.identifier.type.coding.code" />
+      <min value="1" />
+    </element>
     <element id="Patient.identifier:crr-pseudonym.system">
       <path value="Patient.identifier.system" />
       <min value="1" />
@@ -163,6 +207,28 @@
         <expression value="$this.exists() implies (%resource.identifier.where(system='http://www.netzwerk-universitaetsmedizin.de/sid/bloom-filter').exists().not() and (%resource.identifier.where(system='http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym').exists().not()))" />
         <source value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
       </constraint>
+    </element>
+    <element id="Patient.identifier:dic-pseudonym.type">
+      <path value="Patient.identifier.type" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+          <code value="ANON" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Patient.identifier:dic-pseudonym.type.coding">
+      <path value="Patient.identifier.type.coding" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:dic-pseudonym.type.coding.system">
+      <path value="Patient.identifier.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:dic-pseudonym.type.coding.code">
+      <path value="Patient.identifier.type.coding.code" />
+      <min value="1" />
     </element>
     <element id="Patient.identifier:dic-pseudonym.system">
       <path value="Patient.identifier.system" />
