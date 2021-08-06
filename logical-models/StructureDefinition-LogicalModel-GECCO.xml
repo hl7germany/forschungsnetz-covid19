@@ -3354,7 +3354,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="kg"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -3415,7 +3415,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="cm"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -3423,7 +3423,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="m"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -3888,7 +3888,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mg/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -3896,7 +3896,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="nmol/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -3904,7 +3904,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mg/dL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -3985,7 +3985,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ng/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -3993,7 +3993,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="pmol/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4069,7 +4069,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mg/dL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4077,7 +4077,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="umol/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4158,7 +4158,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ug/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4166,7 +4166,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ng/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4174,7 +4174,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ng/mL{FEU}"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4182,7 +4182,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ug/mL{FEU}"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4190,7 +4190,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ug/L{DDU}"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4198,7 +4198,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="{titer}"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4299,7 +4299,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="U/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4360,7 +4360,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="U/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4426,7 +4426,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="U/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4502,7 +4502,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ug/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4510,7 +4510,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ng/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4518,7 +4518,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ng/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4609,7 +4609,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mmol/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4617,7 +4617,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="g/dL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4625,7 +4625,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="g/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4736,7 +4736,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="umol/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4744,7 +4744,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mg/dL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4830,7 +4830,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mmol/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4838,7 +4838,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mg/dL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -4944,7 +4944,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="10*3/uL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5015,7 +5015,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="10*3/uL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5086,7 +5086,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="10*3/uL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5152,7 +5152,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="s"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5223,7 +5223,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="10*3/uL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5314,7 +5314,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="{INR}"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5380,7 +5380,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="g/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5388,7 +5388,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="umol/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5396,7 +5396,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="g/dL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5487,7 +5487,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="%"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5495,7 +5495,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="[IU]/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5567,7 +5567,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="ng/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5628,7 +5628,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="pg/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5699,7 +5699,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="pg/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5760,7 +5760,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="g/L"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5768,7 +5768,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mg/dL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -5940,7 +5940,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="[arb'U]/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -6031,7 +6031,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="[arb'U]/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -6122,7 +6122,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="[IU]/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -6213,7 +6213,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="[IU]/mL"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8172,7 +8172,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mm[Hg]"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8238,7 +8238,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mm[Hg]"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8304,7 +8304,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="%"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8365,7 +8365,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="[pH]"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8490,7 +8490,7 @@
                 <f:valueCodeableConcept>
                     <f:text value="{breaths}/min"/>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="%"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8551,7 +8551,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mm[Hg]"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8612,7 +8612,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="mm[Hg]"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8673,7 +8673,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="{beats}/min"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8734,7 +8734,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="Cel"/>
                     </f:coding>
                 </f:valueCodeableConcept>
@@ -8795,7 +8795,7 @@
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
                     <f:coding>
-                        <f:system value="http://unitsofmeasure.org/"/>
+                        <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="%"/>
                     </f:coding>
                 </f:valueCodeableConcept>
