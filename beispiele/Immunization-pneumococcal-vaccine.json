@@ -11,8 +11,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "333598008",
-				"display": "Pneumococcal vaccine"
+				"code": "836398006",
+				"display": "Vaccine product containing Streptococcus pneumoniae antigen (medicinal product)"
 			}
 		]
 	},
@@ -28,7 +28,7 @@
 						{
 							"system": "http://snomed.info/sct",
 							"code": "16814004",
-							"display": "Pneumococcal infectious disease"
+							"display": "Pneumococcal infectious disease (disorder)"
 						}
 					]
 				}
