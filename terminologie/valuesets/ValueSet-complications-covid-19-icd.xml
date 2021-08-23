@@ -14,7 +14,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.509"/>
     </identifier>
-    <version value="1.0.4"/>
+    <version value="1.0.5"/>
     <name value="ComplicationsCovid19ICD"/>
     <title value="Complications Covid-19 ICD-10-GM"/>
     <status value="active"/>
@@ -57,6 +57,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -65,6 +66,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -73,6 +75,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -86,6 +89,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -99,6 +103,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -112,6 +117,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -125,6 +131,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -138,6 +145,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -151,6 +159,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -164,6 +173,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -177,6 +187,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -190,6 +201,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -198,6 +210,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -211,6 +224,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -224,6 +238,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -237,6 +252,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -250,6 +266,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -263,6 +280,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -276,6 +294,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
@@ -289,6 +308,7 @@
         </include>
         <include>
             <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <version value="2021"/>
             <filter>
                 <property value="concept"/>
                 <op value="is-a"/>
