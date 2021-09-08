@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-procedure-radiology" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures" />
-  <version value="1.0.4" />
+  <version value="1.0.5" />
   <name value="RadiologyProcedures" />
   <title value="Radiology Procedures" />
   <status value="active" />
-  <date value="2020-10-29" />
+  <date value="2021-09-08" />
   <publisher value="Charité" />
   <contact>
     <telecom>
@@ -42,6 +42,14 @@
   <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
+    <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.category.coding">
+      <path value="Procedure.category.coding" />
+      <min value="1" />
+    </element>
     <element id="Procedure.category.coding:sct">
       <path value="Procedure.category.coding" />
       <sliceName value="sct" />
