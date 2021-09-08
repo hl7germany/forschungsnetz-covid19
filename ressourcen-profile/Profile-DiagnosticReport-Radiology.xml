@@ -143,6 +143,11 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="DiagnosticReport.effective[x]">
+      <path value="DiagnosticReport.effective[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="DiagnosticReport.conclusionCode">
       <path value="DiagnosticReport.conclusionCode" />
       <min value="1" />
