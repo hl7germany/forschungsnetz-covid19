@@ -52,6 +52,7 @@
     </element>
     <element id="Procedure.category.coding:sct">
       <path value="Procedure.category.coding" />
+      <min value="1" />
       <sliceName value="sct" />
       <patternCoding>
         <code value="103693007" />
