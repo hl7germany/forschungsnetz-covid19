@@ -30,6 +30,7 @@
 	"patient": {
 		"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
     },
+	"dateTime": "2021-09-01",
     "policy": [
         {
             "uri": "https://www.aerzteblatt.de/archiv/65440/DNR-Anordnungen-Das-fehlende-Bindeglied"
