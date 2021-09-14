@@ -43,8 +43,8 @@
 			},
 			{
 				"system": "http://snomed.info/sct",
-				"code": "248334005",
-				"display": "Length of body (observable entity)"
+				"code": "1153637007",
+				"display": "Body height (observable entity)"
 			}
 		],
 		"text": "Body height"

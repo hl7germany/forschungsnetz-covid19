@@ -8,12 +8,12 @@
     <valueCode value="patient" />
   </extension>
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height" />
-  <version value="1.0.4" />
+  <version value="1.0.5" />
   <name value="BodyHeight" />
   <title value="Body Height" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2021-05-17" />
+  <date value="2021-09-14" />
   <publisher value="Charité" />
   <contact>
     <telecom>
@@ -101,7 +101,7 @@
       <max value="*" />
       <patternCoding>
         <system value="http://snomed.info/sct" />
-        <code value="248334005" />
+        <code value="1153637007" />
       </patternCoding>
     </element>
     <element id="Observation.code.coding:snomed.system">
