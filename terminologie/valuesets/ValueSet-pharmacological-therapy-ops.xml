@@ -24,7 +24,7 @@
     <immutable value="false"/>
     <compose>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
             <version value="2021"/>
             <concept>
                 <code value="6-00a.g"/>
@@ -52,7 +52,7 @@
             </concept>
         </include>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
@@ -61,7 +61,7 @@
             </filter>
         </include>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
@@ -70,7 +70,7 @@
             </filter>
         </include>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
@@ -79,7 +79,7 @@
             </filter>
         </include>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
@@ -88,7 +88,7 @@
             </filter>
         </include>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
@@ -97,7 +97,7 @@
             </filter>
         </include>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/ops"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/ops"/>
             <version value="2021"/>
             <filter>
                 <property value="concept"/>

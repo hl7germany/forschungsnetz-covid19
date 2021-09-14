@@ -14,7 +14,7 @@
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.499"/>
     </identifier>
-    <version value="1.0.4"/>
+    <version value="1.0.5"/>
     <name value="AceInhibitorsATC"/>
     <title value="ACE inhibitors ATC"/>
     <status value="active"/>
@@ -24,7 +24,7 @@
     <immutable value="false"/>
     <compose>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/atc"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
             <version value="2020"/>
             <concept>
                 <code value="C09A"/>

@@ -24,7 +24,7 @@
     <immutable value="false"/>
     <compose>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
             <version value="2021"/>
             <concept>
                 <code value="B20"/>
@@ -44,7 +44,7 @@
             </concept>
         </include>
         <include>
-            <system value="http://fhir.de/CodeSystem/dimdi/icd-10-gm"/>
+            <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
             <version value="2021"/>
             <filter>
                 <property value="concept"/>
