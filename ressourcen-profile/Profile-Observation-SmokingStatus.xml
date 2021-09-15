@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-observation-smoking-status" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/smoking-status" />
-  <version value="1.0" />
+  <version value="1.0.5" />
   <name value="SmokingStatus" />
   <title value="Smoking Status" />
   <status value="active" />
-  <date value="2020-10-29" />
+  <date value="2021-09-15" />
   <publisher value="Charité" />
   <contact>
     <telecom>
@@ -42,11 +42,6 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.subject.reference">
-      <path value="Observation.subject.reference" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.effective[x]">
