@@ -1323,9 +1323,9 @@
                 <f:valueSet value="http://hl7.org/fhir/ValueSet/data-absent-reason"/>
             </f:binding>
         </f:element>
-        <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1210--20200408000000.coding: transplantationsorgane_icd">
+        <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1210--20200408000000.coding:transplantationsorgane_icd">
             <f:path value="forschungsdatensatz_gecco.gecco.anamnese__risikofaktoren.organtransplantiert.coding"/>
-            <f:sliceName value=" transplantationsorgane_icd"/>
+            <f:sliceName value="transplantationsorgane_icd"/>
             <f:definition value="-"/>
             <f:min value="0"/>
             <f:max value="1"/>
@@ -3255,6 +3255,54 @@
             </f:type>
         </f:element>
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.74--20200918111707">
+            <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
+                <f:valueCodeableConcept>
+                    <f:coding>
+                        <f:system value="http://unitsofmeasure.org"/>
+                        <f:code value="min"/>
+                    </f:coding>
+                </f:valueCodeableConcept>
+            </f:extension>
+            <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
+                <f:valueCodeableConcept>
+                    <f:coding>
+                        <f:system value="http://unitsofmeasure.org"/>
+                        <f:code value="h"/>
+                    </f:coding>
+                </f:valueCodeableConcept>
+            </f:extension>
+            <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
+                <f:valueCodeableConcept>
+                    <f:coding>
+                        <f:system value="http://unitsofmeasure.org"/>
+                        <f:code value="d"/>
+                    </f:coding>
+                </f:valueCodeableConcept>
+            </f:extension>
+            <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
+                <f:valueCodeableConcept>
+                    <f:coding>
+                        <f:system value="http://unitsofmeasure.org"/>
+                        <f:code value="wk"/>
+                    </f:coding>
+                </f:valueCodeableConcept>
+            </f:extension>
+            <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
+                <f:valueCodeableConcept>
+                    <f:coding>
+                        <f:system value="http://unitsofmeasure.org"/>
+                        <f:code value="mo"/>
+                    </f:coding>
+                </f:valueCodeableConcept>
+            </f:extension>
+            <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
+                <f:valueCodeableConcept>
+                    <f:coding>
+                        <f:system value="http://unitsofmeasure.org"/>
+                        <f:code value="a"/>
+                    </f:coding>
+                </f:valueCodeableConcept>
+            </f:extension>
             <f:path value="forschungsdatensatz_gecco.gecco.demographie.alter"/>
             <f:code>
                 <f:system value="http://loinc.org"/>
@@ -8488,11 +8536,11 @@
         <f:element id="2.16.840.1.113883.3.1937.777.53.2.1.1330--20200408000000">
             <f:extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits">
                 <f:valueCodeableConcept>
-                    <f:text value="{breaths}/min"/>
                     <f:coding>
                         <f:system value="http://unitsofmeasure.org"/>
                         <f:code value="%"/>
                     </f:coding>
+                    <f:text value="{breaths}/min"/>
                 </f:valueCodeableConcept>
             </f:extension>
             <f:path value="forschungsdatensatz_gecco.gecco.vitalparameter.atemfrequenz"/>
