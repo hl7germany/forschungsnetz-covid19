@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-immunization" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization" />
-  <version value="1.0" />
+  <version value="1.0.5" />
   <name value="Immunization" />
   <title value="History of Vaccination" />
   <status value="active" />
-  <date value="2020-10-29" />
+  <date value="2021-09-20" />
   <publisher value="Charité" />
   <contact>
     <telecom>
@@ -107,13 +107,13 @@
       <sliceName value="atc" />
       <max value="1" />
       <patternCoding>
-        <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+        <system value="http://fhir.de/CodeSystem/bfarm/atc" />
       </patternCoding>
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <description value="ATC Vaccine Codes" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List_ATC" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-atc" />
       </binding>
     </element>
     <element id="Immunization.vaccineCode.coding:atc.system">
