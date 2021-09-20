@@ -47,25 +47,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
   <derivation value="constraint" />
   <differential>
-    <element id="Immunization.extension">
-      <path value="Immunization.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Immunization.extension:dataAbsentReason">
-      <path value="Immunization.extension" />
-      <sliceName value="dataAbsentReason" />
-      <short value="occurrence[x] absence reason" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
-      </type>
-    </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
       <mustSupport value="true" />
