@@ -92,6 +92,19 @@
                     <value value="angeborene Immundefekte"/>
                 </designation>
             </concept>
+            <concept>
+                <code value="396332003+414029004"/>
+                <display value="Rheumatism (disorder) + Disorder of immune function (disorder)"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="Rheumatologische/immunologische Erkrankung"/>
+                </designation>
+            </concept>
         </include>
         <include>
             <system value="http://snomed.info/sct"/>
