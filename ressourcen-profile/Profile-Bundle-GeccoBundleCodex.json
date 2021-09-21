@@ -1,13 +1,23 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "gecco-transaction-bundle-codex",
+  "id": "gecco-batch-bundle-codex",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Other"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle-codex",
   "version": "1.0.5",
   "name": "GeccoBundleCodex",
   "title": "GECCO Bundle NUM-CODEX",
   "status": "active",
   "experimental": false,
-  "date": "2021-07-06",
+  "date": "2021-09-21",
   "publisher": "Charité",
   "contact": [
     {
@@ -19,7 +29,7 @@
       ]
     }
   ],
-  "description": "Constrains the GECCO-Bundle for the NUM-CODEX use case and requires that a Consent resource must always be included.",
+  "description": "Bundle of type 'batch' used to collect the set of resources as part of the GECCO dataset into a single instance for the NUM-CODEX use case and requires that a Consent resource must always be included.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -46,10 +56,34 @@
   "kind": "resource",
   "abstract": false,
   "type": "Bundle",
-  "baseDefinition": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Bundle",
+        "path": "Bundle",
+        "constraint": [
+          {
+            "key": "consent-num-codex-bundle",
+            "severity": "error",
+            "human": "NUM-CODEX bundle shall contain a Consent resource that is a Privacy policy acknowledgement Document (code=57016-8).",
+            "expression": "Bundle.entry.where(resource.is(Consent)).select(resource.category.coding.where(code='57016-8')).count() > 0",
+            "source": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle-codex"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "batch",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "mustSupport": true
+      },
       {
         "id": "Bundle.entry",
         "path": "Bundle.entry",
@@ -61,18 +95,22 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Bundle.entry:Consent",
         "path": "Bundle.entry",
         "sliceName": "Consent",
         "min": 1,
-        "max": "1"
+        "max": "*",
+        "mustSupport": true
       },
       {
         "id": "Bundle.entry:Consent.resource",
         "path": "Bundle.entry.resource",
+        "min": 1,
         "type": [
           {
             "code": "Consent",
@@ -81,8 +119,7 @@
             ]
           }
         ],
-        "min": 1,
-        "max": "1"
+        "mustSupport": true
       }
     ]
   }

@@ -6,7 +6,7 @@
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle-codex"
         ]
     },
-    "type": "transaction",
+    "type": "batch",
     "entry": [
         {
             "fullUrl": "urn:uuid:dfd5edc6-3a8a-4796-a9bb-f9572cf15c96",
@@ -69,7 +69,7 @@
                     }
                 ],
                 "sourceReference": {
-                    "reference": "QuestionnaireResponse/dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"
+                    "reference": "QuestionnaireResponse/example"
                 },
                 "policyRule": {
                     "text": "Patienteneinwilligung MII|1.6.f"
@@ -533,6 +533,14 @@
                 ],
                 "identifier": [
                     {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "ANON"
+                                }
+                            ]
+                        },
                         "system": "http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym",
                         "value": "dic_charite/dic_C7H2E9"
                     }

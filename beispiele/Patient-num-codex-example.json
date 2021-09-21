@@ -40,6 +40,14 @@
     ],
     "identifier": [
         {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "ANON"
+                    }
+                ]
+            },
             "system": "http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym",
             "value": "codex_6348Q7"
         }
