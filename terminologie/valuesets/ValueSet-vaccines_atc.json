@@ -1,5 +1,6 @@
 {
     "resourceType": "ValueSet",
+    "id": "gecco-valueset-vaccines-atc",
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-atc",
     "version": "1.0.5",
     "name": "VaccinesATC",
