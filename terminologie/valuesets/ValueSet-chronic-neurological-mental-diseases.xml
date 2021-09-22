@@ -9,6 +9,9 @@
             <start value="2020-04-25T22:00:02+02:00"/>
         </valuePeriod>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-supplement">
+        <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement|1.0.5" />
+    </extension>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases"/>
     <identifier>
         <use value="official"/>
