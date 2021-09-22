@@ -9,13 +9,16 @@
             <start value="2020-04-25T23:32:23+02:00"/>
         </valuePeriod>
     </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/valueset-supplement">
+        <valueCanonical value="https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement|1.0.5" />
+    </extension>
     <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
         <value value="1.2.276.0.76.11.474"/>
     </identifier>
-    <version value="1.0.4"/>
+    <version value="1.0.5"/>
     <name value="RheumatologicalImmunologicalDiseases"/>
     <title value="Rheumatological Immunological Diseases"/>
     <status value="active"/>
