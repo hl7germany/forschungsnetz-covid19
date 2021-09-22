@@ -72,7 +72,7 @@
       <binding>
         <strength value="extensible" />
         <description value="SNOMED Vaccine Codes" />
-        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List" />
+        <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-snomed" />
       </binding>
     </element>
     <element id="Immunization.vaccineCode.coding:snomed.system">
