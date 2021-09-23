@@ -44,8 +44,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "129561000119108",
-				"display": "Pre-renal acute kidney injury (disorder)"
+				"code": "14669001",
+				"display": "Acute renal failure syndrome (disorder)"
 			}
 		]
 	},

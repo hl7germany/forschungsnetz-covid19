@@ -44,8 +44,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "417662000:246090004=22298006",
-				"display": "History of myocardial infarction"
+				"code": "399211009",
+				"display": "History of myocardial infarction (situation)"
 			}
 		]
 	},

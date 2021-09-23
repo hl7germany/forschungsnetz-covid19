@@ -35,8 +35,8 @@
 		"coding": [
 			{
 				"system": "http://snomed.info/sct",
-				"code": "416940007:363589002=81266008",
-				"display": "History of heart revascularization"
+				"code": "399261000",
+				"display": "History of coronary artery bypass grafting (situation)"
 			}
 		]
 	},
