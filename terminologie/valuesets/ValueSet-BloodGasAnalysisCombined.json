@@ -1,0 +1,89 @@
+{
+  "resourceType": "ValueSet",
+  "id": "gecco-valueset-blood-gas-analysis-combined-v105",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Blood Gas Analysis Combined</h2><tt>https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/blood-gas-analysis-combined</tt><p>Relevant codes for a blood gas analysis taken from LOINC and SNOMED CT.</p></div>"
+  },
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/blood-gas-analysis-combined",
+  "name": "BloodGasAnalysisCombined",
+  "title": "Blood Gas Analysis Combined",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "11558-4",
+            "display": "pH of Blood"
+          },
+          {
+            "code": "2744-1",
+            "display": "pH of Arterial blood"
+          },
+          {
+            "code": "2745-8",
+            "display": "pH of Capillary blood"
+          },
+          {
+            "code": "3150-0",
+            "display": "Inhaled oxygen concentration"
+          },
+          {
+            "code": "11556-8",
+            "display": "Oxygen [Partial pressure] in Blood"
+          },
+          {
+            "code": "2703-7",
+            "display": "Oxygen [Partial pressure] in Arterial blood"
+          },
+          {
+            "code": "2704-5",
+            "display": "Oxygen [Partial pressure] in Capillary blood"
+          },
+          {
+            "code": "11557-6",
+            "display": "Carbon dioxide [Partial pressure] in Blood"
+          },
+          {
+            "code": "2020-6",
+            "display": "Carbon dioxide [Partial pressure] in Capillary blood"
+          },
+          {
+            "code": "2019-8",
+            "display": "Carbon dioxide [Partial pressure] in Arterial blood"
+          },
+          {
+            "code": "2708-6",
+            "display": "Oxygen saturation in Arterial blood"
+          }
+        ],
+        "system": "http://loinc.org"
+      },
+      {
+        "concept": [
+          {
+            "code": "250774007",
+            "display": "Inspired oxygen concentration"
+          },
+          {
+            "code": "431314004",
+            "display": "Peripheral oxygen saturation"
+          }
+        ],
+        "system": "http://snomed.info/sct"
+      }
+    ]
+  },
+  "version": "1.0.5",
+  "description": "Relevant codes for a blood gas analysis taken from LOINC and SNOMED CT.",
+  "date": "2021-10-01T00:00:00.000Z",
+  "experimental": false,
+  "publisher": "UKSH Lübeck",
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
+}

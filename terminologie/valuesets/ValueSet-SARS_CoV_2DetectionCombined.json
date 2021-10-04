@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "id": "gecco-valueset-sars-cov-2-detection-combined-v105",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SARS-CoV-2 Detection Combined</h2><tt>https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-detection-combined</tt><p>Relevant codes for a detection of SARS-COV-2 antibodies taken from LOINC.</p></div>"
+  },
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-detection-combined",
+  "name": "SARS_CoV_2DetectionCombined",
+  "title": "SARS-CoV-2 Detection Combined",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "94504-8",
+            "display": "SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "94769-7",
+            "display": "SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "94762-2",
+            "display": "SARS-CoV-2 (COVID-19) Ab [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "94720-0",
+            "display": "SARS-CoV-2 (COVID-19) IgA Ab [Units/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "94562-6",
+            "display": "SARS-CoV-2 (COVID-19) IgA Ab [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "94505-5",
+            "display": "SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "94563-4",
+            "display": "SARS-CoV-2 (COVID-19) IgG Ab [Presence] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "94506-3",
+            "display": "SARS-CoV-2 (COVID-19) IgM Ab [Units/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "94564-2",
+            "display": "SARS-CoV-2 (COVID-19) IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+          }
+        ],
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "version": "1.0.5",
+  "description": "Relevant codes for a detection of SARS-COV-2 antibodies taken from LOINC.",
+  "date": "2021-10-01T00:00:00.000Z",
+  "experimental": false,
+  "publisher": "UKSH Lübeck"
+}

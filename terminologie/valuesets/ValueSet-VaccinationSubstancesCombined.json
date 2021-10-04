@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "gecco-valueset-vaccination-substances-combined-v105",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Vaccination Substances Combined</h2><tt>https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-substances-combined</tt><p>Vaccination substances combined from mulitple ValueSets and terminologies.</p></div>"
+  },
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-substances-combined",
+  "name": "VaccinationSubstancesCombined",
+  "title": "Vaccination Substances Combined",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-snomed"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-atc"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.de/ValueSet/ifa/pzn"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips"
+        ]
+      }
+    ]
+  },
+  "version": "1.0.5",
+  "description": "Vaccination substances combined from mulitple ValueSets and terminologies.",
+  "date": "2021-10-01T00:00:00.000Z",
+  "experimental": false,
+  "publisher": "UKSH Lübeck",
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
+}

@@ -1,0 +1,158 @@
+{
+  "resourceType": "ValueSet",
+  "id": "gecco-valueset-diseases-combined-v105",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ],
+    "versionId": "1",
+    "lastUpdated": "2021-10-01T13:31:09.612+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Diseases Combined</h2><tt>https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diseases-combined</tt><p>Diseases in the context of Covid-19 combined from mulitple ValueSets and terminologies.</p></div>"
+  },
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diseases-combined",
+  "name": "DiseasesCombined",
+  "title": "Diseases Combined",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "concept": [
+          {
+            "code": "161663000",
+            "display": "History of being a tissue or organ recipient"
+          }
+        ],
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-lung-diseases-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-liver-diseases-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-ulcers-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/history-of-organ-transplantation-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complications-covid-19-icd"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-liver-diseases"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-lung-diseases"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-ulcers"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complications-covid-19"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://fhir.de/ValueSet/bfarm/alpha-id"
+        ]
+      }
+    ]
+  },
+  "version": "1.0.5",
+  "description": "Diseases in the context of Covid-19 combined from mulitple ValueSets and terminologies.",
+  "date": "2021-10-01T00:00:00.000Z",
+  "experimental": false,
+  "publisher": "UKSH Lübeck",
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
+}
