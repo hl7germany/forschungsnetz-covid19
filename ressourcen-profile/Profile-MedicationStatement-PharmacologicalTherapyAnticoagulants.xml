@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-medication-statement-anticoagulants" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants" />
-  <version value="1.0" />
+  <version value="1.0.5" />
   <name value="PharmacologicalTherapyAnticoagulants" />
   <title value="Pharmacological Therapy Anticoagulants" />
   <status value="active" />
-  <date value="2020-10-29" />
+  <date value="2021-10-11" />
   <publisher value="Charité" />
   <contact>
     <telecom>
