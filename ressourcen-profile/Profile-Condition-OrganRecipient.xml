@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="gecco-condition-organ-recipient" />
   <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/organ-recipient" />
-  <version value="1.0" />
+  <version value="1.0.5" />
   <name value="HistoryOfOrganRecipient" />
   <title value="History of Organ Recipient" />
   <status value="active" />
-  <date value="2020-10-29" />
+  <date value="2021-11-22" />
   <publisher value="Charité" />
   <contact>
     <telecom>
@@ -98,24 +98,12 @@
         <valueSet value="https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/history-of-organ-transplantation-icd" />
       </binding>
     </element>
-    <element id="Condition.code.coding:icd10-gm.system">
-      <path value="Condition.code.coding.system" />
-      <fixedUri value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
-    </element>
     <element id="Condition.code.coding:sct">
       <path value="Condition.code.coding" />
       <sliceName value="sct" />
       <patternCoding>
         <code value="161663000" />
       </patternCoding>
-    </element>
-    <element id="Condition.code.coding:sct.system">
-      <path value="Condition.code.coding.system" />
-      <fixedUri value="http://snomed.info/sct" />
-    </element>
-    <element id="Condition.code.coding:sct.code">
-      <path value="Condition.code.coding.code" />
-      <fixedCode value="161663000" />
     </element>
     <element id="Condition.code.coding:orphanet">
       <path value="Condition.code.coding" />
