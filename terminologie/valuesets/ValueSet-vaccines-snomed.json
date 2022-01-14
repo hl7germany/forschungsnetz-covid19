@@ -8,7 +8,7 @@
         }
     ],
     "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-snomed",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "name": "VaccinesSNOMED",
     "title": "Vaccines SNOMED",
     "status": "active",
@@ -31,15 +31,27 @@
         "include":  [
             {
                 "system": "http://snomed.info/sct",
-                "version": "http://snomed.info/sct/900000000000207008/version/20210131",
+                "version": "http://snomed.info/sct/900000000000207008/version/20210731",
                 "concept":  [
                     {
                         "code": "1119305005",
                         "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)"
                     },
                     {
+                        "code": "1157024006",
+                        "display": "Vaccine product containing only inactivated whole Severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)"
+                    },
+                    {
+                        "code": "1162643001",
+                        "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (medicinal product)"
+                    },
+                    {
                         "code": "1119349007",
                         "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)"
+                    },
+                    {
+                        "code": "29061000087103",
+                        "display": "Vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (medicinal product)"
                     },
                     {
                         "code": "871875004",
