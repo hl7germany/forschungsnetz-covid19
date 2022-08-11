@@ -6,14 +6,14 @@ Usage: #example
 * entry[Consent].resource = dfd5edc6-3a8a-4796-a9bb-f9572cf15c96
 * entry[Consent].request.method = #PUT
 * entry[Consent].request.url = "Consent/dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"
-* entry[+].fullUrl = "urn:uuid:c183799b-9fd8-416c-a826-e3c69a2a6c6d"
-* entry[=].resource = c183799b-9fd8-416c-a826-e3c69a2a6c6d
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Patient?identifier=http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym|dic_charite/dic_C7H2E9"
-* entry[+].fullUrl = "urn:uuid:12987d1f-7ce6-4d3a-993e-2cd553081092"
-* entry[=].resource = Inline-Instance-for-bundle-num-codex-example-1
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Condition?category=http://snomed.info/sct|418112009&code=http://snomed.info/sct|413839001&recorded-date=2020-11-10&subject:identifier=http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym|dic_charite/dic_C7H2E9"
+* entry[1].fullUrl = "urn:uuid:c183799b-9fd8-416c-a826-e3c69a2a6c6d"
+* entry[1].resource = c183799b-9fd8-416c-a826-e3c69a2a6c6d
+* entry[1].request.method = #PUT
+* entry[1].request.url = "Patient?identifier=http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym|dic_charite/dic_C7H2E9"
+* entry[2].fullUrl = "urn:uuid:12987d1f-7ce6-4d3a-993e-2cd553081092"
+* entry[2].resource = Inline-Instance-for-bundle-num-codex-example-1
+* entry[2].request.method = #PUT
+* entry[2].request.url = "Condition?category=http://snomed.info/sct|418112009&code=http://snomed.info/sct|413839001&recorded-date=2020-11-10&subject:identifier=http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym|dic_charite/dic_C7H2E9"
 
 Instance: gecco-bundle
 InstanceOf: GeccoBundle

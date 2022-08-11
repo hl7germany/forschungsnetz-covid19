@@ -11,13 +11,12 @@
     {
       "fullUrl": "urn:uuid:dfd5edc6-3a8a-4796-a9bb-f9572cf15c96",
       "resource": {
-        "resourceType": "Patient",
-        "id": "c183799b-9fd8-416c-a826-e3c69a2a6c6d",
+        "resourceType": "Consent",
+        "id": "dfd5edc6-3a8a-4796-a9bb-f9572cf15c96",
         "meta": {
           "lastUpdated": "2021-05-19T17:50:23.000+02:00",
           "profile": [
-            "http://fhir.de/ConsentManagement/StructureDefinition/Consent",
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+            "http://fhir.de/ConsentManagement/StructureDefinition/Consent"
           ]
         },
         "extension": [
@@ -35,32 +34,6 @@
                 "valueCoding": {
                   "code": "active",
                   "system": "http://hl7.org/fhir/publication-status"
-                }
-              }
-            ]
-          },
-          {
-            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
-            "valueCoding": {
-              "code": "26242008",
-              "system": "http://snomed.info/sct",
-              "display": "Mixed (qualifier value)"
-            }
-          },
-          {
-            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
-            "extension": [
-              {
-                "url": "dateTimeOfDocumentation",
-                "valueDateTime": "2020-10-01"
-              },
-              {
-                "url": "age",
-                "valueAge": {
-                  "value": 67,
-                  "code": "a",
-                  "system": "http://unitsofmeasure.org",
-                  "unit": "years"
                 }
               }
             ]
@@ -509,7 +482,51 @@
               ]
             }
           ]
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Consent/dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c183799b-9fd8-416c-a826-e3c69a2a6c6d",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "c183799b-9fd8-416c-a826-e3c69a2a6c6d",
+        "meta": {
+          "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+          ]
         },
+        "extension": [
+          {
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+            "valueCoding": {
+              "code": "26242008",
+              "system": "http://snomed.info/sct",
+              "display": "Mixed (qualifier value)"
+            }
+          },
+          {
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
+            "extension": [
+              {
+                "url": "dateTimeOfDocumentation",
+                "valueDateTime": "2020-10-01"
+              },
+              {
+                "url": "age",
+                "valueAge": {
+                  "value": 67,
+                  "code": "a",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "years"
+                }
+              }
+            ]
+          }
+        ],
         "identifier": [
           {
             "type": {
@@ -528,7 +545,7 @@
       },
       "request": {
         "method": "PUT",
-        "url": "Consent/dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"
+        "url": "Patient?identifier=http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym|dic_charite/dic_C7H2E9"
       }
     },
     {
