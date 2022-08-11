@@ -19,6 +19,11 @@
   "code": {
     "coding": [
       {
+        "code": "2708-6",
+        "system": "http://loinc.org",
+        "display": "Oxygen saturation in Arterial blood"
+      },
+      {
         "code": "442476006",
         "system": "http://snomed.info/sct",
         "display": "Arterial oxygen saturation"

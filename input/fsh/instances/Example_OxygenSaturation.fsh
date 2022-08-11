@@ -19,8 +19,8 @@ Usage: #example
 * status = #final
 * category[vs-cat] = $observation-category#vital-signs
 * code.coding[loinc] = $loinc#2708-6 "Oxygen saturation in Arterial blood"
-* code.coding[+] = $sct#442476006 "Arterial oxygen saturation"
-* code.coding[+] = $loinc#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
+* code.coding[1] = $sct#442476006 "Arterial oxygen saturation"
+* code.coding[2] = $loinc#59408-5 "Oxygen saturation in Arterial blood by Pulse oximetry"
 * code.coding[snomed] = $sct#431314004 "Peripheral oxygen saturation"
 * code.text = "Pulsoximetrische Sauerstoffsättigung"
 * subject = Reference(Patient/example)

@@ -24,9 +24,9 @@ Usage: #example
 * status = #final
 * category[vs-cat] = $observation-category#vital-signs
 * code.coding[loinc] = $loinc#8310-5 "Body temperature"
-* code.coding[+] = $loinc#8334-5 "Body temperature - Urinary bladder"
+* code.coding[1] = $loinc#8334-5 "Body temperature - Urinary bladder"
 * code.coding[snomed] = $sct#386725007 "Body temperature (observable entity)"
-* code.coding[+] = $sct#698832009 "Core body temperature measured at urinary bladder (observable entity)"
+* code.coding[3] = $sct#698832009 "Core body temperature measured at urinary bladder (observable entity)"
 * code.text = "Body temperature"
 * subject = Reference(gecco-patient)
 * effectiveDateTime = "2021-04-14"

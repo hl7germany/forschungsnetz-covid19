@@ -19,6 +19,11 @@
   "code": {
     "coding": [
       {
+        "code": "9279-1",
+        "system": "http://loinc.org",
+        "display": "Respiratory rate"
+      },
+      {
         "code": "19840-8",
         "system": "http://loinc.org",
         "display": "Breath rate spontaneous and mechanical --on ventilator"

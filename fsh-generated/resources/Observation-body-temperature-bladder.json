@@ -19,9 +19,19 @@
   "code": {
     "coding": [
       {
+        "code": "8310-5",
+        "system": "http://loinc.org",
+        "display": "Body temperature"
+      },
+      {
         "code": "8334-5",
         "system": "http://loinc.org",
         "display": "Body temperature - Urinary bladder"
+      },
+      {
+        "code": "386725007",
+        "system": "http://snomed.info/sct",
+        "display": "Body temperature (observable entity)"
       },
       {
         "code": "698832009",

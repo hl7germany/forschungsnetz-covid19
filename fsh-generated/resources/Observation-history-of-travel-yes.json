@@ -19,6 +19,11 @@
   "code": {
     "coding": [
       {
+        "code": "8691-8",
+        "system": "http://loinc.org",
+        "display": "History of Travel"
+      },
+      {
         "code": "443846001",
         "system": "http://snomed.info/sct",
         "display": "Detail of history of travel (observable entity)"

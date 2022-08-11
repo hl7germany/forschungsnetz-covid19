@@ -36,9 +36,19 @@
       "code": {
         "coding": [
           {
+            "code": "8480-6",
+            "system": "http://loinc.org",
+            "display": "Systolic blood pressure"
+          },
+          {
             "code": "76215-3",
             "system": "http://loinc.org",
             "display": "Invasive Systolic blood pressure"
+          },
+          {
+            "code": "271649006",
+            "system": "http://snomed.info/sct",
+            "display": "Systolic blood pressure"
           },
           {
             "code": "251071003",
@@ -59,9 +69,19 @@
       "code": {
         "coding": [
           {
+            "code": "8462-4",
+            "system": "http://loinc.org",
+            "display": "Diastolic blood pressure"
+          },
+          {
             "code": "76213-8",
             "system": "http://loinc.org",
             "display": "Invasive Diastolic blood pressure"
+          },
+          {
+            "code": "271650006",
+            "system": "http://snomed.info/sct",
+            "display": "Diastolic blood pressure (observable entity)"
           },
           {
             "code": "251073000",

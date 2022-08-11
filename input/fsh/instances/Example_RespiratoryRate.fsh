@@ -24,7 +24,7 @@ Usage: #example
 * status = #final
 * category[vs-cat] = $observation-category#vital-signs
 * code.coding[loinc] = $loinc#9279-1 "Respiratory rate"
-* code.coding[+] = $loinc#19840-8 "Breath rate spontaneous and mechanical --on ventilator"
+* code.coding[1] = $loinc#19840-8 "Breath rate spontaneous and mechanical --on ventilator"
 * code.coding[snomed] = $sct#86290005 "Respiratory rate (observable entity)"
 * code.text = "Respiratory rate on ventilator"
 * subject = Reference(gecco-patient)

@@ -8,7 +8,7 @@ Usage: #example
 * status = #final
 * category.coding[socialHistory] = $observation-category#social-history
 * code.coding[loinc] = $loinc#8691-8 "History of Travel"
-* code.coding[+] = $sct#443846001 "Detail of history of travel (observable entity)"
+* code.coding[1] = $sct#443846001 "Detail of history of travel (observable entity)"
 * code.text = "History of travel"
 * subject = Reference(gecco-patient)
 * effectiveDateTime = "2020-09-28"
@@ -41,7 +41,7 @@ Usage: #example
 * status = #final
 * category.coding[socialHistory] = $observation-category#social-history
 * code.coding[loinc] = $loinc#8691-8 "History of Travel"
-* code.coding[+] = $sct#443846001 "Detail of history of travel (observable entity)"
+* code.coding[1] = $sct#443846001 "Detail of history of travel (observable entity)"
 * code.text = "History of travel"
 * subject = Reference(gecco-patient)
 * effectiveDateTime = "2020-11-09T12:57:06+01:00"

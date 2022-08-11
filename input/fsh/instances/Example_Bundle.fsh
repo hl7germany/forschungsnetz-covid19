@@ -37,8 +37,8 @@ Instance: Inline-Instance-for-bundle-num-codex-example-1
 InstanceOf: ChronicLungDiseases
 Usage: #inline
 * clinicalStatus = $condition-clinical#active "Active"
-* verificationStatus.coding[0] = $condition-ver-status#confirmed "Confirmed"
-* verificationStatus.coding[+] = $sct#410605003 "Confirmed present (qualifier value)"
+* verificationStatus.coding[conditionVerificationStatus] = $condition-ver-status#confirmed "Confirmed"
+* verificationStatus.coding[snomed] = $sct#410605003 "Confirmed present (qualifier value)"
 * category = $sct#418112009 "Pulmonary medicine"
 * code = $sct#413839001 "Chronic lung disease"
 * subject.identifier.system = "http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym"
