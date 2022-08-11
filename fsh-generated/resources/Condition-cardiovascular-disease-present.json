@@ -1,0 +1,56 @@
+{
+  "resourceType": "Condition",
+  "id": "cardiovascular-disease-present",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiovascular-diseases"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "722414000",
+          "system": "http://snomed.info/sct",
+          "display": "Vascular medicine"
+        }
+      ]
+    }
+  ],
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "410605003",
+        "display": "Confirmed present (qualifier value)"
+      }
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "49601007",
+        "system": "http://snomed.info/sct",
+        "display": "Cardiovascular disease"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-06"
+}

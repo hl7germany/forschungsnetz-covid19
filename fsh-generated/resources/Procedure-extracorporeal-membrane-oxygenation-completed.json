@@ -1,0 +1,40 @@
+{
+  "resourceType": "Procedure",
+  "id": "extracorporeal-membrane-oxygenation-completed",
+  "meta": {
+    "profile": [
+      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-extracorporeal-membrane-oxygenation"
+    ]
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "277132007",
+        "system": "http://snomed.info/sct",
+        "display": "Therapeutic procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "233573008",
+        "system": "http://snomed.info/sct",
+        "display": "Extracorporeal membrane oxygenation (procedure)"
+      }
+    ],
+    "text": "ECMO"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "_performedDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-num-codex-example",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:c183799b-9fd8-416c-a826-e3c69a2a6c6d",
+            "resource": {
+                "resourceType": "Patient",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "26242008",
+                            "display": "Mixed (qualifier value)"
+                        }
+                    },
+                    {
+                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
+                        "extension": [
+                            {
+                                "url": "dateTimeOfDocumentation",
+                                "valueDateTime": "2020-10-01"
+                            },
+                            {
+                                "url": "age",
+                                "valueAge": {
+                                    "value": 67,
+                                    "unit": "years",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "a"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym",
+                        "value": "codex_6348Q7"
+                    }
+                ],
+                "birthDate": "1953-09-30"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient?identifier=http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym|codex_6348Q7"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:c17f192c-f765-4729-818a-4ee55be5c87b",
+            "resource": {
+                "resourceType": "Immunization",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization"
+                    ]
+                },
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "1119349007",
+                            "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "identifier": {
+                        "system": "http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym",
+                        "value": "codex_6348Q7"
+                    }
+                },
+                "occurrenceDateTime": "2020-12-27",
+                "protocolApplied": [
+                    {
+                        "targetDisease": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "840539006",
+                                        "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+                                    }
+                                ]
+                            }
+                        ],
+                        "_doseNumberString": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Immunization?vaccine-code=http://snomed.info/sct|1119349007&date=2020-12-27&target-disease=http://snomed.info/sct|840539006&patient:identifier=http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym|codex_6348Q7"
+            }
+        }
+    ]
+}

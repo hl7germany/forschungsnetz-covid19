@@ -1,0 +1,414 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ChronicNeurologicalMentalDiseasesICD",
+  "id": "1.2.276.0.76.11.498--20200504223508",
+  "title": "Chronic Neurological Mental Diseases ICD-10-GM",
+  "description": "Chronic neurological or mental diseases in the context of Covid-19 from ICD-10-GM",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases-icd",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-05-04T22:35:08+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.498"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "concept": [
+          {
+            "code": "F99",
+            "display": "Psychische Störung ohne nähere Angabe"
+          },
+          {
+            "code": "G20",
+            "display": "Primäres Parkinson-Syndrom"
+          },
+          {
+            "code": "G35",
+            "display": "Multiple Sklerose [Encephalomyelitis disseminata]"
+          },
+          {
+            "code": "G96.9",
+            "display": "Krankheit des Zentralnervensystems, nicht näher bezeichnet"
+          },
+          {
+            "code": "F41.9",
+            "display": "Angststörung, nicht näher bezeichnet"
+          },
+          {
+            "code": "F32.9",
+            "display": "Depressive Episode, nicht näher bezeichnet"
+          },
+          {
+            "code": "F29",
+            "display": "Nicht näher bezeichnete nichtorganische Psychose"
+          },
+          {
+            "code": "F03",
+            "display": "Nicht näher bezeichnete Demenz"
+          },
+          {
+            "code": "G70.9",
+            "display": "Neuromuskuläre Krankheit, nicht näher bezeichnet"
+          },
+          {
+            "code": "G40.9",
+            "display": "Epilepsie, nicht näher bezeichnet"
+          },
+          {
+            "code": "G43.9",
+            "display": "Migräne, nicht näher bezeichnet"
+          },
+          {
+            "code": "I69.4",
+            "display": "Folgen eines Schlaganfalls, nicht als Blutung oder Infarkt bezeichnet"
+          },
+          {
+            "code": "Z86.7",
+            "display": "Krankheiten des Kreislaufsystems in der Eigenanamnese"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "G20"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "G35"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "F40"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "F41"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "F32"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "F33"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "F23"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "F28"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "F29"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "F00"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "F01"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "F02"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "G70"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "G71"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "G72"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "G73"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "G40"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "G41"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "G43"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "I69"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      }
+    ]
+  }
+}

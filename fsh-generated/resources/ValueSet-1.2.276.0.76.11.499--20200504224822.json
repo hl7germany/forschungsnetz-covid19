@@ -1,0 +1,278 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AceInhibitorsATC",
+  "id": "1.2.276.0.76.11.499--20200504224822",
+  "title": "ACE inhibitors ATC",
+  "description": "ACE inhibitors in the context of Covid-19",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ace-inhibitors-atc",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-05-04T22:48:22+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.499"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "concept": [
+          {
+            "code": "C09A",
+            "display": "ACE-HEMMER, REIN"
+          },
+          {
+            "code": "C09AA",
+            "display": "ACE-Hemmer, rein"
+          },
+          {
+            "code": "C09AA01",
+            "display": "Captopril"
+          },
+          {
+            "code": "C09AA02",
+            "display": "Enalapril"
+          },
+          {
+            "code": "C09AA03",
+            "display": "Lisinopril"
+          },
+          {
+            "code": "C09AA04",
+            "display": "Perindopril"
+          },
+          {
+            "code": "C09AA05",
+            "display": "Ramipril"
+          },
+          {
+            "code": "C09AA06",
+            "display": "Quinapril"
+          },
+          {
+            "code": "C09AA07",
+            "display": "Benazepril"
+          },
+          {
+            "code": "C09AA08",
+            "display": "Cilazapril"
+          },
+          {
+            "code": "C09AA09",
+            "display": "Fosinopril"
+          },
+          {
+            "code": "C09AA10",
+            "display": "Trandolapril"
+          },
+          {
+            "code": "C09AA11",
+            "display": "Spirapril"
+          },
+          {
+            "code": "C09AA12",
+            "display": "Delapril"
+          },
+          {
+            "code": "C09AA13",
+            "display": "Moexipril"
+          },
+          {
+            "code": "C09AA14",
+            "display": "Temocapril"
+          },
+          {
+            "code": "C09AA15",
+            "display": "Zofenopril"
+          },
+          {
+            "code": "C09AA16",
+            "display": "Imidapril"
+          },
+          {
+            "code": "C09B",
+            "display": "ACE-HEMMER, KOMBINATIONEN"
+          },
+          {
+            "code": "C09BA",
+            "display": "ACE-Hemmer und Diuretika"
+          },
+          {
+            "code": "C09BA01",
+            "display": "Captopril und Diuretika"
+          },
+          {
+            "code": "C09BA02",
+            "display": "Enalapril und Diuretika"
+          },
+          {
+            "code": "C09BA03",
+            "display": "Lisinopril und Diuretika"
+          },
+          {
+            "code": "C09BA04",
+            "display": "Perindopril und Diuretika"
+          },
+          {
+            "code": "C09BA05",
+            "display": "Ramipril und Diuretika"
+          },
+          {
+            "code": "C09BA06",
+            "display": "Quinapril und Diuretika"
+          },
+          {
+            "code": "C09BA07",
+            "display": "Benazepril und Diuretika"
+          },
+          {
+            "code": "C09BA08",
+            "display": "Cilazapril und Diuretika"
+          },
+          {
+            "code": "C09BA09",
+            "display": "Fosinopril und Diuretika"
+          },
+          {
+            "code": "C09BA12",
+            "display": "Delapril und Diuretika"
+          },
+          {
+            "code": "C09BA13",
+            "display": "Moexipril und Diuretika"
+          },
+          {
+            "code": "C09BA15",
+            "display": "Zofenopril und Diuretika"
+          },
+          {
+            "code": "C09BA21",
+            "display": "Captopril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA22",
+            "display": "Enalapril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA23",
+            "display": "Lisinopril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA25",
+            "display": "Ramipril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA26",
+            "display": "Quinapril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA27",
+            "display": "Benazepril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA28",
+            "display": "Cilazapril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA29",
+            "display": "Fosinopril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA33",
+            "display": "Moexipril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA35",
+            "display": "Zofenopril und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BA54",
+            "display": "Perindopril und Indapamid"
+          },
+          {
+            "code": "C09BA55",
+            "display": "Ramipril und Piretanid"
+          },
+          {
+            "code": "C09BB",
+            "display": "ACE-Hemmer und Calciumkanalblocker"
+          },
+          {
+            "code": "C09BB02",
+            "display": "Enalapril und Lercanidipin"
+          },
+          {
+            "code": "C09BB03",
+            "display": "Lisinopril und Amlodipin"
+          },
+          {
+            "code": "C09BB04",
+            "display": "Perindopril und Amlodipin"
+          },
+          {
+            "code": "C09BB05",
+            "display": "Ramipril und Felodipin"
+          },
+          {
+            "code": "C09BB06",
+            "display": "Enalapril und Nitrendipin"
+          },
+          {
+            "code": "C09BB07",
+            "display": "Ramipril und Amlodipin"
+          },
+          {
+            "code": "C09BB10",
+            "display": "Trandolapril und Verapamil"
+          },
+          {
+            "code": "C09BB12",
+            "display": "Delapril und Manidipin"
+          },
+          {
+            "code": "C09BX",
+            "display": "ACE-Hemmer, andere Kombinationen"
+          },
+          {
+            "code": "C09BX01",
+            "display": "Perindopril, Amlodipin und Indapamid"
+          },
+          {
+            "code": "C09BX02",
+            "display": "Perindopril und Bisoprolol"
+          },
+          {
+            "code": "C09BX03",
+            "display": "Ramipril, Amlodipin und Hydrochlorothiazid"
+          },
+          {
+            "code": "C09BX04",
+            "display": "Perindopril, Bisoprolol und Amlodipin"
+          },
+          {
+            "code": "C09BX05",
+            "display": "Ramipril und Bisoprolol"
+          }
+        ]
+      }
+    ]
+  }
+}

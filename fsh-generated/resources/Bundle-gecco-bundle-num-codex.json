@@ -1,0 +1,601 @@
+{
+  "resourceType": "Bundle",
+  "id": "gecco-bundle-num-codex",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle-codex"
+    ]
+  },
+  "type": "batch",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:dfd5edc6-3a8a-4796-a9bb-f9572cf15c96",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "c183799b-9fd8-416c-a826-e3c69a2a6c6d",
+        "meta": {
+          "lastUpdated": "2021-05-19T17:50:23.000+02:00",
+          "profile": [
+            "http://fhir.de/ConsentManagement/StructureDefinition/Consent",
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+          ]
+        },
+        "extension": [
+          {
+            "url": "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference",
+            "extension": [
+              {
+                "url": "domain",
+                "valueReference": {
+                  "reference": "ResearchStudy/593d66f3-3654-4e8a-9524-3bcd78a363bb"
+                }
+              },
+              {
+                "url": "status",
+                "valueCoding": {
+                  "code": "active",
+                  "system": "http://hl7.org/fhir/publication-status"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+            "valueCoding": {
+              "code": "26242008",
+              "system": "http://snomed.info/sct",
+              "display": "Mixed (qualifier value)"
+            }
+          },
+          {
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
+            "extension": [
+              {
+                "url": "dateTimeOfDocumentation",
+                "valueDateTime": "2020-10-01"
+              },
+              {
+                "url": "age",
+                "valueAge": {
+                  "value": 67,
+                  "code": "a",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "years"
+                }
+              }
+            ]
+          }
+        ],
+        "status": "active",
+        "scope": {
+          "coding": [
+            {
+              "code": "research",
+              "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "57016-8",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "patient": {
+          "reference": "Patient/c183799b-9fd8-416c-a826-e3c69a2a6c6d",
+          "display": "Pseudonym dic_charite/dic_C7H2E9"
+        },
+        "dateTime": "2021-05-19T00:00:00+02:00",
+        "organization": [
+          {
+            "display": "MII"
+          }
+        ],
+        "sourceReference": {
+          "reference": "QuestionnaireResponse/example"
+        },
+        "policyRule": {
+          "text": "Patienteneinwilligung MII|1.6.f"
+        },
+        "provision": {
+          "type": "deny",
+          "period": {
+            "start": "2021-05-19T17:50:22+02:00",
+            "end": "2051-05-19T17:50:23+02:00"
+          },
+          "provision": [
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_bereitstellen_EU_DSGVO_konform",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Herausgabe identifizierender Daten (IDAT)[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.5",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_erheben",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Erfassung neuer identifizierender Daten (IDAT)"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.2",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_speichern_verarbeiten",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Speicherung und Verarbeitung identifizierender Daten (IDAT)[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.3",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "IDAT_zusammenfuehren_Dritte",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Zusammenführung identifizierender Daten (IDAT)[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.4",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_erheben",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Erfassung medizinischer Daten"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.6",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_speichern_verarbeiten",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Speicherung_Verarbeitung von medizinischen Daten[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.7",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_wissenschaftlich_nutzen_EU_DSGVO_konform",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Bereitstellung medizinischer Daten (MDAT)[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.8",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_zusammenfuehren_Dritte",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Zusammenführung medizinischer Daten (MDAT)[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.9",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "Rekontaktierung_Verknuepfung_Datenbanken",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Rekontaktierung zur Verknüpfung[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.27",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "Rekontaktierung_weitere_Erhebung",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Rekontaktierung bezüglich Erhebung zusätzlicher Daten"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.28",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "Rekontaktierung_weitere_Studien",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Rekontaktierung bezüglich Information[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.29",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_GECCO83_bereitstellen_NUM_CODEX",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Medizinische Daten des GECCO83 Datensatz[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.33",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy",
+                      "display": "Medizinische Daten des GECCO83 Datensatz[...]"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.34",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+                      "display": "Nutzung des Covid-19-Datensatzes[...]"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+                      "display": "Nutzung des Covid-19-Datensatzes[...]"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "permit",
+              "period": {
+                "start": "2021-05-19T17:50:22+02:00",
+                "end": "2051-05-19T17:50:23+02:00"
+              },
+              "code": [
+                {
+                  "coding": [
+                    {
+                      "code": "Rekontaktierung_Zusatzbefund",
+                      "system": "https://ths-greifswald.de/fhir/CodeSystem/gics/Policy/MII",
+                      "display": "Rekontaktierung bezüglich Zusatzbefund"
+                    }
+                  ]
+                },
+                {
+                  "coding": [
+                    {
+                      "code": "2.16.840.1.113883.3.1937.777.24.5.3.31",
+                      "system": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "ANON",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym",
+            "value": "dic_charite/dic_C7H2E9"
+          }
+        ],
+        "birthDate": "1953-09-30"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Consent/dfd5edc6-3a8a-4796-a9bb-f9572cf15c96"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:12987d1f-7ce6-4d3a-993e-2cd553081092",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Inline-Instance-for-bundle-num-codex-example-1",
+        "meta": {
+          "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "418112009",
+                "system": "http://snomed.info/sct",
+                "display": "Pulmonary medicine"
+              }
+            ]
+          }
+        ],
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "410605003",
+              "display": "Confirmed present (qualifier value)"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "413839001",
+              "system": "http://snomed.info/sct",
+              "display": "Chronic lung disease"
+            }
+          ]
+        },
+        "subject": {
+          "identifier": {
+            "system": "http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym",
+            "value": "dic_charite/dic_C7H2E9"
+          }
+        },
+        "recordedDate": "2020-11-10T15:50:41.000+01:00"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Condition?category=http://snomed.info/sct|418112009&code=http://snomed.info/sct|413839001&recorded-date=2020-11-10&subject:identifier=http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym|dic_charite/dic_C7H2E9"
+      }
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DiabetesMellitusDiseasesICD",
+  "id": "1.2.276.0.76.11.497--20200504221730",
+  "title": "Diabetes Mellitus Diseases ICD-10-GM",
+  "description": "Diabetes mellitus in the context of Covid-19 from ICD-10-GM",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases-icd",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-05-04T22:17:30+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.497"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "concept": [
+          {
+            "code": "E11.9",
+            "display": "Diabetes mellitus, Typ 2 : Ohne Komplikationen"
+          },
+          {
+            "code": "E10.9",
+            "display": "Diabetes mellitus, Typ 1 : Ohne Komplikationen"
+          },
+          {
+            "code": "E13.9",
+            "display": "Sonstiger näher bezeichneter Diabetes mellitus : Ohne Komplikationen"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "E11"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "E10"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "E13"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "E14"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      }
+    ]
+  }
+}

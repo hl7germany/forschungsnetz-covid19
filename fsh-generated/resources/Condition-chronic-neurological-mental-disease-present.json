@@ -1,0 +1,61 @@
+{
+  "resourceType": "Condition",
+  "id": "chronic-neurological-mental-disease-present",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-neurological-mental-diseases"
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "410605003",
+        "display": "Confirmed present (qualifier value)"
+      }
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "394591006",
+          "system": "http://snomed.info/sct",
+          "display": "Neurology"
+        },
+        {
+          "code": "394587001",
+          "system": "http://snomed.info/sct",
+          "display": "Psychiatry"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "74732009",
+        "system": "http://snomed.info/sct",
+        "display": "Mental disorder"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-06"
+}

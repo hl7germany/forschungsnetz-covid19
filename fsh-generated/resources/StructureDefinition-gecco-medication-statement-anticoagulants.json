@@ -1,0 +1,139 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "gecco-medication-statement-anticoagulants",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants",
+  "version": "1.0.6",
+  "name": "PharmacologicalTherapyAnticoagulants",
+  "title": "Pharmacological Therapy Anticoagulants",
+  "status": "active",
+  "date": "2020-10-29",
+  "publisher": "Charité",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Pharmacological therapy using anticoagulants in the context of Covid-19",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept",
+        "path": "MedicationStatement.medicationCodeableConcept",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept.coding",
+        "path": "MedicationStatement.medicationCodeableConcept.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept.coding:atcClassDe",
+        "path": "MedicationStatement.medicationCodeableConcept.coding",
+        "sliceName": "atcClassDe",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/dimdi/atc"
+        },
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/anticoagulants-atc"
+        }
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept.coding:atcClassDe.system",
+        "path": "MedicationStatement.medicationCodeableConcept.coding.system",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept.coding:atcClassDe.code",
+        "path": "MedicationStatement.medicationCodeableConcept.coding.code",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.reasonCode",
+        "path": "MedicationStatement.reasonCode",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.reasonCode.coding",
+        "path": "MedicationStatement.reasonCode.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.reasonCode.coding:snomed",
+        "path": "MedicationStatement.reasonCode.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/therapeutic-intent",
+          "description": "Prophylaxis | Curative"
+        }
+      },
+      {
+        "id": "MedicationStatement.reasonCode.coding:snomed.system",
+        "path": "MedicationStatement.reasonCode.coding.system",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.reasonCode.coding:snomed.code",
+        "path": "MedicationStatement.reasonCode.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

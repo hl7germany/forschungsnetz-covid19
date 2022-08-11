@@ -1,0 +1,508 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "gecco-observation-history-of-travel",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/history-of-travel",
+  "version": "1.0.6",
+  "name": "HistoryOfTravel",
+  "title": "History Of Travel",
+  "status": "active",
+  "date": "2020-10-29",
+  "publisher": "Charité",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "A patient's history of travel",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:socialHistory",
+        "path": "Observation.category.coding",
+        "sliceName": "socialHistory",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "social-history",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:socialHistory.system",
+        "path": "Observation.category.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.category.coding:socialHistory.code",
+        "path": "Observation.category.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "8691-8",
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc.system",
+        "path": "Observation.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na",
+          "description": "Yes | No | Unknown"
+        }
+      },
+      {
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.valueCodeableConcept.coding",
+        "path": "Observation.valueCodeableConcept.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.valueCodeableConcept.coding.system",
+        "path": "Observation.valueCodeableConcept.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.valueCodeableConcept.coding.code",
+        "path": "Observation.valueCodeableConcept.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "max": "0"
+      },
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "max": "0"
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "max": "0"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:TravelStartDate",
+        "path": "Observation.component",
+        "sliceName": "TravelStartDate",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:TravelStartDate.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "82752-7",
+              "system": "http://loinc.org",
+              "display": "Date travel started"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:TravelStartDate.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:TravelStartDate.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:TravelStartDate.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:TravelStartDate.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:TravelStartDate.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:Country",
+        "path": "Observation.component",
+        "sliceName": "Country",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:Country.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "94651-7",
+              "system": "http://loinc.org",
+              "display": "Country of travel"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:Country.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:Country.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:Country.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:Country.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:Country.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+          "description": "ISO 3166 Part 1 2-letter codes"
+        }
+      },
+      {
+        "id": "Observation.component:State",
+        "path": "Observation.component",
+        "sliceName": "State",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:State.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "82754-3",
+              "system": "http://loinc.org",
+              "display": "State of travel"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:State.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:State.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:State.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:State.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:State.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://fhir.de/ValueSet/iso/bundeslaender"
+        }
+      },
+      {
+        "id": "Observation.component:City",
+        "path": "Observation.component",
+        "sliceName": "City",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:City.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "94653-3",
+              "system": "http://loinc.org",
+              "display": "City of travel"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:City.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:City.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:City.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:City.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:City.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:TravelEndDate",
+        "path": "Observation.component",
+        "sliceName": "TravelEndDate",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:TravelEndDate.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "91560-3",
+              "system": "http://loinc.org",
+              "display": "Date of departure from travel destination"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:TravelEndDate.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:TravelEndDate.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:TravelEndDate.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:TravelEndDate.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:TravelEndDate.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

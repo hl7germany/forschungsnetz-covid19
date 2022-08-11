@@ -1,0 +1,61 @@
+{
+  "resourceType": "Condition",
+  "id": "rheumatological-immunological-disease-present",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/rheumatological-immunological-diseases"
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "410605003",
+        "display": "Confirmed present (qualifier value)"
+      }
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "394810000",
+          "system": "http://snomed.info/sct",
+          "display": "Rheumatology"
+        },
+        {
+          "code": "408480009",
+          "system": "http://snomed.info/sct",
+          "display": "Clinical immunology"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "396332003",
+        "system": "http://snomed.info/sct",
+        "display": "Rheumatism"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-06"
+}

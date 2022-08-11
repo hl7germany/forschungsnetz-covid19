@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "interventional-clinical-trial-participation-not-applicable",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/interventional-clinical-trial-participation"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "03",
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+        "display": "Participation in interventional clinical trials"
+      }
+    ],
+    "text": "Has the patient participated in one or more interventional clinical trials?"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "385432009",
+        "display": "Not applicable (qualifier value)"
+      }
+    ],
+    "text": "Not applicable"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "OBI",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+      "value": "ecrf_03_InterventionalClinicalTrialsParticipation",
+      "assigner": {
+        "reference": "Organization/Charité"
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-10-16T08:49:21+02:00"
+}

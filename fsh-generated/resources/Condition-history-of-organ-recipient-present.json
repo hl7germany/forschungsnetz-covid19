@@ -1,0 +1,67 @@
+{
+  "resourceType": "Condition",
+  "id": "history-of-organ-recipient-present",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/organ-recipient"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "788415003",
+          "system": "http://snomed.info/sct",
+          "display": "Transplant medicine"
+        }
+      ]
+    }
+  ],
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "410605003",
+        "display": "Confirmed present (qualifier value)"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "181268008",
+          "display": "Entire liver"
+        }
+      ]
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "161663000",
+        "system": "http://snomed.info/sct",
+        "display": "History of being a tissue or organ recipient"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-05"
+}

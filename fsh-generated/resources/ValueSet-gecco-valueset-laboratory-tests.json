@@ -1,0 +1,542 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "LaboratoryTestsGECCO",
+  "id": "gecco-valueset-laboratory-tests",
+  "title": "Laboratory Tests GECCO",
+  "description": "Laboratory tests in the context of Covid-19",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/lab-tests-gecco",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-06-05T17:27:13+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.521"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "48421-2",
+            "display": "C reactive protein [Mass/volume] in Capillary blood"
+          },
+          {
+            "code": "71426-1",
+            "display": "C reactive protein [Mass/volume] in Blood by High sensitivity method"
+          },
+          {
+            "code": "76486-0",
+            "display": "C reactive protein [Moles/volume] in Serum or Plasma by High sensitivity method"
+          },
+          {
+            "code": "30522-7",
+            "display": "C reactive protein [Mass/volume] in Serum or Plasma by High sensitivity method"
+          },
+          {
+            "code": "1988-5",
+            "display": "C reactive protein [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "76485-2",
+            "display": "C reactive protein [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "20567-4",
+            "display": "Ferritin [Mass/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "86914-9",
+            "display": "Ferritin goal [Mass/volume] Serum or Plasma"
+          },
+          {
+            "code": "14723-1",
+            "display": "Ferritin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "2276-4",
+            "display": "Ferritin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "24373-3",
+            "display": "Ferritin [Mass/volume] in Blood"
+          },
+          {
+            "code": "1971-1",
+            "display": "Bilirubin.indirect [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1975-2",
+            "display": "Bilirubin.total [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14631-6",
+            "display": "Bilirubin.total [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "59828-4",
+            "display": "Bilirubin.total [Mass/volume] in Venous blood"
+          },
+          {
+            "code": "59827-6",
+            "display": "Bilirubin.total [Mass/volume] in Arterial blood"
+          },
+          {
+            "code": "42719-5",
+            "display": "Bilirubin.total [Mass/volume] in Blood"
+          },
+          {
+            "code": "48066-5",
+            "display": "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma"
+          },
+          {
+            "code": "48065-7",
+            "display": "Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma"
+          },
+          {
+            "code": "48067-3",
+            "display": "Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma by Immunoassay"
+          },
+          {
+            "code": "55398-2",
+            "display": "Short Fibrin D-dimer FEU and DDU panel - Platelet poor plasma"
+          },
+          {
+            "code": "71427-9",
+            "display": "Fibrin D-dimer FEU [Mass/volume] in Blood by Immunoassay"
+          },
+          {
+            "code": "7799-0",
+            "display": "Fibrin D-dimer [Units/volume] in Platelet poor plasma"
+          },
+          {
+            "code": "91556-1",
+            "display": "Fibrin D-dimer DDU [Mass/volume] in Blood by Immunoassay"
+          },
+          {
+            "code": "38898-3",
+            "display": "Fibrin D-dimer [Titer] in Platelet poor plasma"
+          },
+          {
+            "code": "3246-6",
+            "display": "Fibrin D-dimer [Units/volume] in Platelet poor plasma by Immunoassay"
+          },
+          {
+            "code": "48058-2",
+            "display": "Fibrin D-dimer DDU [Mass/volume] in Platelet poor plasma by Immunoassay"
+          },
+          {
+            "code": "2325-9",
+            "display": "Gamma glutamyl transferase/Aspartate aminotransferase [Enzymatic activity ratio] in Serum or Plasma"
+          },
+          {
+            "code": "2324-2",
+            "display": "Gamma glutamyl transferase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "1920-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "30239-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5'-P"
+          },
+          {
+            "code": "88112-8",
+            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by No addition of P-5'-P"
+          },
+          {
+            "code": "2532-0",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14805-6",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Pyruvate to lactate reaction"
+          },
+          {
+            "code": "14804-9",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction"
+          },
+          {
+            "code": "14803-1",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Lactate to pyruvate reaction"
+          },
+          {
+            "code": "60017-1",
+            "display": "Lactate dehydrogenase [Enzymatic activity/volume] in Body fluid by Pyruvate to lactate reaction"
+          },
+          {
+            "code": "49563-0",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by Detection limit <= 0.01 ng/mL"
+          },
+          {
+            "code": "89579-7",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method"
+          },
+          {
+            "code": "67151-1",
+            "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method"
+          },
+          {
+            "code": "6598-7",
+            "display": "Troponin T.cardiac [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "6597-9",
+            "display": "Troponin T.cardiac [Mass/volume] in Venous blood"
+          },
+          {
+            "code": "48425-3",
+            "display": "Troponin T.cardiac [Mass/volume] in Blood"
+          },
+          {
+            "code": "42757-5",
+            "display": "Troponin I.cardiac [Mass/volume] in Blood"
+          },
+          {
+            "code": "10839-9",
+            "display": "Troponin I.cardiac [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "76769-9",
+            "display": "Hemoglobin [Mass/volume] in Venous blood by Oximetry"
+          },
+          {
+            "code": "59260-0",
+            "display": "Hemoglobin [Moles/volume] in Blood"
+          },
+          {
+            "code": "718-7",
+            "display": "Hemoglobin [Mass/volume] in Blood"
+          },
+          {
+            "code": "20509-6",
+            "display": "Hemoglobin [Mass/volume] in Blood by calculation"
+          },
+          {
+            "code": "55782-7",
+            "display": "Hemoglobin [Mass/volume] in Blood by Oximetry"
+          },
+          {
+            "code": "75928-2",
+            "display": "Hemoglobin [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "14775-1",
+            "display": "Hemoglobin [Mass/volume] in Arterial blood by Oximetry"
+          },
+          {
+            "code": "30313-1",
+            "display": "Hemoglobin [Mass/volume] in Arterial blood"
+          },
+          {
+            "code": "30350-3",
+            "display": "Hemoglobin [Mass/volume] in Venous blood"
+          },
+          {
+            "code": "30351-1",
+            "display": "Hemoglobin [Mass/volume] in Mixed venous blood"
+          },
+          {
+            "code": "30352-9",
+            "display": "Hemoglobin [Mass/volume] in Capillary blood"
+          },
+          {
+            "code": "76768-1",
+            "display": "Hemoglobin [Mass/volume] in Mixed venous blood by Oximetry"
+          },
+          {
+            "code": "21232-4",
+            "display": "Creatinine [Mass/volume] in Arterial blood"
+          },
+          {
+            "code": "38483-4",
+            "display": "Creatinine [Mass/volume] in Blood"
+          },
+          {
+            "code": "59826-8",
+            "display": "Creatinine [Moles/volume] in Blood"
+          },
+          {
+            "code": "12190-5",
+            "display": "Creatinine [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "25386-4",
+            "display": "Creatinine [Moles/volume] in Body fluid"
+          },
+          {
+            "code": "2160-0",
+            "display": "Creatinine [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14682-9",
+            "display": "Creatinine [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "14118-4",
+            "display": "Lactate [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "59032-3",
+            "display": "Lactate [Mass/volume] in Blood"
+          },
+          {
+            "code": "32693-4",
+            "display": "Lactate [Moles/volume] in Blood"
+          },
+          {
+            "code": "2520-5",
+            "display": "Lactate [Moles/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "19239-3",
+            "display": "Lactate [Moles/volume] in Capillary blood"
+          },
+          {
+            "code": "19240-1",
+            "display": "Lactate [Moles/volume] in Mixed venous blood"
+          },
+          {
+            "code": "2518-9",
+            "display": "Lactate [Moles/volume] in Arterial blood"
+          },
+          {
+            "code": "2519-7",
+            "display": "Lactate [Moles/volume] in Venous blood"
+          },
+          {
+            "code": "2524-7",
+            "display": "Lactate [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "30242-2",
+            "display": "Lactate [Mass/volume] in Arterial blood"
+          },
+          {
+            "code": "27941-4",
+            "display": "Lactate [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "49498-9",
+            "display": "Leukocytes [#/volume] in Blood by Estimate"
+          },
+          {
+            "code": "6690-2",
+            "display": "Leukocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "804-5",
+            "display": "Leukocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "26464-8",
+            "display": "Leukocytes [#/volume] in Blood"
+          },
+          {
+            "code": "732-8",
+            "display": "Lymphocytes [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "731-0",
+            "display": "Lymphocytes [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "30364-4",
+            "display": "Lymphocytes [#/volume] in Blood by Flow cytometry (FC)"
+          },
+          {
+            "code": "26474-7",
+            "display": "Lymphocytes [#/volume] in Blood"
+          },
+          {
+            "code": "753-4",
+            "display": "Neutrophils [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "751-8",
+            "display": "Neutrophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "26499-4",
+            "display": "Neutrophils [#/volume] in Blood"
+          },
+          {
+            "code": "16631-4",
+            "display": "aPTT in Blood by Coagulation 1:1 saline"
+          },
+          {
+            "code": "43734-3",
+            "display": "aPTT in Platelet poor plasma by Coagulation 1:1 saline"
+          },
+          {
+            "code": "14979-9",
+            "display": "aPTT in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "3173-2",
+            "display": "aPTT in Blood by Coagulation assay"
+          },
+          {
+            "code": "74775-8",
+            "display": "Platelets [#/volume] in Platelet rich plasma by Automated count"
+          },
+          {
+            "code": "13056-7",
+            "display": "Platelets [#/volume] in Plasma by Automated count"
+          },
+          {
+            "code": "26516-5",
+            "display": "Platelets [#/volume] in Plasma"
+          },
+          {
+            "code": "74464-9",
+            "display": "Platelets [#/volume] in Capillary blood by Manual count"
+          },
+          {
+            "code": "778-1",
+            "display": "Platelets [#/volume] in Blood by Manual count"
+          },
+          {
+            "code": "49497-1",
+            "display": "Platelets [#/volume] in Blood by Estimate"
+          },
+          {
+            "code": "777-3",
+            "display": "Platelets [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "26515-7",
+            "display": "Platelets [#/volume] in Blood"
+          },
+          {
+            "code": "6301-6",
+            "display": "INR in Platelet poor plasma by Coagulation assay"
+          },
+          {
+            "code": "46418-0",
+            "display": "INR in Capillary blood by Coagulation assay"
+          },
+          {
+            "code": "34714-6",
+            "display": "INR in Blood by Coagulation assay"
+          },
+          {
+            "code": "76631-1",
+            "display": "Albumin [Mass/volume] in Blood by Bromocresol purple (BCP) dye binding method"
+          },
+          {
+            "code": "62235-7",
+            "display": "Albumin [Moles/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method"
+          },
+          {
+            "code": "62234-0",
+            "display": "Albumin [Moles/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method"
+          },
+          {
+            "code": "61152-5",
+            "display": "Albumin [Mass/volume] in Serum or Plasma by Bromocresol purple (BCP) dye binding method"
+          },
+          {
+            "code": "61151-7",
+            "display": "Albumin [Mass/volume] in Serum or Plasma by Bromocresol green (BCG) dye binding method"
+          },
+          {
+            "code": "2862-1",
+            "display": "Albumin [Mass/volume] in Serum or Plasma by Electrophoresis"
+          },
+          {
+            "code": "1751-7",
+            "display": "Albumin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "54347-0",
+            "display": "Albumin [Moles/volume] in Serum or Plasma"
+          },
+          {
+            "code": "3176-5",
+            "display": "Antithrombin [Moles/volume] in Platelet poor plasma by Chromogenic method"
+          },
+          {
+            "code": "91120-6",
+            "display": "Antithrombin in Platelet poor plasma by Chromo.no addition of heparin"
+          },
+          {
+            "code": "3174-0",
+            "display": "Antithrombin [Units/volume] in Platelet poor plasma by Chromogenic method"
+          },
+          {
+            "code": "27811-9",
+            "display": "Antithrombin actual/normal in Platelet poor plasma by Chromogenic method"
+          },
+          {
+            "code": "27812-7",
+            "display": "Antithrombin Ag actual/normal in Platelet poor plasma by Immunoassay"
+          },
+          {
+            "code": "75241-0",
+            "display": "Procalcitonin [Mass/volume] in Serum or Plasma by Immunoassay"
+          },
+          {
+            "code": "33959-8",
+            "display": "Procalcitonin [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "44322-6",
+            "display": "Interleukin 6 [Presence] in Serum or Plasma"
+          },
+          {
+            "code": "26881-3",
+            "display": "Interleukin 6 [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "49919-4",
+            "display": "Interleukin 6 [Mass/volume] in Cerebral spinal fluid"
+          },
+          {
+            "code": "49732-1",
+            "display": "Interleukin 6 [Mass/volume] in Body fluid"
+          },
+          {
+            "code": "33762-6",
+            "display": "Natriuretic peptide.B prohormone N-Terminal [Mass/volume] in Serum or Plasma"
+          },
+          {
+            "code": "16859-1",
+            "display": "Fibrinogen [Presence] in Platelet poor plasma"
+          },
+          {
+            "code": "30902-1",
+            "display": "Fibrinogen [Mass/volume] in Platelet poor plasma by Heat denaturation"
+          },
+          {
+            "code": "48664-7",
+            "display": "Fibrinogen [Mass/volume] in Platelet poor plasma by Coagulation.derived"
+          },
+          {
+            "code": "3255-7",
+            "display": "Fibrinogen [Mass/volume] in Platelet poor plasma by Coagulation assay"
+          }
+        ]
+      }
+    ]
+  }
+}

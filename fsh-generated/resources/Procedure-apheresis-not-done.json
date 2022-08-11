@@ -1,0 +1,40 @@
+{
+  "resourceType": "Procedure",
+  "id": "apheresis-not-done",
+  "meta": {
+    "profile": [
+      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-apheresis"
+    ]
+  },
+  "status": "not-done",
+  "category": {
+    "coding": [
+      {
+        "code": "277132007",
+        "system": "http://snomed.info/sct",
+        "display": "Therapeutic procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "127788007",
+        "system": "http://snomed.info/sct",
+        "display": "Apheresis (procedure)"
+      }
+    ],
+    "text": "Apheresis"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "_performedDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "not-performed"
+      }
+    ]
+  }
+}

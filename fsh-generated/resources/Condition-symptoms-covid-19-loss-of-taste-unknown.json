@@ -1,0 +1,48 @@
+{
+  "resourceType": "Condition",
+  "id": "symptoms-covid-19-loss-of-taste-unknown",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "75325-1",
+          "system": "http://loinc.org",
+          "display": "Symptom"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "36955009",
+        "display": "Loss of taste"
+      }
+    ]
+  },
+  "modifierExtension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "261665006",
+            "system": "http://snomed.info/sct",
+            "display": "Unknown (qualifier value)"
+          }
+        ],
+        "text": "Presence of symptom is unknown."
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-05"
+}

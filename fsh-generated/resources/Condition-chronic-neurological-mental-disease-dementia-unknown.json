@@ -1,0 +1,53 @@
+{
+  "resourceType": "Condition",
+  "id": "chronic-neurological-mental-disease-dementia-unknown",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-neurological-mental-diseases"
+    ]
+  },
+  "modifierExtension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
+          }
+        ],
+        "text": "Presence of condition is unknown."
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "394591006",
+          "system": "http://snomed.info/sct",
+          "display": "Neurology"
+        },
+        {
+          "code": "394587001",
+          "system": "http://snomed.info/sct",
+          "display": "Psychiatry"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "52448006",
+        "system": "http://snomed.info/sct",
+        "display": "Dementia"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-06"
+}

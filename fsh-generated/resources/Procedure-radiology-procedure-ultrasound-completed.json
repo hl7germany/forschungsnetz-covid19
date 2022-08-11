@@ -1,0 +1,54 @@
+{
+  "resourceType": "Procedure",
+  "id": "radiology-procedure-ultrasound-completed",
+  "meta": {
+    "profile": [
+      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-radiology"
+    ]
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "103693007",
+        "system": "http://snomed.info/sct",
+        "display": "Diagnostic procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "16310003",
+        "system": "http://snomed.info/sct",
+        "display": "Diagnostic ultrasonography (procedure)"
+      },
+      {
+        "code": "US",
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "display": "Ultrasound"
+      }
+    ],
+    "text": "Ultrasound"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "performedDateTime": "2020-09-30",
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "39607008",
+          "system": "http://snomed.info/sct",
+          "display": "Lung structure (body structure)"
+        }
+      ]
+    }
+  ],
+  "report": [
+    {
+      "reference": "DiagnosticReport/diagnostic-report-radiology-covid-19"
+    }
+  ]
+}

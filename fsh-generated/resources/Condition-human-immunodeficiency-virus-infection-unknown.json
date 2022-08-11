@@ -1,0 +1,48 @@
+{
+  "resourceType": "Condition",
+  "id": "human-immunodeficiency-virus-infection-unknown",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "394807007",
+          "system": "http://snomed.info/sct",
+          "display": "Infectious diseases (specialty)"
+        }
+      ]
+    }
+  ],
+  "modifierExtension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
+          }
+        ],
+        "text": "Presence of condition is unknown."
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "86406008",
+        "system": "http://snomed.info/sct",
+        "display": "Human immunodeficiency virus infection"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-06"
+}

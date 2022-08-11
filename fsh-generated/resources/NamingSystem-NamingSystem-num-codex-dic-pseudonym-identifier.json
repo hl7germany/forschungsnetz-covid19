@@ -1,0 +1,18 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "NamingSystem-num-codex-dic-pseudonym-identifier",
+  "name": "NUM-CODEX_DIC_Pseudonym_Identifier",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2021-06-14",
+  "publisher": "NUM-Codex",
+  "responsible": "THS Greifswald",
+  "description": "DIZ specific pseudonym",
+  "usage": "Used withing the NUM-CODEX project for data integration center pseudonyms",
+  "uniqueId": [
+    {
+      "type": "other",
+      "value": "http://www.netzwerk-universitaetsmedizin.de/sid/dic-pseudonym"
+    }
+  ]
+}

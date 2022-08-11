@@ -1,0 +1,39 @@
+{
+  "resourceType": "Procedure",
+  "id": "respiratory-therapy-unknown",
+  "meta": {
+    "profile": [
+      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-respiratory-therapy"
+    ]
+  },
+  "status": "unknown",
+  "category": {
+    "coding": [
+      {
+        "code": "277132007",
+        "system": "http://snomed.info/sct",
+        "display": "Therapeutic procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "53950000",
+        "system": "http://snomed.info/sct",
+        "display": "Respiratory therapy (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "_performedDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  }
+}

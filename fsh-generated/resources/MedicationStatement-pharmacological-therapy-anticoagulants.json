@@ -1,0 +1,40 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "pharmacological-therapy-anticoagulants",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants"
+    ]
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "360271000",
+          "display": "Prophylaxis - procedure intent (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "81839001",
+        "system": "http://snomed.info/sct",
+        "display": "Medicinal product acting as anticoagulant agent (product)"
+      },
+      {
+        "code": "B01AB01",
+        "system": "http://fhir.de/CodeSystem/dimdi/atc",
+        "display": "Heparin"
+      }
+    ],
+    "text": "Atazanavir"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+}

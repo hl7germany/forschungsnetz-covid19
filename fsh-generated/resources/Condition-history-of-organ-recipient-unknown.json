@@ -1,0 +1,48 @@
+{
+  "resourceType": "Condition",
+  "id": "history-of-organ-recipient-unknown",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/organ-recipient"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "788415003",
+          "system": "http://snomed.info/sct",
+          "display": "Transplant medicine"
+        }
+      ]
+    }
+  ],
+  "modifierExtension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
+          }
+        ],
+        "text": "Presence of condition is unknown."
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "161663000",
+        "system": "http://snomed.info/sct",
+        "display": "History of being a tissue or organ recipient"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-05"
+}

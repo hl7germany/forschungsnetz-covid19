@@ -1,0 +1,81 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DialysisProceduresOPS",
+  "id": "1.2.276.0.76.11.536--20200720125411",
+  "title": "Dialysis Procedures OPS",
+  "description": "Dialysis procedures from the German procedure classification (Operationen- und Prozedurenschlüssel - OPS)",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/dialysis-procedures-ops",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-07-20T12:54:11+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.536"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "8-85"
+          }
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "8-851"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "8-852"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "concept": [
+          {
+            "code": "8-85b",
+            "display": "Anwendung von Blutegeln zur Sicherung des venösen Blutabstroms bei Lappenplastiken oder replantierten Gliedmaßenabschnitten"
+          }
+        ]
+      }
+    ]
+  }
+}

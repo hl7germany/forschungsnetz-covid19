@@ -1,0 +1,46 @@
+{
+  "resourceType": "Immunization",
+  "id": "immunization-covid19",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization"
+    ]
+  },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "code": "1119349007",
+        "system": "http://snomed.info/sct",
+        "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/gecco-patient"
+  },
+  "occurrenceDateTime": "2020-12-27",
+  "protocolApplied": [
+    {
+      "targetDisease": [
+        {
+          "coding": [
+            {
+              "code": "840539006",
+              "system": "http://snomed.info/sct",
+              "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+            }
+          ]
+        }
+      ],
+      "_doseNumberString": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unknown"
+          }
+        ]
+      }
+    }
+  ]
+}

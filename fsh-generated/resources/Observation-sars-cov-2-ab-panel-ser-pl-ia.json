@@ -1,0 +1,81 @@
+{
+  "resourceType": "Observation",
+  "id": "sars-cov-2-ab-panel-ser-pl-ia",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-pnl-ser-pl-ia"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+      "value": "94504-8_SARS-CoV-2-Ab-Panel",
+      "assigner": {
+        "reference": "Organization/Charité"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "94504-8",
+        "system": "http://loinc.org",
+        "display": "SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay"
+      }
+    ],
+    "text": "SARS-CoV-2 antibodies panel"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-10-19T08:43:33+02:00",
+  "hasMember": [
+    {
+      "reference": "Observation/sars-cov-2-ab-ser-pl-ia-acnc"
+    },
+    {
+      "reference": "Observation/sars-cov-2-ab-ser-pl-ql-ia"
+    },
+    {
+      "reference": "Observation/sars-cov-2-igg-ser-pl-ia-acnc"
+    },
+    {
+      "reference": "Observation/sars-cov-2-igg-ser-pl-ql-ia"
+    },
+    {
+      "reference": "Observation/sars-cov-2-igm-ser-pl-ia-acnc"
+    },
+    {
+      "reference": "Observation/sars-cov-2-igm-ser-pl-ql-ia"
+    },
+    {
+      "reference": "Observation/sars-cov-2-iga-ser-pl-ia-acnc"
+    },
+    {
+      "reference": "Observation/sars-cov-2-iga-ser-pl-ql-ia"
+    }
+  ]
+}

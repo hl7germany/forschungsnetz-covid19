@@ -1,0 +1,25 @@
+ValueSet: BloodGasAnalysisCombined
+Id: gecco-valueset-blood-gas-analysis-combined-v105
+Title: "Blood Gas Analysis Combined"
+Description: "Relevant codes for a blood gas analysis taken from LOINC and SNOMED CT."
+* ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/blood-gas-analysis-combined"
+* ^status = #draft
+//* ^version = "1.0.5"
+* ^date = "2021-10-01T00:00:00.000Z"
+* ^experimental = false
+* ^publisher = "UKSH Lübeck"
+* ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
+* $loinc#11558-4 "pH of Blood"
+* $loinc#2744-1 "pH of Arterial blood"
+* $loinc#2745-8 "pH of Capillary blood"
+* $loinc#3150-0 "Inhaled oxygen concentration"
+* $loinc#11556-8 "Oxygen [Partial pressure] in Blood"
+* $loinc#2703-7 "Oxygen [Partial pressure] in Arterial blood"
+* $loinc#2704-5 "Oxygen [Partial pressure] in Capillary blood"
+* $loinc#11557-6 "Carbon dioxide [Partial pressure] in Blood"
+* $loinc#2020-6 "Carbon dioxide [Partial pressure] in Capillary blood"
+* $loinc#2019-8 "Carbon dioxide [Partial pressure] in Arterial blood"
+* $loinc#2708-6 "Oxygen saturation in Arterial blood"
+* SNOMED_CT#250774007 "Inspired oxygen concentration"
+* SNOMED_CT#431314004 "Peripheral oxygen saturation"

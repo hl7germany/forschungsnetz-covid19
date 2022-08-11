@@ -1,0 +1,18 @@
+canonical: https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: gecco-implementationguide
+name: German Corona Consensus Data Set - Implementation Guide
+status: draft
+version: 1.0.6
+dependencies:
+  de.einwilligungsmanagement: 1.0.1
+  de.medizininformatikinitiative.kerndatensatz.medikation: 1.0.10
+  de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
+  hl7.fhir.uv.ips: 1.0.0
+  de.medizininformatikinitiative.kerndatensatz.prozedur: 2.0.0-alpha4
+  de.basisprofil.r4: 1.2.0
+  de.medizininformatikinitiative.kerndatensatz.diagnose: 2.0.0-alpha3
+  de.medizininformatikinitiative.kerndatensatz.laborbefund: 1.0.6
+  #de.gecco: 1.0.5

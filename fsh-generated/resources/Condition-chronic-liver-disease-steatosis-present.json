@@ -1,0 +1,56 @@
+{
+  "resourceType": "Condition",
+  "id": "chronic-liver-disease-steatosis-present",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-liver-diseases"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "408472002",
+          "system": "http://snomed.info/sct",
+          "display": "Hepatology"
+        }
+      ]
+    }
+  ],
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "410605003",
+        "display": "Confirmed present (qualifier value)"
+      }
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "197321007",
+        "system": "http://snomed.info/sct",
+        "display": "Steatosis of liver"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-06"
+}

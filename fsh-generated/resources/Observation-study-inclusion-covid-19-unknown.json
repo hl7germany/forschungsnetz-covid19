@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "study-inclusion-covid-19-unknown",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/study-inclusion-covid-19"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "02",
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+        "display": "Study inclusion due to Covid-19"
+      }
+    ],
+    "text": "Confirmed Covid-19 diagnosis as main reason for enrolment in the study"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "261665006",
+        "display": "Unknown (qualifier value)"
+      }
+    ],
+    "text": "Unknown if Covid-19 is primary reason for study inclusion"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "OBI",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+      "value": "ecrf_02_StudyInclusionCovid19",
+      "assigner": {
+        "reference": "Organization/Charité"
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-10-16T08:49:21+02:00"
+}

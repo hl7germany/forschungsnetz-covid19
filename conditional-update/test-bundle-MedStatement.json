@@ -1,0 +1,95 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-num-codex-example",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:c183799b-9fd8-416c-a826-e3c69a2a6c6d",
+            "resource": {
+                "resourceType": "Patient",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+                        "valueCoding": {
+                            "system": "http://snomed.info/sct",
+                            "code": "26242008",
+                            "display": "Mixed (qualifier value)"
+                        }
+                    },
+                    {
+                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
+                        "extension": [
+                            {
+                                "url": "dateTimeOfDocumentation",
+                                "valueDateTime": "2020-10-01"
+                            },
+                            {
+                                "url": "age",
+                                "valueAge": {
+                                    "value": 67,
+                                    "unit": "years",
+                                    "system": "http://unitsofmeasure.org",
+                                    "code": "a"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym",
+                        "value": "codex_6348Q7"
+                    }
+                ],
+                "birthDate": "1953-09-30"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient?identifier=http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym|codex_6348Q7"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:25369138-60ff-4761-bd6e-b5c9c84758e2",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-ace-inhibitors"
+                    ]
+                },
+                "status": "active",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "41549009",
+                            "display": "Product containing angiotensin-converting enzyme inhibitor (product)"
+                        },
+                        {
+                            "system": "http://fhir.de/CodeSystem/dimdi/atc",
+                            "code": "C09A",
+                            "display": "ACE-HEMMER, REIN"
+                        }
+                    ],
+                    "text": "ACE inhibitors"
+                },
+                "subject": {
+                    "identifier": {
+                        "system": "http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym",
+                        "value": "codex_6348Q7"
+                    }
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "MedicationStatement?status=active&code=http://snomed.info/sct|41549009&effective=2020-10-19T08:43:33+02:00&patient:identifier=http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym|codex_6348Q7"
+            }
+        }
+    ]
+}

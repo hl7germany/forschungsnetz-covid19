@@ -1,0 +1,46 @@
+{
+  "resourceType": "Immunization",
+  "id": "immunization-pneumococcal-disease",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization"
+    ]
+  },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "code": "836398006",
+        "system": "http://snomed.info/sct",
+        "display": "Vaccine product containing Streptococcus pneumoniae antigen (medicinal product)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/gecco-patient"
+  },
+  "occurrenceDateTime": "2020-10-06",
+  "protocolApplied": [
+    {
+      "targetDisease": [
+        {
+          "coding": [
+            {
+              "code": "16814004",
+              "system": "http://snomed.info/sct",
+              "display": "Pneumococcal infectious disease (disorder)"
+            }
+          ]
+        }
+      ],
+      "_doseNumberString": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "unknown"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "Observation",
+  "id": "pH-arterial",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+      "value": "2744-1_pH",
+      "assigner": {
+        "reference": "Organization/Charité"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        },
+        {
+          "code": "18767-4",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "[pH]",
+    "value": 7.4,
+    "unit": "pH"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "2744-1",
+        "system": "http://loinc.org",
+        "display": "pH of Arterial blood"
+      }
+    ],
+    "text": "pH of Arterial blood"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-09-21"
+}

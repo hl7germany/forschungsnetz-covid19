@@ -1,0 +1,34 @@
+{
+  "resourceType": "Procedure",
+  "id": "respiratory-therapy-startet",
+  "meta": {
+    "profile": [
+      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-respiratory-therapy"
+    ]
+  },
+  "status": "in-progress",
+  "category": {
+    "coding": [
+      {
+        "code": "277132007",
+        "system": "http://snomed.info/sct",
+        "display": "Therapeutic procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "53950000",
+        "system": "http://snomed.info/sct",
+        "display": "Respiratory therapy (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "performedPeriod": {
+    "start": "2020-12-12"
+  }
+}

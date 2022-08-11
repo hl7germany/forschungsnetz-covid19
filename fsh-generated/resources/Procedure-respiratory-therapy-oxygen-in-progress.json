@@ -1,0 +1,51 @@
+{
+  "resourceType": "Procedure",
+  "id": "respiratory-therapy-oxygen-in-progress",
+  "meta": {
+    "profile": [
+      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-respiratory-therapy"
+    ]
+  },
+  "status": "in-progress",
+  "category": {
+    "coding": [
+      {
+        "code": "277132007",
+        "system": "http://snomed.info/sct",
+        "display": "Therapeutic procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "371907003",
+        "system": "http://snomed.info/sct",
+        "display": "Oxygen administration by nasal cannula (procedure)"
+      }
+    ],
+    "text": "Nasal High-Flow-Oxygen-Therapy"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "usedCode": [
+    {
+      "coding": [
+        {
+          "code": "426854004",
+          "system": "http://snomed.info/sct",
+          "display": "High flow oxygen nasal cannula (physical object)"
+        }
+      ]
+    }
+  ],
+  "_performedDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  }
+}

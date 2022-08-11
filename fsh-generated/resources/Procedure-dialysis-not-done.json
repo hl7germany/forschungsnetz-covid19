@@ -1,0 +1,40 @@
+{
+  "resourceType": "Procedure",
+  "id": "dialysis-not-done",
+  "meta": {
+    "profile": [
+      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-dialysis"
+    ]
+  },
+  "status": "not-done",
+  "category": {
+    "coding": [
+      {
+        "code": "277132007",
+        "system": "http://snomed.info/sct",
+        "display": "Therapeutic procedure (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "108241001",
+        "system": "http://snomed.info/sct",
+        "display": "Dialysis procedure (procedure)"
+      }
+    ],
+    "text": "Dialysis"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "_performedDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "not-performed"
+      }
+    ]
+  }
+}

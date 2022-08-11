@@ -1,0 +1,65 @@
+{
+  "resourceType": "Observation",
+  "id": "inhaled-oxygen-concentration",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/inhaled-oxygen-concentration"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+      "value": "3150-0_FiO2",
+      "assigner": {
+        "reference": "Organization/Charité"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        },
+        {
+          "code": "18767-4",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "3150-0",
+        "system": "http://loinc.org",
+        "display": "Inhaled oxygen concentration"
+      }
+    ],
+    "text": "Inhaled oxygen concentration"
+  },
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "%",
+    "value": 21,
+    "unit": "%"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-09-21"
+}

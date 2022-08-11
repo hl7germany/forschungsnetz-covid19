@@ -1,0 +1,156 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DrugTherapySnomed",
+  "id": "1.2.276.0.76.11.539--20200722173536",
+  "title": "Drug Therapy SNOMED",
+  "description": "Pharmacological therapy in the context of Covid-19, relevant SNOMED-Codes",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-snomed",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-07-22T17:35:36+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.539"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "768759001",
+            "display": "Product containing steroid (product)"
+          },
+          {
+            "code": "413591007",
+            "display": "Product containing atazanavir (medicinal product)"
+          },
+          {
+            "code": "424096001",
+            "display": "Product containing darunavir (medicinal product)"
+          },
+          {
+            "code": "14728000",
+            "display": "Product containing chloroquine (medicinal product)"
+          },
+          {
+            "code": "83490000",
+            "display": "Product containing hydroxychloroquine (medicinal product)"
+          },
+          {
+            "code": "96138006",
+            "display": "Product containing ivermectin (medicinal product)"
+          },
+          {
+            "code": "134573001",
+            "display": "Product containing lopinavir and ritonavir (medicinal product)"
+          },
+          {
+            "code": "78025001",
+            "display": "Product containing ganciclovir (medicinal product)"
+          },
+          {
+            "code": "386142008",
+            "display": "Product containing oseltamivir (medicinal product)"
+          },
+          {
+            "code": "870518005",
+            "display": "Product containing remdesivir (medicinal product)"
+          },
+          {
+            "code": "35063004",
+            "display": "Product containing ribavirin (medicinal product)"
+          },
+          {
+            "code": "444649004",
+            "display": "Product containing tocilizumab (medicinal product)"
+          },
+          {
+            "code": "763522001",
+            "display": "Product containing sarilumab (medicinal product)"
+          },
+          {
+            "code": "416587008",
+            "display": "Product containing calcineurin inhibitor (product)"
+          },
+          {
+            "code": "416897008",
+            "display": "Product containing tumor necrosis factor alpha inhibitor (product)"
+          },
+          {
+            "code": "430817009",
+            "display": "Product containing interleukin 1 receptor antagonist (product)"
+          },
+          {
+            "code": "703779004",
+            "display": "Product containing ruxolitinib (medicinal product)"
+          },
+          {
+            "code": "73133000",
+            "display": "Product containing colchicine (medicinal product)"
+          },
+          {
+            "code": "768865007",
+            "display": "Product containing interferon (product)"
+          },
+          {
+            "code": "88519001",
+            "display": "Product containing calcifediol (medicinal product)"
+          },
+          {
+            "code": "764877006",
+            "display": "Product containing zinc (medicinal product)"
+          }
+        ]
+      },
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+        "concept": [
+          {
+            "code": "antipyretic",
+            "display": "Product containing antipyretic"
+          },
+          {
+            "code": "camostat",
+            "display": "Product containing camostat"
+          },
+          {
+            "code": "favipiravir",
+            "display": "Product containing favipiravir"
+          },
+          {
+            "code": "convalescent-plasma",
+            "display": "Convalescent plasma"
+          },
+          {
+            "code": "steroids-gt",
+            "display": "Steroids (> 0.5 mg/kg prednisone equivalents)"
+          },
+          {
+            "code": "steroids-lt",
+            "display": "Steroids (<= 0.5 mg/kg prednisone equivalents)"
+          }
+        ]
+      }
+    ]
+  }
+}

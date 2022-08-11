@@ -1,0 +1,48 @@
+{
+  "resourceType": "Condition",
+  "id": "complication-myocardial-infarction-unknown",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/complications-covid-19"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "116223007",
+          "system": "http://snomed.info/sct",
+          "display": "Complication (disorder)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "22298006",
+        "display": "Myocardial infarction (disorder)"
+      }
+    ]
+  },
+  "modifierExtension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "261665006",
+            "system": "http://snomed.info/sct",
+            "display": "Unknown (qualifier value)"
+          }
+        ],
+        "text": "Presence of condition is unknown."
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-15T16:07:48+02:00"
+}

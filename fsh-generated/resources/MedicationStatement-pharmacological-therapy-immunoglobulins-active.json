@@ -1,0 +1,29 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "pharmacological-therapy-immunoglobulins-active",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-immunoglobulins"
+    ]
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "333710000",
+        "system": "http://snomed.info/sct",
+        "display": "Product containing immunoglobulin (product)"
+      },
+      {
+        "code": "J06B",
+        "system": "http://fhir.de/CodeSystem/dimdi/atc",
+        "display": "IMMUNGLOBULINE"
+      }
+    ],
+    "text": "immunoglobulins"
+  },
+  "status": "active",
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+}

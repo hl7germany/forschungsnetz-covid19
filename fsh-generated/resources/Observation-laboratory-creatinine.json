@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "laboratory-creatinine",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+      "value": "2160-0_creatinine-mass-per-volume-in-serum-or-plasma",
+      "assigner": {
+        "reference": "Organization/Charité"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "value": 0.9,
+    "code": "mg/dL",
+    "unit": "mg/dL"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "2160-0",
+        "system": "http://loinc.org",
+        "display": "Creatinine [Mass/volume] in Serum or Plasma"
+      }
+    ],
+    "text": "Creatinine"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-10-16T08:49:21+02:00"
+}

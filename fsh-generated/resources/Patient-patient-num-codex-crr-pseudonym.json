@@ -1,0 +1,52 @@
+{
+  "resourceType": "Patient",
+  "id": "patient-num-codex-crr-pseudonym",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+      "valueCoding": {
+        "code": "26242008",
+        "system": "http://snomed.info/sct",
+        "display": "Mixed (qualifier value)"
+      }
+    },
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
+      "extension": [
+        {
+          "url": "dateTimeOfDocumentation",
+          "valueDateTime": "2020-10-01"
+        },
+        {
+          "url": "age",
+          "valueAge": {
+            "value": 67,
+            "code": "a",
+            "system": "http://unitsofmeasure.org",
+            "unit": "years"
+          }
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "ANON",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym",
+      "value": "codex_6348Q7"
+    }
+  ],
+  "birthDate": "1953-09-30"
+}

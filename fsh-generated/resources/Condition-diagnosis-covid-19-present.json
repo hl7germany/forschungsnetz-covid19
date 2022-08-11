@@ -1,0 +1,79 @@
+{
+  "resourceType": "Condition",
+  "id": "diagnosis-covid-19-present",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "394807007",
+          "system": "http://snomed.info/sct",
+          "display": "Infectious diseases (specialty) (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "840539006",
+        "system": "http://snomed.info/sct",
+        "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "confirmed",
+        "display": "Confirmed"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "410605003",
+        "display": "Confirmed present (qualifier value)"
+      }
+    ]
+  },
+  "stage": [
+    {
+      "summary": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "24484000",
+            "display": "Severe (severity modifier) (qualifier value)"
+          }
+        ],
+        "text": "Critical phase"
+      },
+      "type": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "88859-4",
+            "display": "Disease stage score for risk calculation"
+          }
+        ]
+      }
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-23T12:48:23+02:00"
+}

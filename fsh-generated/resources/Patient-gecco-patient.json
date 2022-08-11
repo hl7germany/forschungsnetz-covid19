@@ -1,0 +1,38 @@
+{
+  "resourceType": "Patient",
+  "id": "gecco-patient",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+      "valueCoding": {
+        "code": "26242008",
+        "system": "http://snomed.info/sct",
+        "display": "Mixed (qualifier value)"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "dateTimeOfDocumentation",
+          "valueDateTime": "2020-10-01"
+        },
+        {
+          "url": "age",
+          "valueAge": {
+            "value": 67,
+            "code": "a",
+            "system": "http://unitsofmeasure.org",
+            "unit": "years"
+          }
+        }
+      ],
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
+    }
+  ],
+  "birthDate": "1953-09-30"
+}

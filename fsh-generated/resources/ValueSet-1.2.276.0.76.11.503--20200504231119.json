@@ -1,0 +1,282 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AnticoagulantsATC",
+  "id": "1.2.276.0.76.11.503--20200504231119",
+  "title": "Anticoagulants ATC",
+  "description": "Pharmacological therapy using anticoagulants in the context of Covid-19",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/anticoagulants-atc",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-05-04T23:11:19+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.503"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "concept": [
+          {
+            "code": "B01AB",
+            "display": "Heparingruppe"
+          },
+          {
+            "code": "B01AB01",
+            "display": "Heparin"
+          },
+          {
+            "code": "B01AB02",
+            "display": "Antithrombin III, Antithrombin alfa"
+          },
+          {
+            "code": "B01AB04",
+            "display": "Dalteparin"
+          },
+          {
+            "code": "B01AB05",
+            "display": "Enoxaparin"
+          },
+          {
+            "code": "B01AB06",
+            "display": "Nadroparin"
+          },
+          {
+            "code": "B01AB07",
+            "display": "Parnaparin"
+          },
+          {
+            "code": "B01AB08",
+            "display": "Reviparin"
+          },
+          {
+            "code": "B01AB09",
+            "display": "Danaparoid"
+          },
+          {
+            "code": "B01AB10",
+            "display": "Tinzaparin"
+          },
+          {
+            "code": "B01AB11",
+            "display": "Sulodexid"
+          },
+          {
+            "code": "B01AB12",
+            "display": "Bemiparin"
+          },
+          {
+            "code": "B01AB13",
+            "display": "Certoparin"
+          },
+          {
+            "code": "B01AB51",
+            "display": "Heparin, Kombinationen"
+          },
+          {
+            "code": "B01AB63",
+            "display": "Certoparin, Kombinationen"
+          },
+          {
+            "code": "B01AC",
+            "display": "Thrombozytenaggregationshemmer, exkl. Heparin"
+          },
+          {
+            "code": "B01AC01",
+            "display": "Ditazol"
+          },
+          {
+            "code": "B01AC02",
+            "display": "Cloricromen"
+          },
+          {
+            "code": "B01AC03",
+            "display": "Picotamid"
+          },
+          {
+            "code": "B01AC04",
+            "display": "Clopidogrel"
+          },
+          {
+            "code": "B01AC05",
+            "display": "Ticlopidin"
+          },
+          {
+            "code": "B01AC06",
+            "display": "Acetylsalicylsäure"
+          },
+          {
+            "code": "B01AC07",
+            "display": "Dipyridamol"
+          },
+          {
+            "code": "B01AC08",
+            "display": "Carbasalat calcium"
+          },
+          {
+            "code": "B01AC09",
+            "display": "Epoprostenol"
+          },
+          {
+            "code": "B01AC10",
+            "display": "Indobufen"
+          },
+          {
+            "code": "B01AC11",
+            "display": "Iloprost"
+          },
+          {
+            "code": "B01AC12",
+            "display": "Sulfinpyrazon"
+          },
+          {
+            "code": "B01AC13",
+            "display": "Abciximab"
+          },
+          {
+            "code": "B01AC15",
+            "display": "Aloxiprin"
+          },
+          {
+            "code": "B01AC16",
+            "display": "Eptifibatid"
+          },
+          {
+            "code": "B01AC17",
+            "display": "Tirofiban"
+          },
+          {
+            "code": "B01AC18",
+            "display": "Triflusal"
+          },
+          {
+            "code": "B01AC19",
+            "display": "Beraprost"
+          },
+          {
+            "code": "B01AC21",
+            "display": "Treprostinil"
+          },
+          {
+            "code": "B01AC22",
+            "display": "Prasugrel"
+          },
+          {
+            "code": "B01AC23",
+            "display": "Cilostazol"
+          },
+          {
+            "code": "B01AC24",
+            "display": "Ticagrelor"
+          },
+          {
+            "code": "B01AC25",
+            "display": "Cangrelor"
+          },
+          {
+            "code": "B01AC26",
+            "display": "Vorapaxar"
+          },
+          {
+            "code": "B01AC27",
+            "display": "Selexipag"
+          },
+          {
+            "code": "B01AC30",
+            "display": "Kombinationen"
+          },
+          {
+            "code": "B01AC34",
+            "display": "Clopidogrel und Acetylsalicylsäure"
+          },
+          {
+            "code": "B01AC36",
+            "display": "Dipyridamol und Acetylsalicylsäure"
+          },
+          {
+            "code": "B01AC56",
+            "display": "Acetylsalicylsäure, Kombinationen mit Protonenpumpenhemmern"
+          },
+          {
+            "code": "B01AC86",
+            "display": "Acetylsalicylsäure und Esomeprazol"
+          },
+          {
+            "code": "B01AA04",
+            "display": "Phenprocoumon"
+          },
+          {
+            "code": "B01AF",
+            "display": "Direkte Faktor-Xa-Inhibitoren"
+          },
+          {
+            "code": "B01AF01",
+            "display": "Rivaroxaban"
+          },
+          {
+            "code": "B01AF02",
+            "display": "Apixaban"
+          },
+          {
+            "code": "B01AF03",
+            "display": "Edoxaban"
+          },
+          {
+            "code": "B01AF04",
+            "display": "Betrixaban"
+          },
+          {
+            "code": "B01AE",
+            "display": "Direkte Thrombininhibitoren"
+          },
+          {
+            "code": "B01AE01",
+            "display": "Desirudin"
+          },
+          {
+            "code": "B01AE02",
+            "display": "Lepirudin"
+          },
+          {
+            "code": "B01AE03",
+            "display": "Argatroban"
+          },
+          {
+            "code": "B01AE04",
+            "display": "Melagatran"
+          },
+          {
+            "code": "B01AE05",
+            "display": "Ximelagatran"
+          },
+          {
+            "code": "B01AE06",
+            "display": "Bivalirudin"
+          },
+          {
+            "code": "B01AE07",
+            "display": "Dabigatranetexilat"
+          }
+        ]
+      }
+    ]
+  }
+}

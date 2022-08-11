@@ -1,0 +1,157 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "gecco-base-condition",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition",
+  "version": "1.0.6",
+  "name": "GeccoBaseCondition",
+  "title": "Gecco Base Condition",
+  "status": "active",
+  "date": "2021-06-29",
+  "publisher": "Charité",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Base condition for the GECCO dataset that contains an additional extension and constraints on the verificationStatus-element.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "constraint": [
+          {
+            "key": "unk-1",
+            "severity": "error",
+            "human": "If verificationStatus is present, uncertaintyOfPresence-Extension SHALL NOT be present.",
+            "expression": "verificationStatus.exists() != Condition.modifierExtension.where(url = 'https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence').exists()",
+            "source": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition"
+          }
+        ]
+      },
+      {
+        "id": "Condition.modifierExtension:uncertaintyOfPresence",
+        "path": "Condition.modifierExtension",
+        "sliceName": "uncertaintyOfPresence",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.verificationStatus",
+        "path": "Condition.verificationStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.verificationStatus.coding",
+        "path": "Condition.verificationStatus.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Condition.verificationStatus.coding:conditionVerificationStatus",
+        "path": "Condition.verificationStatus.coding",
+        "sliceName": "conditionVerificationStatus",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+        }
+      },
+      {
+        "id": "Condition.verificationStatus.coding:conditionVerificationStatus.system",
+        "path": "Condition.verificationStatus.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Condition.verificationStatus.coding:conditionVerificationStatus.code",
+        "path": "Condition.verificationStatus.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Condition.verificationStatus.coding:snomed",
+        "path": "Condition.verificationStatus.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/verification-status",
+          "description": "Confirmed present | Definitely NOT present"
+        }
+      },
+      {
+        "id": "Condition.verificationStatus.coding:snomed.system",
+        "path": "Condition.verificationStatus.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Condition.verificationStatus.coding:snomed.code",
+        "path": "Condition.verificationStatus.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

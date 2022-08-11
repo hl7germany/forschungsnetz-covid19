@@ -1,0 +1,47 @@
+{
+  "resourceType": "Condition",
+  "id": "gastrointestinal-ulcers-absent",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-ulcers"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "394584008",
+          "system": "http://snomed.info/sct",
+          "display": "Gastroenterology"
+        }
+      ]
+    }
+  ],
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "code": "refuted",
+        "display": "Refuted"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "410594000",
+        "display": "Definitely NOT present (qualifier value)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "40845000",
+        "system": "http://snomed.info/sct",
+        "display": "Gastrointestinal ulcer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-06"
+}

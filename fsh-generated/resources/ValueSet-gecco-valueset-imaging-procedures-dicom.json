@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ImagingProceduresDICOM",
+  "id": "gecco-valueset-imaging-procedures-dicom",
+  "title": "Radiology Procedures DICOM",
+  "description": "Radiology procedures in the context of Covid-19 - DICOM",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures-dicom",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-05-03T15:28:27+02:00"
+      }
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "concept": [
+          {
+            "code": "CT",
+            "display": "Computed Tomography"
+          },
+          {
+            "code": "RG",
+            "display": "Radiographic imaging"
+          },
+          {
+            "code": "US",
+            "display": "Ultrasound"
+          }
+        ]
+      }
+    ]
+  }
+}

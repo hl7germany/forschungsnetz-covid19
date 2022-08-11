@@ -1,0 +1,53 @@
+{
+  "resourceType": "Condition",
+  "id": "rheumatological-immunological-disease-unknown",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/rheumatological-immunological-diseases"
+    ]
+  },
+  "modifierExtension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "261665006",
+            "system": "http://snomed.info/sct",
+            "display": "Unknown (qualifier value)"
+          }
+        ],
+        "text": "Presence of condition is unknown."
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "394810000",
+          "system": "http://snomed.info/sct",
+          "display": "Rheumatology"
+        },
+        {
+          "code": "408480009",
+          "system": "http://snomed.info/sct",
+          "display": "Clinical immunology"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "69896004",
+        "system": "http://snomed.info/sct",
+        "display": "Rheumatoid arthritis"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-06"
+}

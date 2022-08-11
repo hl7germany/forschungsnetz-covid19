@@ -1,0 +1,106 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "gecco-extension-condition-uncertainty-of-presence",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+  "version": "1.0.6",
+  "name": "UncertaintyOfPresence",
+  "title": "Uncertainty Of Presence",
+  "status": "active",
+  "date": "2020-10-29",
+  "publisher": "Charité",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Captures the uncertainty of the existence of a condition.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Condition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Uncertainty of presence",
+        "definition": "Extension used on a condition resource if the presence of the condition is unknown.",
+        "isModifier": true,
+        "isModifierReason": "Modifies the meaning of the presence of a condition to being unknown."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.valueCodeableConcept",
+        "path": "Extension.valueCodeableConcept",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.valueCodeableConcept.coding",
+        "path": "Extension.valueCodeableConcept.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.valueCodeableConcept.coding.system",
+        "path": "Extension.valueCodeableConcept.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Extension.valueCodeableConcept.coding.code",
+        "path": "Extension.valueCodeableConcept.coding.code",
+        "min": 1,
+        "fixedCode": "261665006"
+      }
+    ]
+  }
+}

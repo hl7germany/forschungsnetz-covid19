@@ -1,0 +1,60 @@
+{
+  "resourceType": "Observation",
+  "id": "discharge-disposition-palliative-care",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/discharge-disposition"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "social-history",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "55128-3",
+        "system": "http://loinc.org",
+        "display": "Discharge disposition"
+      }
+    ],
+    "text": "Type of discharge"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "306237005",
+        "display": "Referral to palliative care service (procedure)"
+      }
+    ]
+  },
+  "effectiveDateTime": "2020-10-16T08:49:21+02:00",
+  "identifier": [
+    {
+      "assigner": {
+        "reference": "Organization/Charité"
+      },
+      "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+      "type": {
+        "coding": [
+          {
+            "code": "OBI",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "value": "55128-3_DischargeDisposition"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  }
+}

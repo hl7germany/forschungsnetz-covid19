@@ -1,0 +1,210 @@
+{
+  "resourceType": "Bundle",
+  "id": "gecco-bundle",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
+    ]
+  },
+  "type": "transaction",
+  "timestamp": "2020-11-10T15:50:41+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:b1128693-372d-469b-8288-04cf091e7553",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "b1128693-372d-469b-8288-04cf091e7553",
+        "meta": {
+          "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+            "valueCoding": {
+              "code": "26242008",
+              "system": "http://snomed.info/sct",
+              "display": "Mixed (qualifier value)"
+            }
+          },
+          {
+            "extension": [
+              {
+                "url": "dateTimeOfDocumentation",
+                "valueDateTime": "2020-10-01"
+              },
+              {
+                "url": "age",
+                "valueAge": {
+                  "value": 67,
+                  "code": "a",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "years"
+                }
+              }
+            ],
+            "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "MR",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/CodeSystem/medical-record-numbers",
+            "value": "43814872",
+            "assigner": {
+              "reference": "Organization/Charité"
+            }
+          }
+        ],
+        "birthDate": "1953-09-30"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8d4c2cbb-bc80-4e5a-82f0-0babf997660e",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "8d4c2cbb-bc80-4e5a-82f0-0babf997660e",
+        "meta": {
+          "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "418112009",
+                "system": "http://snomed.info/sct",
+                "display": "Pulmonary medicine"
+              }
+            ]
+          }
+        ],
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed",
+              "display": "Confirmed"
+            },
+            {
+              "system": "http://snomed.info/sct",
+              "code": "410605003",
+              "display": "Confirmed present (qualifier value)"
+            }
+          ]
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "display": "Active"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "413839001",
+              "system": "http://snomed.info/sct",
+              "display": "Chronic lung disease"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+        },
+        "recordedDate": "2020-11-10T15:50:41+01:00"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cabb511a-07be-4f2d-9444-54a4171a45a4",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cabb511a-07be-4f2d-9444-54a4171a45a4",
+        "meta": {
+          "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "OBI"
+                }
+              ]
+            },
+            "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+            "value": "94500-6_SARS-CoV-2-RNA-Presence-in-Respiratory-specimen",
+            "assigner": {
+              "reference": "Organization/Charité"
+            }
+          }
+        ],
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26436-6"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "94500-6",
+              "system": "http://loinc.org",
+              "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
+            }
+          ],
+          "text": "SARS-CoV-2-RNA (PCR)"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+        },
+        "effectiveDateTime": "2020-11-10T15:50:41+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "260373001",
+              "system": "http://snomed.info/sct",
+              "display": "Detected (qualifier value)"
+            }
+          ],
+          "text": "SARS-CoV-2-RNA positiv"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Observation/cabb511a-07be-4f2d-9444-54a4171a45a4"
+      }
+    }
+  ]
+}

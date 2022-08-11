@@ -1,0 +1,40 @@
+{
+  "resourceType": "Procedure",
+  "id": "prone-position-completed",
+  "meta": {
+    "profile": [
+      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-prone-position"
+    ]
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "225287004",
+        "system": "http://snomed.info/sct",
+        "display": "Procedures relating to positioning and support (procedure)"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "431182000",
+        "system": "http://snomed.info/sct",
+        "display": "Placing subject in prone position (procedure)"
+      }
+    ],
+    "text": "Prone position"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "_performedDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "resourceType": "Observation",
+  "id": "carbon-dioxide-partial-pressure",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "OBI"
+          }
+        ]
+      },
+      "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+      "value": "2019-8_paCO2",
+      "assigner": {
+        "reference": "Organization/Charité"
+      }
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "26436-6"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        },
+        {
+          "code": "18767-4",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "valueQuantity": {
+    "system": "http://unitsofmeasure.org",
+    "code": "mm[Hg]",
+    "value": 44,
+    "unit": "mmHg"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "2019-8",
+        "system": "http://loinc.org",
+        "display": "Carbon dioxide [Partial pressure] in Arterial blood"
+      }
+    ],
+    "text": "Carbon dioxide [Partial pressure] in Arterial blood"
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-09-21"
+}

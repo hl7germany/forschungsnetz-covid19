@@ -1,0 +1,48 @@
+{
+  "resourceType": "Condition",
+  "id": "chronic-lung-disease-sleep-apnea-unknown",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "418112009",
+          "system": "http://snomed.info/sct",
+          "display": "Pulmonary medicine"
+        }
+      ]
+    }
+  ],
+  "modifierExtension": [
+    {
+      "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
+          }
+        ],
+        "text": "Presence of condition is unknown."
+      }
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "78275009",
+        "system": "http://snomed.info/sct",
+        "display": "Obstructive sleep apnea syndrome"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "recordedDate": "2020-10-06"
+}
