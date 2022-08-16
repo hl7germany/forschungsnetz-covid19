@@ -10,7 +10,7 @@ Description: "CodeSystem supplement for SNOMED CT post-coordinated expressions."
 * ^publisher = "Charité"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-* ^caseSensitive = true
+//* ^caseSensitive = true
 * ^content = #supplement
 * ^supplements = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
 * #"118247008| Radiologic finding|:{363713009| Has interpretation|=373068000| Undetermined|}" "Radiological finding of undetermined significance"
