@@ -27,7 +27,7 @@
       },
       {
         "code": "B01AB01",
-        "system": "http://fhir.de/CodeSystem/dimdi/atc",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "display": "Heparin"
       }
     ],

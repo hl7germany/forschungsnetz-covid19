@@ -16,7 +16,7 @@
       },
       {
         "code": "J05AE08",
-        "system": "http://fhir.de/CodeSystem/dimdi/atc",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "display": "Atazanavir"
       }
     ],

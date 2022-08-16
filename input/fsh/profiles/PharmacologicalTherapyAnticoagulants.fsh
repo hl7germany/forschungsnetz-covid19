@@ -20,7 +20,7 @@ Description: "Pharmacological therapy using anticoagulants in the context of Cov
 * medicationCodeableConcept.coding ^slicing.rules = #open
 * medicationCodeableConcept.coding contains atcClassDe 0..*
 * medicationCodeableConcept.coding[atcClassDe] from AnticoagulantsATC (extensible)
-* medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/dimdi/atc"
+* medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/atc"
 * medicationCodeableConcept.coding[atcClassDe].system 1..
 * medicationCodeableConcept.coding[atcClassDe].code 1..
 * reasonCode MS

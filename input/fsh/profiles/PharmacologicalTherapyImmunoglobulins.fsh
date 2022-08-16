@@ -26,6 +26,6 @@ Description: "Pharmacological therapy using immunoglobulins in the context of Co
 * medicationCodeableConcept.coding[snomed].system 1.. MS
 * medicationCodeableConcept.coding[snomed].code 1.. MS
 * medicationCodeableConcept.coding[atcClassDe] from ImmunoglobulinsATC (extensible)
-* medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/dimdi/atc"
+* medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/atc"
 * medicationCodeableConcept.coding[atcClassDe].system 1..
 * medicationCodeableConcept.coding[atcClassDe].code 1..

@@ -25,6 +25,6 @@ Description: "Pharmacological therapy using ACE inhibitors in the context of Cov
 * medicationCodeableConcept.coding[snomed].system 1.. MS
 * medicationCodeableConcept.coding[snomed].code 1.. MS
 * medicationCodeableConcept.coding[atcClassDe] from AceInhibitorsATC (extensible)
-* medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/dimdi/atc"
+* medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/atc"
 * medicationCodeableConcept.coding[atcClassDe].system 1..
 * medicationCodeableConcept.coding[atcClassDe].code 1..

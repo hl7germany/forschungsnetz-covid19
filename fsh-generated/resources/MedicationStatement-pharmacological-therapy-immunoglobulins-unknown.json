@@ -15,7 +15,7 @@
       },
       {
         "code": "J06B",
-        "system": "http://fhir.de/CodeSystem/dimdi/atc",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "display": "IMMUNGLOBULINE"
       }
     ],

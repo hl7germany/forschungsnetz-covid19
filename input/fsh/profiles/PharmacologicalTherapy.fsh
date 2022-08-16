@@ -23,11 +23,11 @@ Description: "Pharmacological therapy in the context of Covid-19"
     ops 0..* and
     snomed 0..*
 * medicationCodeableConcept.coding[atcClassDe] from DrugTherapyATC (extensible)
-* medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/dimdi/atc"
+* medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/atc"
 * medicationCodeableConcept.coding[atcClassDe].system 1..
 * medicationCodeableConcept.coding[atcClassDe].code 1..
 * medicationCodeableConcept.coding[ops] from DrugTherapyOPS (extensible)
-* medicationCodeableConcept.coding[ops] ^patternCoding.system = "http://fhir.de/CodeSystem/dimdi/ops"
+* medicationCodeableConcept.coding[ops] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/ops"
 * medicationCodeableConcept.coding[ops].system 1..
 * medicationCodeableConcept.coding[ops].code 1..
 * medicationCodeableConcept.coding[snomed] ^patternCoding.system = "http://snomed.info/sct"

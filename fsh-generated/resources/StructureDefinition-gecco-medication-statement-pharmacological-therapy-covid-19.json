@@ -72,7 +72,7 @@
         "min": 0,
         "max": "*",
         "patternCoding": {
-          "system": "http://fhir.de/CodeSystem/dimdi/atc"
+          "system": "http://fhir.de/CodeSystem/bfarm/atc"
         },
         "binding": {
           "strength": "extensible",
@@ -96,7 +96,7 @@
         "min": 0,
         "max": "*",
         "patternCoding": {
-          "system": "http://fhir.de/CodeSystem/dimdi/ops"
+          "system": "http://fhir.de/CodeSystem/bfarm/ops"
         },
         "binding": {
           "strength": "extensible",
