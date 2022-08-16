@@ -9,11 +9,6 @@ Description: "Pharmacological therapy in the context of Covid-19"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * medication[x] only CodeableConcept
-* medication[x] ^slicing.discriminator.type = #type
-* medication[x] ^slicing.discriminator.path = "$this"
-* medication[x] ^slicing.rules = #open
-* medicationCodeableConcept only CodeableConcept
-* medicationCodeableConcept ^sliceName = "medicationCodeableConcept"
 * medicationCodeableConcept.coding 1..
 * medicationCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * medicationCodeableConcept.coding ^slicing.discriminator.path = "$this"

@@ -20,21 +20,13 @@ Description: "This profile constrains the Observation resource to represent the 
 * subject only Reference($Patient)
 * effective[x] 1.. MS
 * effective[x] only dateTime
-* effective[x].extension ^slicing.discriminator.type = #value
-* effective[x].extension ^slicing.discriminator.path = "url"
-* effective[x].extension ^slicing.rules = #open
-* effective[x].extension contains $data-absent-reason_1 named dataAbsentReason 0..1 MS
-* effective[x].extension[dataAbsentReason] ^short = "effective[x] absence reason"
-* effective[x].extension[dataAbsentReason] ^definition = "Provides a reason why the effectiveTime is missing."
+* effectiveDateTime.extension contains $data-absent-reason_1 named dataAbsentReason 0..1 MS
+* effectiveDateTime.extension[dataAbsentReason] ^short = "effective[x] absence reason"
+* effectiveDateTime.extension[dataAbsentReason] ^definition = "Provides a reason why the effectiveTime is missing."
 * value[x] only CodeableConcept
-* value[x] MS
-* value[x] from $pregnancy-status (required)
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #open
-* value[x] ^binding.description = "Pregnant | Not pregnant | Unknown"
-* valueCodeableConcept only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* valueCodeableConcept MS
+* valueCodeableConcept from $pregnancy-status (required)
+* valueCodeableConcept ^binding.description = "Pregnant | Not pregnant | Unknown"
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"

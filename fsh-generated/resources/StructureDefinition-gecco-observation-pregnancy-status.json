@@ -134,6 +134,7 @@
               "path": "url"
             }
           ],
+          "ordered": false,
           "rules": "open"
         }
       },
@@ -158,15 +159,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -180,14 +172,8 @@
         }
       },
       {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.valueCodeableConcept.coding",
-        "path": "Observation.valueCodeableConcept.coding",
+        "id": "Observation.value[x].coding",
+        "path": "Observation.value[x].coding",
         "slicing": {
           "discriminator": [
             {
@@ -201,8 +187,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.valueCodeableConcept.coding:valueLoinc",
-        "path": "Observation.valueCodeableConcept.coding",
+        "id": "Observation.value[x].coding:valueLoinc",
+        "path": "Observation.value[x].coding",
         "sliceName": "valueLoinc",
         "min": 1,
         "max": "1",
@@ -212,18 +198,18 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.valueCodeableConcept.coding:valueLoinc.system",
-        "path": "Observation.valueCodeableConcept.coding.system",
+        "id": "Observation.value[x].coding:valueLoinc.system",
+        "path": "Observation.value[x].coding.system",
         "min": 1
       },
       {
-        "id": "Observation.valueCodeableConcept.coding:valueLoinc.code",
-        "path": "Observation.valueCodeableConcept.coding.code",
+        "id": "Observation.value[x].coding:valueLoinc.code",
+        "path": "Observation.value[x].coding.code",
         "min": 1
       },
       {
-        "id": "Observation.valueCodeableConcept.coding:valueSnomed",
-        "path": "Observation.valueCodeableConcept.coding",
+        "id": "Observation.value[x].coding:valueSnomed",
+        "path": "Observation.value[x].coding",
         "sliceName": "valueSnomed",
         "min": 0,
         "max": "1",
@@ -232,13 +218,13 @@
         }
       },
       {
-        "id": "Observation.valueCodeableConcept.coding:valueSnomed.system",
-        "path": "Observation.valueCodeableConcept.coding.system",
+        "id": "Observation.value[x].coding:valueSnomed.system",
+        "path": "Observation.value[x].coding.system",
         "min": 1
       },
       {
-        "id": "Observation.valueCodeableConcept.coding:valueSnomed.code",
-        "path": "Observation.valueCodeableConcept.coding.code",
+        "id": "Observation.value[x].coding:valueSnomed.code",
+        "path": "Observation.value[x].coding.code",
         "min": 1
       },
       {

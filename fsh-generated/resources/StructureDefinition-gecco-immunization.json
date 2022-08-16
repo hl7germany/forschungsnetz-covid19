@@ -204,8 +204,9 @@
         "mustSupport": true
       },
       {
-        "id": "Immunization.occurrenceDateTime",
-        "path": "Immunization.occurrenceDateTime",
+        "id": "Immunization.occurrence[x]:occurrenceDateTime",
+        "path": "Immunization.occurrence[x]",
+        "sliceName": "occurrenceDateTime",
         "min": 0,
         "max": "1",
         "type": [

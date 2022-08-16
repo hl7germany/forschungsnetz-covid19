@@ -247,6 +247,7 @@
           ],
           "rules": "open"
         },
+        "short": "Systolic blood pressure value",
         "type": [
           {
             "code": "Quantity"
@@ -255,32 +256,24 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component:systolicBloodPressure.valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "short": "Systolic blood pressure value",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:systolicBloodPressure.valueQuantity.value",
-        "path": "Observation.component.valueQuantity.value",
+        "id": "Observation.component:systolicBloodPressure.value[x].value",
+        "path": "Observation.component.value[x].value",
         "min": 1
       },
       {
-        "id": "Observation.component:systolicBloodPressure.valueQuantity.unit",
-        "path": "Observation.component.valueQuantity.unit",
+        "id": "Observation.component:systolicBloodPressure.value[x].unit",
+        "path": "Observation.component.value[x].unit",
         "min": 1
       },
       {
-        "id": "Observation.component:systolicBloodPressure.valueQuantity.system",
-        "path": "Observation.component.valueQuantity.system",
+        "id": "Observation.component:systolicBloodPressure.value[x].system",
+        "path": "Observation.component.value[x].system",
         "min": 1,
         "patternUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation.component:systolicBloodPressure.valueQuantity.code",
-        "path": "Observation.component.valueQuantity.code",
+        "id": "Observation.component:systolicBloodPressure.value[x].code",
+        "path": "Observation.component.value[x].code",
         "min": 1,
         "patternCode": "mm[Hg]"
       },
@@ -374,6 +367,7 @@
           ],
           "rules": "open"
         },
+        "short": "Diastolic blood pressure value",
         "type": [
           {
             "code": "Quantity"
@@ -382,32 +376,24 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.component:diastolicBloodPressure.valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "short": "Diastolic blood pressure value",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.component:diastolicBloodPressure.valueQuantity.value",
-        "path": "Observation.component.valueQuantity.value",
+        "id": "Observation.component:diastolicBloodPressure.value[x].value",
+        "path": "Observation.component.value[x].value",
         "min": 1
       },
       {
-        "id": "Observation.component:diastolicBloodPressure.valueQuantity.unit",
-        "path": "Observation.component.valueQuantity.unit",
+        "id": "Observation.component:diastolicBloodPressure.value[x].unit",
+        "path": "Observation.component.value[x].unit",
         "min": 1
       },
       {
-        "id": "Observation.component:diastolicBloodPressure.valueQuantity.system",
-        "path": "Observation.component.valueQuantity.system",
+        "id": "Observation.component:diastolicBloodPressure.value[x].system",
+        "path": "Observation.component.value[x].system",
         "min": 1,
         "patternUri": "http://unitsofmeasure.org"
       },
       {
-        "id": "Observation.component:diastolicBloodPressure.valueQuantity.code",
-        "path": "Observation.component.valueQuantity.code",
+        "id": "Observation.component:diastolicBloodPressure.value[x].code",
+        "path": "Observation.component.value[x].code",
         "min": 1,
         "patternCode": "mm[Hg]"
       }

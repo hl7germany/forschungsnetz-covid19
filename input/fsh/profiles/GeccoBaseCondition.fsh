@@ -14,7 +14,7 @@ Description: "Base condition for the GECCO dataset that contains an additional e
 * modifierExtension ^slicing.discriminator.path = "url"
 * modifierExtension ^slicing.rules = #open
 * modifierExtension contains UncertaintyOfPresence named uncertaintyOfPresence 0..1 MS
-//* modifierExtension[uncertaintyOfPresence] only UncertaintyOfPresence
+* modifierExtension[uncertaintyOfPresence] only UncertaintyOfPresence
 * verificationStatus MS
 * verificationStatus.coding 1..
 * verificationStatus.coding ^slicing.discriminator.type = #pattern

@@ -32,11 +32,6 @@ Description: "This observation captures if a confirmed Covid-19 diagnosis is the
 * effective[x] MS
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #open
-* valueCodeableConcept only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #open

@@ -11,7 +11,7 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.medikation: 1.0.10
   de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
   hl7.fhir.uv.ips: 1.0.0
-  de.medizininformatikinitiative.kerndatensatz.prozedur: 2.0.0-alpha4
+  de.medizininformatikinitiative.kerndatensatz.prozedur: 2.0.0-alpha5
   de.basisprofil.r4: 1.2.0
   de.medizininformatikinitiative.kerndatensatz.diagnose: 2.0.0-alpha3
   de.medizininformatikinitiative.kerndatensatz.laborbefund: 1.0.6

@@ -30,15 +30,6 @@
       {
         "id": "MedicationStatement.medication[x]",
         "path": "MedicationStatement.medication[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -46,14 +37,8 @@
         ]
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept",
-        "path": "MedicationStatement.medicationCodeableConcept",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "MedicationStatement.medicationCodeableConcept.coding",
-        "path": "MedicationStatement.medicationCodeableConcept.coding",
+        "id": "MedicationStatement.medication[x].coding",
+        "path": "MedicationStatement.medication[x].coding",
         "slicing": {
           "discriminator": [
             {
@@ -66,8 +51,8 @@
         "min": 1
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept.coding:atcClassDe",
-        "path": "MedicationStatement.medicationCodeableConcept.coding",
+        "id": "MedicationStatement.medication[x].coding:atcClassDe",
+        "path": "MedicationStatement.medication[x].coding",
         "sliceName": "atcClassDe",
         "min": 0,
         "max": "*",
@@ -80,18 +65,18 @@
         }
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept.coding:atcClassDe.system",
-        "path": "MedicationStatement.medicationCodeableConcept.coding.system",
+        "id": "MedicationStatement.medication[x].coding:atcClassDe.system",
+        "path": "MedicationStatement.medication[x].coding.system",
         "min": 1
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept.coding:atcClassDe.code",
-        "path": "MedicationStatement.medicationCodeableConcept.coding.code",
+        "id": "MedicationStatement.medication[x].coding:atcClassDe.code",
+        "path": "MedicationStatement.medication[x].coding.code",
         "min": 1
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept.coding:ops",
-        "path": "MedicationStatement.medicationCodeableConcept.coding",
+        "id": "MedicationStatement.medication[x].coding:ops",
+        "path": "MedicationStatement.medication[x].coding",
         "sliceName": "ops",
         "min": 0,
         "max": "*",
@@ -104,18 +89,18 @@
         }
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept.coding:ops.system",
-        "path": "MedicationStatement.medicationCodeableConcept.coding.system",
+        "id": "MedicationStatement.medication[x].coding:ops.system",
+        "path": "MedicationStatement.medication[x].coding.system",
         "min": 1
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept.coding:ops.code",
-        "path": "MedicationStatement.medicationCodeableConcept.coding.code",
+        "id": "MedicationStatement.medication[x].coding:ops.code",
+        "path": "MedicationStatement.medication[x].coding.code",
         "min": 1
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept.coding:snomed",
-        "path": "MedicationStatement.medicationCodeableConcept.coding",
+        "id": "MedicationStatement.medication[x].coding:snomed",
+        "path": "MedicationStatement.medication[x].coding",
         "sliceName": "snomed",
         "min": 0,
         "max": "*",
@@ -124,13 +109,13 @@
         }
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept.coding:snomed.system",
-        "path": "MedicationStatement.medicationCodeableConcept.coding.system",
+        "id": "MedicationStatement.medication[x].coding:snomed.system",
+        "path": "MedicationStatement.medication[x].coding.system",
         "min": 1
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept.coding:snomed.code",
-        "path": "MedicationStatement.medicationCodeableConcept.coding.code",
+        "id": "MedicationStatement.medication[x].coding:snomed.code",
+        "path": "MedicationStatement.medication[x].coding.code",
         "min": 1
       }
     ]

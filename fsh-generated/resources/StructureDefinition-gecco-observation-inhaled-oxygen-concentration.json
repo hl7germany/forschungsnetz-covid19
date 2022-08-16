@@ -96,17 +96,29 @@
         "min": 1
       },
       {
-        "id": "Observation.valueQuantity",
-        "path": "Observation.valueQuantity"
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
       },
       {
-        "id": "Observation.valueQuantity.code",
-        "path": "Observation.valueQuantity.code",
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
         "fixedCode": "%"
       },
       {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "binding": {
           "strength": "example",
           "valueSet": "http://loinc.org/vs/LL738-6",

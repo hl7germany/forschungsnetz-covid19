@@ -191,27 +191,12 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "type": [
           {
             "code": "integer"
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Observation.valueInteger",
-        "path": "Observation.valueInteger",
-        "min": 0,
-        "max": "1"
       },
       {
         "id": "Observation.component",
