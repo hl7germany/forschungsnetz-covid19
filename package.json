@@ -1,6 +1,6 @@
 {
   "name": "de.gecco",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Nationales Forschungsnetzwerk der Universitätsmedizin zu Covid-19",
   "author": "juliansass",
   "fhirVersions": [
@@ -9,7 +9,7 @@
   "dependencies": {
     "de.einwilligungsmanagement": "1.0.1",
     "de.medizininformatikinitiative.kerndatensatz.medikation": "1.0.10",
-    "de.medizininformatikinitiative.kerndatensatz.prozedur": "2.0.0-alpha3",
+    "de.medizininformatikinitiative.kerndatensatz.prozedur": "2.0.0-alpha4",
     "de.medizininformatikinitiative.kerndatensatz.diagnose": "2.0.0-alpha3",
     "de.medizininformatikinitiative.kerndatensatz.laborbefund": "1.0.6",
     "hl7.fhir.uv.ips": "1.0.0"
