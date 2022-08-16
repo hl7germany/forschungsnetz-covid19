@@ -182,15 +182,6 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 1,
         "type": [
           {
@@ -205,24 +196,18 @@
         }
       },
       {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.valueCodeableConcept.coding",
-        "path": "Observation.valueCodeableConcept.coding",
+        "id": "Observation.value[x].coding",
+        "path": "Observation.value[x].coding",
         "min": 1
       },
       {
-        "id": "Observation.valueCodeableConcept.coding.system",
-        "path": "Observation.valueCodeableConcept.coding.system",
+        "id": "Observation.value[x].coding.system",
+        "path": "Observation.value[x].coding.system",
         "min": 1
       },
       {
-        "id": "Observation.valueCodeableConcept.coding.code",
-        "path": "Observation.valueCodeableConcept.coding.code",
+        "id": "Observation.value[x].coding.code",
+        "path": "Observation.value[x].coding.code",
         "min": 1
       },
       {

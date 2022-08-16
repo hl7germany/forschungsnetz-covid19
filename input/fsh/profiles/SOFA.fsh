@@ -11,14 +11,14 @@ Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moren
 * ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * obeys value-1
 * category 1.. MS
-* category.coding MS
-* category.coding ^slicing.discriminator.type = #pattern
-* category.coding ^slicing.discriminator.path = "$this"
-* category.coding ^slicing.rules = #open
-* category.coding contains survey 1..1 MS
-* category.coding[survey] = $observation-category#survey
-* category.coding[survey].system 1..
-* category.coding[survey].code 1..
+  * coding MS
+  * coding ^slicing.discriminator.type = #pattern
+  * coding ^slicing.discriminator.path = "$this"
+  * coding ^slicing.rules = #open
+  * coding contains survey 1..1 MS
+  * coding[survey] = $observation-category#survey
+    * system 1..
+    * code 1..
 * code MS
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -32,12 +32,7 @@ Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moren
 * subject only Reference($Patient or Group)
 * effective[x] 1.. MS
 * value[x] only integer
-* value[x] MS
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #open
-* valueInteger only integer
-* valueInteger ^sliceName = "valueInteger"
+* valueInteger MS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -54,24 +49,24 @@ Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moren
 * component[respiratorySystem].code.coding.system 1..
 * component[respiratorySystem].code.coding.code 1..
 * component[respiratorySystem].value[x] only CodeableConcept
-* component[respiratorySystem].value[x] MS
-* component[respiratorySystem].value[x] from SOFAScore (required)
-* component[respiratorySystem].value[x].coding 1..1 MS
-* component[respiratorySystem].value[x].coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
-* component[respiratorySystem].value[x].coding.system 1..
-* component[respiratorySystem].value[x].coding.code 1..
+* component[respiratorySystem].valueCodeableConcept MS
+* component[respiratorySystem].valueCodeableConcept from SOFAScore (required)
+* component[respiratorySystem].valueCodeableConcept.coding 1..1 MS
+* component[respiratorySystem].valueCodeableConcept.coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+* component[respiratorySystem].valueCodeableConcept.coding.system 1..
+* component[respiratorySystem].valueCodeableConcept.coding.code 1..
 * component[nervousSystem].code = $sofa-score#ns
 * component[nervousSystem].code MS
 * component[nervousSystem].code.coding 1..1 MS
 * component[nervousSystem].code.coding.system 1..
 * component[nervousSystem].code.coding.code 1..
 * component[nervousSystem].value[x] only CodeableConcept
-* component[nervousSystem].value[x] MS
-* component[nervousSystem].value[x] from SOFAScore (required)
-* component[nervousSystem].value[x].coding 1..1 MS
-* component[nervousSystem].value[x].coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
-* component[nervousSystem].value[x].coding.system 1..
-* component[nervousSystem].value[x].coding.code 1..
+* component[nervousSystem].valueCodeableConcept MS
+* component[nervousSystem].valueCodeableConcept from SOFAScore (required)
+* component[nervousSystem].valueCodeableConcept.coding 1..1 MS
+* component[nervousSystem].valueCodeableConcept.coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+* component[nervousSystem].valueCodeableConcept.coding.system 1..
+* component[nervousSystem].valueCodeableConcept.coding.code 1..
 * component[cardiovascularSystem].code = $sofa-score#cvs
 * component[cardiovascularSystem].code MS
 * component[cardiovascularSystem].code.coding 1..1 MS

@@ -24,13 +24,8 @@ Description: "This observation captures if the patient is currently treated in t
 * effective[x] 1.. MS
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* value[x] from YesNoUnknownOtherNa (required)
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #open
-* value[x] ^binding.description = "Yes | No | Unknown"
-* valueCodeableConcept only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* valueCodeableConcept from YesNoUnknownOtherNa (required)
+* valueCodeableConcept ^binding.description = "Yes | No | Unknown"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #open

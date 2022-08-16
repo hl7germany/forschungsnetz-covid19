@@ -176,8 +176,9 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
         "min": 0,
         "max": "1",
         "type": [
@@ -187,8 +188,8 @@
         ]
       },
       {
-        "id": "Observation.valueCodeableConcept.coding",
-        "path": "Observation.valueCodeableConcept.coding",
+        "id": "Observation.value[x]:valueCodeableConcept.coding",
+        "path": "Observation.value[x].coding",
         "slicing": {
           "discriminator": [
             {
@@ -201,8 +202,8 @@
         "min": 1
       },
       {
-        "id": "Observation.valueCodeableConcept.coding:snomed",
-        "path": "Observation.valueCodeableConcept.coding",
+        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed",
+        "path": "Observation.value[x].coding",
         "sliceName": "snomed",
         "min": 1,
         "max": "1",
@@ -215,13 +216,13 @@
         }
       },
       {
-        "id": "Observation.valueCodeableConcept.coding:snomed.system",
-        "path": "Observation.valueCodeableConcept.coding.system",
+        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed.system",
+        "path": "Observation.value[x].coding.system",
         "min": 1
       },
       {
-        "id": "Observation.valueCodeableConcept.coding:snomed.code",
-        "path": "Observation.valueCodeableConcept.coding.code",
+        "id": "Observation.value[x]:valueCodeableConcept.coding:snomed.code",
+        "path": "Observation.value[x].coding.code",
         "min": 1
       },
       {

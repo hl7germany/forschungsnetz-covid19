@@ -33,13 +33,15 @@ Description: "The biological sex of a patient assigned at birth."
 * subject only Reference($Patient or Group)
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* value[x] from BirthSex (required)
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #open
-* value[x] ^binding.description = "Coded value for sex assigned at birth"
-* valueCodeableConcept only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* valueCodeableConcept from BirthSex (required)
+* valueCodeableConcept ^binding.description = "Coded value for sex assigned at birth"
+// * value[x] from BirthSex (required)
+// * value[x] ^slicing.discriminator.type = #type
+// * value[x] ^slicing.discriminator.path = "$this"
+// * value[x] ^slicing.rules = #open
+// * value[x] ^binding.description = "Coded value for sex assigned at birth"
+// * valueCodeableConcept only CodeableConcept
+// * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding 1..
 * valueCodeableConcept.coding.system 1..
 * valueCodeableConcept.coding.code 1..

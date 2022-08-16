@@ -80,13 +80,25 @@
         ]
       },
       {
-        "id": "Observation.valueQuantity",
-        "path": "Observation.valueQuantity",
-        "max": "0"
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "max": "0",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
       },
       {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"

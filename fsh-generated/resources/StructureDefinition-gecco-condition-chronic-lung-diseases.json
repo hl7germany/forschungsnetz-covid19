@@ -123,12 +123,18 @@
         }
       },
       {
-        "id": "Condition.onsetPeriod",
-        "path": "Condition.onsetPeriod"
+        "id": "Condition.onset[x]:onsetPeriod",
+        "path": "Condition.onset[x]",
+        "sliceName": "onsetPeriod",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
       },
       {
-        "id": "Condition.onsetPeriod.extension:dataAbsentReason",
-        "path": "Condition.onsetPeriod.extension",
+        "id": "Condition.onset[x]:onsetPeriod.extension:dataAbsentReason",
+        "path": "Condition.onset[x].extension",
         "sliceName": "dataAbsentReason",
         "min": 0,
         "max": "1",
@@ -142,12 +148,18 @@
         ]
       },
       {
-        "id": "Condition.onsetDateTime",
-        "path": "Condition.onsetDateTime"
+        "id": "Condition.onset[x]:onsetDateTime",
+        "path": "Condition.onset[x]",
+        "sliceName": "onsetDateTime",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
       },
       {
-        "id": "Condition.onsetDateTime.extension",
-        "path": "Condition.onsetDateTime.extension",
+        "id": "Condition.onset[x]:onsetDateTime.extension",
+        "path": "Condition.onset[x].extension",
         "slicing": {
           "discriminator": [
             {
@@ -159,8 +171,8 @@
         }
       },
       {
-        "id": "Condition.onsetDateTime.extension:dataAbsentReason",
-        "path": "Condition.onsetDateTime.extension",
+        "id": "Condition.onset[x]:onsetDateTime.extension:dataAbsentReason",
+        "path": "Condition.onset[x].extension",
         "sliceName": "dataAbsentReason",
         "min": 0,
         "max": "1",

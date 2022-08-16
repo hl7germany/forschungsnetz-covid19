@@ -17,11 +17,11 @@ Description: "Captures the uncertainty of the existence of a condition."
 * url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence" (exactly)
 * value[x] 1..
 * value[x] only CodeableConcept
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #open
-* valueCodeableConcept only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+// * value[x] ^slicing.discriminator.type = #type
+// * value[x] ^slicing.discriminator.path = "$this"
+// * value[x] ^slicing.rules = #open
+// * valueCodeableConcept only CodeableConcept
+// * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding 1..1
 * valueCodeableConcept.coding.system 1..
 * valueCodeableConcept.coding.system = "http://snomed.info/sct" (exactly)

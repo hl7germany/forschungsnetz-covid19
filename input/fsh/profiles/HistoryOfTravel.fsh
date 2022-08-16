@@ -33,13 +33,8 @@ Description: "A patient's history of travel"
 * subject only Reference($Patient or Group)
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* value[x] from YesNoUnknownOtherNa (required)
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #open
-* value[x] ^binding.description = "Yes | No | Unknown"
-* valueCodeableConcept only CodeableConcept
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+* valueCodeableConcept from YesNoUnknownOtherNa (required)
+* valueCodeableConcept ^binding.description = "Yes | No | Unknown"
 * valueCodeableConcept.coding 1..
 * valueCodeableConcept.coding.system 1..
 * valueCodeableConcept.coding.code 1..
