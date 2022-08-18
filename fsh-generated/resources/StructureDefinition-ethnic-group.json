@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "gecco-extension-patient-ethnic-group",
+  "id": "ethnic-group",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
   "version": "1.0.6",
   "name": "EthnicGroup",

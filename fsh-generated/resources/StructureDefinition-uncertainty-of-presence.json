@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "gecco-extension-condition-uncertainty-of-presence",
+  "id": "uncertainty-of-presence",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
   "version": "1.0.6",
   "name": "UncertaintyOfPresence",

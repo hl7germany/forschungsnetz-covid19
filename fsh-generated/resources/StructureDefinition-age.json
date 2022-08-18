@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "gecco-extension-patient-age",
+  "id": "age",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
   "version": "1.0.6",
   "name": "PatientAge",
