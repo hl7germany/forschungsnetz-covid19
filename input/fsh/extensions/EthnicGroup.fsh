@@ -1,9 +1,8 @@
 Extension: EthnicGroup
-Id: gecco-extension-patient-ethnic-group
+Id: ethnic-group
 Title: "Ethnic Group"
 Description: "Ethnic group of a patient"
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group"
-//* ^version = "1.0"
 * ^date = "2020-10-29"
 * ^publisher = "Charité"
 * ^contact.telecom.system = #url

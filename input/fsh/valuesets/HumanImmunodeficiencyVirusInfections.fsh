@@ -1,5 +1,5 @@
 ValueSet: HumanImmunodeficiencyVirusInfections
-Id: 1.2.276.0.76.11.530--20200709125648
+Id: human-immunodeficiency-virus-infections
 Title: "Human Immunodeficiency Virus Infections"
 Description: "HIV infections in the context of Covid-19"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -9,10 +9,9 @@ Description: "HIV infections in the context of Covid-19"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.530"
-//* ^version = "1.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Charité"
 * ^immutable = false
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
-* include codes from system SNOMED_CT where concept is-a #86406008
+* include codes from system $sct where concept is-a #86406008

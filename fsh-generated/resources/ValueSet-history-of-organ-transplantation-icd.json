@@ -1,0 +1,99 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "HistoryOfTransplantationICD",
+  "id": "history-of-organ-transplantation-icd",
+  "title": "History of transplantation ICD-10-GM",
+  "description": "History of organ transplantation ICD-10-GM codes",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/history-of-organ-transplantation-icd",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-07-09T13:39:29+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.531"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "concept": [
+          {
+            "code": "Z94.1",
+            "display": "Zustand nach Herztransplantation"
+          },
+          {
+            "code": "Z94.2",
+            "display": "Zustand nach Lungentransplantation"
+          },
+          {
+            "code": "Z94.4",
+            "display": "Zustand nach Lebertransplantation"
+          },
+          {
+            "code": "Z94.0",
+            "display": "Zustand nach Nierentransplantation"
+          },
+          {
+            "code": "Z94.88",
+            "display": "Zustand nach sonstiger Organ- oder Gewebetransplantation Inkl.: Darm Pankreas"
+          },
+          {
+            "code": "Z94.5",
+            "display": "Zustand nach Hauttransplantation"
+          },
+          {
+            "code": "Z94.7",
+            "display": "Zustand nach Keratoplastik"
+          },
+          {
+            "code": "Z95.5",
+            "display": "Vorhandensein eines Implantates oder Transplantates nach koronarer Gefäßplastik"
+          },
+          {
+            "code": "Z95.88",
+            "display": "Vorhandensein von sonstigen kardialen oder vaskulären Implantaten oder Transplantaten"
+          },
+          {
+            "code": "Z94.6",
+            "display": "Zustand nach Knochentransplantation"
+          },
+          {
+            "code": "Z94.9",
+            "display": "Zustand nach Organ- oder Gewebetransplantation, nicht näher bezeichnet"
+          },
+          {
+            "code": "Z94.80",
+            "display": "Zustand nach hämatopoetischer Stammzelltransplantation ohne gegenwärtige Immunsuppression"
+          },
+          {
+            "code": "Z94.81",
+            "display": "Zustand nach hämatopoetischer Stammzelltransplantation mit gegenwärtiger Immunsuppression"
+          },
+          {
+            "code": "Z94.3",
+            "display": "Zustand nach Herz-Lungen-Transplantation"
+          }
+        ]
+      }
+    ]
+  }
+}

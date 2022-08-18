@@ -1,5 +1,5 @@
 ValueSet: BirthSex
-Id: 2.16.840.1.113883.3.1937.99.61.65.11.4--20200706120216
+Id: birth-sex
 Title: "Birth-Sex"
 Description: "Sex at birth"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -9,7 +9,6 @@ Description: "Sex at birth"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "2.16.840.1.113883.3.1937.99.61.65.11.4"
-//* ^version = "1.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Charité"

@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BirthSex",
+  "id": "birth-sex",
+  "title": "Birth-Sex",
+  "description": "Sex at birth",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/birth-sex",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-07-06T12:02:16+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "2.16.840.1.113883.3.1937.99.61.65.11.4"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/administrative-gender",
+        "concept": [
+          {
+            "code": "male",
+            "display": "Male"
+          },
+          {
+            "code": "female",
+            "display": "Female"
+          },
+          {
+            "code": "unknown",
+            "display": "Unknown"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+        "concept": [
+          {
+            "code": "X",
+            "display": "unbestimmt"
+          },
+          {
+            "code": "D",
+            "display": "divers"
+          }
+        ]
+      }
+    ]
+  }
+}

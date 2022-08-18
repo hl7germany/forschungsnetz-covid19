@@ -1,9 +1,8 @@
 Extension: PatientAge
-Id: gecco-extension-patient-age
+Id: age
 Title: "Age"
 Description: "This extension captures a patient's age at a certain point in time."
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
-//* ^version = "1.0"
 * ^date = "2022-01-24"
 * ^publisher = "Charité"
 * ^contact.telecom.system = #url

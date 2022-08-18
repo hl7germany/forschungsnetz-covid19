@@ -1,10 +1,9 @@
 ValueSet: SmokingStatus
-Id: gecco-valueset-smoking-status
+Id: smoking-status
 Title: "Smoking Status"
 Description: "Codes to capture tobacco smoking status"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/smoking-status"
-//* ^version = "1.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Charité"

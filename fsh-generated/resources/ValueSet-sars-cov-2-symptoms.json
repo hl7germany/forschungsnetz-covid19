@@ -1,0 +1,203 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SARSCoV2Symptoms",
+  "id": "sars-cov-2-symptoms",
+  "title": "SARS-CoV-2-Symptoms",
+  "description": "Symptoms for SARS-CoV-2 infection",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-04-09T00:00:00+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.563"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "21522001",
+            "display": "Abdominal pain (finding)"
+          },
+          {
+            "code": "84387000",
+            "display": "Asymptomatic (finding)"
+          },
+          {
+            "code": "131148009",
+            "display": "Bleeding (finding)"
+          },
+          {
+            "code": "29857009",
+            "display": "Chest pain (finding)"
+          },
+          {
+            "code": "43724002",
+            "display": "Chill (finding)"
+          },
+          {
+            "code": "9826008",
+            "display": "Conjunctivitis (disorder)"
+          },
+          {
+            "code": "49727002",
+            "display": "Cough (finding)"
+          },
+          {
+            "code": "62315008",
+            "display": "Diarrhea (finding)"
+          },
+          {
+            "code": "3006004",
+            "display": "Disturbance of consciousness (finding)"
+          },
+          {
+            "code": "267036007",
+            "display": "Dyspnea (finding)"
+          },
+          {
+            "code": "271807003",
+            "display": "Eruption of skin (disorder)"
+          },
+          {
+            "code": "84229001",
+            "display": "Fatigue (finding)"
+          },
+          {
+            "code": "103001002",
+            "display": "Feeling feverish (finding)"
+          },
+          {
+            "code": "386661006",
+            "display": "Fever (finding)"
+          },
+          {
+            "code": "25064002",
+            "display": "Headache (finding)"
+          },
+          {
+            "code": "66857006",
+            "display": "Hemoptysis (finding)"
+          },
+          {
+            "code": "248567008",
+            "display": "Indrawing of ribs during respiration (finding)"
+          },
+          {
+            "code": "57676002",
+            "display": "Joint pain (finding)"
+          },
+          {
+            "code": "79890006",
+            "display": "Loss of appetite (finding)"
+          },
+          {
+            "code": "44169009",
+            "display": "Loss of sense of smell (finding)"
+          },
+          {
+            "code": "36955009",
+            "display": "Loss of taste (finding)"
+          },
+          {
+            "code": "30746006",
+            "display": "Lymphadenopathy (disorder)"
+          },
+          {
+            "code": "367391008",
+            "display": "Malaise (finding)"
+          },
+          {
+            "code": "68962001",
+            "display": "Muscle pain (finding)"
+          },
+          {
+            "code": "68235000",
+            "display": "Nasal congestion (finding)"
+          },
+          {
+            "code": "64531003",
+            "display": "Nasal discharge (finding)"
+          },
+          {
+            "code": "422587007",
+            "display": "Nausea (finding)"
+          },
+          {
+            "code": "162397003",
+            "display": "Pain in throat (finding)"
+          },
+          {
+            "code": "38880002",
+            "display": "Rigor (finding)"
+          },
+          {
+            "code": "91175000",
+            "display": "Seizure (finding)"
+          },
+          {
+            "code": "46742003",
+            "display": "Skin ulcer (disorder)"
+          },
+          {
+            "code": "282145008",
+            "display": "Unable to walk (finding)"
+          },
+          {
+            "code": "422400008",
+            "display": "Vomiting (disorder)"
+          },
+          {
+            "code": "56018004",
+            "display": "Wheezing (finding)"
+          },
+          {
+            "code": "426000000",
+            "display": "Fever greater than 100.4 Fahrenheit / 38° Celsius (finding)"
+          },
+          {
+            "code": "13791008",
+            "display": "Asthenia (finding)"
+          },
+          {
+            "code": "22253000",
+            "display": "Pain (finding)"
+          },
+          {
+            "code": "28743005",
+            "display": "Productive cough (finding)"
+          },
+          {
+            "code": "11833005",
+            "display": "Dry cough (finding)"
+          },
+          {
+            "code": "40917007",
+            "display": "Clouded consciousness (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

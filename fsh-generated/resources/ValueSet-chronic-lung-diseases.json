@@ -1,0 +1,85 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ChronicLungDiseases",
+  "id": "chronic-lung-diseases",
+  "title": "Chronic Lung Diseases",
+  "description": "Chronic lung diseases in the context of Covid-19",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-lung-diseases",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-04-25T21:27:14+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.470"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "195967001",
+            "display": "Asthma (disorder)"
+          },
+          {
+            "code": "13645005",
+            "display": "Chronic obstructive lung disease (disorder)"
+          },
+          {
+            "code": "51615001",
+            "display": "Fibrosis of lung (disorder)"
+          },
+          {
+            "code": "70995007",
+            "display": "Pulmonary hypertension (disorder)"
+          },
+          {
+            "code": "190966007",
+            "display": "Extreme obesity with alveolar hypoventilation (disorder)"
+          },
+          {
+            "code": "73430006",
+            "display": "Sleep apnea (disorder)"
+          },
+          {
+            "code": "78275009",
+            "display": "Obstructive sleep apnea syndrome (disorder)"
+          },
+          {
+            "code": "190905008",
+            "display": "Cystic fibrosis (disorder)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "106048009"
+          }
+        ]
+      }
+    ]
+  }
+}

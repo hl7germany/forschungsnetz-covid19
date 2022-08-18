@@ -5,7 +5,7 @@
   "id": "gecco-valueset-vaccination-substances-combined-v105",
   "title": "Vaccination Substances Combined",
   "description": "Vaccination substances combined from mulitple ValueSets and terminologies.",
-  "version": "1.0.6",
+  "version": "1.0.5",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-substances-combined",
   "meta": {
     "profile": [

@@ -1,5 +1,5 @@
 ValueSet: ApheresisProceduresOPS
-Id: 1.2.276.0.76.11.538--20200721131410
+Id: apheresis-procedures-ops
 Title: "Apheresis Procedures OPS"
 Description: "Apheresis procedures from the German procedure classification (Operationen- und Prozedurenschlüssel - OPS)"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -14,4 +14,4 @@ Description: "Apheresis procedures from the German procedure classification (Ope
 * ^experimental = false
 * ^publisher = "Charité"
 * ^immutable = false
-* include codes from system http://fhir.de/CodeSystem/bfarm/ops|2021 where concept is-a #8-82
+* include codes from system $ops|2021 where concept is-a #8-82

@@ -5,7 +5,7 @@ Description: "Vaccination substances combined from mulitple ValueSets and termin
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-substances-combined"
 * ^status = #draft
-//* ^version = "1.0.5"
+* ^version = "1.0.5"
 * ^date = "2021-10-01T00:00:00.000Z"
 * ^experimental = false
 * ^publisher = "UKSH Lübeck"

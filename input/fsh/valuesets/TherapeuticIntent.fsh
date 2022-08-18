@@ -9,15 +9,14 @@ Description: "The therapeutic intent why a medication is taken or administered."
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.541"
-//* ^version = "1.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Charité"
 * ^immutable = false
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
-* SNOMED_CT#421974008 "Adjunct - intent (qualifier value)"
-* SNOMED_CT#373846009 "Adjuvant - intent (qualifier value)"
-* SNOMED_CT#373808002 "Curative - procedure intent (qualifier value)"
-* SNOMED_CT#373847000 "Neo-adjuvant - intent (qualifier value)"
-* SNOMED_CT#360271000 "Prophylaxis - procedure intent (qualifier value)"
-* SNOMED_CT#399707004 "Supportive - procedure intent (qualifier value)"
+* $sct#421974008 "Adjunct - intent (qualifier value)"
+* $sct#373846009 "Adjuvant - intent (qualifier value)"
+* $sct#373808002 "Curative - procedure intent (qualifier value)"
+* $sct#373847000 "Neo-adjuvant - intent (qualifier value)"
+* $sct#360271000 "Prophylaxis - procedure intent (qualifier value)"
+* $sct#399707004 "Supportive - procedure intent (qualifier value)"

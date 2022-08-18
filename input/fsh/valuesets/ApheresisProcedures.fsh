@@ -1,5 +1,5 @@
 ValueSet: ApheresisProcedures
-Id: 1.2.276.0.76.11.537--20200721123257
+Id: apheresis-procedures
 Title: "Apheresis-Procedures"
 Description: "Apheresis procedures"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -9,9 +9,8 @@ Description: "Apheresis procedures"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.537"
-//* ^version = "1.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Charité"
 * ^immutable = false
-* include codes from system SNOMED_CT where concept is-a #127788007
+* include codes from system $sct where concept is-a #127788007

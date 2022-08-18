@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PregnancyStatus",
+  "id": "pregnancy-status",
+  "title": "Pregnancy Status",
+  "description": "Pregnancy-Status",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pregnancy-status",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-05-03T16:22:44+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.489"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "77386006",
+            "display": "Pregnant (finding)"
+          },
+          {
+            "code": "60001007",
+            "display": "Not pregnant (finding)"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA15173-0",
+            "display": "Pregnant"
+          },
+          {
+            "code": "LA26683-5",
+            "display": "Not pregnant"
+          },
+          {
+            "code": "LA4489-6",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

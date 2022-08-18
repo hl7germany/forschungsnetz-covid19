@@ -1,5 +1,5 @@
 CodeSystem: SNOMEDsupplement
-Id: gecco-codesystem-snomed-pce-supplement
+Id: snomed-pce-supplement
 Title: "SNOMED Supplement CodeSystem"
 Description: "CodeSystem supplement for SNOMED CT post-coordinated expressions."
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement"

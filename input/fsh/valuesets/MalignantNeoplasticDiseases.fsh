@@ -1,5 +1,5 @@
 ValueSet: MalignantNeoplasticDiseases
-Id: 1.2.276.0.76.11.533--20200710115833
+Id: malignant-neoplastic-diseases
 Title: "Malignant Neoplastic Diseases"
 Description: "Malignant neoplastic diseases in the context of Covid-19"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -9,9 +9,8 @@ Description: "Malignant neoplastic diseases in the context of Covid-19"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.533"
-//* ^version = "1.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Charité"
 * ^immutable = false
-* include codes from system SNOMED_CT where concept is-a #363346000
+* include codes from system $sct where concept is-a #363346000

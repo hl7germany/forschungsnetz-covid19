@@ -1,5 +1,5 @@
 ValueSet: ECMOTherapiesOPS
-Id: 1.2.276.0.76.11.513--20200519104721
+Id: extracorporeal-membrane-oxygenation
 Title: "ECMO Therapies OPS"
 Description: "Extracorporeal membrane oxygenation (ECMO) procedures in the context of Covid-19 from the German procedure classification (Operationen- und Prozedurenschlüssel - OPS)"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -9,11 +9,10 @@ Description: "Extracorporeal membrane oxygenation (ECMO) procedures in the conte
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.513"
-//* ^version = "1.0.5"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Charité"
 * ^immutable = false
-* include codes from system http://fhir.de/CodeSystem/bfarm/ops|2021
+* include codes from system $ops|2021
     where concept descendent-of #8-852 and
     child exists false

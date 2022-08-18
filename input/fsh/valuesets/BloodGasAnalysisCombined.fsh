@@ -21,5 +21,5 @@ Description: "Relevant codes for a blood gas analysis taken from LOINC and SNOME
 * $loinc#2020-6 "Carbon dioxide [Partial pressure] in Capillary blood"
 * $loinc#2019-8 "Carbon dioxide [Partial pressure] in Arterial blood"
 * $loinc#2708-6 "Oxygen saturation in Arterial blood"
-* SNOMED_CT#250774007 "Inspired oxygen concentration"
-* SNOMED_CT#431314004 "Peripheral oxygen saturation"
+* $sct#250774007 "Inspired oxygen concentration"
+* $sct#431314004 "Peripheral oxygen saturation"

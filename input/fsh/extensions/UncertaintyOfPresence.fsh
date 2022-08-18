@@ -1,9 +1,8 @@
 Extension: UncertaintyOfPresence
-Id: gecco-extension-condition-uncertainty-of-presence
+Id: uncertainty-of-presence
 Title: "Uncertainty Of Presence"
 Description: "Captures the uncertainty of the existence of a condition."
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence"
-//* ^version = "1.0"
 * ^date = "2020-10-29"
 * ^publisher = "Charité"
 * ^contact.telecom.system = #url

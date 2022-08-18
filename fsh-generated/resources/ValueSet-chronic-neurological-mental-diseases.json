@@ -1,0 +1,189 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ChronicNeurologicalMentalDiseases",
+  "id": "chronic-neurological-mental-diseases",
+  "title": "Chronic Neurological Mental Diseases",
+  "description": "Chronic neurological or mental diseases in the context of Covid-19",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-04-25T22:00:02+02:00"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/valueset-supplement",
+      "valueCanonical": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement|1.0.5"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.473"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "128283000",
+            "display": "Chronic nervous system disorder (disorder)"
+          },
+          {
+            "code": "74732009",
+            "display": "Mental disorder (disorder)"
+          },
+          {
+            "code": "197480006",
+            "display": "Anxiety disorder (disorder)"
+          },
+          {
+            "code": "35489007",
+            "display": "Depressive disorder (disorder)"
+          },
+          {
+            "code": "69322001",
+            "display": "Psychotic disorder (disorder)"
+          },
+          {
+            "code": "49049000",
+            "display": "Parkinson's disease (disorder)"
+          },
+          {
+            "code": "52448006",
+            "display": "Dementia (disorder)"
+          },
+          {
+            "code": "24700007",
+            "display": "Multiple sclerosis (disorder)"
+          },
+          {
+            "code": "257277002",
+            "display": "Combined disorder of muscle AND peripheral nerve (disorder)"
+          },
+          {
+            "code": "84757009",
+            "display": "Epilepsy (disorder)"
+          },
+          {
+            "code": "37796009",
+            "display": "Migraine (disorder)"
+          },
+          {
+            "code": "440140008",
+            "display": "History of cerebrovascular accident with residual deficit (situation)"
+          },
+          {
+            "code": "429993008",
+            "display": "History of cerebrovascular accident without residual deficits (situation)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "128283000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "74732009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "49049000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "24700007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "257277002"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "84757009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "37796009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "440140008"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "429993008"
+          }
+        ]
+      }
+    ]
+  }
+}

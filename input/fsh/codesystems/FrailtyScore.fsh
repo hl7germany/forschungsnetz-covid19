@@ -1,9 +1,8 @@
 CodeSystem: FrailtyScore
-Id: gecco-codesystem-frailty-score
+Id: frailty-score
 Title: "Frailty Score"
 Description: "Clinical Frailty Scale"
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score"
-//* ^version = "1.0"
 * ^status = #active
 * ^experimental = false
 * ^date = "2020-10-29"

@@ -5,7 +5,7 @@ Description: "Procedures in the context of Covid-19 combined from mulitple Value
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/procedures-combined"
 * ^status = #draft
-//* ^version = "1.0.5"
+* ^version = "1.0.5"
 * ^date = "2021-10-01T00:00:00.000Z"
 * ^experimental = false
 * ^publisher = "UKSH Lübeck"
@@ -16,7 +16,7 @@ Description: "Procedures in the context of Covid-19 combined from mulitple Value
 * include codes from valueset DialysisProceduresOPS
 * include codes from valueset ApheresisProcedures
 * include codes from valueset ApheresisProceduresOPS
-* SNOMED_CT#431182000 "Placing subject in prone position"
+* $sct#431182000 "Placing subject in prone position"
 * include codes from valueset ECMOTherapiesOPS
 * include codes from valueset ValueSet_MII_SnomedProcedureCodes
 * include codes from valueset RespiratoryTherapies

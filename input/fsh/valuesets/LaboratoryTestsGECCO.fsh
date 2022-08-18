@@ -1,5 +1,5 @@
 ValueSet: LaboratoryTestsGECCO
-Id: gecco-valueset-laboratory-tests
+Id: lab-tests-gecco
 Title: "Laboratory Tests GECCO"
 Description: "Laboratory tests in the context of Covid-19"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -9,7 +9,6 @@ Description: "Laboratory tests in the context of Covid-19"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.521"
-//* ^version = "1.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Charité"

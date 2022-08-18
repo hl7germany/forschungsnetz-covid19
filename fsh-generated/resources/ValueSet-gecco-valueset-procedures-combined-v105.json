@@ -5,7 +5,7 @@
   "id": "gecco-valueset-procedures-combined-v105",
   "title": "Procedures Combined",
   "description": "Procedures in the context of Covid-19 combined from mulitple ValueSets and terminologies.",
-  "version": "1.0.6",
+  "version": "1.0.5",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/procedures-combined",
   "meta": {
     "profile": [

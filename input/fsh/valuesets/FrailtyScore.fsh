@@ -1,9 +1,8 @@
 ValueSet: FrailtyScore
-Id: gecco-valueset-frailty-score
+Id: frailty-score
 Title: "Frailty Score"
 Description: "Contains all Frailty Score codes"
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score"
-//* ^version = "1.0"
 * ^status = #active
 * ^experimental = false
 * ^date = "2020-05-20"

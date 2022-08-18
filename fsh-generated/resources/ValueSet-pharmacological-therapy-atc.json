@@ -1,0 +1,1059 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DrugTherapyATC",
+  "id": "pharmacological-therapy-atc",
+  "title": "Pharmacological Therapy ATC",
+  "description": "Pharmacological therapy in the context of Covid-19",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-atc",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-05-04T20:17:42+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.494"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2021",
+        "concept": [
+          {
+            "code": "N02B",
+            "display": "ANDERE ANALGETIKA UND ANTIPYRETIKA"
+          },
+          {
+            "code": "N02BA",
+            "display": "Salicylsäure und Derivate"
+          },
+          {
+            "code": "N02BA01",
+            "display": "Acetylsalicylsäure"
+          },
+          {
+            "code": "N02BA02",
+            "display": "Aloxiprin"
+          },
+          {
+            "code": "N02BA03",
+            "display": "Cholinsalicylat"
+          },
+          {
+            "code": "N02BA04",
+            "display": "Natriumsalicylat"
+          },
+          {
+            "code": "N02BA05",
+            "display": "Salicylamid"
+          },
+          {
+            "code": "N02BA06",
+            "display": "Salsalat"
+          },
+          {
+            "code": "N02BA07",
+            "display": "Ethenzamid"
+          },
+          {
+            "code": "N02BA08",
+            "display": "Morpholinsalicylat"
+          },
+          {
+            "code": "N02BA09",
+            "display": "Dipyrocetyl"
+          },
+          {
+            "code": "N02BA10",
+            "display": "Benorilat"
+          },
+          {
+            "code": "N02BA11",
+            "display": "Diflunisal"
+          },
+          {
+            "code": "N02BA12",
+            "display": "Kaliumsalicylat"
+          },
+          {
+            "code": "N02BA13",
+            "display": "Lysin-Acetylsalicylat"
+          },
+          {
+            "code": "N02BA14",
+            "display": "Guacetisal"
+          },
+          {
+            "code": "N02BA15",
+            "display": "Carbasalat calcium"
+          },
+          {
+            "code": "N02BA16",
+            "display": "Imidazolsalicylat"
+          },
+          {
+            "code": "N02BA19",
+            "display": "Cholin-Magnesium-Tris-Salicylat"
+          },
+          {
+            "code": "N02BA20",
+            "display": "Kombinationen"
+          },
+          {
+            "code": "N02BA51",
+            "display": "Acetylsalicylsäure, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BA55",
+            "display": "Salicylamid, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BA57",
+            "display": "Ethenzamid, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BA59",
+            "display": "Dipyrocetyl, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BA65",
+            "display": "Carbasalat calcium, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BA71",
+            "display": "Acetylsalicylsäure, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BA75",
+            "display": "Salicylamid, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BA77",
+            "display": "Ethenzamid, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BA79",
+            "display": "Dipyrocetyl, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BB",
+            "display": "Pyrazolone"
+          },
+          {
+            "code": "N02BB01",
+            "display": "Phenazon"
+          },
+          {
+            "code": "N02BB02",
+            "display": "Metamizol-Natrium"
+          },
+          {
+            "code": "N02BB03",
+            "display": "Aminophenazon"
+          },
+          {
+            "code": "N02BB04",
+            "display": "Propyphenazon"
+          },
+          {
+            "code": "N02BB05",
+            "display": "Nifenazon"
+          },
+          {
+            "code": "N02BB06",
+            "display": "Phenazonsalicylat"
+          },
+          {
+            "code": "N02BB51",
+            "display": "Phenazon, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BB52",
+            "display": "Metamizol-Natrium, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BB53",
+            "display": "Aminophenazon, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BB54",
+            "display": "Propyphenazon, Kombinationen exkl. Psycholeptika**"
+          },
+          {
+            "code": "N02BB56",
+            "display": "Phenazonsalicylat, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BB71",
+            "display": "Phenazon, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BB72",
+            "display": "Metamizol-Natrium, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BB73",
+            "display": "Aminophenazon, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BB74",
+            "display": "Propyphenazon, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BB76",
+            "display": "Phenazonsalicylat, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BE",
+            "display": "Anilide"
+          },
+          {
+            "code": "N02BE01",
+            "display": "Paracetamol"
+          },
+          {
+            "code": "N02BE03",
+            "display": "Phenacetin"
+          },
+          {
+            "code": "N02BE04",
+            "display": "Bucetin"
+          },
+          {
+            "code": "N02BE05",
+            "display": "Propacetamol"
+          },
+          {
+            "code": "N02BE51",
+            "display": "Paracetamol, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BE53",
+            "display": "Phenacetin, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BE54",
+            "display": "Bucetin, Kombinationen exkl. Psycholeptika"
+          },
+          {
+            "code": "N02BE61",
+            "display": "Paracetamol, Kombinationen mit Coffein"
+          },
+          {
+            "code": "N02BE71",
+            "display": "Paracetamol, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BE73",
+            "display": "Phenacetin, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BE74",
+            "display": "Bucetin, Kombinationen mit Psycholeptika"
+          },
+          {
+            "code": "N02BG",
+            "display": "Andere Analgetika und Antipyretika"
+          },
+          {
+            "code": "N02BG02",
+            "display": "Rimazolium"
+          },
+          {
+            "code": "N02BG03",
+            "display": "Glafenin"
+          },
+          {
+            "code": "N02BG04",
+            "display": "Floctafenin"
+          },
+          {
+            "code": "N02BG05",
+            "display": "Viminol"
+          },
+          {
+            "code": "N02BG06",
+            "display": "Nefopam"
+          },
+          {
+            "code": "N02BG07",
+            "display": "Flupirtin"
+          },
+          {
+            "code": "N02BG08",
+            "display": "Ziconotid"
+          },
+          {
+            "code": "N02BG09",
+            "display": "Methoxyfluran"
+          },
+          {
+            "code": "N02BG10",
+            "display": "Cannabinoide"
+          },
+          {
+            "code": "N02BG11",
+            "display": "Mirogabalin"
+          },
+          {
+            "code": "N02BG12",
+            "display": "Tanezumab"
+          },
+          {
+            "code": "N02BH",
+            "display": "Homöopathische und anthroposophische Analgetika und Antipyretika"
+          },
+          {
+            "code": "N02BH01",
+            "display": "Aconitum"
+          },
+          {
+            "code": "N02BH10",
+            "display": "Verschiedene"
+          },
+          {
+            "code": "N02BH20",
+            "display": "Kombinationen"
+          },
+          {
+            "code": "N02BP",
+            "display": "Pflanzliche Analgetika und Antipyretika"
+          },
+          {
+            "code": "N02BP01",
+            "display": "Blauer Eisenhut"
+          },
+          {
+            "code": "N02BP02",
+            "display": "Lindenblüten"
+          },
+          {
+            "code": "G01B",
+            "display": "ANTIINFEKTIVA/ANTISEPTIKA IN KOMBINATION MIT CORTICOSTEROIDEN"
+          },
+          {
+            "code": "G01BA",
+            "display": "Antibiotika und Corticosteroide"
+          },
+          {
+            "code": "G01BA01",
+            "display": "Antibiotika und Corticosteroide"
+          },
+          {
+            "code": "G01BC",
+            "display": "Chinolin-Derivate und Corticosteroide"
+          },
+          {
+            "code": "G01BD",
+            "display": "Antiseptika und Corticosteroide"
+          },
+          {
+            "code": "G01BD01",
+            "display": "Antiseptika und Corticosteroide"
+          },
+          {
+            "code": "G01BE",
+            "display": "Sulfonamide und Corticosteroide"
+          },
+          {
+            "code": "G01BE50",
+            "display": "Sulfonamide und Corticosteroide, Kombinationen mit Antibiotika"
+          },
+          {
+            "code": "G01BF",
+            "display": "Imidazol-Derivate und Corticosteroide"
+          },
+          {
+            "code": "H02",
+            "display": "CORTICOSTEROIDE ZUR SYSTEMISCHEN ANWENDUNG"
+          },
+          {
+            "code": "H02A",
+            "display": "CORTICOSTEROIDE ZUR SYSTEMISCHEN ANWENDUNG, REIN"
+          },
+          {
+            "code": "H02AA",
+            "display": "Mineralocorticoide"
+          },
+          {
+            "code": "H02AA01",
+            "display": "Aldosteron"
+          },
+          {
+            "code": "H02AA02",
+            "display": "Fludrocortison"
+          },
+          {
+            "code": "H02AA03",
+            "display": "Desoxycorton"
+          },
+          {
+            "code": "H02AB",
+            "display": "Glucocorticoide"
+          },
+          {
+            "code": "H02AB01",
+            "display": "Betamethason"
+          },
+          {
+            "code": "H02AB02",
+            "display": "Dexamethason"
+          },
+          {
+            "code": "H02AB03",
+            "display": "Fluocortolon"
+          },
+          {
+            "code": "H02AB04",
+            "display": "Methylprednisolon"
+          },
+          {
+            "code": "H02AB05",
+            "display": "Paramethason"
+          },
+          {
+            "code": "H02AB06",
+            "display": "Prednisolon"
+          },
+          {
+            "code": "H02AB07",
+            "display": "Prednison"
+          },
+          {
+            "code": "H02AB08",
+            "display": "Triamcinolon"
+          },
+          {
+            "code": "H02AB09",
+            "display": "Hydrocortison"
+          },
+          {
+            "code": "H02AB10",
+            "display": "Cortison"
+          },
+          {
+            "code": "H02AB11",
+            "display": "Prednyliden"
+          },
+          {
+            "code": "H02AB12",
+            "display": "Rimexolon"
+          },
+          {
+            "code": "H02AB13",
+            "display": "Deflazacort"
+          },
+          {
+            "code": "H02AB14",
+            "display": "Cloprednol"
+          },
+          {
+            "code": "H02AB15",
+            "display": "Meprednison"
+          },
+          {
+            "code": "H02AB17",
+            "display": "Cortivazol"
+          },
+          {
+            "code": "H02AB51",
+            "display": "Betamethason-Depot"
+          },
+          {
+            "code": "H02AB54",
+            "display": "Methylprednisolon-Depot"
+          },
+          {
+            "code": "H02AB56",
+            "display": "Prednisolon-Depot"
+          },
+          {
+            "code": "H02AB58",
+            "display": "Triamcinolon-Depot"
+          },
+          {
+            "code": "H02B",
+            "display": "CORTICOSTEROIDE ZUR SYSTEMISCHEN ANWENDUNG, KOMBINATIONEN"
+          },
+          {
+            "code": "H02BX",
+            "display": "Corticosteroide zur systemischen Anwendung, Kombinationen"
+          },
+          {
+            "code": "H02BX01",
+            "display": "Methylprednisolon, Kombinationen"
+          },
+          {
+            "code": "H02BX02",
+            "display": "Dexamethason, Kombinationen"
+          },
+          {
+            "code": "H02BX06",
+            "display": "Prednisolon, Kombinationen"
+          },
+          {
+            "code": "H02BX08",
+            "display": "Triamcinolon, Kombinationen"
+          },
+          {
+            "code": "H02BX09",
+            "display": "Betamethason, Kombinationen"
+          },
+          {
+            "code": "H02BX20",
+            "display": "Kombinationen"
+          },
+          {
+            "code": "H02BX21",
+            "display": "Desoxycorton, Kombinationen"
+          },
+          {
+            "code": "H02C",
+            "display": "NEBENNIERENHEMMSTOFFE"
+          },
+          {
+            "code": "H02CA",
+            "display": "Anticorticosteroide"
+          },
+          {
+            "code": "H02CA01",
+            "display": "Trilostan"
+          },
+          {
+            "code": "H02CA02",
+            "display": "Osilodrostat"
+          },
+          {
+            "code": "H02CA03",
+            "display": "Ketoconazol"
+          },
+          {
+            "code": "M01BA",
+            "display": "Antiphlogistika/Antirheumatika in Kombination mit Corticosteroiden"
+          },
+          {
+            "code": "M01BA01",
+            "display": "Phenylbutazon und Corticosteroide"
+          },
+          {
+            "code": "M01BA02",
+            "display": "Dipyrocetyl und Corticosteroide"
+          },
+          {
+            "code": "M01BA03",
+            "display": "Acetylsalicylsäure und Corticosteroide"
+          },
+          {
+            "code": "M01BA04",
+            "display": "Mofebutazon und Corticosteroide"
+          },
+          {
+            "code": "M01BA05",
+            "display": "Oxyphenbutazon und Corticosteroide"
+          },
+          {
+            "code": "M01BA06",
+            "display": "Salicylamid und Corticosteroide"
+          },
+          {
+            "code": "M01BA07",
+            "display": "Metamizol und Corticosteroide"
+          },
+          {
+            "code": "M01BA08",
+            "display": "Kebuzon und Corticosteroide"
+          },
+          {
+            "code": "R03AK",
+            "display": "Sympathomimetika in Kombination mit Corticosteroiden oder anderen Mitteln, exkl. Anticholinergika"
+          },
+          {
+            "code": "R03AK01",
+            "display": "Epinephrin und andere Mittel bei obstruktiven Atemwegserkrankungen"
+          },
+          {
+            "code": "R03AK02",
+            "display": "Isoprenalin und andere Mittel bei obstruktiven Atemwegserkrankungen"
+          },
+          {
+            "code": "R03AK03",
+            "display": "Fenoterol und Cromoglicinsäure, Dinatriumsalz"
+          },
+          {
+            "code": "R03AK04",
+            "display": "Salbutamol und Cromoglicinsäure, Dinatriumsalz"
+          },
+          {
+            "code": "R03AK05",
+            "display": "Reproterol und Cromoglicinsäure, Dinatriumsalz"
+          },
+          {
+            "code": "R03AK06",
+            "display": "Salmeterol und Fluticason"
+          },
+          {
+            "code": "R03AK07",
+            "display": "Formoterol und Budesonid"
+          },
+          {
+            "code": "R03AK08",
+            "display": "Formoterol und Beclometason"
+          },
+          {
+            "code": "R03AK09",
+            "display": "Formoterol und Mometason"
+          },
+          {
+            "code": "R03AK10",
+            "display": "Vilanterol und Fluticasonfuroat"
+          },
+          {
+            "code": "R03AK11",
+            "display": "Formoterol und Fluticason"
+          },
+          {
+            "code": "R03AK12",
+            "display": "Salmeterol und Budesonid"
+          },
+          {
+            "code": "R03AK13",
+            "display": "Salbutamol und Beclometason"
+          },
+          {
+            "code": "R03AK14",
+            "display": "Indacaterol und Mometason"
+          },
+          {
+            "code": "R03AL",
+            "display": "Sympathomimetika in Kombination mit Anticholinergika inkl. Dreifachkombinationen mit Corticosteroiden"
+          },
+          {
+            "code": "R03AL01",
+            "display": "Fenoterol und Ipratropiumbromid"
+          },
+          {
+            "code": "R03AL02",
+            "display": "Salbutamol und Ipratropiumbromid"
+          },
+          {
+            "code": "R03AL03",
+            "display": "Vilanterol und Umeclidiniumbromid"
+          },
+          {
+            "code": "R03AL04",
+            "display": "Indacaterol und Glycopyrroniumbromid"
+          },
+          {
+            "code": "R03AL05",
+            "display": "Formoterol und Aclidiniumbromid"
+          },
+          {
+            "code": "R03AL06",
+            "display": "Olodaterol und Tiotropiumbromid"
+          },
+          {
+            "code": "R03AL07",
+            "display": "Formoterol und Glycopyrroniumbromid"
+          },
+          {
+            "code": "R03AL08",
+            "display": "Vilanterol, Umeclidiniumbromid und Fluticasonfuroat"
+          },
+          {
+            "code": "R03AL09",
+            "display": "Formoterol, Glycopyrroniumbromid und Beclometason"
+          },
+          {
+            "code": "S02B",
+            "display": "CORTICOSTEROIDE"
+          },
+          {
+            "code": "S02BA",
+            "display": "Corticosteroide"
+          },
+          {
+            "code": "S02BA01",
+            "display": "Hydrocortison"
+          },
+          {
+            "code": "S02BA03",
+            "display": "Prednisolon"
+          },
+          {
+            "code": "S02BA06",
+            "display": "Dexamethason"
+          },
+          {
+            "code": "S02BA07",
+            "display": "Betamethason"
+          },
+          {
+            "code": "S02BA08",
+            "display": "Fluocinolonacetonid"
+          },
+          {
+            "code": "S02BA56",
+            "display": "Dexamethason, Kombinationen"
+          },
+          {
+            "code": "L04AD",
+            "display": "Calcineurin-Inhibitoren"
+          },
+          {
+            "code": "L04AD01",
+            "display": "Ciclosporin"
+          },
+          {
+            "code": "L04AD02",
+            "display": "Tacrolimus"
+          },
+          {
+            "code": "L04AD03",
+            "display": "Voclosporin"
+          },
+          {
+            "code": "L04AB",
+            "display": "Tumornekrosefaktor alpha(TNF-alpha)-Inhibitoren"
+          },
+          {
+            "code": "L04AB01",
+            "display": "Etanercept"
+          },
+          {
+            "code": "L04AB02",
+            "display": "Infliximab"
+          },
+          {
+            "code": "L04AB03",
+            "display": "Afelimomab"
+          },
+          {
+            "code": "L04AB04",
+            "display": "Adalimumab"
+          },
+          {
+            "code": "L04AB05",
+            "display": "Certolizumab pegol"
+          },
+          {
+            "code": "L04AB06",
+            "display": "Golimumab"
+          },
+          {
+            "code": "L04AB07",
+            "display": "Opinercept"
+          },
+          {
+            "code": "L04AC",
+            "display": "Interleukin-Inhibitoren"
+          },
+          {
+            "code": "L04AC01",
+            "display": "Daclizumab"
+          },
+          {
+            "code": "L04AC02",
+            "display": "Basiliximab"
+          },
+          {
+            "code": "L04AC03",
+            "display": "Anakinra"
+          },
+          {
+            "code": "L04AC04",
+            "display": "Rilonacept"
+          },
+          {
+            "code": "L04AC05",
+            "display": "Ustekinumab"
+          },
+          {
+            "code": "L04AC07",
+            "display": "Tocilizumab"
+          },
+          {
+            "code": "L04AC08",
+            "display": "Canakinumab"
+          },
+          {
+            "code": "L04AC09",
+            "display": "Briakinumab"
+          },
+          {
+            "code": "L04AC10",
+            "display": "Secukinumab"
+          },
+          {
+            "code": "L04AC11",
+            "display": "Siltuximab"
+          },
+          {
+            "code": "L04AC12",
+            "display": "Brodalumab"
+          },
+          {
+            "code": "L04AC13",
+            "display": "Ixekizumab"
+          },
+          {
+            "code": "L04AC14",
+            "display": "Sarilumab"
+          },
+          {
+            "code": "L04AC15",
+            "display": "Sirukumab"
+          },
+          {
+            "code": "L04AC16",
+            "display": "Guselkumab"
+          },
+          {
+            "code": "L04AC17",
+            "display": "Tildrakizumab"
+          },
+          {
+            "code": "L04AC18",
+            "display": "Risankizumab"
+          },
+          {
+            "code": "L04AC19",
+            "display": "Satralizumab"
+          },
+          {
+            "code": "L04AC20",
+            "display": "Netakimab"
+          },
+          {
+            "code": "L04AC21",
+            "display": "Bimekizumab"
+          },
+          {
+            "code": "L03AB",
+            "display": "Interferone"
+          },
+          {
+            "code": "L03AB01",
+            "display": "Interferon alfa, natürlich"
+          },
+          {
+            "code": "L03AB02",
+            "display": "Interferon beta, natürlich"
+          },
+          {
+            "code": "L03AB03",
+            "display": "Interferon gamma"
+          },
+          {
+            "code": "L03AB04",
+            "display": "Interferon alfa-2a"
+          },
+          {
+            "code": "L03AB05",
+            "display": "Interferon alfa-2b"
+          },
+          {
+            "code": "L03AB06",
+            "display": "Interferon alfa-n1"
+          },
+          {
+            "code": "L03AB07",
+            "display": "Interferon beta-1a"
+          },
+          {
+            "code": "L03AB08",
+            "display": "Interferon beta-1b"
+          },
+          {
+            "code": "L03AB09",
+            "display": "Interferon alfacon-1"
+          },
+          {
+            "code": "L03AB10",
+            "display": "Peginterferon alfa-2b"
+          },
+          {
+            "code": "L03AB11",
+            "display": "Peginterferon alfa-2a"
+          },
+          {
+            "code": "L03AB12",
+            "display": "Albinterferon alfa-2b"
+          },
+          {
+            "code": "L03AB13",
+            "display": "Peginterferon beta-1a"
+          },
+          {
+            "code": "L03AB14",
+            "display": "Cepeginterferon alfa-2b"
+          },
+          {
+            "code": "L03AB15",
+            "display": "Ropeginterferon alfa-2b"
+          },
+          {
+            "code": "L03AB18",
+            "display": "Interferon gamma-1b"
+          },
+          {
+            "code": "L03AB60",
+            "display": "Peginterferon alfa-2b, Kombinationen"
+          },
+          {
+            "code": "L03AB61",
+            "display": "Peginterferon alfa-2a, Kombinationen"
+          },
+          {
+            "code": "A12CB",
+            "display": "Zink"
+          },
+          {
+            "code": "A12CB01",
+            "display": "Zinksulfat"
+          },
+          {
+            "code": "A12CB02",
+            "display": "Zinkgluconat"
+          },
+          {
+            "code": "A12CB03",
+            "display": "Zinkprotein-Komplex"
+          },
+          {
+            "code": "A12CB05",
+            "display": "Zinkhydrogenaspartat"
+          },
+          {
+            "code": "A12CB06",
+            "display": "Zinkorotat"
+          },
+          {
+            "code": "D01AC20",
+            "display": "Imidazole/Triazole in Kombination mit Corticosteroiden"
+          },
+          {
+            "code": "J05AE08",
+            "display": "Atazanavir"
+          },
+          {
+            "code": "J05AR15",
+            "display": "Atazanavir und Cobicistat"
+          },
+          {
+            "code": "J05AR23",
+            "display": "Atazanavir und Ritonavir"
+          },
+          {
+            "code": "J05AE10",
+            "display": "Darunavir"
+          },
+          {
+            "code": "J05AR14",
+            "display": "Darunavir und Cobicistat"
+          },
+          {
+            "code": "J05AR22",
+            "display": "Emtricitabin, Tenofoviralafenamid, Darunavir und Cobicistat"
+          },
+          {
+            "code": "P01BA01",
+            "display": "Chloroquin"
+          },
+          {
+            "code": "P01BA02",
+            "display": "Hydroxychloroquin"
+          },
+          {
+            "code": "P02CF01",
+            "display": "Ivermectin"
+          },
+          {
+            "code": "D11AX22",
+            "display": "Ivermectin"
+          },
+          {
+            "code": "J05AR10",
+            "display": "Lopinavir und Ritonavir"
+          },
+          {
+            "code": "J05AB06",
+            "display": "Ganciclovir"
+          },
+          {
+            "code": "S01AD09",
+            "display": "Ganciclovir"
+          },
+          {
+            "code": "J05AH02",
+            "display": "Oseltamivir"
+          },
+          {
+            "code": "J05AP01",
+            "display": "Ribavirin"
+          },
+          {
+            "code": "B02AB04",
+            "display": "Camostat"
+          },
+          {
+            "code": "J05AX27",
+            "display": "Favipiravir"
+          },
+          {
+            "code": "S01XA18",
+            "display": "Ciclosporin"
+          },
+          {
+            "code": "D11AH01",
+            "display": "Tacrolimus"
+          },
+          {
+            "code": "L04AA10",
+            "display": "Sirolimus"
+          },
+          {
+            "code": "L04AA18",
+            "display": "Everolimus"
+          },
+          {
+            "code": "L01XE10",
+            "display": "Everolimus"
+          },
+          {
+            "code": "L01XE18",
+            "display": "Ruxolitinib"
+          },
+          {
+            "code": "M04AC01",
+            "display": "Colchicin"
+          },
+          {
+            "code": "S01AD05",
+            "display": "Interferon"
+          },
+          {
+            "code": "A11CC06",
+            "display": "Calcifediol"
+          }
+        ]
+      }
+    ]
+  }
+}

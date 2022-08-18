@@ -1,9 +1,8 @@
 CodeSystem: ParameterCodeseCRF
-Id: gecco-codesystem-ecrf-parameter-codes
+Id: ecrf-parameter-codes
 Title: "Parameter Codes eCRF"
 Description: "Codes for GECCO eCRF parameters where no code from standard terminologies is available."
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes"
-//* ^version = "1.0.4"
 * ^status = #active
 * ^experimental = false
 * ^date = "2020-10-29"

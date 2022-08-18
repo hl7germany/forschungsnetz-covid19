@@ -5,7 +5,7 @@
   "id": "gecco-valueset-sars-cov-2-detection-combined-v105",
   "title": "SARS-CoV-2 Detection Combined",
   "description": "Relevant codes for a detection of SARS-COV-2 antibodies taken from LOINC.",
-  "version": "1.0.6",
+  "version": "1.0.5",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-detection-combined",
   "meta": {
     "profile": [

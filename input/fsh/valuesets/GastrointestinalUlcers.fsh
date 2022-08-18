@@ -1,5 +1,5 @@
 ValueSet: GastrointestinalUlcers
-Id: 1.2.276.0.76.11.484--20200503133419
+Id: gastrointestinal-ulcers
 Title: "Gastrointestinal Ulcers"
 Description: "Gastrointestinal ulcers in the context of Covid-19"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -9,9 +9,8 @@ Description: "Gastrointestinal ulcers in the context of Covid-19"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.484"
-//* ^version = "1.0.4"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Charité"
 * ^immutable = false
-* include codes from system SNOMED_CT where concept is-a #40845000
+* include codes from system $sct where concept is-a #40845000

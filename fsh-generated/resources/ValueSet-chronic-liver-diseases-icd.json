@@ -1,0 +1,95 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ChronicLiverDiseasesICD",
+  "id": "chronic-liver-diseases-icd",
+  "title": "Chronic Liver Diseases ICD-10-GM",
+  "description": "Chronic liver diseases in the context of Covid-19 from ICD-10-GM",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-liver-diseases-icd",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2020-05-04T21:25:58+02:00"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "1.2.276.0.76.11.496"
+    }
+  ],
+  "experimental": false,
+  "publisher": "Charité",
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "concept": [
+          {
+            "code": "K76.0",
+            "display": "Fettleber [fettige Degeneration], anderenorts nicht klassifiziert"
+          },
+          {
+            "code": "K70.0",
+            "display": "Alkoholische Fettleber"
+          },
+          {
+            "code": "K74.6",
+            "display": "Sonstige und nicht näher bezeichnete Zirrhose der Leber"
+          },
+          {
+            "code": "B18.9",
+            "display": "Chronische Virushepatitis, nicht näher bezeichnet"
+          },
+          {
+            "code": "K76.9",
+            "display": "Leberkrankheit, nicht näher bezeichnet"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "regex",
+            "value": "^K7.*"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "B18"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      }
+    ]
+  }
+}
