@@ -1,16 +1,11 @@
 Profile: ClinicalFrailtyScaleScore
 Parent: Observation
-Id: gecco-observation-frailty-score
+Id: frailty-score
 Title: "Clinical Frailty Scale Score"
 Description: "Clinical Frailty Scale score"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score"
-//* ^version = "1.0"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * ^copyright = "This artefact includes content under copyright from Geriatric Medicine Research, Dalhousie University, Halifax, Canada. Implementers of these artefacts must complete a Permission for Use Agreement - for more information visit https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html."
-* meta.profile MS
 * category 1.. MS
 * category.coding MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -33,7 +28,7 @@ Description: "Clinical Frailty Scale score"
 * subject only Reference($Patient or Group)
 * value[x] only CodeableConcept
 * value[x] MS
-* value[x] from FrailtyScore (required)
+* value[x] from $frailty-score-vs (required)
 * bodySite ..0
 * method MS
 * method.coding MS

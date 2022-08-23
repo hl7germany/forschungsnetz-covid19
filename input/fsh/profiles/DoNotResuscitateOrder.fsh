@@ -1,15 +1,10 @@
 Profile: DoNotResuscitateOrder
 Parent: Consent
-Id: gecco-consent-do-not-resuscitate-order
+Id: do-not-resuscitate-order
 Title: "Do-Not-Resuscitate Order"
 Description: "A do-not-resuscitate (DNR) order"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/do-not-resuscitate-order"
-//* ^version = "1.0.5"
-* ^status = #active
+* insert Metadata
 * ^date = "2021-09-08"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * scope MS
 * scope.coding 1.. MS
 * scope.coding.system 1..
@@ -26,7 +21,7 @@ Description: "A do-not-resuscitate (DNR) order"
 * dateTime 1.. MS
 * provision 1.. MS
 * provision.code 1..1 MS
-* provision.code from DoNotResuscitateOrder (required)
+* provision.code from $resuscitation-status (required)
 * provision.code.coding 1.. MS
 * provision.code.coding.system 1..
 * provision.code.coding.code 1..

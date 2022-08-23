@@ -1,15 +1,10 @@
 Profile: DiagnosticReportRadiology
 Parent: DiagnosticReport
-Id: gecco-diagnostic-report-radiology
+Id: diagnostic-report-radiology
 Title: "Diagnostic Report Radiology"
 Description: "Radiological findings in the context of an infection with SARS-CoV-2"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnostic-report-radiology"
-//* ^version = "1.0.5"
-* ^status = #active
+* insert Metadata
 * ^date = "2021-09-08"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * category 1..1 MS
 * category.coding MS
 * category.coding ^slicing.discriminator.type = #pattern

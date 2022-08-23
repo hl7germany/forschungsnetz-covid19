@@ -6,8 +6,9 @@
   "name": "PatientAge",
   "title": "Age",
   "status": "active",
+  "experimental": false,
   "date": "2022-01-24",
-  "publisher": "Charité",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
       "telecom": [

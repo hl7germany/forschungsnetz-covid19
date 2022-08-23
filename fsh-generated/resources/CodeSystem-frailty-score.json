@@ -101,8 +101,7 @@
     }
   ],
   "experimental": false,
-  "date": "2020-10-29",
-  "publisher": "Charité",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
       "telecom": [
@@ -113,6 +112,7 @@
       ]
     }
   ],
+  "date": "2020-10-29",
   "copyright": "This artefact includes content under copyright from Geriatric Medicine Research, Dalhousie University, Halifax, Canada. Implementers of these artefacts must complete a Permission for Use Agreement - for more information visit https://www.dal.ca/sites/gmr/our-tools/clinical-frailty-scale.html.",
   "caseSensitive": false,
   "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score",

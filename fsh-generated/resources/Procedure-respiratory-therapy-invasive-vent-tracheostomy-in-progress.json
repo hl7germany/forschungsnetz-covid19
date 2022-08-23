@@ -3,7 +3,7 @@
   "id": "respiratory-therapy-invasive-vent-tracheostomy-in-progress",
   "meta": {
     "profile": [
-      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-respiratory-therapy"
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
     ]
   },
   "status": "in-progress",

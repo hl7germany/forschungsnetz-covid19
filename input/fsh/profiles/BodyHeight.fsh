@@ -1,15 +1,10 @@
 Profile: BodyHeight
 Parent: VitalSignsBase
-Id: gecco-observation-body-height
+Id: body-height
 Title: "Body Height"
 Description: "Body Height of a patient"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height"
-//* ^version = "1.0.5"
-* ^experimental = false
+* insert Metadata
 * ^date = "2021-09-14"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * code ^short = "Body Height"
 * code ^definition = "Body Height"
 * code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."

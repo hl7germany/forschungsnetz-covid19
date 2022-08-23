@@ -2,11 +2,9 @@ Extension: PatientAge
 Id: age
 Title: "Age"
 Description: "This extension captures a patient's age at a certain point in time."
+* insert Metadata
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
 * ^date = "2022-01-24"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * ^context.type = #element
 * ^context.expression = "Patient"
 * extension ^slicing.discriminator.type = #value

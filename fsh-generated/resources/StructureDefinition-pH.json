@@ -1,0 +1,164 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "pH",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH",
+  "version": "1.0.6",
+  "name": "PH",
+  "title": "pH",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-05-28",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "pH-value of Blood",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category.coding:blood-gas-studies",
+        "path": "Observation.category.coding",
+        "sliceName": "blood-gas-studies",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "18767-4",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding:pH-blood",
+        "path": "Observation.code.coding",
+        "sliceName": "pH-blood",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "11558-4",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.code.coding:pH-blood.system",
+        "path": "Observation.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:pH-blood.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:pH-arterial",
+        "path": "Observation.code.coding",
+        "sliceName": "pH-arterial",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "2744-1",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.code.coding:pH-arterial.system",
+        "path": "Observation.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:pH-arterial.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:pH-capillary",
+        "path": "Observation.code.coding",
+        "sliceName": "pH-capillary",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "2745-8",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.code.coding:pH-capillary.system",
+        "path": "Observation.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:pH-capillary.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity",
+        "path": "Observation.value[x]",
+        "sliceName": "valueQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.code",
+        "path": "Observation.value[x].code",
+        "fixedCode": "[pH]"
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept",
+        "path": "Observation.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "max": "0",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

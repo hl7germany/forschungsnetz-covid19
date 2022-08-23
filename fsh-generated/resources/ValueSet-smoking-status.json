@@ -7,23 +7,23 @@
   "description": "Codes to capture tobacco smoking status",
   "version": "1.0.6",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/smoking-status",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-    ]
-  },
   "experimental": false,
-  "publisher": "Charité",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability"
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
         }
       ]
     }
   ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
   "immutable": false,
   "copyright": "This artefact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms & Conditions in https://loinc.org/license/",
   "compose": {

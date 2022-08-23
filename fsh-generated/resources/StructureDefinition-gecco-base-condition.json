@@ -6,8 +6,9 @@
   "name": "GeccoBaseCondition",
   "title": "Gecco Base Condition",
   "status": "active",
+  "experimental": false,
   "date": "2021-06-29",
-  "publisher": "Charité",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
       "telecom": [

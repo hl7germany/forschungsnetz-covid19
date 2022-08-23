@@ -1,14 +1,10 @@
 Profile: SOFA
 Parent: Observation
-Id: gecco-observation-sofa-score
+Id: sofa-score
 Title: "SOFA Score"
 Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moreno R, Takala J, et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine. Intensive Care Med. 1996;22(7):707-710. doi:10.1007/BF01709751"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score"
-//* ^version = "1.0"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * obeys value-1
 * category 1.. MS
   * coding MS
@@ -50,7 +46,7 @@ Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moren
 * component[respiratorySystem].code.coding.code 1..
 * component[respiratorySystem].value[x] only CodeableConcept
 * component[respiratorySystem].valueCodeableConcept MS
-* component[respiratorySystem].valueCodeableConcept from SOFAScore (required)
+* component[respiratorySystem].valueCodeableConcept from $sofa-score-vs (required)
 * component[respiratorySystem].valueCodeableConcept.coding 1..1 MS
 * component[respiratorySystem].valueCodeableConcept.coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
 * component[respiratorySystem].valueCodeableConcept.coding.system 1..
@@ -62,7 +58,7 @@ Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moren
 * component[nervousSystem].code.coding.code 1..
 * component[nervousSystem].value[x] only CodeableConcept
 * component[nervousSystem].valueCodeableConcept MS
-* component[nervousSystem].valueCodeableConcept from SOFAScore (required)
+* component[nervousSystem].valueCodeableConcept from $sofa-score-vs (required)
 * component[nervousSystem].valueCodeableConcept.coding 1..1 MS
 * component[nervousSystem].valueCodeableConcept.coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
 * component[nervousSystem].valueCodeableConcept.coding.system 1..
@@ -74,7 +70,7 @@ Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moren
 * component[cardiovascularSystem].code.coding.code 1..
 * component[cardiovascularSystem].value[x] only CodeableConcept
 * component[cardiovascularSystem].value[x] MS
-* component[cardiovascularSystem].value[x] from SOFAScore (required)
+* component[cardiovascularSystem].value[x] from $sofa-score-vs (required)
 * component[cardiovascularSystem].value[x].coding 1..1 MS
 * component[cardiovascularSystem].value[x].coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
 * component[cardiovascularSystem].value[x].coding.system 1..
@@ -86,7 +82,7 @@ Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moren
 * component[liver].code.coding.code 1..
 * component[liver].value[x] only CodeableConcept
 * component[liver].value[x] MS
-* component[liver].value[x] from SOFAScore (required)
+* component[liver].value[x] from $sofa-score-vs (required)
 * component[liver].value[x].coding 1..1 MS
 * component[liver].value[x].coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
 * component[liver].value[x].coding.system 1..
@@ -98,7 +94,7 @@ Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moren
 * component[coagulation].code.coding.code 1..
 * component[coagulation].value[x] only CodeableConcept
 * component[coagulation].value[x] MS
-* component[coagulation].value[x] from SOFAScore (required)
+* component[coagulation].value[x] from $sofa-score-vs (required)
 * component[coagulation].value[x].coding 1..1 MS
 * component[coagulation].value[x].coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
 * component[coagulation].value[x].coding.system 1..
@@ -110,7 +106,7 @@ Description: "Observation to capture the SOFA score. Based on: Vincent JL, Moren
 * component[kidneys].code.coding.code 1..
 * component[kidneys].value[x] only CodeableConcept
 * component[kidneys].value[x] MS
-* component[kidneys].value[x] from SOFAScore (required)
+* component[kidneys].value[x] from $sofa-score-vs (required)
 * component[kidneys].value[x].coding 1..1 MS
 * component[kidneys].value[x].coding ^patternCoding.system = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
 * component[kidneys].value[x].coding.system 1..

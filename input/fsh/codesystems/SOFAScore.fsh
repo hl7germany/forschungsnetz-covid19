@@ -2,14 +2,8 @@ CodeSystem: SOFAScore
 Id: sofa-score
 Title: "SOFA Score"
 Description: "SOFA score based on: Vincent JL, Moreno R, Takala J, et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine. Intensive Care Med. 1996;22(7):707-710. doi:10.1007/BF01709751"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
-//* ^version = "1.0.4"
-* ^status = #active
-* ^experimental = false
+* insert Metadata
 * ^date = "2021-05-26"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * ^caseSensitive = true
 * ^valueSet = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score"
 * ^content = #complete

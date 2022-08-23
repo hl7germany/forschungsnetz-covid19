@@ -1,15 +1,10 @@
 Profile: KnownExposure
 Parent: Observation
-Id: gecco-observation-known-exposure
+Id: known-exposure
 Title: "Known Exposure to Covid-19"
 Description: "Contact with persons suffering from COVID-19"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/known-exposure"
-//* ^version = "1.0"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-* meta.profile MS
 * category 1.. MS
 * category.coding MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -33,7 +28,7 @@ Description: "Contact with persons suffering from COVID-19"
 * effective[x] MS
 * value[x] only CodeableConcept
 * value[x] MS
-* valueCodeableConcept from KnownExposureSARSCoV2 (preferred)
+* valueCodeableConcept from $known-exposure (preferred)
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #open

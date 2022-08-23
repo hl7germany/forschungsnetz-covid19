@@ -7,6 +7,18 @@
   "description": "Therapeutic respiratory procedures",
   "version": "1.0.6",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies",
+  "experimental": false,
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -27,8 +39,6 @@
       "value": "1.2.276.0.76.11.482"
     }
   ],
-  "experimental": false,
-  "publisher": "Charité",
   "immutable": false,
   "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
   "compose": {

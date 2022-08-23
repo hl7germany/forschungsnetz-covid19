@@ -2,16 +2,13 @@ ValueSet: ChronicNeurologicalMentalDiseasesICD
 Id: chronic-neurological-mental-diseases-icd
 Title: "Chronic Neurological Mental Diseases ICD-10-GM"
 Description: "Chronic neurological or mental diseases in the context of Covid-19 from ICD-10-GM"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-05-04T22:35:08+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases-icd"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.498"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $icd10gm|2021#F99 "Psychische Störung ohne nähere Angabe"
 * $icd10gm|2021#G20 "Primäres Parkinson-Syndrom"

@@ -2,13 +2,8 @@ ValueSet: SmokingStatus
 Id: smoking-status
 Title: "Smoking Status"
 Description: "Codes to capture tobacco smoking status"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/smoking-status"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability"
 * ^immutable = false
 * ^copyright = "This artefact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms & Conditions in https://loinc.org/license/"
 * $loinc#LA18976-3 "Current every day smoker"

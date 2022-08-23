@@ -1,0 +1,156 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "do-not-resuscitate-order",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Security"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/do-not-resuscitate-order",
+  "version": "1.0.6",
+  "name": "DoNotResuscitateOrder",
+  "title": "Do-Not-Resuscitate Order",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-09-08",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "A do-not-resuscitate (DNR) order",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Consent",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Consent",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Consent.scope",
+        "path": "Consent.scope",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.scope.coding",
+        "path": "Consent.scope.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.scope.coding.system",
+        "path": "Consent.scope.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/consentscope"
+      },
+      {
+        "id": "Consent.scope.coding.code",
+        "path": "Consent.scope.coding.code",
+        "min": 1,
+        "fixedCode": "adr"
+      },
+      {
+        "id": "Consent.category",
+        "path": "Consent.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.category.coding",
+        "path": "Consent.category.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.category.coding.system",
+        "path": "Consent.category.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/consentcategorycodes"
+      },
+      {
+        "id": "Consent.category.coding.code",
+        "path": "Consent.category.coding.code",
+        "min": 1,
+        "fixedCode": "dnr"
+      },
+      {
+        "id": "Consent.patient",
+        "path": "Consent.patient",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.dateTime",
+        "path": "Consent.dateTime",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision",
+        "path": "Consent.provision",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.code",
+        "path": "Consent.provision.code",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/resuscitation-status"
+        }
+      },
+      {
+        "id": "Consent.provision.code.coding",
+        "path": "Consent.provision.code.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Consent.provision.code.coding.system",
+        "path": "Consent.provision.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Consent.provision.code.coding.code",
+        "path": "Consent.provision.code.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

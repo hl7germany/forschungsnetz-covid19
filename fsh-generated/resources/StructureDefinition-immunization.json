@@ -1,0 +1,254 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "immunization",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization",
+  "version": "1.0.6",
+  "name": "Immunization",
+  "title": "History of Vaccination",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-09-20",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "A patient's history of vaccination",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Immunization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Immunization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Immunization.vaccineCode",
+        "path": "Immunization.vaccineCode",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.vaccineCode.coding",
+        "path": "Immunization.vaccineCode.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:snomed",
+        "path": "Immunization.vaccineCode.coding",
+        "sliceName": "snomed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-snomed",
+          "description": "SNOMED Vaccine Codes"
+        }
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:snomed.system",
+        "path": "Immunization.vaccineCode.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:snomed.code",
+        "path": "Immunization.vaccineCode.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:atc",
+        "path": "Immunization.vaccineCode.coding",
+        "sliceName": "atc",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-atc",
+          "description": "ATC Vaccine Codes"
+        }
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:atc.system",
+        "path": "Immunization.vaccineCode.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:atc.code",
+        "path": "Immunization.vaccineCode.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:pzn",
+        "path": "Immunization.vaccineCode.coding",
+        "sliceName": "pzn",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/ifa/pzn"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/ValueSet/ifa/pzn"
+        }
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:pzn.system",
+        "path": "Immunization.vaccineCode.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:pzn.code",
+        "path": "Immunization.vaccineCode.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:absentOrUnknownImmunization",
+        "path": "Immunization.vaccineCode.coding",
+        "sliceName": "absentOrUnknownImmunization",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips"
+        }
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:absentOrUnknownImmunization.system",
+        "path": "Immunization.vaccineCode.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Immunization.vaccineCode.coding:absentOrUnknownImmunization.code",
+        "path": "Immunization.vaccineCode.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Immunization.patient",
+        "path": "Immunization.patient",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.occurrence[x]",
+        "path": "Immunization.occurrence[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.occurrence[x]:occurrenceDateTime",
+        "path": "Immunization.occurrence[x]",
+        "sliceName": "occurrenceDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.protocolApplied",
+        "path": "Immunization.protocolApplied",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.protocolApplied.targetDisease",
+        "path": "Immunization.protocolApplied.targetDisease",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease"
+        }
+      },
+      {
+        "id": "Immunization.protocolApplied.targetDisease.coding",
+        "path": "Immunization.protocolApplied.targetDisease.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Immunization.protocolApplied.targetDisease.coding.system",
+        "path": "Immunization.protocolApplied.targetDisease.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Immunization.protocolApplied.targetDisease.coding.code",
+        "path": "Immunization.protocolApplied.targetDisease.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

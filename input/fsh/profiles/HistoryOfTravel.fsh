@@ -1,16 +1,10 @@
 Profile: HistoryOfTravel
 Parent: Observation
-Id: gecco-observation-history-of-travel
+Id: history-of-travel
 Title: "History Of Travel"
 Description: "A patient's history of travel"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/history-of-travel"
-//* ^version = "1.0"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-//* meta MS
-//* meta.profile MS
 * category 1.. MS
 * category.coding MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -33,7 +27,7 @@ Description: "A patient's history of travel"
 * subject only Reference($Patient or Group)
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* valueCodeableConcept from YesNoUnknownOtherNa (required)
+* valueCodeableConcept from $yes-no-unknown-other-na (required)
 * valueCodeableConcept ^binding.description = "Yes | No | Unknown"
 * valueCodeableConcept.coding 1..
 * valueCodeableConcept.coding.system 1..
@@ -71,7 +65,7 @@ Description: "A patient's history of travel"
 * component[State].code.coding.code 1..
 * component[State].code.coding.display 1..
 * component[State].value[x] only CodeableConcept
-* component[State].value[x] from ValueSetISO31662DE (extensible)
+* component[State].value[x] from $iso3166-2-de (extensible)
 * component[City].code = $loinc#94653-3 "City of travel"
 * component[City].code.coding 1..
 * component[City].code.coding.system 1..

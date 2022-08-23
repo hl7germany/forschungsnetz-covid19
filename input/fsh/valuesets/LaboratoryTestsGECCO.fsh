@@ -2,16 +2,13 @@ ValueSet: LaboratoryTestsGECCO
 Id: lab-tests-gecco
 Title: "Laboratory Tests GECCO"
 Description: "Laboratory tests in the context of Covid-19"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-06-05T17:27:13+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/lab-tests-gecco"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.521"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $loinc#48421-2 "C reactive protein [Mass/volume] in Capillary blood"
 * $loinc#71426-1 "C reactive protein [Mass/volume] in Blood by High sensitivity method"

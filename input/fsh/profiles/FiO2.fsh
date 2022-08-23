@@ -1,14 +1,10 @@
 Profile: FiO2
-Parent: ProfileObservationLaboruntersuchung
-Id: gecco-observation-inhaled-oxygen-concentration
+Parent: $MII-Laboruntersuchung
+Id: inhaled-oxygen-concentration
 Title: "FiO2"
 Description: "Fraction of inspired oxygen"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/inhaled-oxygen-concentration"
-//* ^version = "1.0.4"
+* insert Metadata
 * ^date = "2021-05-28"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * category.coding contains blood-gas-studies 0..1
 * category.coding[blood-gas-studies] = $loinc#18767-4
 * code.coding MS

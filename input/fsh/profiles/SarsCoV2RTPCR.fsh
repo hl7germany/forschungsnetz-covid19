@@ -1,13 +1,10 @@
 Profile: SarsCoV2RTPCR
-Parent: ProfileObservationLaboruntersuchung
-Id: gecco-observation-sars-cov-2-rt-pcr
+Parent: $MII-Laboruntersuchung
+Id: sars-cov-2-rt-pcr
 Title: "Sars-CoV-2-RT-PCR"
 Description: "Qualitative detection of SARS-CoV-2 in respiratory specimens by RT-PCR"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
@@ -19,4 +16,4 @@ Description: "Qualitative detection of SARS-CoV-2 in respiratory specimens by RT
 * subject only Reference($Patient or Group)
 * valueQuantity ..0
 * valueCodeableConcept 1..
-* valueCodeableConcept from DetectedNotDetectedInconclusive (required)
+* valueCodeableConcept from $detected-not-detected-inconclusive (required)

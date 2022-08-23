@@ -1,14 +1,10 @@
 Profile: HeartRate
 Parent: VitalSignsBase
-Id: gecco-observation-heart-rate
+Id: heart-rate
 Title: "Heart Rate"
 Description: "Heart rate of a patient"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate"
-* ^experimental = false
+* insert Metadata
 * ^date = "2021-05-17"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * code ^short = "Heart Rate"
 * code ^definition = "Heart Rate"
 * code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."

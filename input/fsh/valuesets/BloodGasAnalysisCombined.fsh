@@ -1,5 +1,5 @@
 ValueSet: BloodGasAnalysisCombined
-Id: gecco-valueset-blood-gas-analysis-combined-v105
+Id: gecco-valueset-blood-gas-analysis-combined-v106
 Title: "Blood Gas Analysis Combined"
 Description: "Relevant codes for a blood gas analysis taken from LOINC and SNOMED CT."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

@@ -1,13 +1,10 @@
 Profile: PharmacologicalTherapyACEInhibitors
-Parent: ProfileMedicationStatementMedikation
-Id: gecco-medication-statement-ace-inhibitors
+Parent: $MII-MedicationStatement
+Id: pharmacological-therapy-ace-inhibitors
 Title: "Pharmacological Therapy ACE Inhibitors"
 Description: "Pharmacological therapy using ACE inhibitors in the context of Covid-19"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-ace-inhibitors"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * medication[x] only CodeableConcept
 * medicationCodeableConcept.coding MS
 * medicationCodeableConcept.coding ^slicing.discriminator.type = #pattern
@@ -19,7 +16,7 @@ Description: "Pharmacological therapy using ACE inhibitors in the context of Cov
 * medicationCodeableConcept.coding[snomed] = $sct#41549009
 * medicationCodeableConcept.coding[snomed].system 1.. MS
 * medicationCodeableConcept.coding[snomed].code 1.. MS
-* medicationCodeableConcept.coding[atcClassDe] from AceInhibitorsATC (extensible)
+* medicationCodeableConcept.coding[atcClassDe] from $ace-inhibitors-atc (extensible)
 * medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/atc"
 * medicationCodeableConcept.coding[atcClassDe].system 1..
 * medicationCodeableConcept.coding[atcClassDe].code 1..

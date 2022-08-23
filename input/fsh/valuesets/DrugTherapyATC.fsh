@@ -2,16 +2,13 @@ ValueSet: DrugTherapyATC
 Id: pharmacological-therapy-atc
 Title: "Pharmacological Therapy ATC"
 Description: "Pharmacological therapy in the context of Covid-19"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-05-04T20:17:42+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-atc"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.494"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $atc|2021#N02B "ANDERE ANALGETIKA UND ANTIPYRETIKA"
 * $atc|2021#N02BA "Salicylsäure und Derivate"

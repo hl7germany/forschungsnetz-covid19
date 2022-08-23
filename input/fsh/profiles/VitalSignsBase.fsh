@@ -1,15 +1,10 @@
 Profile: VitalSignsBase
 Parent: Observation
-Id: gecco-vital-signs-base
+Id: vital-signs-base
 Title: "Vital Signs Base Profile"
 Description: "Vital signs base definition profile"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base"
-//* ^version = "1.0.4"
-* ^experimental = false
+* insert Metadata
 * ^date = "2021-05-17"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * obeys vs-2
 * status MS
 * category MS

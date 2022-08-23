@@ -7,6 +7,18 @@
   "description": "Apheresis procedures from the German procedure classification (Operationen- und Prozedurenschlüssel - OPS)",
   "version": "1.0.6",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures-ops",
+  "experimental": false,
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -27,8 +39,6 @@
       "value": "1.2.276.0.76.11.538"
     }
   ],
-  "experimental": false,
-  "publisher": "Charité",
   "immutable": false,
   "compose": {
     "include": [

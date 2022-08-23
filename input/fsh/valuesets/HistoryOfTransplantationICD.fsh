@@ -2,16 +2,13 @@ ValueSet: HistoryOfTransplantationICD
 Id: history-of-organ-transplantation-icd
 Title: "History of transplantation ICD-10-GM"
 Description: "History of organ transplantation ICD-10-GM codes"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-07-09T13:39:29+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/history-of-organ-transplantation-icd"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.531"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $icd10gm|2021#Z94.1 "Zustand nach Herztransplantation"
 * $icd10gm|2021#Z94.2 "Zustand nach Lungentransplantation"

@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "frailty-score-mildly-frail",
+  "meta": {
+    "profile": [
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "763264000",
+        "system": "http://snomed.info/sct",
+        "display": "Canadian Study of Health and Aging Clinical Frailty Scale score"
+      }
+    ],
+    "text": "Frailty Scale Score"
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/gecco-patient"
+  },
+  "effectiveDateTime": "2020-06-16",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "5",
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score",
+        "display": "Mildly Frail"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "445414007",
+        "system": "http://snomed.info/sct",
+        "display": "Canadian Study of Health and Aging clinical frailty scale (assessment scale)"
+      }
+    ]
+  }
+}

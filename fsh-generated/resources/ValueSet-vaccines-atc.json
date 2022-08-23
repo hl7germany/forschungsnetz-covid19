@@ -8,7 +8,7 @@
   "version": "1.0.6",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-atc",
   "experimental": false,
-  "publisher": "Charité",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
       "telecom": [

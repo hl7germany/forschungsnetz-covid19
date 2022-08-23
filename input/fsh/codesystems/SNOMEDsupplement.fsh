@@ -2,14 +2,8 @@ CodeSystem: SNOMEDsupplement
 Id: snomed-pce-supplement
 Title: "SNOMED Supplement CodeSystem"
 Description: "CodeSystem supplement for SNOMED CT post-coordinated expressions."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement"
-//* ^version = "1.0.5"
-* ^status = #active
-* ^experimental = false
+* insert Metadata
 * ^date = "2021-09-20"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 //* ^caseSensitive = true
 * ^content = #supplement
 * ^supplements = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"

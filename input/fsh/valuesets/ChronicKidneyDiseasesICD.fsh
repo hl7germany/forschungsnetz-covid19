@@ -2,16 +2,13 @@ ValueSet: ChronicKidneyDiseasesICD
 Id: chronic-kidney-diseases-icd
 Title: "Chronic Kidney Diseases ICD-10-GM"
 Description: "Chronic kidney diseases in the context of Covid-19 from ICD-10-GM"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-05-04T22:57:39+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases-icd"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.501"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $icd10gm|2021#N18.9 "Chronische Nierenkrankheit, nicht näher bezeichnet"
 * $icd10gm|2021#N18.1 "Chronische Nierenkrankheit, Stadium 1"

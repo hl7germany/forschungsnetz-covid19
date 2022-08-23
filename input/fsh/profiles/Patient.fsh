@@ -1,14 +1,11 @@
 Profile: Patient
 Parent: $Patient
-Id: gecco-patient
+Id: Patient
 Title: "Patient"
 Description: "Covers demographic data about the patient"
+* insert Metadata
 * ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
-//* ^version = "1.0.5"
 * ^date = "2021-06-22"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

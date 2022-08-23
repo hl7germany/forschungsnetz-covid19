@@ -1,16 +1,10 @@
 Profile: SexAssignedAtBirth
 Parent: Observation
-Id: gecco-observation-sex-assigned-at-birth
+Id: sex-assigned-at-birth
 Title: "Sex assigned at birth"
 Description: "The biological sex of a patient assigned at birth."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sex-assigned-at-birth"
-//* ^version = "1.0"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-* meta MS
-* meta.profile MS
 * category 1.. MS
 * category.coding MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -33,15 +27,8 @@ Description: "The biological sex of a patient assigned at birth."
 * subject only Reference($Patient or Group)
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* valueCodeableConcept from BirthSex (required)
+* valueCodeableConcept from $birth-sex (required)
 * valueCodeableConcept ^binding.description = "Coded value for sex assigned at birth"
-// * value[x] from BirthSex (required)
-// * value[x] ^slicing.discriminator.type = #type
-// * value[x] ^slicing.discriminator.path = "$this"
-// * value[x] ^slicing.rules = #open
-// * value[x] ^binding.description = "Coded value for sex assigned at birth"
-// * valueCodeableConcept only CodeableConcept
-// * valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * valueCodeableConcept.coding 1..
 * valueCodeableConcept.coding.system 1..
 * valueCodeableConcept.coding.code 1..

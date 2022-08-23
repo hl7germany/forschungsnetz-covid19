@@ -1,0 +1,103 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "extracorporeal-membrane-oxygenation",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/extracorporeal-membrane-oxygenation",
+  "version": "1.0.6",
+  "name": "ExtracorporealMembraneOxygenation",
+  "title": "Extracorporeal membrane oxygenation",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-10-29",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Extracorporeal membrane oxygenation (ECMO) procedures",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1
+      },
+      {
+        "id": "Procedure.category.coding:sct",
+        "path": "Procedure.category.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "277132007",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:ops",
+        "path": "Procedure.code.coding",
+        "sliceName": "ops",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/extracorporeal-membrane-oxygenation"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:sct",
+        "path": "Procedure.code.coding",
+        "sliceName": "sct"
+      },
+      {
+        "id": "Procedure.code.coding:sct.code",
+        "path": "Procedure.code.coding.code",
+        "patternCode": "233573008"
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

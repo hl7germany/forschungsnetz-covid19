@@ -1,20 +1,16 @@
 Profile: GeccoBaseCondition
-Parent: ProfileConditionDiagnose
+Parent: $MII-Diagnose
 Id: gecco-base-condition
 Title: "Gecco Base Condition"
 Description: "Base condition for the GECCO dataset that contains an additional extension and constraints on the verificationStatus-element."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-base-condition"
-//* ^version = "1.0.5"
+* insert Metadata
 * ^date = "2021-06-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * obeys unk-1
 * modifierExtension ^slicing.discriminator.type = #value
 * modifierExtension ^slicing.discriminator.path = "url"
 * modifierExtension ^slicing.rules = #open
-* modifierExtension contains UncertaintyOfPresence named uncertaintyOfPresence 0..1 MS
-* modifierExtension[uncertaintyOfPresence] only UncertaintyOfPresence
+* modifierExtension contains $uncertainty-of-presence named uncertaintyOfPresence 0..1 MS
+* modifierExtension[uncertaintyOfPresence] only $uncertainty-of-presence
 * verificationStatus MS
 * verificationStatus.coding 1..
 * verificationStatus.coding ^slicing.discriminator.type = #pattern

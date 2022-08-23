@@ -1,13 +1,10 @@
 Profile: SarsCoV2AbSerPlIAaCnc
-Parent: ProfileObservationLaboruntersuchung
-Id: gecco-observation-sars-cov-2-ab-ser-pl-ia-acnc
+Parent: $MII-Laboruntersuchung
+Id: sars-cov-2-ab-ser-pl-ia-acnc
 Title: "SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay"
 Description: "SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ia-acnc"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open

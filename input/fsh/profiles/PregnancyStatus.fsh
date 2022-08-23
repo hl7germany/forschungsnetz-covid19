@@ -1,14 +1,10 @@
 Profile: PregnancyStatus
 Parent: Observation
-Id: gecco-observation-pregnancy-status
+Id: pregnancy-status
 Title: "Pregnancy Status"
 Description: "This profile constrains the Observation resource to represent the pregnancy status."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pregnancy-status"
-//* ^version = "1.0.4"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * code = $loinc#82810-3
 * code MS
 * code.coding 1..
@@ -20,7 +16,7 @@ Description: "This profile constrains the Observation resource to represent the 
 * subject only Reference($Patient)
 * effective[x] 1.. MS
 * effective[x] only dateTime
-* effectiveDateTime.extension contains $data-absent-reason_1 named dataAbsentReason 0..1 MS
+* effectiveDateTime.extension contains $sd-data-absent-reason named dataAbsentReason 0..1 MS
 * effectiveDateTime.extension[dataAbsentReason] ^short = "effective[x] absence reason"
 * effectiveDateTime.extension[dataAbsentReason] ^definition = "Provides a reason why the effectiveTime is missing."
 * value[x] only CodeableConcept
@@ -48,7 +44,7 @@ Description: "This profile constrains the Observation resource to represent the 
 * device ^mustSupport = false
 * referenceRange ..0
 * referenceRange ^mustSupport = false
-* hasMember only Reference(ObservationPregnancyEddUvIps)
+* hasMember only Reference($pregnancy-edd)
 * hasMember ^short = "Expected Delivery Date"
 * hasMember ^definition = "A reference to the Expected Delivery Date Observation."
 * hasMember.reference 1..

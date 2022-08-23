@@ -2,14 +2,9 @@ ValueSet: VaccinesSNOMED
 Id: vaccines-snomed
 Title: "Vaccines SNOMED"
 Description: "This value set contains SNOMED codes for vaccines"
+* insert Metadata
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-supplement"
-* ^extension.valueCanonical = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement|1.0.5"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-snomed"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+* ^extension.valueCanonical = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/snomed-pce-supplement|1.0.6"
 * ^immutable = false
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
 * $sct#1119305005 "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)"

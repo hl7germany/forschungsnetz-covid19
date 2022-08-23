@@ -1,0 +1,241 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "diagnostic-report-radiology",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnostic-report-radiology",
+  "version": "1.0.6",
+  "name": "DiagnosticReportRadiology",
+  "title": "Diagnostic Report Radiology",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-09-08",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Radiological findings in the context of an infection with SARS-CoV-2",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.category",
+        "path": "DiagnosticReport.category",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding",
+        "path": "DiagnosticReport.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:loinc",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "18726-0",
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:loinc.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.category.coding:loinc.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections",
+        "path": "DiagnosticReport.category.coding",
+        "sliceName": "diagnostic-service-sections",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "RAD",
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding",
+        "path": "DiagnosticReport.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:loinc",
+        "path": "DiagnosticReport.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "18748-4",
+          "system": "http://loinc.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.code.coding:loinc.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.code.coding:loinc.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.effective[x]",
+        "path": "DiagnosticReport.effective[x]",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode",
+        "path": "DiagnosticReport.conclusionCode",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-findings"
+        }
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode.coding",
+        "path": "DiagnosticReport.conclusionCode.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode.coding:snomed",
+        "path": "DiagnosticReport.conclusionCode.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode.coding:snomed.system",
+        "path": "DiagnosticReport.conclusionCode.coding.system",
+        "min": 1
+      },
+      {
+        "id": "DiagnosticReport.conclusionCode.coding:snomed.code",
+        "path": "DiagnosticReport.conclusionCode.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

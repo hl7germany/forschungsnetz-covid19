@@ -2,16 +2,13 @@ ValueSet: CardiovascularDiseasesICD
 Id: cardiovascular-diseases-icd
 Title: "Cardiovascular Diseases ICD-10-GM"
 Description: "Cardiovascular diseases in the context of Covid-19 from ICD-10-GM"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-05-04T21:23:32+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases-icd"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.495"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $icd10gm|2021#I25.29 "Alter Myokardinfarkt Nicht näher bezeichnet"
 * $icd10gm|2021#I10.90 "Essentielle Hypertonie, nicht näher bezeichnet : Ohne Angabe einer hypertensiven Krise"

@@ -2,13 +2,8 @@ CodeSystem: ParameterCodeseCRF
 Id: ecrf-parameter-codes
 Title: "Parameter Codes eCRF"
 Description: "Codes for GECCO eCRF parameters where no code from standard terminologies is available."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes"
-* ^status = #active
-* ^experimental = false
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * ^caseSensitive = true
 * ^content = #complete
 * ^property[0].code = #status

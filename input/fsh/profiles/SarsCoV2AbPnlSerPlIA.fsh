@@ -1,16 +1,10 @@
 Profile: SarsCoV2AbPnlSerPlIA
 Parent: Observation
-Id: gecco-observation-sars-cov-2-ab-pnl-ser-pl-ia
+Id: sars-cov-2-ab-pnl-ser-pl-ia
 Title: "SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay"
 Description: "SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-pnl-ser-pl-ia"
-//* ^version = "1.0.4"
+* insert Metadata
 * ^date = "2021-05-31"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-* meta.source MS
-* meta.profile MS
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
 * identifier ^slicing.discriminator[=].path = "type"

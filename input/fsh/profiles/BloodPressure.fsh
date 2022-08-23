@@ -1,13 +1,10 @@
 Profile: BloodPressure
 Parent: VitalSignsBase
-Id: gecco-observation-blood-pressure
+Id: blood-pressure
 Title: "Blood Pressure"
 Description: "The blood pressure of a patient."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure"
+* insert Metadata
 * ^date = "2021-05-17"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open

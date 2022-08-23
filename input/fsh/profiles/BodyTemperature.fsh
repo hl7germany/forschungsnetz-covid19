@@ -1,14 +1,10 @@
 Profile: BodyTemperature
 Parent: VitalSignsBase
-Id: gecco-observation-body-temperature
+Id: body-temperature
 Title: "Body Temperature"
 Description: "Body Temperature of a patient"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature"
-* ^experimental = false
+* insert Metadata
 * ^date = "2021-05-17"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * code ^short = "Body Temperature"
 * code ^definition = "Body Temperature"
 * code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."

@@ -7,6 +7,18 @@
   "description": "Radiology procedures in the context of Covid-19 - DICOM",
   "version": "1.0.6",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures-dicom",
+  "experimental": false,
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -20,8 +32,6 @@
       }
     }
   ],
-  "experimental": false,
-  "publisher": "Charité",
   "immutable": false,
   "compose": {
     "include": [

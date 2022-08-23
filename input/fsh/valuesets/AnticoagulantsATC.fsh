@@ -2,16 +2,13 @@ ValueSet: AnticoagulantsATC
 Id: anticoagulants-atc
 Title: "Anticoagulants ATC"
 Description: "Pharmacological therapy using anticoagulants in the context of Covid-19"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-05-04T23:11:19+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/anticoagulants-atc"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.503"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $atc|2021#B01AB "Heparingruppe"
 * $atc|2021#B01AB01 "Heparin"

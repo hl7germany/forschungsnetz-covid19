@@ -3,7 +3,7 @@
   "id": "dialysis-completed",
   "meta": {
     "profile": [
-      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-dialysis"
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dialysis"
     ]
   },
   "status": "completed",

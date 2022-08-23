@@ -1,14 +1,10 @@
 Profile: BloodGasPanel
 Parent: Observation
-Id: gecco-observation-blood-gas-panel
+Id: blood-gas-panel
 Title: "Blood Gas Panel"
 Description: "Blood gas panel is a grouper observation with references to the individual measurements as separate observations."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-gas-panel"
-//* ^version = "1.0.5"
+* insert Metadata
 * ^date = "2021-09-20"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * identifier MS
 * identifier ^slicing.discriminator[0].type = #pattern
 * identifier ^slicing.discriminator[=].path = "type"

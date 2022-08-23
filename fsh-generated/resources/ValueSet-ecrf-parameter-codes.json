@@ -7,14 +7,8 @@
   "description": "Contains the codes for GECCO eCRF parameters where no code from standard terminologies is available.",
   "version": "1.0.6",
   "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ecrf-parameter-codes",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-    ]
-  },
   "experimental": false,
-  "date": "2020-08-10",
-  "publisher": "Charité",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
       "telecom": [
@@ -25,6 +19,11 @@
       ]
     }
   ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
   "compose": {
     "include": [
       {

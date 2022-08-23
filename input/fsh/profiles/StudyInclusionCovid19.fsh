@@ -1,15 +1,10 @@
 Profile: StudyInclusionCovid19
 Parent: Observation
-Id: gecco-observation-study-inclusion-covid-19
+Id: study-inclusion-covid-19
 Title: "Study Inclusion due to Covid-19"
 Description: "This observation captures if a confirmed Covid-19 diagnosis is the main reason for enrolment in the study."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/study-inclusion-covid-19"
-//* ^version = "1.0"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-* meta MS
-* meta.profile MS
+* insert Metadata
+* ^date = "2020-10-29"
 * category 1.. MS
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
@@ -36,7 +31,7 @@ Description: "This observation captures if a confirmed Covid-19 diagnosis is the
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #open
 * valueCodeableConcept.coding contains snomed 1..1
-* valueCodeableConcept.coding[snomed] from YesNoUnknownOtherNa (required)
+* valueCodeableConcept.coding[snomed] from $yes-no-unknown-other-na (required)
 * valueCodeableConcept.coding[snomed] ^patternCoding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[snomed].system 1..
 * valueCodeableConcept.coding[snomed].code 1..

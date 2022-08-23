@@ -2,16 +2,13 @@ ValueSet: RheumatologicalImmunologicalDiseasesICD
 Id: rheumatological-immunological-diseases-icd
 Title: "Rheumatological Immunological Diseases ICD-10-GM"
 Description: "Rheumatological or immunological diseases in the context of Covid-19 - ICD-10-GM"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-05-04T22:30:24+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases-icd"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.512"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $icd10gm|2021#K52.9 "Nichtinfektiöse Gastroenteritis und Kolitis, nicht näher bezeichnet"
 * $icd10gm|2021#M06.99 "Chronische Polyarthritis, nicht näher bezeichnet : Nicht näher bezeichnete Lokalisation"

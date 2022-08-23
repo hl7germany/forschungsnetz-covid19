@@ -1,14 +1,10 @@
 Profile: PatientInICU
 Parent: Observation
-Id: gecco-observation-patient-in-icu
+Id: patient-in-icu
 Title: "Patient in ICU"
 Description: "This observation captures if the patient is currently treated in the intensive care unit."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/patient-in-icu"
-//* ^version = "1.0.4"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * status = #final (exactly)
 * code MS
 * code.coding MS
@@ -24,7 +20,7 @@ Description: "This observation captures if the patient is currently treated in t
 * effective[x] 1.. MS
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* valueCodeableConcept from YesNoUnknownOtherNa (required)
+* valueCodeableConcept from $yes-no-unknown-other-na (required)
 * valueCodeableConcept ^binding.description = "Yes | No | Unknown"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"

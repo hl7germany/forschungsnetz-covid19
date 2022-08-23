@@ -1,14 +1,10 @@
 Profile: DiagnosisCovid19
-Parent: ProfileConditionDiagnose
-Id: gecco-condition-diagnosis-covid-19
+Parent: $MII-Diagnose
+Id: diagnosis-covid-19
 Title: "Diagnosis Covid-19"
 Description: "Profile to capture the diagnosis of disease caused by 2019 novel coronavirus. Includes the stage at diagnosis."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19"
-//* ^version = "1.0"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * verificationStatus MS
 * verificationStatus.coding 1..
 * verificationStatus.coding ^slicing.discriminator.type = #pattern

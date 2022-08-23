@@ -1,16 +1,10 @@
 Profile: DischargeDisposition
 Parent: Observation
-Id: gecco-observation-discharge-disposition
+Id: discharge-disposition
 Title: "Discharge Disposition"
 Description: "The type of discharge from a hospital or care facility"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/discharge-disposition"
-//* ^version = "1.0"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-//* meta MS
-//* meta.profile MS
 * category 1.. MS
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
@@ -39,7 +33,7 @@ Description: "The type of discharge from a hospital or care facility"
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #open
 * valueCodeableConcept.coding contains snomed 1..1
-* valueCodeableConcept.coding[snomed] from DischargeDisposition (required)
+* valueCodeableConcept.coding[snomed] from $discharge-disposition (required)
 * valueCodeableConcept.coding[snomed] ^patternCoding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[snomed].system 1..
 * valueCodeableConcept.coding[snomed].code 1..

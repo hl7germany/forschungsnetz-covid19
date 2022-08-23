@@ -3,7 +3,7 @@
   "id": "apheresis-unknown",
   "meta": {
     "profile": [
-      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-apheresis"
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/apheresis"
     ]
   },
   "status": "unknown",

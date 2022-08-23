@@ -1,14 +1,10 @@
 Profile: RespiratoryRate
 Parent: VitalSignsBase
-Id: gecco-observation-respiratory-rate
+Id: respiratory-rate
 Title: "Respiratory Rate"
 Description: "Respiratory rate of a patient"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate"
-* ^experimental = false
+* insert Metadata
 * ^date = "2021-05-17"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * code ^short = "Respiratory Rate"
 * code ^definition = "Respiratory Rate"
 * code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."

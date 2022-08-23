@@ -2,16 +2,13 @@ ValueSet: DrugTherapyOPS
 Id: pharmacological-therapy-ops
 Title: "Pharmacological Therapy OPS"
 Description: "Pharmacological therapy in the context of Covid-19, relevant OPS-Codes"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-05-29T15:04:32+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-ops"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.516"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $ops|2021#6-00a.g "Sarilumab, parenteral"
 * $ops|2021#6-005.8 "Everolimus, oral"

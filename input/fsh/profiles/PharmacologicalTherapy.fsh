@@ -1,13 +1,10 @@
 Profile: PharmacologicalTherapy
-Parent: ProfileMedicationStatementMedikation
-Id: gecco-medication-statement-pharmacological-therapy-covid-19
+Parent: $MII-MedicationStatement
+Id: pharmacological-therapy
 Title: "Pharmacological Therapy"
 Description: "Pharmacological therapy in the context of Covid-19"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * medication[x] only CodeableConcept
 * medicationCodeableConcept.coding 1..
 * medicationCodeableConcept.coding ^slicing.discriminator.type = #pattern
@@ -17,11 +14,11 @@ Description: "Pharmacological therapy in the context of Covid-19"
     atcClassDe 0..* and
     ops 0..* and
     snomed 0..*
-* medicationCodeableConcept.coding[atcClassDe] from DrugTherapyATC (extensible)
+* medicationCodeableConcept.coding[atcClassDe] from $pharmacological-therapy-atc (extensible)
 * medicationCodeableConcept.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/atc"
 * medicationCodeableConcept.coding[atcClassDe].system 1..
 * medicationCodeableConcept.coding[atcClassDe].code 1..
-* medicationCodeableConcept.coding[ops] from DrugTherapyOPS (extensible)
+* medicationCodeableConcept.coding[ops] from $pharmacological-therapy-ops (extensible)
 * medicationCodeableConcept.coding[ops] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/ops"
 * medicationCodeableConcept.coding[ops].system 1..
 * medicationCodeableConcept.coding[ops].code 1..

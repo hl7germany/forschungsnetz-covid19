@@ -1,14 +1,10 @@
 Profile: ChronicLungDiseases
 Parent: GeccoBaseCondition
-Id: gecco-condition-chronic-lung-diseases
+Id: chronic-lung-diseases
 Title: "Chronic Lung Diseases"
 Description: "Chronic lung diseases as a risk factor for a severe course of an infection with SARS-CoV-2"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases"
-//* ^version = "1.0"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * category 1.. MS
 * category.coding MS
 * category.coding ^slicing.discriminator.type = #pattern
@@ -18,13 +14,5 @@ Description: "Chronic lung diseases as a risk factor for a severe course of an i
 * category.coding[pulmonaryMedicine] = $sct#418112009
 * category.coding[pulmonaryMedicine].system 1.. MS
 * category.coding[pulmonaryMedicine].code 1.. MS
-* code.coding[icd10-gm] from ChronicLungDiseasesICD (required)
+* code.coding[icd10-gm] from $chronic-lung-diseases-icd (required)
 * code.coding[sct] from $chronic-lung-diseases (required)
-* onsetPeriod.extension ^slicing.discriminator.type = #value
-* onsetPeriod.extension ^slicing.discriminator.path = "url"
-* onsetPeriod.extension ^slicing.rules = #open
-* onsetPeriod.extension contains $data-absent-reason_1 named dataAbsentReason 0..1
-* onsetDateTime.extension ^slicing.discriminator.type = #value
-* onsetDateTime.extension ^slicing.discriminator.path = "url"
-* onsetDateTime.extension ^slicing.rules = #open
-* onsetDateTime.extension contains $data-absent-reason_1 named dataAbsentReason 0..1

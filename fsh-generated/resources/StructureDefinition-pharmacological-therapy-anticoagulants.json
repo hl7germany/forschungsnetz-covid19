@@ -1,0 +1,125 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "pharmacological-therapy-anticoagulants",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants",
+  "version": "1.0.6",
+  "name": "PharmacologicalTherapyAnticoagulants",
+  "title": "Pharmacological Therapy Anticoagulants",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-10-29",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Pharmacological therapy using anticoagulants in the context of Covid-19",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding",
+        "path": "MedicationStatement.medication[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding:atcClassDe",
+        "path": "MedicationStatement.medication[x].coding",
+        "sliceName": "atcClassDe",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        },
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/anticoagulants-atc"
+        }
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding:atcClassDe.system",
+        "path": "MedicationStatement.medication[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding:atcClassDe.code",
+        "path": "MedicationStatement.medication[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.reasonCode",
+        "path": "MedicationStatement.reasonCode",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.reasonCode.coding",
+        "path": "MedicationStatement.reasonCode.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.reasonCode.coding:snomed",
+        "path": "MedicationStatement.reasonCode.coding",
+        "sliceName": "snomed",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/therapeutic-intent",
+          "description": "Prophylaxis | Curative"
+        }
+      },
+      {
+        "id": "MedicationStatement.reasonCode.coding:snomed.system",
+        "path": "MedicationStatement.reasonCode.coding.system",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.reasonCode.coding:snomed.code",
+        "path": "MedicationStatement.reasonCode.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

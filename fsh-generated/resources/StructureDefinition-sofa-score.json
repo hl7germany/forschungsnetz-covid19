@@ -1,0 +1,643 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sofa-score",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score",
+  "version": "1.0.6",
+  "name": "SOFA",
+  "title": "SOFA Score",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-10-29",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Observation to capture the SOFA score. Based on: Vincent JL, Moreno R, Takala J, et al. The SOFA (Sepsis-related Organ Failure Assessment) score to describe organ dysfunction/failure. On behalf of the Working Group on Sepsis-Related Problems of the European Society of Intensive Care Medicine. Intensive Care Med. 1996;22(7):707-710. doi:10.1007/BF01709751",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "value-1",
+            "severity": "error",
+            "human": "A value or dataAbsentReason SHALL be present.",
+            "expression": "valueInteger.exists() or dataAbsentReason.exists()",
+            "source": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score"
+          }
+        ]
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:survey",
+        "path": "Observation.category.coding",
+        "sliceName": "survey",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding:survey.system",
+        "path": "Observation.category.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.category.coding:survey.code",
+        "path": "Observation.category.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sofaScore",
+        "path": "Observation.code.coding",
+        "sliceName": "sofaScore",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "06",
+          "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:sofaScore.system",
+        "path": "Observation.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:sofaScore.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:respiratorySystem",
+        "path": "Observation.component",
+        "sliceName": "respiratorySystem",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:respiratorySystem.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "resp",
+              "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:respiratorySystem.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:respiratorySystem.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:respiratorySystem.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:respiratorySystem.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score"
+        }
+      },
+      {
+        "id": "Observation.component:respiratorySystem.value[x].coding",
+        "path": "Observation.component.value[x].coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:respiratorySystem.value[x].coding.system",
+        "path": "Observation.component.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:respiratorySystem.value[x].coding.code",
+        "path": "Observation.component.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:nervousSystem",
+        "path": "Observation.component",
+        "sliceName": "nervousSystem",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:nervousSystem.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "ns",
+              "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:nervousSystem.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:nervousSystem.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:nervousSystem.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:nervousSystem.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score"
+        }
+      },
+      {
+        "id": "Observation.component:nervousSystem.value[x].coding",
+        "path": "Observation.component.value[x].coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:nervousSystem.value[x].coding.system",
+        "path": "Observation.component.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:nervousSystem.value[x].coding.code",
+        "path": "Observation.component.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:cardiovascularSystem",
+        "path": "Observation.component",
+        "sliceName": "cardiovascularSystem",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:cardiovascularSystem.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "cvs",
+              "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cardiovascularSystem.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cardiovascularSystem.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:cardiovascularSystem.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:cardiovascularSystem.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score"
+        }
+      },
+      {
+        "id": "Observation.component:cardiovascularSystem.value[x].coding",
+        "path": "Observation.component.value[x].coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:cardiovascularSystem.value[x].coding.system",
+        "path": "Observation.component.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:cardiovascularSystem.value[x].coding.code",
+        "path": "Observation.component.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:liver",
+        "path": "Observation.component",
+        "sliceName": "liver",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:liver.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "liv",
+              "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:liver.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:liver.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:liver.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:liver.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score"
+        }
+      },
+      {
+        "id": "Observation.component:liver.value[x].coding",
+        "path": "Observation.component.value[x].coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:liver.value[x].coding.system",
+        "path": "Observation.component.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:liver.value[x].coding.code",
+        "path": "Observation.component.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:coagulation",
+        "path": "Observation.component",
+        "sliceName": "coagulation",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:coagulation.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "coa",
+              "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:coagulation.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:coagulation.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:coagulation.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:coagulation.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score"
+        }
+      },
+      {
+        "id": "Observation.component:coagulation.value[x].coding",
+        "path": "Observation.component.value[x].coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:coagulation.value[x].coding.system",
+        "path": "Observation.component.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:coagulation.value[x].coding.code",
+        "path": "Observation.component.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:kidneys",
+        "path": "Observation.component",
+        "sliceName": "kidneys",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:kidneys.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "kid",
+              "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:kidneys.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:kidneys.code.coding.system",
+        "path": "Observation.component.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:kidneys.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:kidneys.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score"
+        }
+      },
+      {
+        "id": "Observation.component:kidneys.value[x].coding",
+        "path": "Observation.component.value[x].coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/sofa-score"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:kidneys.value[x].coding.system",
+        "path": "Observation.component.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.component:kidneys.value[x].coding.code",
+        "path": "Observation.component.value[x].coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

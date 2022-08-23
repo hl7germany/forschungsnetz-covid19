@@ -593,8 +593,7 @@
     }
   ],
   "experimental": false,
-  "date": "2021-05-26",
-  "publisher": "Charité",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
       "telecom": [
@@ -605,6 +604,7 @@
       ]
     }
   ],
+  "date": "2021-05-26",
   "caseSensitive": true,
   "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score",
   "property": [

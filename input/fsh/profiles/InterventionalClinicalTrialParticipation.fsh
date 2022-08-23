@@ -1,16 +1,10 @@
 Profile: InterventionalClinicalTrialParticipation
 Parent: Observation
-Id: gecco-observation-interventional-clinical-trial-participation
+Id: interventional-clinical-trial-participation
 Title: "Interventional Clinical Trial Participation"
 Description: "This observation captures if the patient participated in one or more interventional clinical trials."
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/interventional-clinical-trial-participation"
-//* ^version = "1.0"
+* insert Metadata
 * ^date = "2020-10-29"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
-* meta MS
-* meta.profile MS
 * category 1.. MS
 * category.coding ^slicing.discriminator.type = #pattern
 * category.coding ^slicing.discriminator.path = "$this"
@@ -37,7 +31,7 @@ Description: "This observation captures if the patient participated in one or mo
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #open
 * valueCodeableConcept.coding contains snomed 1..1
-* valueCodeableConcept.coding[snomed] from YesNoUnknownOtherNa (required)
+* valueCodeableConcept.coding[snomed] from $yes-no-unknown-other-na (required)
 * valueCodeableConcept.coding[snomed] ^patternCoding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[snomed] ^binding.description = "Yes | No | Unknown"
 * valueCodeableConcept.coding[snomed].system 1..

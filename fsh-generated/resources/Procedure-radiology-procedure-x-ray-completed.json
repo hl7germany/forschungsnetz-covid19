@@ -3,7 +3,7 @@
   "id": "radiology-procedure-x-ray-completed",
   "meta": {
     "profile": [
-      "https://simplifier.net/guide/germancoronaconsensusdataset-implementationguide/StructureDefinition/gecco-procedure-radiology"
+      "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures"
     ]
   },
   "status": "completed",

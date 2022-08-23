@@ -1,14 +1,10 @@
 Profile: PH
-Parent: ProfileObservationLaboruntersuchung
-Id: gecco-observation-pH
+Parent: $MII-Laboruntersuchung
+Id: pH
 Title: "pH"
 Description: "pH-value of Blood"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH"
-//* ^version = "1.0.4"
+* insert Metadata
 * ^date = "2021-05-28"
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
 * category.coding contains blood-gas-studies 0..1
 * category.coding[blood-gas-studies] = $loinc#18767-4
 * code.coding 1..1

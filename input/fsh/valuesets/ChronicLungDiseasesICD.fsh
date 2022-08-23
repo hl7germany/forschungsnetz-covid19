@@ -2,16 +2,13 @@ ValueSet: ChronicLungDiseasesICD
 Id: chronic-lung-diseases-icd
 Title: "Chronic Lung Diseases ICD-10-GM"
 Description: "Chronic lung diseases in the context of Covid-19 from ICD-10-GM"
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-05-04T19:50:12+02:00"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-lung-diseases-icd"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.493"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
 * ^immutable = false
 * $icd10gm|2021#G47.3 "Schlafapnoe"
 * $icd10gm|2021#G47.31 "Obstruktives Schlafapnoe-Syndrom"

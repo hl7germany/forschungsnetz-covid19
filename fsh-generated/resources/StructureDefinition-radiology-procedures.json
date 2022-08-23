@@ -1,0 +1,160 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "radiology-procedures",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures",
+  "version": "1.0.6",
+  "name": "RadiologyProcedures",
+  "title": "Radiology Procedures",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-09-08",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "description": "Records the details of radiological imaging procedures performed on the patient.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1
+      },
+      {
+        "id": "Procedure.category.coding:sct",
+        "path": "Procedure.category.coding",
+        "sliceName": "sct",
+        "patternCoding": {
+          "code": "103693007",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:sct",
+        "path": "Procedure.code.coding",
+        "sliceName": "sct",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:dicom",
+        "path": "Procedure.code.coding",
+        "sliceName": "dicom",
+        "min": 0,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures-dicom"
+        }
+      },
+      {
+        "id": "Procedure.code.coding:dicom.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "patternUri": "http://dicom.nema.org/resources/ontology/DCM"
+      },
+      {
+        "id": "Procedure.code.coding:dicom.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.bodySite",
+        "path": "Procedure.bodySite",
+        "min": 1
+      },
+      {
+        "id": "Procedure.bodySite.coding",
+        "path": "Procedure.bodySite.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Procedure.bodySite.coding:snomed-lung",
+        "path": "Procedure.bodySite.coding",
+        "sliceName": "snomed-lung",
+        "short": "Coding for bodySite of lung",
+        "definition": "A reference to a code defined by SNOMED CT to express that the imaging procedure is performed on the anatomical location of the lung.",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "39607008",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Procedure.bodySite.coding:snomed-lung.system",
+        "path": "Procedure.bodySite.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Procedure.bodySite.coding:snomed-lung.code",
+        "path": "Procedure.bodySite.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Procedure.report",
+        "path": "Procedure.report",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnostic-report-radiology"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

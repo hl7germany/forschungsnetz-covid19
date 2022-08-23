@@ -2,12 +2,7 @@ ValueSet: VaccinesATC
 Id: vaccines-atc
 Title: "Vaccines ATC"
 Description: "This value set contains ATC codes for vaccines"
-* ^url = "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-atc"
-* ^status = #active
-* ^experimental = false
-* ^publisher = "Charité"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+* insert Metadata
 * ^immutable = false
 * $atc|2021#J07AR "Typhus (exanthematicus)-Impfstoff"
 * $atc|2021#J07AR01 "Typhus exanthematicus, inaktiviert, ganze Zelle"
