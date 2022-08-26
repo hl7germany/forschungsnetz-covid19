@@ -254,7 +254,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips",
           "description": "Intensional Value Set Definition: LOINC {  {    STATUS in {ACTIVE}    CLASSTYPE in {1}    CLASS exclude {CHALSKIN, H&P.HX.LAB, H&P.HX, NR STATS, PATH.PROTOCOLS.*}  } }"
         }
       },
