@@ -229,7 +229,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease"
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccination-target-diseases-snomed"
         }
       },
       {

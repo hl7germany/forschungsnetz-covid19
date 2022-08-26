@@ -42,7 +42,7 @@ Description: "A patient's history of vaccination"
 * occurrenceDateTime ^sliceName = "occurrenceDateTime"
 * protocolApplied MS
 * protocolApplied.targetDisease 1.. MS
-* protocolApplied.targetDisease from $KBV_VS_MIO_Vaccination_TargetDisease (extensible)
+* protocolApplied.targetDisease from VaccinationTargetDiseasesSNOMED (extensible)
 * protocolApplied.targetDisease.coding 1..1 MS
 * protocolApplied.targetDisease.coding.system 1..
 * protocolApplied.targetDisease.coding.code 1..
