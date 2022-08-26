@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "HeartRateNormal",
+  "id": "heart-rate-normal",
   "meta": {
     "profile": [
       "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate"

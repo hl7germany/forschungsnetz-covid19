@@ -2,6 +2,7 @@ ValueSet: KnownExposureSARSCoV2
 Id: known-exposure
 Title: "Known Exposure to SARS-CoV-2"
 Description: "A set of answers if the patient had contact with a person suffering from Covid-19."
+* insert Metadata
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2020-06-08T12:32:31+02:00"

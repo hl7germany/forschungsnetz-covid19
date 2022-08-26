@@ -1,4 +1,4 @@
-Instance: HeartRateNormal
+Instance: heart-rate-normal
 InstanceOf: HeartRate
 Usage: #example
 * identifier.type = $v2-0203#OBI
