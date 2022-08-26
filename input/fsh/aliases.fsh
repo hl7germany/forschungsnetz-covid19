@@ -1,6 +1,7 @@
 // External
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
+Alias: $SCTv20210131 = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131
 Alias: $alpha-id = http://fhir.de/ValueSet/bfarm/alpha-id
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $icd10gm = http://fhir.de/CodeSystem/bfarm/icd-10-gm
