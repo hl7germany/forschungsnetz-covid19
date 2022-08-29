@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "O2_mask",
+  "id": "LL738-6",
+  "version": "Loinc_2.73",
+  "url": "http://loinc.org/vs/LL738-6",
+  "meta": {
+    "versionId": "9",
+    "lastUpdated": "2022-08-08T16:18:57.182+00:00"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.3.6.1.4.1.12009.10.1.3220"
+    }
+  ],
+  "publisher": "Regenstrief Institute, Inc.",
+  "contact": [
+    {
+      "name": "Regenstrief Institute, Inc.",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://loinc.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright ©1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA11849-9",
+            "display": "Room air"
+          },
+          {
+            "code": "LA11856-4",
+            "display": "24% mask"
+          },
+          {
+            "code": "LA11857-2",
+            "display": "28% mask"
+          },
+          {
+            "code": "LA11858-0",
+            "display": "31% mask"
+          },
+          {
+            "code": "LA11859-8",
+            "display": "35% mask"
+          },
+          {
+            "code": "LA11860-6",
+            "display": "40% mask"
+          },
+          {
+            "code": "LA11861-4",
+            "display": "50% mask"
+          }
+        ]
+      }
+    ]
+  }
+}
