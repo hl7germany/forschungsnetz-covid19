@@ -97,7 +97,11 @@
       "property": [
         {
           "code": "status",
-          "valueCode": "active"
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2022-09-01"
         }
       ]
     },
@@ -108,7 +112,11 @@
       "property": [
         {
           "code": "status",
-          "valueCode": "active"
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2022-09-01"
         }
       ]
     },
@@ -119,7 +127,11 @@
       "property": [
         {
           "code": "status",
-          "valueCode": "active"
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2022-09-01"
         }
       ]
     },
@@ -158,7 +170,7 @@
       ]
     }
   ],
-  "date": "2020-10-29",
+  "date": "2022-09-01",
   "caseSensitive": true,
   "property": [
     {

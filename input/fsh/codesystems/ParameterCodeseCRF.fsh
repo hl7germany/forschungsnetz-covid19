@@ -3,7 +3,7 @@ Id: ecrf-parameter-codes
 Title: "Parameter Codes eCRF"
 Description: "Codes for GECCO eCRF parameters where no code from standard terminologies is available."
 * insert Metadata
-* ^date = "2020-10-29"
+* ^date = "2022-09-01"
 * ^caseSensitive = true
 * ^content = #complete
 * ^property[0].code = #status
@@ -39,13 +39,19 @@ Description: "Codes for GECCO eCRF parameters where no code from standard termin
 * #antipyretic ^property[=].valueCode = #active
 * #camostat "Product containing camostat" "Pharmaceutical product containing the substance camostat"
 * #camostat ^property[0].code = #status
-* #camostat ^property[=].valueCode = #active
+* #camostat ^property[=].valueCode = #deprecated
+* #camostat ^property[+].code = #deprecationDate
+* #camostat ^property[=].valueDateTime = "2022-09-01"
 * #favipiravir "Product containing favipiravir" "Pharmaceutical product containing the substance favipiravir"
 * #favipiravir ^property[0].code = #status
-* #favipiravir ^property[=].valueCode = #active
+* #favipiravir ^property[=].valueCode = #deprecated
+* #favipiravir ^property[+].code = #deprecationDate
+* #favipiravir ^property[=].valueDateTime = "2022-09-01"
 * #convalescent-plasma "Convalescent plasma" "Convalescent plasma from patients who have recovered from COVID-19"
 * #convalescent-plasma ^property[0].code = #status
-* #convalescent-plasma ^property[=].valueCode = #active
+* #convalescent-plasma ^property[=].valueCode = #deprecated
+* #convalescent-plasma ^property[+].code = #deprecationDate
+* #convalescent-plasma ^property[=].valueDateTime = "2022-09-01"
 * #steroids-gt "Steroids (> 0.5 mg/kg prednisone equivalents)" "A dose of steroids that is greater than an equivalent dose of prednisone of 0.5 mg/kg"
 * #steroids-gt ^property[0].code = #status
 * #steroids-gt ^property[=].valueCode = #active
