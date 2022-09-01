@@ -10,6 +10,15 @@ Description: "Extracorporeal membrane oxygenation (ECMO) procedures in the conte
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.513"
 * ^immutable = false
+//2020
+* include codes from system $ops|2020
+    where concept descendent-of #8-852 and
+    child exists false
+//2021
 * include codes from system $ops|2021
+    where concept descendent-of #8-852 and
+    child exists false
+//2022
+* include codes from system $ops|2022
     where concept descendent-of #8-852 and
     child exists false

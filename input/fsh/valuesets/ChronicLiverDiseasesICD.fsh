@@ -15,9 +15,21 @@ Description: "Chronic liver diseases in the context of Covid-19 from ICD-10-GM"
 * $icd10gm|2021#K74.6 "Sonstige und nicht näher bezeichnete Zirrhose der Leber"
 * $icd10gm|2021#B18.9 "Chronische Virushepatitis, nicht näher bezeichnet"
 * $icd10gm|2021#K76.9 "Leberkrankheit, nicht näher bezeichnet"
+* include codes from system $icd10gm|2020
+    where concept regex /^K7.*/ and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #B18 and
+    child exists false
 * include codes from system $icd10gm|2021
     where concept regex /^K7.*/ and
     child exists false
 * include codes from system $icd10gm|2021
+    where concept is-a #B18 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept regex /^K7.*/ and
+    child exists false
+* include codes from system $icd10gm|2022
     where concept is-a #B18 and
     child exists false

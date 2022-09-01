@@ -44,7 +44,29 @@
     "include": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "8-85"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "8-85"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2022",
         "filter": [
           {
             "property": "concept",
@@ -55,6 +77,38 @@
       }
     ],
     "exclude": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "8-851"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "8-852"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2020",
+        "concept": [
+          {
+            "code": "8-85b",
+            "display": "Anwendung von Blutegeln zur Sicherung des venösen Blutabstroms bei Lappenplastiken oder replantierten Gliedmaßenabschnitten"
+          }
+        ]
+      },
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "version": "2021",
@@ -80,6 +134,38 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "version": "2021",
+        "concept": [
+          {
+            "code": "8-85b",
+            "display": "Anwendung von Blutegeln zur Sicherung des venösen Blutabstroms bei Lappenplastiken oder replantierten Gliedmaßenabschnitten"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "8-851"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "8-852"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2022",
         "concept": [
           {
             "code": "8-85b",

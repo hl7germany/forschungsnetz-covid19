@@ -44,6 +44,252 @@
     "include": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "N02B"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "G01B"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "H02"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "M01BA"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "R03AK"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "R03AL"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "S02B"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "L04AD"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "L04AB"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "L04AC"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "L03AB"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A12CB"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "concept": [
+          {
+            "code": "D01AC20",
+            "display": "Imidazole/Triazole in Kombination mit Corticosteroiden"
+          },
+          {
+            "code": "J05AE08",
+            "display": "Atazanavir"
+          },
+          {
+            "code": "J05AR15",
+            "display": "Atazanavir und Cobicistat"
+          },
+          {
+            "code": "J05AR23",
+            "display": "Atazanavir und Ritonavir"
+          },
+          {
+            "code": "J05AE10",
+            "display": "Darunavir"
+          },
+          {
+            "code": "J05AR14",
+            "display": "Darunavir und Cobicistat"
+          },
+          {
+            "code": "J05AR22",
+            "display": "Emtricitabin, Tenofoviralafenamid, Darunavir und Cobicistat"
+          },
+          {
+            "code": "P01BA01",
+            "display": "Chloroquin"
+          },
+          {
+            "code": "P01BA02",
+            "display": "Hydroxychloroquin"
+          },
+          {
+            "code": "P02CF01",
+            "display": "Ivermectin"
+          },
+          {
+            "code": "D11AX22",
+            "display": "Ivermectin"
+          },
+          {
+            "code": "J05AR10",
+            "display": "Lopinavir und Ritonavir"
+          },
+          {
+            "code": "J05AB06",
+            "display": "Ganciclovir"
+          },
+          {
+            "code": "S01AD09",
+            "display": "Ganciclovir"
+          },
+          {
+            "code": "J05AH02",
+            "display": "Oseltamivir"
+          },
+          {
+            "code": "J05AP01",
+            "display": "Ribavirin"
+          },
+          {
+            "code": "B02AB04",
+            "display": "Camostat"
+          },
+          {
+            "code": "J05AX27",
+            "display": "Favipiravir"
+          },
+          {
+            "code": "S01XA18",
+            "display": "Ciclosporin"
+          },
+          {
+            "code": "D11AH01",
+            "display": "Tacrolimus"
+          },
+          {
+            "code": "L04AA10",
+            "display": "Sirolimus"
+          },
+          {
+            "code": "L04AA18",
+            "display": "Everolimus"
+          },
+          {
+            "code": "L01XE10",
+            "display": "Everolimus"
+          },
+          {
+            "code": "L01XE18",
+            "display": "Ruxolitinib"
+          },
+          {
+            "code": "M04AC01",
+            "display": "Colchicin"
+          },
+          {
+            "code": "S01AD05",
+            "display": "Interferon"
+          },
+          {
+            "code": "A11CC06",
+            "display": "Calcifediol"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "version": "2021",
         "concept": [
           {
@@ -1061,6 +1307,256 @@
           {
             "code": "A11CC06",
             "display": "Calcifediol"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "N02B"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "G01B"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "H02"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "M01BA"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "R03AK"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "R03AL"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "S02B"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "L04AD"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "L04AB"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "L04AC"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "L03AB"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A12CB"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "concept": [
+          {
+            "code": "D01AC20",
+            "display": "Imidazole/Triazole in Kombination mit Corticosteroiden"
+          },
+          {
+            "code": "J05AE08",
+            "display": "Atazanavir"
+          },
+          {
+            "code": "J05AR15",
+            "display": "Atazanavir und Cobicistat"
+          },
+          {
+            "code": "J05AR23",
+            "display": "Atazanavir und Ritonavir"
+          },
+          {
+            "code": "J05AE10",
+            "display": "Darunavir"
+          },
+          {
+            "code": "J05AR14",
+            "display": "Darunavir und Cobicistat"
+          },
+          {
+            "code": "J05AR22",
+            "display": "Emtricitabin, Tenofoviralafenamid, Darunavir und Cobicistat"
+          },
+          {
+            "code": "P01BA01",
+            "display": "Chloroquin"
+          },
+          {
+            "code": "P01BA02",
+            "display": "Hydroxychloroquin"
+          },
+          {
+            "code": "P02CF01",
+            "display": "Ivermectin"
+          },
+          {
+            "code": "D11AX22",
+            "display": "Ivermectin"
+          },
+          {
+            "code": "J05AR10",
+            "display": "Lopinavir und Ritonavir"
+          },
+          {
+            "code": "J05AB06",
+            "display": "Ganciclovir"
+          },
+          {
+            "code": "S01AD09",
+            "display": "Ganciclovir"
+          },
+          {
+            "code": "J05AH02",
+            "display": "Oseltamivir"
+          },
+          {
+            "code": "J05AP01",
+            "display": "Ribavirin"
+          },
+          {
+            "code": "B02AB04",
+            "display": "Camostat"
+          },
+          {
+            "code": "J05AX27",
+            "display": "Favipiravir"
+          },
+          {
+            "code": "S01XA18",
+            "display": "Ciclosporin"
+          },
+          {
+            "code": "D11AH01",
+            "display": "Tacrolimus"
+          },
+          {
+            "code": "L04AA10",
+            "display": "Sirolimus"
+          },
+          {
+            "code": "L04AA18",
+            "display": "Everolimus"
+          },
+          {
+            "code": "L01EG02",
+            "display": "Everolimus"
+          },
+          {
+            "code": "L01EJ01",
+            "display": "Ruxolitinib"
+          },
+          {
+            "code": "M04AC01",
+            "display": "Colchicin"
+          },
+          {
+            "code": "S01AD05",
+            "display": "Interferon"
+          },
+          {
+            "code": "A11CC06",
+            "display": "Calcifediol"
+          },
+          {
+            "code": "J06BD07",
+            "display": "Casirivimab und Imdevimab"
           }
         ]
       }

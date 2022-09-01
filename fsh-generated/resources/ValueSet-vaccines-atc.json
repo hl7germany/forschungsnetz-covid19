@@ -24,6 +24,17 @@
     "include": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "J07"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "version": "2021",
         "concept": [
           {
@@ -469,6 +480,17 @@
           {
             "code": "J07CA13",
             "display": "Diphtherie-Haemophilus influenzae  B-Pertussis-Tetanus-Hepatitis B-Meningokokken  A + C"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "J07"
           }
         ]
       }

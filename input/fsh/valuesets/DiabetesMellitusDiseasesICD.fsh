@@ -13,6 +13,20 @@ Description: "Diabetes mellitus in the context of Covid-19 from ICD-10-GM"
 * $icd10gm|2021#E11.9 "Diabetes mellitus, Typ 2 : Ohne Komplikationen"
 * $icd10gm|2021#E10.9 "Diabetes mellitus, Typ 1 : Ohne Komplikationen"
 * $icd10gm|2021#E13.9 "Sonstiger näher bezeichneter Diabetes mellitus : Ohne Komplikationen"
+//2020
+* include codes from system $icd10gm|2020
+    where concept is-a #E11 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #E10 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #E13 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #E14 and
+    child exists false
+//2021
 * include codes from system $icd10gm|2021
     where concept is-a #E11 and
     child exists false
@@ -23,5 +37,18 @@ Description: "Diabetes mellitus in the context of Covid-19 from ICD-10-GM"
     where concept is-a #E13 and
     child exists false
 * include codes from system $icd10gm|2021
+    where concept is-a #E14 and
+    child exists false
+//2022
+* include codes from system $icd10gm|2022
+    where concept is-a #E11 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #E10 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #E13 and
+    child exists false
+* include codes from system $icd10gm|2022
     where concept is-a #E14 and
     child exists false

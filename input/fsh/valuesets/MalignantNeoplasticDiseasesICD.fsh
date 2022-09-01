@@ -11,6 +11,15 @@ Description: "Malignant neoplastic diseases in the context of Covid-19 from ICD-
 * ^identifier.value = "1.2.276.0.76.11.534"
 * ^immutable = false
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
+//2020
+* include codes from system $icd10gm|2020
+    where concept regex /^C.*/ and
+    child exists false
+//2021
 * include codes from system $icd10gm|2021
+    where concept regex /^C.*/ and
+    child exists false
+//2022
+* include codes from system $icd10gm|2022
     where concept regex /^C.*/ and
     child exists false

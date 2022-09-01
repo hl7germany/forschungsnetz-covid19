@@ -133,31 +133,24 @@
         ]
       },
       {
-        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220731",
         "concept": [
           {
-            "code": "antipyretic",
-            "display": "Product containing antipyretic"
+            "code": "1187214003",
+            "display": "Product containing camostat (medicinal product)"
           },
           {
-            "code": "camostat",
-            "display": "Product containing camostat"
+            "code": "1172871009",
+            "display": "Product containing favipiravir (medicinal product)"
           },
           {
-            "code": "favipiravir",
-            "display": "Product containing favipiravir"
+            "code": "1184610009",
+            "display": "Convalescent plasma (product)"
           },
           {
-            "code": "convalescent-plasma",
-            "display": "Convalescent plasma"
-          },
-          {
-            "code": "steroids-gt",
-            "display": "Steroids (> 0.5 mg/kg prednisone equivalents)"
-          },
-          {
-            "code": "steroids-lt",
-            "display": "Steroids (<= 0.5 mg/kg prednisone equivalents)"
+            "code": "1162706008",
+            "display": "Product containing casirivimab and imdevimab (medicinal product)"
           }
         ]
       }

@@ -2,6 +2,7 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $SCTv20210131 = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131
+Alias: $SCTv20220731 = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731
 Alias: $alpha-id = http://fhir.de/ValueSet/bfarm/alpha-id
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $icd10gm = http://fhir.de/CodeSystem/bfarm/icd-10-gm
@@ -90,6 +91,7 @@ Alias: $malignant-neoplastic-diseases-icd = https://www.netzwerk-universitaetsme
 Alias: $pharmacological-therapy-atc = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-atc
 Alias: $pharmacological-therapy-ops = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-ops
 Alias: $pharmacological-therapy-snomed = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-snomed
+Alias: $pharmacological-therapy-other = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-other
 Alias: $ace-inhibitors-atc = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ace-inhibitors-atc
 Alias: $anticoagulants-atc = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/anticoagulants-atc
 Alias: $therapeutic-intent = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/therapeutic-intent

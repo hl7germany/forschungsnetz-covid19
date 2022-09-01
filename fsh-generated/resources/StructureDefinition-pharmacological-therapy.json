@@ -7,7 +7,7 @@
   "title": "Pharmacological Therapy",
   "status": "active",
   "experimental": false,
-  "date": "2020-10-29",
+  "date": "2022-08-29",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -107,6 +107,10 @@
         "max": "*",
         "patternCoding": {
           "system": "http://snomed.info/sct"
+        },
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-snomed"
         }
       },
       {
@@ -116,6 +120,30 @@
       },
       {
         "id": "MedicationStatement.medication[x].coding:snomed.code",
+        "path": "MedicationStatement.medication[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding:other",
+        "path": "MedicationStatement.medication[x].coding",
+        "sliceName": "other",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes"
+        },
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-other"
+        }
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding:other.system",
+        "path": "MedicationStatement.medication[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "MedicationStatement.medication[x].coding:other.code",
         "path": "MedicationStatement.medication[x].coding.code",
         "min": 1
       }

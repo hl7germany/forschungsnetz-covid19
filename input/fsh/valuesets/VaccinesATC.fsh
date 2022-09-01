@@ -4,6 +4,10 @@ Title: "Vaccines ATC"
 Description: "This value set contains ATC codes for vaccines"
 * insert Metadata
 * ^immutable = false
+//2020
+* include codes from system $atc|2020
+    where concept descendent-of #J07
+//2021
 * $atc|2021#J07AR "Typhus (exanthematicus)-Impfstoff"
 * $atc|2021#J07AR01 "Typhus exanthematicus, inaktiviert, ganze Zelle"
 * $atc|2021#J07AC "Milzbrand-Impfstoffe"
@@ -115,3 +119,6 @@ Description: "This value set contains ATC codes for vaccines"
 * $atc|2021#J07CA11 "Diphtherie-Haemophilus influenzae  B-Pertussis-Tetanus-Hepatitis B"
 * $atc|2021#J07CA12 "Diphtherie-Pertussis-Poliomyelitis-Tetanus-Hepatitis B"
 * $atc|2021#J07CA13 "Diphtherie-Haemophilus influenzae  B-Pertussis-Tetanus-Hepatitis B-Meningokokken  A + C"
+//2022
+* include codes from system $atc|2022
+    where concept descendent-of #J07

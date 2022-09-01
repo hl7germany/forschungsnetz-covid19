@@ -78,6 +78,311 @@
       },
       {
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "U69.0"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J17"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A15.0"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A16.0"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A16.1"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A16.2"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A20.2"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A24.1"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A48.1"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J12"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I80"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I81"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I82"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I74"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I61"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I63"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I64"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I21"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I22"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "N17"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "version": "2021",
         "filter": [
           {
@@ -368,6 +673,311 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "N17"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "U69.0"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J17"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A15.0"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A16.0"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A16.1"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A16.2"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A20.2"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A24.1"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A48.1"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J12"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I80"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I81"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I82"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I74"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I61"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I63"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I64"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I21"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "I22"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
         "filter": [
           {
             "property": "concept",

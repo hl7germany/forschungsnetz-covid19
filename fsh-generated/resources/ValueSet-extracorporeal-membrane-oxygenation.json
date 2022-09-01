@@ -44,7 +44,39 @@
     "include": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "8-852"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "8-852"
+          },
+          {
+            "property": "child",
+            "op": "exists",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/ops",
+        "version": "2022",
         "filter": [
           {
             "property": "concept",

@@ -10,6 +10,10 @@ Description: "History of organ transplantation ICD-10-GM codes"
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.531"
 * ^immutable = false
+//2020
+* include codes from system $icd10gm|2020
+    where concept is-a #Z94
+//2021
 * $icd10gm|2021#Z94.1 "Zustand nach Herztransplantation"
 * $icd10gm|2021#Z94.2 "Zustand nach Lungentransplantation"
 * $icd10gm|2021#Z94.4 "Zustand nach Lebertransplantation"
@@ -24,3 +28,6 @@ Description: "History of organ transplantation ICD-10-GM codes"
 * $icd10gm|2021#Z94.80 "Zustand nach hämatopoetischer Stammzelltransplantation ohne gegenwärtige Immunsuppression"
 * $icd10gm|2021#Z94.81 "Zustand nach hämatopoetischer Stammzelltransplantation mit gegenwärtiger Immunsuppression"
 * $icd10gm|2021#Z94.3 "Zustand nach Herz-Lungen-Transplantation"
+//2022
+* include codes from system $icd10gm|2022
+    where concept is-a #Z94

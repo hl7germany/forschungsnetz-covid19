@@ -19,6 +19,12 @@ Description: "Cardiovascular diseases in the context of Covid-19 from ICD-10-GM"
 * $icd10gm|2021#I65.2 "Verschluss und Stenose der A. carotis"
 * $icd10gm|2021#Z95.1 "Vorhandensein eines aortokoronaren Bypasses"
 * $icd10gm|2021#Z95.5 "Vorhandensein eines Implantates oder Transplantates nach koronarer Gefäßplastik"
+* include codes from system $icd10gm|2020
+    where concept regex /^I.*/ and
+    child exists false
 * include codes from system $icd10gm|2021
+    where concept regex /^I.*/ and
+    child exists false
+* include codes from system $icd10gm|2022
     where concept regex /^I.*/ and
     child exists false

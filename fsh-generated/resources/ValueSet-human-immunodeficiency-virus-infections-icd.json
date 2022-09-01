@@ -44,6 +44,39 @@
     "include": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "concept": [
+          {
+            "code": "B20",
+            "display": "Infektiöse und parasitäre Krankheiten infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "B21",
+            "display": "Bösartige Neubildungen infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "B22",
+            "display": "Sonstige näher bezeichnete Krankheiten infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "B24",
+            "display": "Nicht näher bezeichnete HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "B23"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "version": "2021",
         "concept": [
           {
@@ -67,6 +100,39 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
         "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "B23"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
+        "concept": [
+          {
+            "code": "B20",
+            "display": "Infektiöse und parasitäre Krankheiten infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "B21",
+            "display": "Bösartige Neubildungen infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "B22",
+            "display": "Sonstige näher bezeichnete Krankheiten infolge HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          },
+          {
+            "code": "B24",
+            "display": "Nicht näher bezeichnete HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "version": "2022",
         "filter": [
           {
             "property": "concept",

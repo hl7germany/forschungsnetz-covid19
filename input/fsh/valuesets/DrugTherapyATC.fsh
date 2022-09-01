@@ -10,6 +10,59 @@ Description: "Pharmacological therapy in the context of Covid-19"
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.494"
 * ^immutable = false
+//2020
+* include codes from system $atc|2020
+    where concept is-a #N02B
+* include codes from system $atc|2020
+    where concept is-a #G01B
+* include codes from system $atc|2020
+    where concept is-a #H02
+* include codes from system $atc|2020
+    where concept is-a #M01BA
+* include codes from system $atc|2020
+    where concept is-a #R03AK
+* include codes from system $atc|2020
+    where concept is-a #R03AL
+* include codes from system $atc|2020
+    where concept is-a #S02B
+* include codes from system $atc|2020
+    where concept is-a #L04AD
+* include codes from system $atc|2020
+    where concept is-a #L04AB
+* include codes from system $atc|2020
+    where concept is-a #L04AC
+* include codes from system $atc|2020
+    where concept is-a #L03AB
+* include codes from system $atc|2020
+    where concept is-a #A12CB
+* $atc|2020#D01AC20 "Imidazole/Triazole in Kombination mit Corticosteroiden"
+* $atc|2020#J05AE08 "Atazanavir"
+* $atc|2020#J05AR15 "Atazanavir und Cobicistat"
+* $atc|2020#J05AR23 "Atazanavir und Ritonavir"
+* $atc|2020#J05AE10 "Darunavir"
+* $atc|2020#J05AR14 "Darunavir und Cobicistat"
+* $atc|2020#J05AR22 "Emtricitabin, Tenofoviralafenamid, Darunavir und Cobicistat"
+* $atc|2020#P01BA01 "Chloroquin"
+* $atc|2020#P01BA02 "Hydroxychloroquin"
+* $atc|2020#P02CF01 "Ivermectin"
+* $atc|2020#D11AX22 "Ivermectin"
+* $atc|2020#J05AR10 "Lopinavir und Ritonavir"
+* $atc|2020#J05AB06 "Ganciclovir"
+* $atc|2020#S01AD09 "Ganciclovir"
+* $atc|2020#J05AH02 "Oseltamivir"
+* $atc|2020#J05AP01 "Ribavirin"
+* $atc|2020#B02AB04 "Camostat"
+* $atc|2020#J05AX27 "Favipiravir"
+* $atc|2020#S01XA18 "Ciclosporin"
+* $atc|2020#D11AH01 "Tacrolimus"
+* $atc|2020#L04AA10 "Sirolimus"
+* $atc|2020#L04AA18 "Everolimus"
+* $atc|2020#L01XE10 "Everolimus"
+* $atc|2020#L01XE18 "Ruxolitinib"
+* $atc|2020#M04AC01 "Colchicin"
+* $atc|2020#S01AD05 "Interferon"
+* $atc|2020#A11CC06 "Calcifediol"
+//2021
 * $atc|2021#N02B "ANDERE ANALGETIKA UND ANTIPYRETIKA"
 * $atc|2021#N02BA "Salicylsäure und Derivate"
 * $atc|2021#N02BA01 "Acetylsalicylsäure"
@@ -264,3 +317,56 @@ Description: "Pharmacological therapy in the context of Covid-19"
 * $atc|2021#M04AC01 "Colchicin"
 * $atc|2021#S01AD05 "Interferon"
 * $atc|2021#A11CC06 "Calcifediol"
+//2022
+* include codes from system $atc|2022
+    where concept is-a #N02B
+* include codes from system $atc|2022
+    where concept is-a #G01B
+* include codes from system $atc|2022
+    where concept is-a #H02
+* include codes from system $atc|2022
+    where concept is-a #M01BA
+* include codes from system $atc|2022
+    where concept is-a #R03AK
+* include codes from system $atc|2022
+    where concept is-a #R03AL
+* include codes from system $atc|2022
+    where concept is-a #S02B
+* include codes from system $atc|2022
+    where concept is-a #L04AD
+* include codes from system $atc|2022
+    where concept is-a #L04AB
+* include codes from system $atc|2022
+    where concept is-a #L04AC
+* include codes from system $atc|2022
+    where concept is-a #L03AB
+* include codes from system $atc|2022
+    where concept is-a #A12CB
+* $atc|2022#D01AC20 "Imidazole/Triazole in Kombination mit Corticosteroiden"
+* $atc|2022#J05AE08 "Atazanavir"
+* $atc|2022#J05AR15 "Atazanavir und Cobicistat"
+* $atc|2022#J05AR23 "Atazanavir und Ritonavir"
+* $atc|2022#J05AE10 "Darunavir"
+* $atc|2022#J05AR14 "Darunavir und Cobicistat"
+* $atc|2022#J05AR22 "Emtricitabin, Tenofoviralafenamid, Darunavir und Cobicistat"
+* $atc|2022#P01BA01 "Chloroquin"
+* $atc|2022#P01BA02 "Hydroxychloroquin"
+* $atc|2022#P02CF01 "Ivermectin"
+* $atc|2022#D11AX22 "Ivermectin"
+* $atc|2022#J05AR10 "Lopinavir und Ritonavir"
+* $atc|2022#J05AB06 "Ganciclovir"
+* $atc|2022#S01AD09 "Ganciclovir"
+* $atc|2022#J05AH02 "Oseltamivir"
+* $atc|2022#J05AP01 "Ribavirin"
+* $atc|2022#B02AB04 "Camostat"
+* $atc|2022#J05AX27 "Favipiravir"
+* $atc|2022#S01XA18 "Ciclosporin"
+* $atc|2022#D11AH01 "Tacrolimus"
+* $atc|2022#L04AA10 "Sirolimus"
+* $atc|2022#L04AA18 "Everolimus"
+* $atc|2022#L01EG02 "Everolimus"
+* $atc|2022#L01EJ01 "Ruxolitinib"
+* $atc|2022#M04AC01 "Colchicin"
+* $atc|2022#S01AD05 "Interferon"
+* $atc|2022#A11CC06 "Calcifediol"
+* $atc|2022#J06BD07	"Casirivimab und Imdevimab"

@@ -17,6 +17,12 @@ Description: "Chronic kidney diseases in the context of Covid-19 from ICD-10-GM"
 * $icd10gm|2021#N18.4 "Chronische Nierenkrankheit, Stadium 4"
 * $icd10gm|2021#N18.5 "Chronische Nierenkrankheit, Stadium 5"
 * $icd10gm|2021#Z99.2 "Langzeitige Abhängigkeit von Dialyse bei Niereninsuffizienz"
+* include codes from system $icd10gm|2020
+    where concept descendent-of #N18 and
+    child exists false
 * include codes from system $icd10gm|2021
+    where concept descendent-of #N18 and
+    child exists false
+* include codes from system $icd10gm|2022
     where concept descendent-of #N18 and
     child exists false

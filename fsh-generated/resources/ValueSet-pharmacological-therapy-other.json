@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DrugTherapyOther",
+  "id": "pharmacological-therapy-other",
+  "title": "Drug Therapy Other",
+  "description": "Pharmacological therapy in the context of Covid-19, relevant custom-defined codes",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-other",
+  "experimental": false,
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/en/research/core-facilities/interoperability/"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+        "concept": [
+          {
+            "code": "antipyretic",
+            "display": "Product containing antipyretic"
+          },
+          {
+            "code": "camostat",
+            "display": "Product containing camostat"
+          },
+          {
+            "code": "favipiravir",
+            "display": "Product containing favipiravir"
+          },
+          {
+            "code": "convalescent-plasma",
+            "display": "Convalescent plasma"
+          },
+          {
+            "code": "steroids-gt",
+            "display": "Steroids (> 0.5 mg/kg prednisone equivalents)"
+          },
+          {
+            "code": "steroids-lt",
+            "display": "Steroids (<= 0.5 mg/kg prednisone equivalents)"
+          }
+        ]
+      }
+    ]
+  }
+}

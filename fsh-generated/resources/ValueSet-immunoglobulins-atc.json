@@ -44,6 +44,17 @@
     "include": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J06B"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "version": "2021",
         "concept": [
           {
@@ -165,6 +176,17 @@
           {
             "code": "J06BC10",
             "display": "Andere Immunglobuline"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "J06B"
           }
         ]
       }

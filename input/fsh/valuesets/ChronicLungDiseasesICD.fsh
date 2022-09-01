@@ -22,6 +22,53 @@ Description: "Chronic lung diseases in the context of Covid-19 from ICD-10-GM"
 * $icd10gm|2021#J44.9 "Chronische obstruktive Lungenkrankheit, nicht näher bezeichnet"
 * $icd10gm|2021#J45.9 "Asthma bronchiale, nicht näher bezeichnet"
 * $icd10gm|2021#E84.9 "Zystische Fibrose, nicht näher bezeichnet"
+//2020
+* include codes from system $icd10gm|2020
+    where concept is-a #G47.3 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #E66.2 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #I27 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J62 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J63 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J44 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J45 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #E84 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J66 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #A16 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J67 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J68 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J70 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #P27 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J98 and
+    child exists false
+//2021
 * include codes from system $icd10gm|2021
     where concept is-a #G47.3 and
     child exists false
@@ -65,5 +112,51 @@ Description: "Chronic lung diseases in the context of Covid-19 from ICD-10-GM"
     where concept is-a #P27 and
     child exists false
 * include codes from system $icd10gm|2021
+    where concept is-a #J98 and
+    child exists false
+//2022
+* include codes from system $icd10gm|2022
+    where concept is-a #G47.3 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #E66.2 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #I27 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #J62 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #J63 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #J44 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #J45 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #E84 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #J66 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #A16 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #J67 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #J68 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #J70 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #P27 and
+    child exists false
+* include codes from system $icd10gm|2022
     where concept is-a #J98 and
     child exists false

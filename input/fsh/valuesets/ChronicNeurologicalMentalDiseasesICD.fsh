@@ -23,6 +23,68 @@ Description: "Chronic neurological or mental diseases in the context of Covid-19
 * $icd10gm|2021#G43.9 "Migräne, nicht näher bezeichnet"
 * $icd10gm|2021#I69.4 "Folgen eines Schlaganfalls, nicht als Blutung oder Infarkt bezeichnet"
 * $icd10gm|2021#Z86.7 "Krankheiten des Kreislaufsystems in der Eigenanamnese"
+//2020
+* include codes from system $icd10gm|2020
+    where concept descendent-of #G20 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept descendent-of #G35 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept descendent-of #F40 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept descendent-of #F41 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept descendent-of #F32 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept descendent-of #F33 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept descendent-of #F23 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #F28 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #F29 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #F00 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #F01 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #F02 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #G70 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #G71 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #G72 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #G73 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #G40 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #G41 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #G43 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept descendent-of #I69 and
+    child exists false
+//2021
 * include codes from system $icd10gm|2021
     where concept descendent-of #G20 and
     child exists false
@@ -81,5 +143,66 @@ Description: "Chronic neurological or mental diseases in the context of Covid-19
     where concept is-a #G43 and
     child exists false
 * include codes from system $icd10gm|2021
+    where concept descendent-of #I69 and
+    child exists false
+//2022
+* include codes from system $icd10gm|2022
+    where concept descendent-of #G20 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept descendent-of #G35 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept descendent-of #F40 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept descendent-of #F41 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept descendent-of #F32 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept descendent-of #F33 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept descendent-of #F23 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #F28 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #F29 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #F00 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #F01 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #F02 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #G70 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #G71 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #G72 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #G73 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #G40 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #G41 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #G43 and
+    child exists false
+* include codes from system $icd10gm|2022
     where concept descendent-of #I69 and
     child exists false

@@ -10,6 +10,10 @@ Description: "Pharmacological therapy using immunoglobulins in the context of Co
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.500"
 * ^immutable = false
+//2020
+* include codes from system $atc|2020
+    where concept is-a #J06B
+//2021
 * $atc|2021#J06B "IMMUNGLOBULINE"
 * $atc|2021#J06BA "Immunglobuline, normal human"
 * $atc|2021#J06BA01 "Immunglobuline, normal human, zur extravasalen Anwendung"
@@ -40,3 +44,6 @@ Description: "Pharmacological therapy using immunoglobulins in the context of Co
 * $atc|2021#J06BC "Andere Immunglobuline"
 * $atc|2021#J06BC01 "Nebacumab"
 * $atc|2021#J06BC10 "Andere Immunglobuline"
+//2022
+* include codes from system $atc|2022
+    where concept is-a #J06B

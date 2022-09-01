@@ -17,6 +17,62 @@ Description: "Complications in the context of Covid-19 from ICD-10-GM"
 * $icd10gm|2021#I64 "Schlaganfall, nicht als Blutung oder Infarkt bezeichnet"
 * $icd10gm|2021#I21.9 "Akuter Myokardinfarkt, nicht näher bezeichnet"
 * $icd10gm|2021#N17.9 "Akutes Nierenversagen, nicht näher bezeichnet"
+//2020
+* include codes from system $icd10gm|2020 where concept is-a #U69.0
+* include codes from system $icd10gm|2020 where concept is-a #J17
+* include codes from system $icd10gm|2020
+    where concept is-a #A15.0 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #A16.0 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #A16.1 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #A16.2 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #A20.2 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #A24.1 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #A48.1 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #J12 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #I80 and
+    child exists false
+* include codes from system $icd10gm|2020 where concept is-a #I81
+* include codes from system $icd10gm|2020
+    where concept is-a #I82 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #I74 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #I61 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #I63 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #I64 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #I21 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #I22 and
+    child exists false
+* include codes from system $icd10gm|2020
+    where concept is-a #N17 and
+    child exists false
+//2021
 * include codes from system $icd10gm|2021 where concept is-a #U69.0
 * include codes from system $icd10gm|2021 where concept is-a #J17
 * include codes from system $icd10gm|2021
@@ -69,5 +125,60 @@ Description: "Complications in the context of Covid-19 from ICD-10-GM"
     where concept is-a #I22 and
     child exists false
 * include codes from system $icd10gm|2021
+    where concept is-a #N17 and
+    child exists false
+//2022
+* include codes from system $icd10gm|2022 where concept is-a #U69.0
+* include codes from system $icd10gm|2022 where concept is-a #J17
+* include codes from system $icd10gm|2022
+    where concept is-a #A15.0 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #A16.0 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #A16.1 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #A16.2 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #A20.2 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #A24.1 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #A48.1 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #J12 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #I80 and
+    child exists false
+* include codes from system $icd10gm|2022 where concept is-a #I81
+* include codes from system $icd10gm|2022
+    where concept is-a #I82 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #I74 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #I61 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #I63 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #I64 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #I21 and
+    child exists false
+* include codes from system $icd10gm|2022
+    where concept is-a #I22 and
+    child exists false
+* include codes from system $icd10gm|2022
     where concept is-a #N17 and
     child exists false
