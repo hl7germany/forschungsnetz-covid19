@@ -46,3 +46,19 @@ Usage: #example
 * subject = Reference(gecco-patient)
 * effectiveDateTime = "2020-11-09T12:57:06+01:00"
 * valueCodeableConcept = $sct#373067005 "No (qualifier value)"
+
+Instance: history-of-travel-unknown
+InstanceOf: HistoryOfTravel
+Usage: #example
+* identifier.type = $v2-0203#OBI
+* identifier.system = "https://www.charite.de/fhir/CodeSystem/observation-identifiers"
+* identifier.value = "8691-8_HistoryOfTravel"
+* identifier.assigner = Reference(Organization/Charité)
+* status = #final
+* category.coding[socialHistory] = $observation-category#social-history
+* code.coding[loinc] = $loinc#8691-8 "History of Travel"
+* code.coding[1] = $sct#443846001 "Detail of history of travel (observable entity)"
+* code.text = "History of travel"
+* subject = Reference(gecco-patient)
+* effectiveDateTime = "2020-11-09T12:57:06+01:00"
+* valueCodeableConcept = $sct#261665006 "Unknown (qualifier value)"
