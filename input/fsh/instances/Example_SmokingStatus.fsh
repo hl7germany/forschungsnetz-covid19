@@ -30,3 +30,14 @@ Usage: #example
 * effectiveDateTime = "2020-10-06"
 * valueCodeableConcept = $loinc#LA18976-3 "Current every day smoker"
 * valueCodeableConcept.text = "Patient is smoker"
+
+Instance: smoking-status-unknown
+InstanceOf: SmokingStatus
+Usage: #example
+* status = #final
+* category = $observation-category#social-history "Social History"
+* code = $loinc#72166-2 "Tobacco smoking status"
+* subject = Reference(gecco-patient)
+* effectiveDateTime = "2020-10-06"
+* valueCodeableConcept = $loinc#LA18980-5 "Unknown if ever smoked"
+* valueCodeableConcept.text = "Unknown if patient ever smoked"
