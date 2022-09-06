@@ -1,6 +1,6 @@
 Instance: sars-cov-2-rt-pcr-positive
 InstanceOf: SarsCoV2RTPCR
-Usage: #inline
+Usage: #example
 * identifier[analyseBefundCode].type = $v2-0203#OBI
 * identifier[analyseBefundCode].system = "https://www.charite.de/fhir/CodeSystem/lab-identifiers"
 * identifier[analyseBefundCode].value = "94500-6_SARS-CoV-2-RNA-Presence-in-Respiratory-specimen"
@@ -10,7 +10,7 @@ Usage: #inline
 * category.coding[observation-category] = $observation-category#laboratory
 * code = $loinc#94500-6 "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
 * code.text = "SARS-CoV-2-RNA (PCR)"
-* subject = Reference(b1128693-372d-469b-8288-04cf091e7553)
+* subject = Reference(gecco-patient)
 * effectiveDateTime = "2020-11-10T15:50:41+01:00"
 * valueCodeableConcept = $sct#260373001 "Detected (qualifier value)"
 * valueCodeableConcept.text = "SARS-CoV-2-RNA positiv"
