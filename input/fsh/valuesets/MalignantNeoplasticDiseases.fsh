@@ -10,4 +10,4 @@ Description: "Malignant neoplastic diseases in the context of Covid-19"
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.533"
 * ^immutable = false
-* include codes from system $sct where concept is-a #363346000
+* include codes from system $SCTv20220131 where concept is-a #363346000

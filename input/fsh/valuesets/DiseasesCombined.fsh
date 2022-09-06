@@ -12,7 +12,7 @@ Description: "Diseases in the context of Covid-19 combined from mulitple ValueSe
 * ^experimental = false
 * ^publisher = "UKSH Lübeck"
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
-* $sct#161663000 "History of being a tissue or organ recipient"
+* $SCTv20220131#161663000 "History of being a tissue or organ recipient"
 * include codes from valueset $chronic-lung-diseases-icd
 * include codes from valueset $chronic-kidney-diseases-icd
 * include codes from valueset $chronic-liver-diseases-icd

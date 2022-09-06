@@ -11,8 +11,8 @@ Description: "Diabetes mellitus in the context of Covid-19"
 * ^identifier.value = "1.2.276.0.76.11.480"
 * ^immutable = false
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
-* $sct#46635009 "Diabetes mellitus type 1 (disorder)"
-* $sct#44054006 "Diabetes mellitus type 2 (disorder)"
-* $sct#237599002 "Insulin treated type 2 diabetes mellitus (disorder)"
-* $sct#8801005 "Secondary diabetes mellitus (disorder)"
-* include codes from system $sct where concept is-a #73211009
+* $SCTv20220131#46635009 "Diabetes mellitus type 1 (disorder)"
+* $SCTv20220131#44054006 "Diabetes mellitus type 2 (disorder)"
+* $SCTv20220131#237599002 "Insulin treated type 2 diabetes mellitus (disorder)"
+* $SCTv20220131#8801005 "Secondary diabetes mellitus (disorder)"
+* include codes from system $SCTv20220131 where concept is-a #73211009

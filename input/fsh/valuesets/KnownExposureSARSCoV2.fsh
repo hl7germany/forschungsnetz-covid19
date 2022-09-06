@@ -11,5 +11,5 @@ Description: "A set of answers if the patient had contact with a person sufferin
 * ^identifier.value = "1.2.276.0.76.11.520"
 * ^immutable = false
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
-* $sct#840546002 "Exposure to severe acute respiratory syndrome coronavirus 2 (event)"
-* $sct#373067005 "No (qualifier value)"
+* $SCTv20220131#840546002 "Exposure to severe acute respiratory syndrome coronavirus 2 (event)"
+* $SCTv20220131#373067005 "No (qualifier value)"

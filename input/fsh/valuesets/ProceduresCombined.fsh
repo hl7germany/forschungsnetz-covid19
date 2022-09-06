@@ -16,7 +16,7 @@ Description: "Procedures in the context of Covid-19 combined from mulitple Value
 * include codes from valueset $dialysis-procedures-ops
 * include codes from valueset $apheresis-procedures
 * include codes from valueset $apheresis-procedures-ops
-* $sct#431182000 "Placing subject in prone position"
+* $SCTv20220131#431182000 "Placing subject in prone position"
 * include codes from valueset $extracorporeal-membrane-oxygenation
 * include codes from valueset $MII-Procedures-sct
 * include codes from valueset $respiratory-therapies

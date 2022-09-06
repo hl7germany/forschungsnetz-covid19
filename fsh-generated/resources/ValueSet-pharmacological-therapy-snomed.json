@@ -45,6 +45,7 @@
     "include": [
       {
         "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20220131",
         "concept": [
           {
             "code": "768759001",
@@ -129,13 +130,7 @@
           {
             "code": "764877006",
             "display": "Product containing zinc (medicinal product)"
-          }
-        ]
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "version": "http://snomed.info/sct/900000000000207008/version/20220731",
-        "concept": [
+          },
           {
             "code": "1187214003",
             "display": "Product containing camostat (medicinal product)"

@@ -2,6 +2,7 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $SCTv20210131 = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131
+Alias: $SCTv20220131 = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220131
 Alias: $SCTv20220731 = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731
 Alias: $alpha-id = http://fhir.de/ValueSet/bfarm/alpha-id
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM

@@ -10,4 +10,4 @@ Description: "Apheresis procedures"
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "1.2.276.0.76.11.537"
 * ^immutable = false
-* include codes from system $sct where concept is-a #127788007
+* include codes from system $SCTv20220131 where concept is-a #127788007

@@ -6,7 +6,7 @@ Description: "CodeSystem supplement for SNOMED CT post-coordinated expressions."
 * ^date = "2021-09-20"
 //* ^caseSensitive = true
 * ^content = #supplement
-* ^supplements = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"
+* ^supplements = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220131"
 * #"118247008| Radiologic finding|:{363713009| Has interpretation|=373068000| Undetermined|}" "Radiological finding of undetermined significance"
 * #"118247008| Radiologic finding|:{363713009| Has interpretation|=263654008| Abnormal|,42752001| Due to|=840539006| COVID-19|}" "Radiological finding characteristic for COVID-19"
 * #"118247008| Radiologic finding|:{363713009| Has interpretation|=17621005| Normal|}" "Radiological finding normal"
