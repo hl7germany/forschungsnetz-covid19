@@ -21,9 +21,9 @@
   "medicationCodeableConcept": {
     "coding": [
       {
-        "code": "81839001",
+        "code": "84812008",
         "system": "http://snomed.info/sct",
-        "display": "Medicinal product acting as anticoagulant agent (product)"
+        "display": "Product containing heparin (medicinal product)"
       },
       {
         "code": "B01AB01",
@@ -31,7 +31,7 @@
         "display": "Heparin"
       }
     ],
-    "text": "Atazanavir"
+    "text": "Heparin"
   },
   "subject": {
     "reference": "Patient/gecco-patient"
