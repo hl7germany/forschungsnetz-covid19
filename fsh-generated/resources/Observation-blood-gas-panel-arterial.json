@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "BloodGasPanelArterial",
+  "id": "blood-gas-panel-arterial",
   "meta": {
     "profile": [
       "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-gas-panel"
@@ -58,19 +58,19 @@
   "effectiveDateTime": "2020-09-21",
   "hasMember": [
     {
-      "reference": "ac8b697d-7088-4fbe-9ece-51df2d3f1e04"
+      "reference": "Observation/pH-arterial"
     },
     {
-      "reference": "6a78560b-2f7c-4af5-a7bc-3c7d62ca8458"
+      "reference": "Observation/carbon-dioxide-partial-pressure"
     },
     {
-      "reference": "e39a18a6-63d7-4117-a38e-1f29be15f6fa"
+      "reference": "Observation/oxygen-partial-pressure"
     },
     {
-      "reference": "6fa9e2be-d15a-4e77-81fc-056dda521875"
+      "reference": "Observation/oxygen-saturation"
     },
     {
-      "reference": "c9f96dd3-a77a-4aa9-9b12-43cd1972d9a4"
+      "reference": "Observation/inhaled-oxygen-concentration"
     }
   ]
 }
