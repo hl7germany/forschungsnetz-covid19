@@ -68,6 +68,9 @@
         "id": "Procedure.code.coding:ops",
         "path": "Procedure.code.coding",
         "sliceName": "ops",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/ops"
+        },
         "binding": {
           "strength": "required",
           "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures-ops"
@@ -77,6 +80,9 @@
         "id": "Procedure.code.coding:sct",
         "path": "Procedure.code.coding",
         "sliceName": "sct",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
         "binding": {
           "strength": "required",
           "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures"

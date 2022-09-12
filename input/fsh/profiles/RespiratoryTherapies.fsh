@@ -7,6 +7,8 @@ Description: "Respiratory therapies as a risk factor for a severe course of an i
 * ^date = "2020-10-29"
 * category 1..
 * category.coding[sct] = $sct#277132007
+* code.coding[ops] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/ops"
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
 * code.coding[sct] from $respiratory-therapies (required)
 * subject only Reference($Patient)
 * subject MS

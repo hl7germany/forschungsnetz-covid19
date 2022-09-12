@@ -68,6 +68,9 @@
         "id": "Procedure.code.coding:ops",
         "path": "Procedure.code.coding",
         "sliceName": "ops",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/ops"
+        },
         "binding": {
           "strength": "required",
           "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/extracorporeal-membrane-oxygenation"
@@ -76,7 +79,10 @@
       {
         "id": "Procedure.code.coding:sct",
         "path": "Procedure.code.coding",
-        "sliceName": "sct"
+        "sliceName": "sct",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        }
       },
       {
         "id": "Procedure.code.coding:sct.code",

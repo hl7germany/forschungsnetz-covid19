@@ -10,6 +10,8 @@ Description: "Records the details of radiological imaging procedures performed o
 * code.coding contains
     dicom 0..1
 * code.coding[sct] from $radiology-procedures (required)
+* code.coding[ops] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/ops"
+* code.coding[sct] ^patternCoding.system = "http://snomed.info/sct"
 * code.coding[dicom] from $radiology-procedures-dicom (required)
 * code.coding[dicom].system 1..
 * code.coding[dicom].system = "http://dicom.nema.org/resources/ontology/DCM"
