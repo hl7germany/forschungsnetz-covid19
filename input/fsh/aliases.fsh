@@ -25,6 +25,7 @@ Alias: $MII-Laboruntersuchung = https://www.medizininformatik-initiative.de/fhir
 Alias: $MII-MedicationStatement = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement
 Alias: $MII-Reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 Alias: $pzn = http://fhir.de/ValueSet/ifa/pzn
+Alias: $ucum = http://unitsofmeasure.org
 
 // HL7
 Alias: $publication-status = http://hl7.org/fhir/publication-status
