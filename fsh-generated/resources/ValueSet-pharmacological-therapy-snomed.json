@@ -146,6 +146,82 @@
           {
             "code": "1162706008",
             "display": "Product containing casirivimab and imdevimab (medicinal product)"
+          },
+          {
+            "code": "763701005",
+            "display": "Product containing baricitinib (medicinal product)"
+          },
+          {
+            "code": "704316006",
+            "display": "Product containing tofacitinib (medicinal product)"
+          },
+          {
+            "code": "1162693002",
+            "display": "Product containing sotrovimab (medicinal product)"
+          },
+          {
+            "code": "108693005",
+            "display": "Product containing ritonavir (medicinal product)"
+          },
+          {
+            "code": "96034006",
+            "display": "Product containing azithromycin (medicinal product)"
+          },
+          {
+            "code": "395279009",
+            "display": "Product containing anakinra (medicinal product)"
+          },
+          {
+            "code": "108622005",
+            "display": "Product containing budesonide (medicinal product)"
+          },
+          {
+            "code": "416739001",
+            "display": "Product containing ciclesonide (medicinal product)"
+          },
+          {
+            "code": "96213009",
+            "display": "Product containing fluvoxamine (medicinal product)"
+          },
+          {
+            "code": "46123006",
+            "display": "Product containing ascorbic acid (medicinal product)"
+          },
+          {
+            "code": "108943009",
+            "display": "Product containing colecalciferol (medicinal product)"
+          },
+          {
+            "code": "59187003",
+            "display": "Product containing dopamine (medicinal product)"
+          },
+          {
+            "code": "26523005",
+            "display": "Product containing dobutamine (medicinal product)"
+          },
+          {
+            "code": "108480007",
+            "display": "Product containing milrinone (medicinal product)"
+          },
+          {
+            "code": "442790008",
+            "display": "Product containing levosimendan (medicinal product)"
+          },
+          {
+            "code": "65502005",
+            "display": "Product containing epinephrine (medicinal product)"
+          },
+          {
+            "code": "111130009",
+            "display": "Product containing norepinephrine (medicinal product)"
+          },
+          {
+            "code": "772208008",
+            "display": "Product containing antidiuretic hormone (medicinal product)"
+          },
+          {
+            "code": "54765002",
+            "display": "Product containing phenylephrine (medicinal product)"
           }
         ]
       }

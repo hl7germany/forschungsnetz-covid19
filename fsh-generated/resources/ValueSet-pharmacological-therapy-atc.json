@@ -177,10 +177,36 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A11G"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "C03XA"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2020",
         "concept": [
           {
             "code": "D01AC20",
             "display": "Imidazole/Triazole in Kombination mit Corticosteroiden"
+          },
+          {
+            "code": "J05AE03",
+            "display": "Ritonavir"
           },
           {
             "code": "J05AE08",
@@ -267,6 +293,14 @@
             "display": "Everolimus"
           },
           {
+            "code": "L04AA29",
+            "display": "Tofacitinib"
+          },
+          {
+            "code": "L04AA37",
+            "display": "Baricitinib"
+          },
+          {
             "code": "L01XE10",
             "display": "Everolimus"
           },
@@ -285,6 +319,88 @@
           {
             "code": "A11CC06",
             "display": "Calcifediol"
+          },
+          {
+            "code": "J01FA10",
+            "display": "Azithromycin"
+          },
+          {
+            "code": "J01RA07",
+            "display": "Azithromycin, Fluconazol und Secnidazol"
+          },
+          {
+            "code": "S01AA26",
+            "display": "Azithromycin"
+          },
+          {
+            "code": "R03BA02",
+            "display": "Budesonid"
+          },
+          {
+            "code": "R03AK07",
+            "display": "Formoterol und Budesonid"
+          },
+          {
+            "code": "R03AK12",
+            "display": "Salmeterol und Budesonid"
+          },
+          {
+            "code": "R03BA08",
+            "display": "Ciclesonid"
+          },
+          {
+            "code": "N06AB08",
+            "display": "Fluvoxamin"
+          },
+          {
+            "code": "C01CA04",
+            "display": "Dopamin"
+          },
+          {
+            "code": "C01CA07",
+            "display": "Dobutamin"
+          },
+          {
+            "code": "C01CE02",
+            "display": "Milrinon"
+          },
+          {
+            "code": "C01CX08",
+            "display": "Levosimendan"
+          },
+          {
+            "code": "C01CA24",
+            "display": "Epinephrin"
+          },
+          {
+            "code": "C01CA03",
+            "display": "Norepinephrin"
+          },
+          {
+            "code": "C01CA06",
+            "display": "Phenylephrin"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A11G"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2021",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "C03XA"
           }
         ]
       },
@@ -1205,6 +1321,14 @@
             "display": "Imidazole/Triazole in Kombination mit Corticosteroiden"
           },
           {
+            "code": "J05AB16",
+            "display": "Remdesivir"
+          },
+          {
+            "code": "J05AE03",
+            "display": "Ritonavir"
+          },
+          {
             "code": "J05AE08",
             "display": "Atazanavir"
           },
@@ -1289,6 +1413,14 @@
             "display": "Everolimus"
           },
           {
+            "code": "L04AA29",
+            "display": "Tofacitinib"
+          },
+          {
+            "code": "L04AA37",
+            "display": "Baricitinib"
+          },
+          {
             "code": "L01XE10",
             "display": "Everolimus"
           },
@@ -1307,6 +1439,62 @@
           {
             "code": "A11CC06",
             "display": "Calcifediol"
+          },
+          {
+            "code": "J01FA10",
+            "display": "Azithromycin"
+          },
+          {
+            "code": "J01RA07",
+            "display": "Azithromycin, Fluconazol und Secnidazol"
+          },
+          {
+            "code": "S01AA26",
+            "display": "Azithromycin"
+          },
+          {
+            "code": "R03BA02",
+            "display": "Budesonid"
+          },
+          {
+            "code": "R03AL11",
+            "display": "Formoterol, Glycopyrroniumbromid und Budesonid"
+          },
+          {
+            "code": "R03BA08",
+            "display": "Ciclesonid"
+          },
+          {
+            "code": "N06AB08",
+            "display": "Fluvoxamin"
+          },
+          {
+            "code": "C01CA04",
+            "display": "Dopamin"
+          },
+          {
+            "code": "C01CA07",
+            "display": "Dobutamin"
+          },
+          {
+            "code": "C01CE02",
+            "display": "Milrinon"
+          },
+          {
+            "code": "C01CX08",
+            "display": "Levosimendan"
+          },
+          {
+            "code": "C01CA24",
+            "display": "Epinephrin"
+          },
+          {
+            "code": "C01CA03",
+            "display": "Norepinephrin"
+          },
+          {
+            "code": "C01CA06",
+            "display": "Phenylephrin"
           }
         ]
       },
@@ -1445,10 +1633,40 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A11G"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "C03XA"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022",
         "concept": [
           {
             "code": "D01AC20",
             "display": "Imidazole/Triazole in Kombination mit Corticosteroiden"
+          },
+          {
+            "code": "J05AB16",
+            "display": "Remdesivir"
+          },
+          {
+            "code": "J05AE03",
+            "display": "Ritonavir"
           },
           {
             "code": "J05AE08",
@@ -1499,6 +1717,10 @@
             "display": "Ganciclovir"
           },
           {
+            "code": "J05AB18",
+            "display": "Molnupiravir"
+          },
+          {
             "code": "S01AD09",
             "display": "Ganciclovir"
           },
@@ -1535,6 +1757,14 @@
             "display": "Everolimus"
           },
           {
+            "code": "L04AA29",
+            "display": "Tofacitinib"
+          },
+          {
+            "code": "L04AA37",
+            "display": "Baricitinib"
+          },
+          {
             "code": "L01EG02",
             "display": "Everolimus"
           },
@@ -1555,8 +1785,80 @@
             "display": "Calcifediol"
           },
           {
+            "code": "J06BD03",
+            "display": "Tixagevimab und Cilgavimab"
+          },
+          {
+            "code": "J06BD05",
+            "display": "Sotrovimab"
+          },
+          {
             "code": "J06BD07",
             "display": "Casirivimab und Imdevimab"
+          },
+          {
+            "code": "J01FA10",
+            "display": "Azithromycin"
+          },
+          {
+            "code": "J01RA07",
+            "display": "Azithromycin, Fluconazol und Secnidazol"
+          },
+          {
+            "code": "S01AA26",
+            "display": "Azithromycin"
+          },
+          {
+            "code": "R03BA02",
+            "display": "Budesonid"
+          },
+          {
+            "code": "R03AK07",
+            "display": "Formoterol und Budesonid"
+          },
+          {
+            "code": "R03AK12",
+            "display": "Salmeterol und Budesonid"
+          },
+          {
+            "code": "R03AL11",
+            "display": "Formoterol, Glycopyrroniumbromid und Budesonid"
+          },
+          {
+            "code": "R03BA08",
+            "display": "Ciclesonid"
+          },
+          {
+            "code": "N06AB08",
+            "display": "Fluvoxamin"
+          },
+          {
+            "code": "C01CA04",
+            "display": "Dopamin"
+          },
+          {
+            "code": "C01CA07",
+            "display": "Dobutamin"
+          },
+          {
+            "code": "C01CE02",
+            "display": "Milrinon"
+          },
+          {
+            "code": "C01CX08",
+            "display": "Levosimendan"
+          },
+          {
+            "code": "C01CA24",
+            "display": "Epinephrin"
+          },
+          {
+            "code": "C01CA03",
+            "display": "Norepinephrin"
+          },
+          {
+            "code": "C01CA06",
+            "display": "Phenylephrin"
           }
         ]
       }
