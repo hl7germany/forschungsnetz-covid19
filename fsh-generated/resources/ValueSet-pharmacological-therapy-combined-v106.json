@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Pharmacological_Therapy_Combined",
+  "id": "pharmacological-therapy-combined-v106",
+  "title": "Pharmacological Therapy Combined",
+  "description": "Pharmacological therapies in the context of Covid-19 combined from mulitple ValueSets and terminologies.",
+  "version": "1.0.6",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-combined",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ],
+    "versionId": "2",
+    "lastUpdated": "2022-09-23T08:31:47.108+00:00"
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Pharmacological Therapy Combined</h2><tt>https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-combined</tt></div>"
+  },
+  "date": "2022-09-23T00:00:00.000Z",
+  "publisher": "UKSH Lübeck",
+  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-snomed"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-atc"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-ops"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-other"
+        ]
+      }
+    ]
+  }
+}
