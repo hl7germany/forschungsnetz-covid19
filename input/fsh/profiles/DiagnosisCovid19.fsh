@@ -36,7 +36,7 @@ Description: "Profile to capture the diagnosis of disease caused by 2019 novel c
 * stage.summary.coding ^slicing.discriminator.path = "system"
 * stage.summary.coding ^slicing.rules = #open
 * stage.summary.coding contains snomed 0..1 MS
-* stage.summary.coding[snomed] from StageAtDiagnosis (preferred)
+* stage.summary.coding[snomed] from $stage-at-diagnosis (preferred)
 * stage.summary.coding[snomed].system 1.. MS
 * stage.summary.coding[snomed].system = "http://snomed.info/sct"
 * stage.summary.coding[snomed].code 1.. MS

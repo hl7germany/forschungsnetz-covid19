@@ -111,6 +111,8 @@ Alias: $birth-sex = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/b
 Alias: $smoking-status = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/smoking-status
 Alias: $sofa-score-vs = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sofa-score
 Alias: $ethnic-groups = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ethnic-groups
+Alias: $stage-at-diagnosis = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/stage-at-diagnosis
+Alias: $lab-tests = https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/lab-tests-gecco
 
 //Profiles
 Alias: $sd-age = https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age
