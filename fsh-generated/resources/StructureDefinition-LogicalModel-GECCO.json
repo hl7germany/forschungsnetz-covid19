@@ -1,0 +1,2356 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "LogicalModel-GECCO",
+  "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/LogicalModel-GECCO",
+  "version": "1.0.6",
+  "name": "LogicalModelGecco",
+  "title": "Logical Model German Corona Consensus Dataset (GECCO)",
+  "status": "active",
+  "description": "Logical Model of the German Corona Consensus Dataset (GECCO)",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "FHIR-Profiles",
+      "name": "GECCO LogicalModel FHIR Profiles Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/LogicalModel-GECCO",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "LogicalModel-GECCO",
+        "path": "LogicalModel-GECCO",
+        "short": "Logical Model German Corona Consensus Dataset (GECCO)",
+        "definition": "Logical Model of the German Corona Consensus Dataset (GECCO)"
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO",
+        "path": "LogicalModel-GECCO.GECCO",
+        "short": "GECCO",
+        "definition": "Research Dataset German Corona Consensus (GECCO)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors",
+        "short": "Anamnesis and risk factors",
+        "definition": "Anamnesis and risk factors",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ChronicLungDiseases",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ChronicLungDiseases",
+        "code": [
+          {
+            "code": "413839001",
+            "system": "http://snomed.info/sct",
+            "display": "Chronic lung disease (disorder)"
+          }
+        ],
+        "short": "Chronic lung diseases",
+        "definition": "Does the patient suffer from a chronic lung disease? Which chronic lung disease does the patient suffer from?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-lung-diseases"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.CardiovascularDiseases",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.CardiovascularDiseases",
+        "code": [
+          {
+            "code": "49601007",
+            "system": "http://snomed.info/sct",
+            "display": "Disorder of cardiovascular system (disorder)"
+          }
+        ],
+        "short": "Cardiovascular diseases",
+        "definition": "Does the patient suffer from a cardiovascular disease? Which cardiovascular disease does the patient suffer from?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/cardiovascular-diseases"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiovascular-diseases"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ChronicLiverDiseases",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ChronicLiverDiseases",
+        "code": [
+          {
+            "code": "328383001",
+            "system": "http://snomed.info/sct",
+            "display": "Chronic liver disease (disorder)"
+          }
+        ],
+        "short": "Chronic liver diseases",
+        "definition": "Does the patient suffer from a chronic liver disease? Which chronic liver disease does the patient suffer from?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-liver-diseases"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-liver-diseases"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.RheumatologicalImmunologicalDiseases",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.RheumatologicalImmunologicalDiseases",
+        "code": [
+          {
+            "code": "396332003",
+            "system": "http://snomed.info/sct",
+            "display": "Rheumatism (disorder)"
+          },
+          {
+            "code": "414029004",
+            "system": "http://snomed.info/sct",
+            "display": "Disorder of immune function (disorder)"
+          }
+        ],
+        "short": "Rheumatological and immunological diseases",
+        "definition": "Does the patient suffer from at least one rheumatological or immunological disease? Which rheumatological or immunological  disease does the patient suffer from?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/rheumatological-immunological-diseases"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/rheumatological-immunological-diseases"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.HumanImmunodeficiencyVirusInfection",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.HumanImmunodeficiencyVirusInfection",
+        "code": [
+          {
+            "code": "86406008",
+            "system": "http://snomed.info/sct",
+            "display": "Human immunodeficiency virus infection (disorder)"
+          }
+        ],
+        "short": "Human immunodeficiency virus infection",
+        "definition": "Is the patient infected with HIV?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/human-immunodeficiency-virus-infections"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.HistoryOfOrganTransplantation",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.HistoryOfOrganTransplantation",
+        "code": [
+          {
+            "code": "161663000",
+            "system": "http://snomed.info/sct",
+            "display": "History of being a tissue or organ recipient (situation)"
+          }
+        ],
+        "short": "History of being a tissue or organ recipient",
+        "definition": "Does the patient have a history of being an organ transplant recipient? Which transplantation was performed?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/organs-for-transplant"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/organ-recipient"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.DiabetesMellitus",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.DiabetesMellitus",
+        "code": [
+          {
+            "code": "73211009",
+            "system": "http://snomed.info/sct",
+            "display": "Diabetes mellitus (disorder)"
+          }
+        ],
+        "short": "Diabetes mellitus",
+        "definition": "Does the patient suffer from diabetes? Which type of diabetes does the patient suffer from?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/diabetes-mellitus-diseases"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diabetes-mellitus"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.MalignantNeoplasticDiseases",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.MalignantNeoplasticDiseases",
+        "code": [
+          {
+            "code": "363346000",
+            "system": "http://snomed.info/sct",
+            "display": "Malignant neoplastic disease (disorder)"
+          }
+        ],
+        "short": "Malignant neoplastic diseases",
+        "definition": "Does the patient suffer from at least one active tumour/cancer disease?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/malignant-neoplastic-diseases"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/malignant-neoplastic-disease"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.TobaccoSmokingStatus",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.TobaccoSmokingStatus",
+        "code": [
+          {
+            "code": "72166-2",
+            "system": "http://loinc.org",
+            "display": "Tobacco smoking status"
+          }
+        ],
+        "short": "Tobacco smoking status",
+        "definition": "Has the patient ever smoked cigarettes?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/smoking-status"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/smoking-status"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ChronicNeurologicalOrMentalDiseases",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ChronicNeurologicalOrMentalDiseases",
+        "code": [
+          {
+            "code": "74732009",
+            "system": "http://snomed.info/sct",
+            "display": "Mental disorder (disorder)"
+          },
+          {
+            "code": "128283000",
+            "system": "http://snomed.info/sct",
+            "display": "Chronic nervous system disorder (disorder)"
+          }
+        ],
+        "short": "Chronic neurological or mental diseases",
+        "definition": "Does the patient suffer from at least one chronic neurological disease or psychiatric illness? Which one?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-neurological-mental-diseases"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-neurological-mental-diseases"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.RespiratoryTherapy",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.RespiratoryTherapy",
+        "code": [
+          {
+            "code": "53950000",
+            "system": "http://snomed.info/sct",
+            "display": "Respiratory therapy (procedure)"
+          }
+        ],
+        "short": "Respiratory therapy",
+        "definition": "Did an oxygen or respiratory therapy already exist before the current illness?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ChronicKidneyDiseases",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ChronicKidneyDiseases",
+        "code": [
+          {
+            "code": "709044004",
+            "system": "http://snomed.info/sct",
+            "display": "709044004 |Chronic kidney disease (disorder)|"
+          }
+        ],
+        "short": "Chronic kidney diseases",
+        "definition": "Does the patient suffer from a chronic kidney disease? Which chronic kidney disease does the patient suffer from?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/chronic-kidney-diseases"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-kidney-diseases"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.HistoryOfTravel",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.HistoryOfTravel",
+        "code": [
+          {
+            "code": "8691-8",
+            "system": "http://loinc.org",
+            "display": "History of Travel"
+          }
+        ],
+        "short": "History of travel",
+        "definition": "Travel within 14 days of onset of symptoms",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/history-of-travel"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.GastrointestinalUlcers",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.GastrointestinalUlcers",
+        "code": [
+          {
+            "code": "40845000",
+            "system": "http://snomed.info/sct",
+            "display": "Gastrointestinal ulcer (disorder)"
+          }
+        ],
+        "short": "Gastrointestinal ulcers",
+        "definition": "Does the patient suffer from gastrointestinal ulcers?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/gastrointestinal-ulcers"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-ulcers"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ImmunizationStatus",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ImmunizationStatus",
+        "code": [
+          {
+            "code": "408864009",
+            "system": "http://snomed.info/sct",
+            "display": "Vaccination status (observable entity)"
+          }
+        ],
+        "short": "Immunization status",
+        "definition": "Which vaccination does the patient have?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/vaccines-snomed"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ResuscitationStatus",
+        "path": "LogicalModel-GECCO.GECCO.AnamnesisRiskFactors.ResuscitationStatus",
+        "code": [
+          {
+            "code": "304251008",
+            "system": "http://snomed.info/sct",
+            "display": "Resuscitation status (observable entity)"
+          }
+        ],
+        "short": "Resuscitation status",
+        "definition": "Is there any information on the DNR order?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/resuscitation-status"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/do-not-resuscitate-order"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Imaging",
+        "path": "LogicalModel-GECCO.GECCO.Imaging",
+        "short": "Imaging",
+        "definition": "Radiology procedures and findings",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Imaging.ImagingProcedures",
+        "path": "LogicalModel-GECCO.GECCO.Imaging.ImagingProcedures",
+        "code": [
+          {
+            "code": "363679005",
+            "system": "http://snomed.info/sct",
+            "display": "Imaging (procedure)"
+          }
+        ],
+        "short": "Imaging procedures",
+        "definition": "Imaging procedures of the lung in the context of Covid-19",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-procedures"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Imaging.RadiologicalFindings",
+        "path": "LogicalModel-GECCO.GECCO.Imaging.RadiologicalFindings",
+        "code": [
+          {
+            "code": "118247008",
+            "system": "http://snomed.info/sct",
+            "display": "Radiologic finding (finding)"
+          }
+        ],
+        "short": "Radiological findings",
+        "definition": "Radiological findings in the context of Covid-19",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/radiology-findings"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnostic-report-radiology"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Demographics",
+        "path": "LogicalModel-GECCO.GECCO.Demographics",
+        "short": "Demographics",
+        "definition": "Demographic patient information",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Demographics.Pregnancy",
+        "path": "LogicalModel-GECCO.GECCO.Demographics.Pregnancy",
+        "code": [
+          {
+            "code": "82810-3",
+            "system": "http://loinc.org",
+            "display": "Pregnancy status"
+          }
+        ],
+        "short": "Pregnancy",
+        "definition": "Is the patient currently pregnant?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pregnancy-status"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pregnancy-status"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Demographics.EthnicGroup",
+        "path": "LogicalModel-GECCO.GECCO.Demographics.EthnicGroup",
+        "code": [
+          {
+            "code": "372148003",
+            "system": "http://snomed.info/sct",
+            "display": "Ethnic group (ethnic group)"
+          }
+        ],
+        "short": "Ethnic group",
+        "definition": "Ethnic group",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ethnic-groups"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Demographics.BiologicalSex",
+        "path": "LogicalModel-GECCO.GECCO.Demographics.BiologicalSex",
+        "code": [
+          {
+            "code": "76689-9",
+            "system": "http://loinc.org",
+            "display": "Sex assigned at birth"
+          }
+        ],
+        "short": "Biological sex",
+        "definition": "Biological sex",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/birth-sex"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sex-assigned-at-birth"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Demographics.DateOfBirth",
+        "path": "LogicalModel-GECCO.GECCO.Demographics.DateOfBirth",
+        "code": [
+          {
+            "code": "184099003",
+            "system": "http://snomed.info/sct",
+            "display": "Date of birth (observable entity)"
+          },
+          {
+            "code": "21112-8",
+            "system": "http://loinc.org",
+            "display": "Birth date"
+          }
+        ],
+        "short": "Date of birth",
+        "definition": "Date of birth",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Demographics.Age",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCanonical": "http://hl7.org/fhir/ValueSet/age-units"
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.Demographics.Age",
+        "code": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "Current chronological age (observable entity)"
+          },
+          {
+            "code": "30525-0",
+            "system": "http://loinc.org",
+            "display": "Age"
+          }
+        ],
+        "short": "Age",
+        "definition": "Age at study enrollment (in years or months)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Demographics.FrailtyScore",
+        "path": "LogicalModel-GECCO.GECCO.Demographics.FrailtyScore",
+        "code": [
+          {
+            "code": "763264000",
+            "system": "http://snomed.info/sct",
+            "display": "Canadian Study of Health and Aging Clinical Frailty Scale score (observable entity)"
+          }
+        ],
+        "short": "Frailty score",
+        "definition": "Frailty score before admission",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/frailty-score"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Demographics.BodyWeight",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCanonical": "http://hl7.org/fhir/ValueSet/ucum-bodyweight"
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.Demographics.BodyWeight",
+        "code": [
+          {
+            "code": "27113001",
+            "system": "http://snomed.info/sct",
+            "display": "Body weight (observable entity)"
+          },
+          {
+            "code": "29463-7",
+            "system": "http://loinc.org",
+            "display": "Body weight"
+          }
+        ],
+        "short": "Body weight",
+        "definition": "Body weight",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Demographics.BodyHeight",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCanonical": "http://hl7.org/fhir/ValueSet/ucum-bodylength"
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.Demographics.BodyHeight",
+        "code": [
+          {
+            "code": "1153637007",
+            "system": "http://snomed.info/sct",
+            "display": "Body height (observable entity)"
+          },
+          {
+            "code": "8302-2",
+            "system": "http://loinc.org",
+            "display": "Body height"
+          }
+        ],
+        "short": "Body height",
+        "definition": "Body height",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.EpidemiologicalFactors",
+        "path": "LogicalModel-GECCO.GECCO.EpidemiologicalFactors",
+        "short": "Epidemiological factors",
+        "definition": "Epidemiological factors",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.EpidemiologicalFactors.ContactWithPersonsSufferingFromCOVID19",
+        "path": "LogicalModel-GECCO.GECCO.EpidemiologicalFactors.ContactWithPersonsSufferingFromCOVID19",
+        "code": [
+          {
+            "code": "88636-6",
+            "system": "http://loinc.org",
+            "display": "Known exposure [Identifier]"
+          }
+        ],
+        "short": "Contact with persons suffering from COVID-19",
+        "definition": "Did the patient knowingly have contact with a person with probable or proven COVID-19 disease within 14 days before the onset of his/her symptoms?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/known-exposure"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/known-exposure"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Complications",
+        "path": "LogicalModel-GECCO.GECCO.Complications",
+        "short": "Complications",
+        "definition": "Complications due to COVID-19",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Complications.Complication",
+        "path": "LogicalModel-GECCO.GECCO.Complications.Complication",
+        "code": [
+          {
+            "code": "116223007",
+            "system": "http://snomed.info/sct",
+            "display": "Complication (disorder)"
+          },
+          {
+            "code": "19817-6",
+            "system": "http://loinc.org",
+            "display": "Complications"
+          }
+        ],
+        "short": "Complication",
+        "definition": "Complications in the context of Covid-19",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/complications-covid-19"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/complications-covid-19"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.OnsetOfIllnessAndAdmission",
+        "path": "LogicalModel-GECCO.GECCO.OnsetOfIllnessAndAdmission",
+        "short": "Onset of illness / Admission",
+        "definition": "Onset of illness / Admission",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.OnsetOfIllnessAndAdmission.StageAtDiagnosis",
+        "path": "LogicalModel-GECCO.GECCO.OnsetOfIllnessAndAdmission.StageAtDiagnosis",
+        "code": [
+          {
+            "code": "385349001",
+            "system": "http://snomed.info/sct",
+            "display": "Clinical stage (observable entity)"
+          },
+          {
+            "code": "88859-4",
+            "system": "http://loinc.org",
+            "display": "Disease stage score for risk calculation"
+          }
+        ],
+        "short": "Stage at diagnosis",
+        "definition": "Stage of illness at the time of COVID-19 diagnosis",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/stage-at-diagnosis"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues",
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues",
+        "short": "Laboratory values",
+        "definition": "Laboratory values",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.LaboratoryValue",
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.LaboratoryValue",
+        "short": "Laboratory value",
+        "definition": "Laboratory value",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-RT-PCR",
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-RT-PCR",
+        "code": [
+          {
+            "code": "94500-6",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
+          }
+        ],
+        "short": "SARS-COV-2-RT-PCR",
+        "definition": "SARS-COV-2-RT-PCR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-Ab-Ql",
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-Ab-Ql",
+        "code": [
+          {
+            "code": "94762-2",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) Ab [Presence] in Serum or Plasma by Immunoassay"
+          }
+        ],
+        "short": "SARS-CoV-2 (COVID-19) Ab IA Ql",
+        "definition": "Qualitative detection of SARS-CoV-2 antibodies by an immunoassay method.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ql-ia"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-Ab-Qn",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "[IU]/mL",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-Ab-Qn",
+        "code": [
+          {
+            "code": "94769-7",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay"
+          }
+        ],
+        "short": "SARS-CoV-2 (COVID-19) Ab IA Qn",
+        "definition": "Quantitative detection of any SARS-CoV-2 antibodies (IgG, IgM, or IgA) in serum or plasma by immunoassay methods.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ia-acnc"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgG-Ql",
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgG-Ql",
+        "code": [
+          {
+            "code": "94563-4",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) IgG Ab [Presence] in Serum or Plasma by Immunoassay"
+          }
+        ],
+        "short": "SARS-CoV-2 (COVID-19) IgG IA Ql",
+        "definition": "Detection of SARS-CoV-2 IgG antibodies by an immunoassay method.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igg-ser-pl-ql-ia"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgG-Qn",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "[arb'U]/mL",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgG-Qn",
+        "code": [
+          {
+            "code": "94505-5",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"
+          }
+        ],
+        "short": "SARS-CoV-2 (COVID-19) IgG IA Qn",
+        "definition": "Quantitative results for detection of IgG antibodies against SARS coronavirus 2 (SARS-CoV-2) in serum or plasma by immunoassay methods.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igg-ser-pl-ia-acnc"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgM-Ql",
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgM-Ql",
+        "code": [
+          {
+            "code": "94564-2",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+          }
+        ],
+        "short": "SARS-CoV-2 (COVID-19) IgM IA Ql",
+        "definition": "Detection of SARS-CoV-2 IgM antibodies by an immunoassay method.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igm-ser-pl-ql-ia"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgM-Qn",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "[arb'U]/mL",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgM-Qn",
+        "code": [
+          {
+            "code": "94506-3",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) IgM Ab [Units/volume] in Serum or Plasma by Immunoassay"
+          }
+        ],
+        "short": "SARS-CoV-2 (COVID-19) IgM IA Qn",
+        "definition": "Quantitative results for detection of IgM antibodies against SARS coronavirus 2 (SARS-CoV-2) in serum or plasma by immunoassay methods.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igm-ser-pl-ia-acnc"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgA-Ql",
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgA-Ql",
+        "code": [
+          {
+            "code": "94562-6",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) IgA Ab [Presence] in Serum or Plasma by Immunoassay"
+          }
+        ],
+        "short": "SARS-CoV-2 (COVID-19) IgA IA Ql",
+        "definition": "Detection of SARS-CoV-2 IgA antibodies by an immunoassay method.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-iga-ser-pl-ql-ia"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgA-Qn",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "[arb'U]/mL",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.LaboratoryValues.SARS-CoV-2-IgA-Qn",
+        "code": [
+          {
+            "code": "94720-0",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) IgA Ab [Units/volume] in Serum or Plasma by Immunoassay"
+          }
+        ],
+        "short": "SARS-CoV-2 (COVID-19) IgA IA Qn",
+        "definition": "Quantitative results for detection of IgA antibodies against SARS coronavirus 2 (SARS-CoV-2) in serum or plasma by immunoassay methods.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-iga-ser-pl-ia-acnc"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Medication",
+        "path": "LogicalModel-GECCO.GECCO.Medication",
+        "short": "Medication",
+        "definition": "Pharmacological therapy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Medication.COVID-19-Therapy",
+        "path": "LogicalModel-GECCO.GECCO.Medication.COVID-19-Therapy",
+        "short": "Covid-19 therapy",
+        "definition": "Pharmacological therapy for Covid-19",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/pharmacological-therapy-snomed"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Medication.ACE-Inhibitors",
+        "path": "LogicalModel-GECCO.GECCO.Medication.ACE-Inhibitors",
+        "code": [
+          {
+            "code": "41549009",
+            "system": "http://snomed.info/sct",
+            "display": "Product containing angiotensin-converting enzyme inhibitor (product)"
+          }
+        ],
+        "short": "ACE Inhibitors",
+        "definition": "ACE Inhibitors",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/ace-inhibitors-atc"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-ace-inhibitors"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Medication.Immunoglobulins",
+        "path": "LogicalModel-GECCO.GECCO.Medication.Immunoglobulins",
+        "code": [
+          {
+            "code": "333710000",
+            "system": "http://snomed.info/sct",
+            "display": "Product containing immunoglobulin (product)"
+          }
+        ],
+        "short": "Immunoglobulins",
+        "definition": "Immunoglobulins",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/immunoglobulins-atc"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-immunoglobulins"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Medication.Anticoagulation",
+        "path": "LogicalModel-GECCO.GECCO.Medication.Anticoagulation",
+        "short": "Anticoagulation",
+        "definition": "Anticoagulation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/anticoagulants-atc"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Medication.Anticoagulation.TherapeuticIntent",
+        "path": "LogicalModel-GECCO.GECCO.Medication.Anticoagulation.TherapeuticIntent",
+        "short": "Therapeutic intent",
+        "definition": "Therapeutic intent - why the drug is taken",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/therapeutic-intent"
+        }
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.OutcomeAtDischarge",
+        "path": "LogicalModel-GECCO.GECCO.OutcomeAtDischarge",
+        "short": "Outcome at discharge",
+        "definition": "Outcome at discharge",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.OutcomeAtDischarge.RespiratoryOutcome",
+        "path": "LogicalModel-GECCO.GECCO.OutcomeAtDischarge.RespiratoryOutcome",
+        "code": [
+          {
+            "code": "444932008",
+            "system": "http://snomed.info/sct",
+            "display": "Dependence on ventilator (finding)"
+          }
+        ],
+        "short": "Respiratory outcome",
+        "definition": "Dependence on ventilator",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/verification-status"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dependence-on-ventilator"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.OutcomeAtDischarge.TypeOfDischarge",
+        "path": "LogicalModel-GECCO.GECCO.OutcomeAtDischarge.TypeOfDischarge",
+        "code": [
+          {
+            "code": "55128-3",
+            "system": "http://loinc.org",
+            "display": "Discharge disposition"
+          }
+        ],
+        "short": "Type of discharge",
+        "definition": "Type of discharge",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/discharge-disposition"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/discharge-disposition"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.OutcomeAtDischarge.FollowUpSwabResult",
+        "path": "LogicalModel-GECCO.GECCO.OutcomeAtDischarge.FollowUpSwabResult",
+        "code": [
+          {
+            "code": "94500-6",
+            "system": "http://loinc.org",
+            "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
+          }
+        ],
+        "short": "Follow-up swab result SARS-CoV-2 (COVID-19)",
+        "definition": "SARS-COV-2-RT-PCR",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/detected-not-detected-inconclusive"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.StudyEnrollmentInclusionCriteria",
+        "path": "LogicalModel-GECCO.GECCO.StudyEnrollmentInclusionCriteria",
+        "short": "Study enrollment / Inclusion criteria",
+        "definition": "Study enrollment / Inclusion criteria",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.StudyEnrollmentInclusionCriteria.StudyEnrolmentDueToCOVID-19",
+        "path": "LogicalModel-GECCO.GECCO.StudyEnrollmentInclusionCriteria.StudyEnrolmentDueToCOVID-19",
+        "short": "Study enrolment due to Covid-19",
+        "definition": "Confirmed Covid-19 diagnosis as main reason for enrolment in the study",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/study-inclusion-covid-19"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.StudyEnrollmentInclusionCriteria.InterventionalStudiesParticipation",
+        "path": "LogicalModel-GECCO.GECCO.StudyEnrollmentInclusionCriteria.InterventionalStudiesParticipation",
+        "short": "Interventional studies participation",
+        "definition": "Study enrolment due to Covid-19",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/interventional-clinical-trial-participation"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Symptoms",
+        "path": "LogicalModel-GECCO.GECCO.Symptoms",
+        "short": "Symptoms",
+        "definition": "Symptoms",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Symptoms.Symptom",
+        "path": "LogicalModel-GECCO.GECCO.Symptoms.Symptom",
+        "short": "SARS-CoV-2 Symptom",
+        "definition": "Symptom for SARS-CoV-2 infection",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/sars-cov-2-symptoms"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Symptoms.Symptom.Severity",
+        "path": "LogicalModel-GECCO.GECCO.Symptoms.Symptom.Severity",
+        "short": "Severity",
+        "definition": "Severity",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/condition-severity"
+        }
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Therapy",
+        "path": "LogicalModel-GECCO.GECCO.Therapy",
+        "short": "Therapy",
+        "definition": "Therapy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Therapy.DialysisHemofiltration",
+        "path": "LogicalModel-GECCO.GECCO.Therapy.DialysisHemofiltration",
+        "short": "Dialysis / Hemofiltration",
+        "definition": "Dialysis / Hemofiltration",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/dialysis-procedures"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dialysis"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Therapy.Apheresis",
+        "path": "LogicalModel-GECCO.GECCO.Therapy.Apheresis",
+        "short": "Apheresis",
+        "definition": "Apheresis",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/apheresis-procedures"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/apheresis"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Therapy.PronePosition",
+        "path": "LogicalModel-GECCO.GECCO.Therapy.PronePosition",
+        "code": [
+          {
+            "code": "431182000",
+            "system": "http://snomed.info/sct",
+            "display": "Placing subject in prone position (procedure)"
+          }
+        ],
+        "short": "Prone position",
+        "definition": "Prone position",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/prone-position"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Therapy.ECMO",
+        "path": "LogicalModel-GECCO.GECCO.Therapy.ECMO",
+        "code": [
+          {
+            "code": "233573008",
+            "system": "http://snomed.info/sct",
+            "display": "Extracorporeal membrane oxygenation (procedure)"
+          }
+        ],
+        "short": "ECMO therapy",
+        "definition": "ECMO therapy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/extracorporeal-membrane-oxygenation"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/extracorporeal-membrane-oxygenation"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Therapy.PatientInICU",
+        "path": "LogicalModel-GECCO.GECCO.Therapy.PatientInICU",
+        "code": [
+          {
+            "code": "95420-6",
+            "system": "http://loinc.org",
+            "display": "Whether the patient was admitted to intensive care unit (ICU) for condition of interest"
+          }
+        ],
+        "short": "Patient in ICU",
+        "definition": "Is the patient in the intensive care unit?",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/yes-no-unknown-other-na"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/patient-in-icu"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Therapy.VentilationType",
+        "path": "LogicalModel-GECCO.GECCO.Therapy.VentilationType",
+        "short": "Ventilation type",
+        "definition": "Ventilation type",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies"
+        },
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.Therapy.VentilationType.Device",
+        "path": "LogicalModel-GECCO.GECCO.Therapy.VentilationType.Device",
+        "short": "Ventilation device",
+        "definition": "Ventilation device used during the procedure",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.netzwerk-universitaetsmedizin.de/fhir/ValueSet/respiratory-therapies-devices"
+        }
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns",
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns",
+        "short": "Vital signs",
+        "definition": "Vital signs",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.PaCO2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "mm[Hg]",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.PaCO2",
+        "code": [
+          {
+            "code": "2019-8",
+            "system": "http://loinc.org",
+            "display": "Carbon dioxide [Partial pressure] in Arterial blood"
+          }
+        ],
+        "short": "PaCO2",
+        "definition": "Carbon dioxide partial pressure (PaCO2)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.PaO2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "mm[Hg]",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.PaO2",
+        "code": [
+          {
+            "code": "2703-7",
+            "system": "http://loinc.org",
+            "display": "Oxygen [Partial pressure] in Arterial blood"
+          }
+        ],
+        "short": "PaO2",
+        "definition": "Oxygen partial pressure (PaO2)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-partial-pressure"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.FiO2",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "%",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.FiO2",
+        "code": [
+          {
+            "code": "3150-0",
+            "system": "http://loinc.org",
+            "display": "Inhaled oxygen concentration"
+          }
+        ],
+        "short": "FiO2",
+        "definition": "Inhaled oxygen concentration (FiO2)",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/inhaled-oxygen-concentration"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.pH",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "[pH]",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.pH",
+        "code": [
+          {
+            "code": "2744-1",
+            "system": "http://loinc.org",
+            "display": "pH of Arterial blood"
+          }
+        ],
+        "short": "pH",
+        "definition": "pH",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.SOFA-Score",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "1",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.SOFA-Score",
+        "code": [
+          {
+            "code": "96790-1",
+            "system": "http://loinc.org",
+            "display": "SOFA Total Score"
+          }
+        ],
+        "short": "SOFA Score",
+        "definition": "Sepsis-related Organ Failure Assessment Score",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.RespiratoryRate",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "/min",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.RespiratoryRate",
+        "code": [
+          {
+            "code": "9279-1",
+            "system": "http://loinc.org",
+            "display": "Respiratory rate"
+          }
+        ],
+        "short": "Respiratory rate",
+        "definition": "Respiratory rate",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.DiastolicBloodPressure",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "mm[Hg]",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.DiastolicBloodPressure",
+        "code": [
+          {
+            "code": "8462-4",
+            "system": "http://loinc.org",
+            "display": "Diastolic blood pressure"
+          }
+        ],
+        "short": "Diastolic blood pressure",
+        "definition": "Diastolic blood pressure",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.SystolicBloodPressure",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "mm[Hg]",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.SystolicBloodPressure",
+        "code": [
+          {
+            "code": "8480-6",
+            "system": "http://loinc.org",
+            "display": "Systolic blood pressure"
+          }
+        ],
+        "short": "Systolic blood pressure",
+        "definition": "Systolic blood pressure",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.HeartRate",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "/min",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.HeartRate",
+        "code": [
+          {
+            "code": "8867-4",
+            "system": "http://loinc.org",
+            "display": "Heart rate"
+          }
+        ],
+        "short": "Heart rate",
+        "definition": "Heart rate",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.BodyTemperature",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "Cel",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.BodyTemperature",
+        "code": [
+          {
+            "code": "8310-5",
+            "system": "http://loinc.org",
+            "display": "Body temperature"
+          }
+        ],
+        "short": "Body temperature",
+        "definition": "Body temperature",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature"
+          }
+        ]
+      },
+      {
+        "id": "LogicalModel-GECCO.GECCO.VitalSigns.PeripheralOxygenSaturation",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-allowedUnits",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "%",
+                  "system": "http://unitsofmeasure.org"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "LogicalModel-GECCO.GECCO.VitalSigns.PeripheralOxygenSaturation",
+        "code": [
+          {
+            "code": "2708-6",
+            "system": "http://loinc.org",
+            "display": "Oxygen saturation in Arterial blood"
+          }
+        ],
+        "short": "Peripheral oxygen saturation",
+        "definition": "Peripheral oxygen saturation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "FHIR-Profiles",
+            "map": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation"
+          }
+        ]
+      }
+    ]
+  }
+}
